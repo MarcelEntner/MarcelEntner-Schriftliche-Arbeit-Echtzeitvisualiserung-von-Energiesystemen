@@ -1,0 +1,190 @@
+% Vorlage für die Erstellung einer Diplomarbeit
+% Zusammengestellt von Stefan Zauner im Februar 2016
+
+% Die Kapitelstruktur und Titelei entspricht dem Wunsch der Landesschulinspektion.
+
+% Für TeX-Neulinge: Compiliert werden muss hier nur das File main.tex
+
+% Definieren der Dokumentklasse
+\documentclass [a4paper] {report}
+
+
+% Zeichensatz definieren
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+
+
+
+% Einbinden üblicher Packages
+\usepackage{tikz}
+\usepackage{xcolor}
+\usepackage{epsfig}
+\usepackage{latexsym}
+\usepackage{colordvi}
+\usepackage{colortbl}
+\usepackage{multirow}
+\usepackage{eurosym}
+\usepackage{ulem}
+\usepackage{amsmath,amssymb,amstext}
+\usepackage{selinput} 
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{color}
+\usepackage{acronym}
+\usepackage{textcomp}
+\usepackage{ltxtable}
+\usepackage{longtable}
+\usepackage{supertabular}
+\usepackage{verbatim}
+\usepackage{float}
+\usepackage{array}
+\usepackage{blindtext}
+\usepackage{multicol}
+\usepackage{tocbibind}
+
+
+
+
+
+
+
+
+
+
+
+
+
+% für neue deutsche Rechtschreibung
+\usepackage[ngerman]{babel}
+% für englischsprachige Arbeiten
+%\usepackage[english]{babel}
+
+%Zeilenumbruch in URLs
+\usepackage[hyphens]{url}
+\usepackage{hyperref}
+\usepackage{breakurl}
+
+%zum Einbinden von PDF-Dateien
+\usepackage{pdfpages}
+
+%zum Einbinden von Listings und darin enthaltenen Umlauten
+\usepackage{listings}
+\lstset{literate=%
+  {Ö}{{\"O}}1
+  {Ä}{{\"A}}1
+  {Ü}{{\"U}}1
+  {ß}{{\ss}}2
+  {ü}{{\"u}}1
+  {ä}{{\"a}}1
+  {ö}{{\"o}}1
+}
+
+% Zum Einfügen kursiver Zitate
+\newenvironment{italicquotes}
+{\begin{quote}\itshape}
+{\end{quote}}
+
+% Definieren notwendiger Farben, eigene hier erweitern
+\definecolor{grau}{rgb}{0.9,0.9,0.9}
+\definecolor{middlegray}{rgb}{0.5,0.5,0.5}
+
+% Vor PDF Erstellung hier ergänzen
+\hypersetup{
+	pdftitle={Titel der Arbeit},
+	pdfauthor={Name 1, Name 2, Name 3, Name 4},
+	linkcolor={black}
+}
+
+% Global gültige Definition wie SourceCode-Formatierung aussehen könnte
+\lstset{ 
+   basicstyle=\scriptsize\ttfamily,
+   keywordstyle=\bfseries\ttfamily\color{blue},
+   stringstyle=\ttfamily\color{red},
+   commentstyle=\color{middlegray}\ttfamily,
+   showstringspaces=false,
+   flexiblecolumns=false,
+   tabsize=2,
+   numbers=left,
+   numberstyle=\scriptsize,
+   numberblanklines=false,
+   stepnumber=1,
+   numbersep=10pt,
+   xleftmargin=15pt,
+   tabsize=2,
+   breaklines, breakatwhitespace
+}
+
+
+\textwidth16.5cm
+\textheight22.6cm
+\oddsidemargin-3mm
+\evensidemargin-3mm
+\topmargin0mm
+
+% Kopfzeile Standard für Bücher
+%\pagestyle{headings} \frenchspacing
+
+% Kopfzeile alternativ ähnlich MEDT-DA-Vorgabe
+\pagestyle{fancy} \frenchspacing
+\lhead{\textsc{Nachnamen (Jahr) und ${\raisebox{1pt}{\scriptsize $\slash$} }$ oder Titel}}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+
+\renewcommand{\textfraction}{0}
+\renewcommand{\floatpagefraction}{0.999}
+\renewcommand{\topfraction}{0.999}
+\renewcommand{\bottomfraction}{0.999}
+
+\newcommand{\fig}[1]{Abb.~\ref{#1}}
+% Relevant für englischsprachige Arbeiten:
+%\newcommand{\sect}[1]{Sect.~\ref{#1}}
+\newcommand{\eqn}[1]{Gleichung.~\ref{#1}}
+
+\newlength{\matwidth}
+\setlength{\matwidth}{112mm}
+
+
+
+
+
+
+% Einbinden einer Schriftart mit angepasster Kerningtabelle und guten Ligaturen
+\usepackage{lmodern}
+
+\begin{document}
+
+
+\linespread{1.5} \normalsize
+\include{titlepage}
+\linespread{1.25} \normalsize
+
+\clearpage
+\setcounter{secnumdepth}{3}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt plus 2pt minus 1pt}
+\pagenumbering{Alph}
+\include{erklaerung}
+\include{kurzfassung}
+\include{danksagung}
+\pagenumbering{roman}
+\tableofcontents
+
+\cleardoublepage 
+\pagenumbering{arabic}{page}{1} 
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt plus 2pt minus 1pt}
+\include{einleitung}
+\include{doku}
+\listoffigures
+\listoftables
+\include{begleitprotokoll}
+\include{anhang}
+
+  
+\end{document}
+
+
+
+
+
