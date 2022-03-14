@@ -321,7 +321,26 @@ Text
 
 
 \section{DataTable}
-Text
+\definecolor{mygray}{RGB}{252,251,244}
+\renewcommand{\lstlistingname}{Quellcode}
+
+\begin{lstlisting}[
+	caption={Funktion Blade.php Zeile 1-2},
+	label=Code,
+	language=octave,
+	numbers=left,
+	firstnumber=100,
+	numberfirstline=false,
+	backgroundcolor=\color{mygray},
+	basicstyle=\footnotesize=15,
+	keywordstyle=\color{blue}
+	]
+	
+	$EnSys = EnSys::find($id);
+	$data = DB::table('EnSys')->get();
+	//Kommentar
+	$EnTech = EnTech::where('enSys_idEnSys', $id)->get();
+\end{lstlisting}
 \subsection{Individueller DataTable}
 Text
 \subsection{Sortierfunktion}
