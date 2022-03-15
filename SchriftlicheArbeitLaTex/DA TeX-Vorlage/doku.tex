@@ -324,7 +324,7 @@ Die Hauptaufgabe eines Seeder ist es jedoch nur die Factories aufzurufen.
 
 \subsubsection{Datenübergabe in Laravel}
 Ein Controller hat die Aufgabe mithilfe eines Models die Daten zu verändern und danach eine View zurückzugeben. Möchte man jedoch Daten wie Attribute, welche im Formular mitgeschickt werden, auf der zurückgegebenen View verwenden, müssen diese mitgegeben werden.
-Es gibt die Möglichkeit, Daten mithilfe von compact in das Return Statement*anzuhängen. Dies würde im Code folgendermaßen aussehen: 
+Es gibt die Möglichkeit, Daten mithilfe von compact in das Return Statement\footnote{Rückgabewert einer Funktion}anzuhängen. Dies würde im Code folgendermaßen aussehen: 
 \definecolor{mygray}{RGB}{252,251,244}
 \renewcommand{\lstlistingname}{Quellcode}
 
@@ -348,7 +348,7 @@ In der View kann dann mit folgendem Code auf die Daten zugegriffen werden:
 \renewcommand{\lstlistingname}{Quellcode}
 
 \begin{lstlisting}[
-	caption={Zugriff im Program},
+	caption={Zugriff mittels Foreach Schleife},
 	label=Code,
 	language=octave,
 	numbers=left,
@@ -369,7 +369,7 @@ Die zweite Variante Daten zu Übergeben schaut folgendermaßen aus:
 \renewcommand{\lstlistingname}{Quellcode}
 
 \begin{lstlisting}[
-	caption={Zugriff im Program},
+	caption={Attributübermittlung in einem return View Statment},
 	label=Code,
 	language=octave,
 	numbers=left,
@@ -381,25 +381,119 @@ Die zweite Variante Daten zu Übergeben schaut folgendermaßen aus:
 	]
 return view('Viewname', ['AttributName' => 'AttributWert']);
 \end{lstlisting}
+\newpage
 
-Diese Variante bietet den Vorteil, dass im Code gleich direkt auf das Attribut zugegriffen werden kann und keine  foreach Schleife nötig ist. Ein solcher Zugriff würde folgendermaßen aussehen : 
-<h2>{{ $AttributName }}</h2>
-*Rückgabewert einer Funktion 
-Genauer Informationen finden sie unter der Quelle xy (https://www.youtube.com/watch?v=7rbp31Bz8QQ&ab_channel=KOBERIT)
+Diese Variante bietet den Vorteil, dass im Code gleich direkt auf das Attribut zugegriffen werden kann und keine  Foreach Schleife nötig ist. Ein solcher Zugriff würde folgendermaßen aussehen : 
+\definecolor{mygray}{RGB}{252,251,244}
+\renewcommand{\lstlistingname}{Quellcode}
+
+\begin{lstlisting}[
+	caption={Zugriff im Program},
+	label=Code,
+	language=octave,
+	numbers=left,
+	firstnumber=1,
+	numberfirstline=false,
+	backgroundcolor=\color{mygray},
+	basicstyle=\footnotesize=15,
+	keywordstyle=\color{blue}
+	]
+{{ $AttributName }}
+\end{lstlisting}
+
+
+Alle Informationen und Arten der Datenübergabe wurden aus dem Video aus der Quelle xy () entnommen.
 
 
 \section {Visuelle Darstellung der Energiesysteme und Energietechnologien }
+Von Seiten des Auftraggebers wurde von Anfang an der Wunsch geäußert, Energiesysteme und Energietechnologien, mithilfe eines Kartendienstes visuell darzustellen. Um andere Möglichkeiten, wie eine Karte auszuschließen, wurde auch zu Geoinformationssystem und CSS-System recherchiert. Die Ergebnisse dieser Recherchen werden in den nachfolgenden Kapiteln behandelt. 
 
 \subsection{Kartendienste}
+Das Produkt stellt eine zentrale Verwaltungsmöglichkeit in Form einer Karte bereit. Um diese Karte auf dem Produkt zu verwenden, wird ein Kartenanbieter benötigt. Die Zwei Optionen Google Maps und OpenStreetMap wurden vom Projektteam analysiert. Auf diese zwei Anbieter wird in den Kapitel \ref{sec:OpenStreetMap} und \ref{sec:Gooogle Maps} genauer eingegangen. Von Seiten des Auftraggebers wurde, aufgrund einer gewissen Abneigung zu Diensten, die von Google bereitgestellt werden, eine Präferenz zu OpenStreetMap geäußert.
 
-\subsubsection{Google Maps}
-\subsubsection{OpenStreetMap}
+\subsubsection{Google Maps} \label{sec:Gooogle Map}
+
+
+Google Maps ist der klare Marktführer in der Sparte der Kartendienst Anbieter.  Der Großteil  aller Webanwendungen, welche Maps verwenden, werden mit Google Maps umgesetzt. Google Maps überzeugt nicht nur mit einer sehr hohen Individualisierungsmöglichkeiten, sondern auch mit einer sehr hohen Ausfallsicherheit. Der größte Vorteil ist jedoch, das große Angebot an vordefinierten Api Diensten. Diese können einfach über die Google Cloud Platform überwacht, bedient oder aktiviert werden. Genauere Infos zur Google Maps Plattform stehen im Kapitel 3.9. Ein weiterer Vorteil von Google Maps ist es, dass es wirklich weitflächig alles abdeckt, ganz im Gegensatz zu OpenStreetMap. Der einzige Nachteil ist, dass die Verwendung einer Google Maps Karte auf der Website kostenpflichtig ist. Es gibt jedoch auf der Google Cloud Seite eine genaue Kostenaufstellung. Bezahlt wird bei Verwendung der Api Dienste. Google verrechnet hier je nach Api Dienst einen gewissen Betrag pro Verwendung. Diese Kosten waren jedoch bei der Entwicklung kein Problem, da auf Google Cloud für die ersten 30 Tage ein Startkapital von 300 Dollar anbietet.  
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=5cm,width=7cm]{images/GoogleMapsLogo}
+	\caption{Google Maps Logo}
+	\label{fig:GoogleMaps Logo}
+\end{figure}
+\newpage
+\subsubsection{OpenStreetMap}\label{sec:OpenStreetMap}
+
+
+OpenStreetMap ist ein 2004 gegründetes Projekt, welches das Ziel hat, eine frei verfügbare Weltkarte zu erstellen. Gegründet wurde dieses Projekt von Steve Coast und zählt mittlerweile um die 7.8 Millionen Nutzer. Das Hauptargument OpenStreetMap eher als Google Maps zu verwenden ist es, dass dieses kostenlos und lizenzfrei ist. Es gibt jedoch gravierende Nachteile gegenüber Google Maps. Openstreetmap bietet keine  Api Dienste an. Es gibt zwar die Möglichkeit, mithilfe von Leaflet, welches eine JavaScript-Bibliothek ist, eigenen Api Dienste zu programmieren, dies ist jedoch mit einem sehr hohen Aufwand und einer sehr hohen Komplexität verbunden. Ein weiterer Nachteil von Openstreetmap ist es, dass es auf Benutzerdaten aufbaut. Das bedeutet, Nutzer sind  dafür verantwortlich, die Karte immer auf dem aktuellsten Stand zu halten. Somit ist dieser Kartendienst wenig zuverlässig.
+Ein weiterer Nachteil wäre, dass Daten für alle User zugänglich sind. 
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=5cm,width=7cm]{images/OpenStreetMap_Logo}
+	\caption{Open Street Map Logo}
+	\label{fig:Open Street Map Logo}
+\end{figure}
+
+Informationen über OpenStreetMap wurden aus der Quelle xy () entnommen.
+\newpage
 
 \subsection{Geoinformationssystem }
+Die aufwendigste Option ist es, die Energiesysteme mittels GPS (Global Positioning System) zu orten und diese dann auf der Seite visuell darzustellen. In diesem Falle müsste das Galileo, welches das Europäische GPS System ist, genutzt werden. Galileo ist ein offenes, kostenloses Signal, welches es ermöglicht, den Sender auf bis zu zwei Meter genau zu orten. Ein solcher GPS Sender würde auf circa zehn bis zwanzig Euro pro System oder Technologie kommen. Die gesendeten Signale können mithilfe eines Empfängers ausgewertet werden.
 
 \subsection{CSS-System}
+Eine weitere Option ist es, die Energiesysteme und Technologien mittels CSS auf der Website darzustellen. Eine Möglichkeit wäre es, die Koordinaten der Systeme in die Datenbank zu schreiben, diese dann in Laravel auszulesen und auf einem selbst erstellten Hintergrund  einzuzeichnen. Dieses System könnte in Kombination mit einem Geoinformationssystem * verwendet werden. Dies könnte dann folgendermaßen aussehen: 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=6cm,width=10cm]{images/CSS_System}
+	\caption{Beispiel eines CSS-Systems}
+	\label{fig:CSS_System}
+\end{figure}
+
 
 \subsection{Auswahl des Anbieters}
+	Bei der Wahl des Anbieters, müsste der Auftraggeber Best GmbH berücksichtigt werden. Folgende Punkte muss der Anbieter erfüllen:
+	\begin{itemize}
+		\item leichte Implementierung 
+		\item es sollen alle gewünschten Funktionen umsetzbar sein 
+		\item es soll möglichst ohne viel extra Aufwand möglich sein  
+		\item es soll nicht Kostspielig sein 
+	\end{itemize}
+
+Um die Anbieter auf die gewünschten Anforderungen zu Überprüfen wurde die Liste angefertigt.
+
+\begin{table}[h]
+
+	\begin{tabular}{|l|l|l|l|l|}
+		\hline
+		Anbieter &
+		Kosten &
+		Apis vorhanden &
+		Umsetzbarkeit(Zeit) &
+		Vorteile und Nachteile \\ \hline
+		Google Maps &
+		gering &
+		ja &
+		ja &
+		\begin{tabular}[c]{@{}l@{}}viele Apis,\\ die die Arbeit erleichtern;\\ einfache Einbindung auf der Website;\\ performant;\\ großflächig aufgeschlossen;\\ Daten nur für den\\ Betreiber selbst einsehbar\end{tabular} \\ \hline
+		Open Street Map &
+		keine &
+		nein &
+		nein &
+		\begin{tabular}[c]{@{}l@{}}keine Apis vorhanden;\\ viel mehr Aufwand,\\ um das Gleiche wie\\ Google Maps zu bieten;\\ unperformant;\\ keine großflächige Aufschließung;\\ Daten sind für Jeden einsehbar\end{tabular} \\ \hline
+		Geoinformationssystem &
+		sehr hohe &
+		nein &
+		nein &
+		\begin{tabular}[c]{@{}l@{}}genaue Ortung der Systeme;\\ sehr preisintensiv;\\ sehr zeitintensiv und komplex\end{tabular} \\ \hline
+		CSS-System &
+		keine &
+		nein &
+		ja &
+		\begin{tabular}[c]{@{}l@{}}keine Apis;\\ sehr viel Aufwand;\\ erfüllt den gleichen Zweck \\wie eine Karte\end{tabular} \\ \hline
+	\end{tabular}
+\end{table}
+
 
 
 \section{Berechtigungssystem Benutzer}
