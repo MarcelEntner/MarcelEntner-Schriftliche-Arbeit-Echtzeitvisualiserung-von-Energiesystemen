@@ -97,7 +97,13 @@ Die \autoref{fig:Architektur} repräsentiert die Architektur des Zielsystems. De
 \end{figure}
 
 \subsection{Endgeräte}
-Text
+Das Produkt wurde als Browser Anwendung entwickelt, um überall lauffähig zu sein. Es ist in Chrome, Firefox und Edge Browser getestet worden und ist dort voll funktionsfähig. Die Oberfläche wurde für einen 13 bis 27 Zoll Monitor entwickelt und funktioniert dort in jeder Zoomstufe einwandfrei. Klares Ziel war es, das Produkt nicht für den Mobiltelefongebrauch zu programmieren. Bewusst wurde sich gegen eine native Anwendungsentwicklung entschieden, um so die Verwendbarkeit auf allen Plattformen zu garantieren. Darüber hinaus würde eine parallele Anwendungsentwicklung auf den drei gängigen Betriebssystemen (Windows, MacOS, Linux) den zeitlichen Rahmen der Diplomarbeit sprengen. Getestet wurde das Produkt in den Versionen:
+
+\begin{itemize}
+	\item Chrom 99.0.4844.51
+	\item Firefox 98.0
+	\item Edge 99.0
+\end{itemize}
 
 \subsection{Serverseitig}
 Text
@@ -135,10 +141,82 @@ Migrations sind die Abbildung der Tabellenstruktur und ermöglichen es, bei rich
 	\caption{Laravel MVC}
 	\label{fig:Laravel MVC}
 \end{figure}
+\newpage
+
+
+
+
 \subsubsection{Angular}
+Angular ist ein clientseitiges JavaScript-Web-Framework und wird meistens zum Erstellen von sogenannten Single Page Applications, wie beispielsweise ein einfaches Bedienelement zur Steuerung einer Maschine, verwendet. Angular ist speziell für Web-,Desktop- und Mobile-Anwendungen entworfen. Ein weiterer Aspekt des Frameworks ist es, dass es von Google entwickelt wurde, und so ein langfristiger Support gewährleistet ist. Angular macht es mit der Kombination aus HTML und TypeScript möglich, so ziemlich jede mögliche Aufgabenstellung zu bewältigen. Es bietet auch besondere Features wie eine bidirektionale Datenbindung an und ist somit gut für Echtzeitanwendungen geeignet. 
+Weitere Informationen zu Angular können unter der Qulle xy (https://angular.de/artikel/was-ist-angular/) nachgelsen werden.
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=6cm,width=9cm]{images/Angular_Logo}
+	\caption{Angular Logo}
+	\label{fig:Angular Logo}
+\end{figure}
+\newpage
 \subsubsection{ASP.NET}
+ASP.NET (Active Server Pages) ist ein Web Applications Framework, welches 2002 von der Firma Microsoft veröffentlicht wurde. Es ist der Nachfolger des ASP Frameworks und bietet eine perfekte Grundlage, um dynamische Websites, Webanwendungen und Webservices zu entwickeln. Projekte werden hier in der Regel in der Sprache C\# programmiert. Jedoch besteht auch die Möglichkeit, andere Sprachen wie beispielsweise Perl, Python oder Cobol zu verwenden. ASP.NET bietet nicht nur die Möglichkeit dynamische Websites zu erstellen, sondern auch Desktop Anwendungen.
+Durch die vordefinierte Datenstruktur, die ASP.NET bereitstellt, hilft es dem Programmierer Programmiersprachen nicht zu vermischen und einen übersichtlichen Programmierstil beizubehalten. Des Weiteren können viele Teile automatisch generiert werden und ersparen dem Programmierer damit einen immensen Aufwand.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=6cm,width=8cm]{images/ASP.net_Logo}
+	\caption{ASP.net Logo}
+	\label{fig:ASP.net Logo}
+\end{figure}
+
+
+Genaure Informatione zu ASP.Net können unter der Quelle xy (https://asp.mvc-tutorial.com/de/421/einfuhrung/was-ist-asp-net-mvc/) nachgelesen werden.
 \subsubsection{React}
+React ist eine JavaScript-Softwarebibliothek, die es erleichtert, Benutzeroberflächen in Form von Web Applikationen zu erstellen. Es ist komponentenbasiert, was bedeutet, dass jedes Element in Blöcken aufgebaut ist und durch Zusammenfügen dieser einzelnen Codebits kann dann eine sogenannte View erstellt werden. Dies bietet die Möglichkeit, bereits erstellte Codebits auch in anderen Views zu verwenden. React wird oft zusammen mit ASP.NET verwendet.
+
+
+Genaueres zu React kann unter der Quelle xy (https://t3n.de/news/react-facebook-623999/) nachgelesen werden.
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=5cm,width=7cm]{images/React_Logo}
+	\caption{React Logo}
+	\label{fig:React Logo}
+\end{figure}
+\newpage
+
 \subsubsection{Entscheidung des Frameworks}\label{sec:Entscheidung des Frameworks}
+Positive und negative Aspekte jedes Framworks wurden vom Projektteam, mithilfe der Tabelle \ref{sec:Entscheidung des Frameworks}, abgewogen.
+
+\begin{table}[h]
+	
+	\label{tab: Entscheidung des Frameworks}
+	\begin{tabular}{|l|l|l|}
+		\hline
+		Framework &
+		Vorteile &
+		Nachteile \\ \hline
+		React &
+		\begin{tabular}[c]{@{}l@{}}Software Skalierbarkeit;\\ hohe Flexibilität;\\ Codebits ermöglichen es, die  Redundanz zu erhöhen; \\schnelles Rendering;\\ leichter Einstieg\end{tabular} &
+		\begin{tabular}[c]{@{}l@{}}Es nicht genug Möglichkeiten,\\ eine Webapp zu erstellen \\ und benötigt Zusatzbibliotheken; \\ schweres debuggen;\\ komplexe Benutzeroberfläche\end{tabular} \\ \hline
+		ASP.NET &
+		\begin{tabular}[c]{@{}l@{}}hohe Flexibilität;\\ MVC Architektur; \\ gute Skalierbarkeit;\\ einfache Benutzung\end{tabular} &
+		\begin{tabular}[c]{@{}l@{}}Ressourcenaufwendig;\\ Teuer aufgrund des Lizenskaufes;\\ keine aktuelle Dokumentation;\\alte Versionen sind nicht mehr kompatibel\end{tabular} \\ \hline
+		Angular &
+		\begin{tabular}[c]{@{}l@{}}frühzeitige Fehlererkennung;\\ Konsistent\end{tabular} &
+		\begin{tabular}[c]{@{}l@{}}
+		relativ starr und unflexibel;\\ schwer zu erlernen; 
+	\end{tabular} \\ \hline
+		 
+		Laravel &
+		\begin{tabular}[c]{@{}l@{}}Unit Tests werden angeboten;\\ einfache Erweiterbarkeit;\\ Routing in der App;\\ nutzt die neuesten Funktion von PHP;\\ sehr gute Dokumentation;\\ integrierte Benutzerverwaltung;\\ integrierte Mailverwaltung;\\ performant;\\ einfache Handhabung; \\ Bootstrap Einbindung ist einfach möglich\end{tabular} &
+		\begin{tabular}[c]{@{}l@{}}unterstützt keine Zahlungsfunktion;\\ keine Mobil App Entwicklung;\\ oft Probleme bei Updates\end{tabular} \\ \hline
+		
+	\end{tabular}
+	\caption{Entscheidung des Frameworks}
+\end{table}
+\newpage
+Nach Begutachtung der Tabelle \ref{sec:Entscheidung des Frameworks} und aufgrund der überwiegenden positiven Aspekte , entschied sich das Projektteam für das Framework Laravel.Entscheidend war beispielsweise die einfache Handhabung und die Möglichkeit Bootstrap in Kombination zu verwenden. Da dieses Framework auch im Schulfach Softwareentwicklung genauer bearbeitet wurde, besitzt das Projektteam bereits ein gutes Grundwissen. Es wurde darüber hinaus überlegt, ob auch das Front-End Framework Vue.js zusätzlich verwendet werden soll. Da Vue.js nur zusätzliche Komplexität ohne einen wirklichen Nutzen mit sich bringen würde, wurde diese Option vernachlässigt. Das Framework Laravel bietet alle nötigen Front- und Back-End Möglichkeiten, die es ermöglichen, Laravel im Front wie auch im Back-End zu verwenden. Entscheidender Faktor war auch, dass das Projektteam noch nie mit einem anderen Framework gearbeitet hat, und so eigentlich nur Laravel in Frage gekommen ist.
+
+
+
 
 \newpage
 \subsection{Front-End Templates}
@@ -149,7 +227,7 @@ Bootstrap ist ein Open Source Front-End-CSS-Framework. Es basiert auf den Progra
 
 \subsubsection{Tailwind.css}
 Tailwind ist ein Utility-First CSS-Framework, welches derzeit weltweit sehr beliebt ist. Diese Art von Framework soll mehr Flexibilität bieten als die traditionellen Vorgänger. Tailwind.css stellt Utility-Klassen zur Verfügung, mit denen man selbst Klassen zum Stylen der Komponenten definieren kann. Ein Inlinestylen ist bei diesem Framework ebenso möglich, womit externe CSS-Dateien überflüssig sind. Tailwind stellt Hilfsklassen zur Verfügung, welche das Arbeiten um einiges erleichtern. Zusätzlich bietet dieses Template eine hohe Flexibilität sowie mehrere Funktionen, um ein Responsive Design zu erreichen. Jedoch hat dieses Template keine vorgefertigten Komponenten, auf welche zurückgegriffen werden kann, und der Benutzer dieses Templates braucht sehr viel Zeit zum Erlernen der richtigen Verwendung. Die Größe der zu installierenden CSS-Datei ist sehr groß, da dieses Template eine breite Palette von Klassen bereitstellt, wobei die meisten oft in einem Projekt nicht verwendet werden. Das Projektteam hat mit diesem Template wenig Erfahrung, und die Dokumentation im Internet ist sehr mangelhaft.
-
+\newpage
 \subsubsection{Vue.js}
 Das JavaScript Framework Vue.js, welches für die Front-End-Entwicklung eingesetzt werden kann, wird immer populärer. Die Einfachheit und Benutzerfreundlichkeit ist ein Grund für die immer größer werdende Beliebtheit. Vue.js basiert auf dem virtuellen DOM \footnote{Virtuelles Document Object Model, beim Aktualisieren schneller als das herkömmliche}, was bedeutet, dass das Abarbeiten von Befehlen schneller funktioniert als beim herkömmlichen bekannten DOM\footnote{Document Object Model, stellt XML oder HTML Dokumente als Baumstruktur dar}. Vue.js basiert auf den Programmiersprachen HTML, CSS und JavaScript, womit die wichtigsten verwendeten Sprachen abgedeckt sind. Vue.js stellt Funktionen wie UniTests, End-to-End-Tests sowie Routing-Systeme bereit. Die Lesbarkeit bei diesem Template ist sehr gut, da alle Komponenten sich in einer Datei befinden. Das Projektteam hat nur wenig Erfahrung mit diesem Template und es herrschen generelle Sprachbarrieren, da vieles nur in der Sprache Chinesisch vorhanden ist.
 
@@ -169,11 +247,11 @@ In der nachfolgenden Tabelle ist eine Gegenüberstellung der Vor- und Nachteile 
 		&
 		stellt Gestaltungsvorlagen bereit 
 		&   nicht geeignet für große Applikationen \\
-	 &	weltweit sehr bekannt und beliebt \\
+	 &	weltweit sehr bekannt und beliebt&  \\
 		&
-		leicht in das Projekt einzubinden \\
+		leicht in das Projekt einzubinden&  \\
 		&
-		Projektteam hat bereits Erfahrungen damit
+		Projektteam hat bereits Erfahrungen damit& 
 		
 		
 		
@@ -190,19 +268,19 @@ In der nachfolgenden Tabelle ist eine Gegenüberstellung der Vor- und Nachteile 
 		&&  		  benötigt viel Einarbeitungszeit\\
 		&&		  Größe der CSS-Datei ist enorm \\
 	
-		      \\ \hline
+		       \hline
 		      
 		\textbf{Vue.js} &
 		 einfach und benutzerfreundlich  & Projektteam hat wenig Erfahrung \\
 		 &
 		basiert auf HTML, CSS und JavaScript & 		 Sprachbarrieren, vieles nur auf Chinesisch \\
 		&
-		stellt Funktionen wie UniTests, \\
+		stellt Funktionen wie UniTests, & \\
 		&
-		 End-to-End Tests und \\
-		 &Routing-Systeme bereit \\
+		 End-to-End Tests und & \\
+		 &Routing-Systeme bereit  &  \\ 
 		 &
-		hohe Lesbarkeit des Codes 
+		hohe Lesbarkeit des Codes & 
 		
 		                  \\ \hline
 		                  
@@ -211,13 +289,103 @@ In der nachfolgenden Tabelle ist eine Gegenüberstellung der Vor- und Nachteile 
 	\label{tab:Vor- und Nachteile der Front-End Templates}
 \end{table}
 
-
+\newpage
 
 \subsection{Verbindung der Datenbank mit Laravel}
-\subsubsection{Laravel .env Datei }
-\subsubsection{Migrations}
-\subsubsection{Seeder / Factories}
+In Laravel ist die Verbindung  der Datenbank mithilfe der .env Datei möglich. Tabellen werden in sogenannten Migrations definiert. Auf die einzelnen Komponenten und deren Individualisierung wird in den Kapiteln \ref{sec:Laravel .env Datei} und \ref{sec:Migrations} noch genauer eingegangen.
+\subsubsection{Laravel .env Datei } \label{sec:Laravel .env Datei}
+In Laravel bietet die .env Datei, welche sich direkt im Projektordner befindet, die Möglichkeit, alle nötigen Umgebungsvariablen zu initialisieren. Ein Beispiel für Umgebungsvariablen sind Datenbank Anmeldeinformationen, Cache-Treiber, Mail-Server-Domain oder auch die App URL. Wichtig ist es, dass die .env Datei immer Gerät spezifisch konfiguriert wird. Das heißt, es ist wichtig beim Zusammenarbeiten, speziell mit Git, sehr gut aufzupassen. Folgedessen ist es empfehlenswert, die .env Datei  mit einem Gitignore\footnote{Gitignore gibt an, welche Datei bei einem Git Pull nicht heruntergeladen werden soll} zu versehen, um Komplikationen zu vermeiden. Es besteht auch die Möglichkeit,  Änderungen in der .env Datei direkt aus dem Programm vorzunehmen. 
+
+\subsubsection{Migrations}\label{sec:Migrations}
+Migrations bilden in Laravel eine Möglichkeit, die Tabellenstruktur im Programm selbst fest zu legen. Sie sind sozusagen der Blueprint\footnote{ein Blueprint ist sozusagen der Bauplan oder eine Vorlage wie etwas auszusehen hat}, in welchem die gesamte Tabellenstruktur vordefiniert ist. Für jede Tabelle, die in der Datenbank, welche vorher in der  .env Datei  definiert wurde, erstellt werden soll, gibt es eine eigene Migration. Migrations sind unterteilt in eine up() und in eine down()  Methode\footnote{Methoden sind ein Art Container für den in ihnen auszuführenden Code}. In der up() Methode wird der Name der Tabelle der Name der einzelnen Tupel und deren Datentyp definiert. Der Datentyp id() ist standardmäßig immer der primary Key. 
+In der down() Methode wird die Tabelle von der Datenbank gelöscht. Die beiden Methoden werden durch artisan Befehle, welche im Kapitel 3.10 ersichtlich sind, angesteuert. 
+Erstellt werden Migrations mithilfe eines weiteren Laravel Befehls, welcher ebenfalls  im Kapitel 3.10.1 beschrieben wird. Wenn die Migration erfolgreich erstellt wurde, ist diese folgendermaßen benannt : JJJJ.MM.DD\_tempname.php und befindet sich im Ordner Projektname\textbackslash database \textbackslash migrations.
+
+
+Alle Informationen liegen der Qulle xy (https://laravel.com/docs/9.x/migrations) zugrunde.
+\newpage
+\subsubsection{Seeder und Factories}
+Factories ermöglichen es,  Fake Models\footnote{Fake Models sind Models die nur temporär angelegt werden} zu erstellen und mithilfe dieser auf die Datensätze in der Datenbank  zuzugreifen und diese zu verändern. Daten werden mithilfe der Open Source-Bibliothek Faker generiert. Die Faker Bibliothek kann folgende Daten generieren: 
+
+
+
+\begin{itemize}
+	\item E-Mail 
+	\item einen Namen
+	\item eine Telefonnummer 
+	\item Wörter
+	\item Sätze 
+	\item Absätze
+	\item Zufallszahlen
+\end{itemize}
+
+Datenbank-Factories  erlauben es , Tabellen programmgesteuert mit Daten anzufüllen. Sie ermöglichen es, innerhalb von einigen Minuten tausende Daten in die Datenbank zu schreiben.
+Die Hauptaufgabe eines Seeder ist es jedoch nur die Factories aufzurufen.
+
 \subsubsection{Datenübergabe in Laravel}
+Ein Controller hat die Aufgabe mithilfe eines Models die Daten zu verändern und danach eine View zurückzugeben. Möchte man jedoch Daten wie Attribute, welche im Formular mitgeschickt werden, auf der zurückgegebenen View verwenden, müssen diese mitgegeben werden.
+Es gibt die Möglichkeit, Daten mithilfe von compact in das Return Statement*anzuhängen. Dies würde im Code folgendermaßen aussehen: 
+\definecolor{mygray}{RGB}{252,251,244}
+\renewcommand{\lstlistingname}{Quellcode}
+
+\begin{lstlisting}[
+	caption={Return Statemnet mit Compact},
+	label=Code,
+	language=octave,
+	numbers=left,
+	firstnumber=1,
+	numberfirstline=false,
+	backgroundcolor=\color{mygray},
+	basicstyle=\footnotesize=15,
+	keywordstyle=\color{blue}
+	]
+	return view(Viewname , compact('data'));
+	
+\end{lstlisting}
+
+In der View kann dann mit folgendem Code auf die Daten zugegriffen werden:
+\definecolor{mygray}{RGB}{252,251,244}
+\renewcommand{\lstlistingname}{Quellcode}
+
+\begin{lstlisting}[
+	caption={Zugriff im Program},
+	label=Code,
+	language=octave,
+	numbers=left,
+	firstnumber=1,
+	numberfirstline=false,
+	backgroundcolor=\color{mygray},
+	basicstyle=\footnotesize=15,
+	keywordstyle=\color{blue}
+	]
+	@foreach ($data as $d)
+	$d->Beispiel_Attribut 
+	@endforeach
+	
+\end{lstlisting}
+
+Die zweite Variante Daten zu Übergeben schaut folgendermaßen aus:
+\definecolor{mygray}{RGB}{252,251,244}
+\renewcommand{\lstlistingname}{Quellcode}
+
+\begin{lstlisting}[
+	caption={Zugriff im Program},
+	label=Code,
+	language=octave,
+	numbers=left,
+	firstnumber=1,
+	numberfirstline=false,
+	backgroundcolor=\color{mygray},
+	basicstyle=\footnotesize=15,
+	keywordstyle=\color{blue}
+	]
+return view('Viewname', ['AttributName' => 'AttributWert']);
+\end{lstlisting}
+
+Diese Variante bietet den Vorteil, dass im Code gleich direkt auf das Attribut zugegriffen werden kann und keine  foreach Schleife nötig ist. Ein solcher Zugriff würde folgendermaßen aussehen : 
+<h2>{{ $AttributName }}</h2>
+*Rückgabewert einer Funktion 
+Genauer Informationen finden sie unter der Quelle xy (https://www.youtube.com/watch?v=7rbp31Bz8QQ&ab_channel=KOBERIT)
 
 
 \section {Visuelle Darstellung der Energiesysteme und Energietechnologien }
@@ -728,8 +896,8 @@ Text
 \chapter{Quellen und Literatur}
 Text
 
-\chapter{Abbildungsverzeichnis}
-Text
+
+\listoffigures
 \chapter{Tabellenverzeichnis}
 Text
 \chapter{Codeverzeichnis}
