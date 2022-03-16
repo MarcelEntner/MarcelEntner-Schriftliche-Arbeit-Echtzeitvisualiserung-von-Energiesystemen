@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.2.14)  16 MAR 2022 11:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.2.16)  16 MAR 2022 20:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6,9 +6,9 @@ entering extended mode
 (main.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2021-11-22>
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
 Document Class: report 2021/10/04 v1.4n Standard LaTeX document class
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
 File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count183
@@ -24,78 +24,81 @@ File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 \belowcaptionskip=\skip48
 \bibindent=\dimen138
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/base\inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
 \inpenc@prehook=\toks16
 \inpenc@posthook=\toks17
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz.
-sty
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.st
-y
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
--common.tex
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlayer\tikz
+.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgf.sty
+
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfrcs.s
+ty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfuti
+l-common.tex
 \pgfutil@everybye=\toks18
 \pgfutil@tempdima=\dimen139
 \pgfutil@tempdimb=\dimen140
 
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
--common-lists.tex))
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfutil
--latex.def
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfuti
+l-common-lists.tex))
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfuti
+l-latex.def
 \pgfutil@abb=\box50
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs.
-code.tex
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex)
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfrcs
+.code.tex
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revision.tex
+)
 Package: pgfrcs 2021/05/15 v3.1.9a (3.1.9a)
 ))
 Package: pgf 2021/05/15 v3.1.9a (3.1.9a)
 
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore.
-sty
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\pgfcore
+.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
 
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks19
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
 Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
 
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
-fg
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.
+cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
 
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.de
+f
 File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen141
 \Gin@req@width=\dimen142
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys.
-sty
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
-s.code.tex
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer\pgfsys
+.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfs
+ys.code.tex
 Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
 
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
-.code.tex
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkey
+s.code.tex
 \pgfkeys@pathtoks=\toks20
 \pgfkeys@temptoks=\toks21
 
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
-filtered.code.tex
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkey
+sfiltered.code.tex
 \pgfkeys@tmptoks=\toks22
 ))
 \pgf@x=\dimen143
@@ -119,34 +122,34 @@ filtered.code.tex
 \t@pgf@tokc=\toks25
 \pgf@sys@id@count=\count196
 
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.c
-fg
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgf.
+cfg
 File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
 )
 Driver file for pgf: pgfsys-pdftex.def
 
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
-s-pdftex.def
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfs
+ys-pdftex.def
 File: pgfsys-pdftex.def 2021/05/15 v3.1.9a (3.1.9a)
 
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
-s-common-pdf.def
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfs
+ys-common-pdf.def
 File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
 )))
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
-ssoftpath.code.tex
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfs
+yssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfsyssoftpath@smallbuffer@items=\count197
 \pgfsyssoftpath@bigbuffer@items=\count198
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfsy
-sprotocol.code.tex
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlayer\pgfs
+ysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ))
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2021/10/31 v2.13 LaTeX color extensions (UK)
 
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 227.
@@ -160,18 +163,18 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1373.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1374.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-e.code.tex
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+re.code.tex
 Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
 
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
-.tex
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc.
-code.tex
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil.
-code.tex)
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathparse
-r.code.tex
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.cod
+e.tex
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathcalc
+.code.tex
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathutil
+.code.tex)
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathpars
+er.code.tex
 \pgfmath@dimen=\dimen153
 \pgfmath@count=\count199
 \pgfmath@box=\box51
@@ -179,32 +182,32 @@ r.code.tex
 \pgfmath@stack@operand=\toks27
 \pgfmath@stack@operation=\toks28
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.code.tex
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.basic.code.tex)
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.trigonometric.code.tex)
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.random.code.tex)
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.comparison.code.tex)
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.base.code.tex)
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.round.code.tex)
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.misc.code.tex)
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunct
-ions.integerarithmetics.code.tex)))
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloat
-.code.tex
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
+tions.code.tex
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
+tions.basic.code.tex)
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
+tions.trigonometric.code.tex)
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
+tions.random.code.tex)
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
+tions.comparison.code.tex)
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
+tions.base.code.tex)
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
+tions.round.code.tex)
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
+tions.misc.code.tex)
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfunc
+tions.integerarithmetics.code.tex)))
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmathfloa
+t.code.tex
 \c@pgfmathroundto@lastzeros=\count266
 ))
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code.
-tex)
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-epoints.code.tex
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfint.code
+.tex)
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+repoints.code.tex
 File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@picminx=\dimen154
 \pgf@picmaxx=\dimen155
@@ -221,132 +224,132 @@ File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@zx=\dimen166
 \pgf@zy=\dimen167
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-epathconstruct.code.tex
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+repathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@path@lastx=\dimen168
 \pgf@path@lasty=\dimen169
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-epathusage.code.tex
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+repathusage.code.tex
 File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@shorten@end@additional=\dimen170
 \pgf@shorten@start@additional=\dimen171
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-escopes.code.tex
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+rescopes.code.tex
 File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfpic=\box52
 \pgf@hbox=\box53
 \pgf@layerbox@main=\box54
 \pgf@picture@serial@count=\count267
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-egraphicstate.code.tex
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+regraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgflinewidth=\dimen172
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-etransformations.code.tex
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+retransformations.code.tex
 File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@pt@x=\dimen173
 \pgf@pt@y=\dimen174
 \pgf@pt@temp=\dimen175
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-equick.code.tex
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+requick.code.tex
 File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-eobjects.code.tex
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+reobjects.code.tex
 File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-epathprocessing.code.tex
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+repathprocessing.code.tex
 File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-earrows.code.tex
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+rearrows.code.tex
 File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfarrowsep=\dimen176
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-eshade.code.tex
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+reshade.code.tex
 File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@max=\dimen177
 \pgf@sys@shading@range@num=\count268
 \pgf@shadingcount=\count269
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-eimage.code.tex
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+reimage.code.tex
 File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-eexternal.code.tex
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+reexternal.code.tex
 File: pgfcoreexternal.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfexternal@startupbox=\box55
 ))
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-elayers.code.tex
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+relayers.code.tex
 File: pgfcorelayers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-etransparency.code.tex
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+retransparency.code.tex
 File: pgfcoretransparency.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-epatterns.code.tex
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+repatterns.code.tex
 File: pgfcorepatterns.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfcor
-erdf.code.tex
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclayer\pgfco
+rerdf.code.tex
 File: pgfcorerdf.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )))
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
-shapes.code.tex
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodul
+eshapes.code.tex
 File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfnodeparttextbox=\box56
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
-plot.code.tex
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodul
+eplot.code.tex
 File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
-mp-version-0-65.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfc
+omp-version-0-65.sty
 Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@nodesepstart=\dimen178
 \pgf@nodesepend=\dimen179
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfco
-mp-version-1-18.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibility\pgfc
+omp-version-1-18.sty
 Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
 ))
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.st
-y
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.s
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgffor.s
 ty
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkeys
-.code.tex))
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
-.tex))
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor.
-code.tex
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\pgfkeys.
+sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgfkey
+s.code.tex))
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmath.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.cod
+e.tex))
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities\pgffor
+.code.tex
 Package: pgffor 2021/05/15 v3.1.9a (3.1.9a)
 
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.code
-.tex)
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfmath.cod
+e.tex)
 \pgffor@iter=\dimen180
 \pgffor@skip=\dimen181
 \pgffor@stack=\toks29
 \pgffor@toks=\toks30
 ))
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
-z\tikz.code.tex
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
+kz\tikz.code.tex
 Package: tikz 2021/05/15 v3.1.9a (3.1.9a)
 
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibr
-aryplothandlers.code.tex
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflib
+raryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgf@plot@mark@count=\count270
 \pgfplotmarksize=\dimen182
@@ -368,8 +371,8 @@ File: pgflibraryplothandlers.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \tikznumberofcurrentchild=\count273
 \tikz@fig@count=\count274
 
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodule
-matrix.code.tex
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodul
+ematrix.code.tex
 File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfmatrixcurrentrow=\count275
 \pgfmatrixcurrentcolumn=\count276
@@ -377,26 +380,26 @@ File: pgfmodulematrix.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )
 \tikz@expandcount=\count278
 
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tik
-z/libraries\tikzlibrarytopaths.code.tex
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/ti
+kz/libraries\tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )))
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/graphics\epsfig.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/graphics\epsfig.sty
 Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
 \epsfxsize=\dimen191
 \epsfysize=\dimen192
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/base\latexsym.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/base\latexsym.sty
 Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
 \symlasy=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 (Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/dvips\colordvi.sty)
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colortbl.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/dvips\colordvi.sty)
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/colortbl\colortbl.sty
 Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
 
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
 Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
 \col@sep=\dimen193
 \ar@mcellbox=\box61
@@ -409,18 +412,17 @@ Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
 \everycr=\toks32
 \minrowclearance=\skip51
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/multirow\multirow.sty
 Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \multirow@colwidth=\skip52
 \multirow@cntb=\count279
 \multirow@dima=\skip53
 \bigstrutjot=\dimen195
-)
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/eurosym\eurosym.sty
+) (C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/eurosym\eurosym.sty
 Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
 \@eurobox=\box63
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/ulem\ulem.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/ulem\ulem.sty
 \UL@box=\box64
 \UL@hyphenbox=\box65
 \UL@skip=\skip54
@@ -432,24 +434,24 @@ Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
 Package: ulem 2019/11/18
 \ULdepth=\dimen198
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2021/10/15 v2.17l AMS math features
 \@mathmargin=\skip55
 
 For additional information on amsmath, use the `?' option.
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
 
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks34
 \ex@=\dimen199
 ))
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen256
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.sty
 Package: amsopn 2021/08/26 v2.02 operator names
 )
 \inf@bad=\count281
@@ -490,55 +492,57 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 LaTeX Info: Redefining \[ on input line 2938.
 LaTeX Info: Redefining \] on input line 2939.
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup5
 \symAMSb=\mathgroup6
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/selinput\selinput.st
-y
+))
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/selinput\selinput.sty
 Package: selinput 2019-12-10 v1.6 Semi-automatic input encoding detection (HO)
 
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/kvsetkeys\kvsetkeys.s
-ty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/kvsetkeys\kvsetkeys.
+sty
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.s
-ty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.
+sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.s
-ty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\infwarerr.
+sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.s
-ty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdfescape.
+sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
 
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmds
-.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pdftexcmd
+s.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
- (C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2020/03/06 v1.0d TeX engine tests
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )))
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.st
+y
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 ))
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and foote
 rs
 \f@nch@headwidth=\skip58
@@ -550,31 +554,30 @@ rs
 \f@nch@O@erf=\skip64
 \f@nch@O@olf=\skip65
 \f@nch@O@orf=\skip66
-)
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/lastpage\lastpage.sty
+) (C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/lastpage\lastpage.st
+y
 Package: lastpage 2021/09/03 v1.2n Refers to last page's name (HMM; JPG)
-)
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/acronym\acronym.sty
+) (C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/acronym\acronym.sty
 Package: acronym 2020/04/17 v1.47 Support for acronyms (Tobias Oetiker)
 
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/bigfoot\suffix.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/bigfoot\suffix.sty
 Package: suffix 2006/07/15 1.5a Variant command support
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/xstring\xstring.sty
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/xstring\xstring.tex
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/xstring\xstring.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/xstring\xstring.tex
 \integerpart=\count293
 \decimalpart=\count294
 )
 Package: xstring 2021/07/21 v1.84 String manipulations (CT)
 )
 \AC@clearlist=\toks39
-) (C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
+) (C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
 Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/carlisle\ltxtable.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/carlisle\ltxtable.sty
 Package: ltxtable 2021/06/13 v0.4 longtable/tabularx merge (DPC)
 
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.sty
 Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
 \TX@col@width=\dimen264
 \TX@old@table=\dimen265
@@ -584,7 +587,7 @@ Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
 \TX@cols=\count295
 \TX@ftn=\toks40
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable.sty
 Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
 \LTleft=\skip67
 \LTright=\skip68
@@ -603,8 +606,8 @@ Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
 \c@LT@chunks=\count300
 \LT@p@ftn=\toks41
 ))
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/supertabular\supertabul
-ar.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/supertabular\supertabu
+lar.sty
 Package: supertabular 2020/02/02 v4.1g the supertabular environment
 \c@tracingst=\count301
 \ST@wd=\dimen270
@@ -622,13 +625,13 @@ Package: supertabular 2020/02/02 v4.1g the supertabular environment
 \ST@dimen=\dimen279
 \ST@pbox=\box74
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/tools\verbatim.sty
 Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks42
 \verbatim@line=\toks43
 \verbatim@in@stream=\read3
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count302
 \float@exts=\toks44
@@ -636,9 +639,10 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks45
 \@floatcapt=\box76
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/blindtext\blindtext.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/blindtext\blindtext.st
+y
 Package: blindtext 2012/01/06 V2.0 blindtext-Package
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/tools\xspace.sty
+ (C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/tools\xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
 \c@blindtext=\count303
@@ -660,7 +664,7 @@ Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 \c@blind@pangramcount=\count319
 \c@blind@pangrammax=\count320
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/tools\multicol.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/tools\multicol.sty
 Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
 \c@tracingmulticols=\count321
 \mult@box=\box77
@@ -729,16 +733,18 @@ Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
 \colbreak@box=\box121
 \mc@col@check@num=\count330
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/tocbibind\tocbibind.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/tocbibind\tocbibind.st
+y
 Package: tocbibind 2010/10/13 v1.5k extra ToC listings
 Package tocbibind Info: The document has chapter divisions on input line 50.
 
+
 Package tocbibind Note: Using chapter style headings, unless overridden.
 
-) (C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
+) (C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
 Package: caption 2022/02/28 v3.6a Customizing captions (AR)
 
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
 Package: caption3 2022/02/28 v2.3a caption3 kernel (AR)
 \caption@tempdima=\dimen289
 \captionmargin=\dimen290
@@ -755,80 +761,81 @@ Package caption Info: Standard document class detected.
 Package caption Info: float package is loaded.
 Package caption Info: longtable package is loaded.
 
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/caption\ltcaption.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/caption\ltcaption.sty
 Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: supertabular package is loaded.
-) (C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
+) (C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/babel\babel.sty
 Package: babel 2021/11/29 3.67 The Babel package
 \babel@savecnt=\count333
 \U@D=\dimen297
 \l@unhyphenated=\language79
 
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/babel\txtbabel.def)
 \bbl@readstream=\read4
 \bbl@dirlevel=\count334
 
 *************************************
 * Local config file bblopts.cfg used
 *
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/arabi\bblopts.cfg
 File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
  babel
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/babel-german\ngerman.ld
-f
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/babel-german\ngerman.l
+df
 Language: ngerman 2021/02/27 v2.13 German support for babel (post-1996 orthogra
 phy)
 
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/babel-german\ngermanb.l
-df
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/babel-german\ngermanb.
+ldf
 Language: ngermanb 2021/02/27 v2.13 German support for babel (post-1996 orthogr
 aphy)
 Package babel Info: Making " an active character on input line 122.
-))) (C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+))) (C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2021-06-07 v7.00m Hypertext links for LaTeX
 
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefine
-keys.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\kvdefin
+ekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxmacro
-.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/letltxmacro\letltxmacr
+o.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/auxhook\auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
 \@linkdim=\dimen298
 \Hy@linkcounter=\count335
 \Hy@pagecounter=\count336
 
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2021-06-07 v7.00m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref-langp
-atches.def
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref-lang
+patches.def
 File: hyperref-langpatches.def 2021-06-07 v7.00m Hyperref: patches for babel la
 nguages
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/etexcmds\etexcmds.st
+y
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
 \Hy@SavedSpaceFactor=\count337
- (C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
+ (C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2021-06-07 v7.00m Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
@@ -843,12 +850,11 @@ Package hyperref Info: Bookmarks ON on input line 4445.
 \c@Hy@tempcnt=\count338
 LaTeX Info: Redefining \url on input line 4804.
 \XeTeXLinkMargin=\dimen299
-
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcalc
-.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bigintcal
+c.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
@@ -865,7 +871,7 @@ Package hyperref Info: PDF/A mode OFF on input line 6106.
 LaTeX Info: Redefining \ref on input line 6146.
 LaTeX Info: Redefining \pageref on input line 6150.
 
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/base\atbegshi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
@@ -874,10 +880,10 @@ package with kernel methods
 \c@Hfootnote=\count342
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
+ (C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
 File: hpdftex.def 2021-06-07 v7.00m Hyperref driver for pdfTeX
 
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/base\atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
 kage
 with kernel methods
@@ -885,12 +891,12 @@ with kernel methods
 \Fld@listcount=\count343
 \c@bookmark@seq@number=\count344
 
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
-echeck.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfi
+lecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
 
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\uniquec
-ounter.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter\unique
+counter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
@@ -898,20 +904,20 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip76
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/breakurl\breakurl.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/breakurl\breakurl.sty
 Package: breakurl 2013/04/10 v1.40 Breakable hyperref URLs
 
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
 Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
 
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
 \XKV@toks=\toks46
 \XKV@tempa@toks=\toks47
 )
 \XKV@depth=\count345
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-)) (C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifpdf.sty
+)) (C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifpdf.sty
 Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
 )
 
@@ -920,12 +926,14 @@ Package breakurl Warning: You are using breakurl while processing via pdflatex.
 (breakurl)                \burl will be just a synonym of \url.
 (breakurl)                 on input line 48.
 
-) (C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pdfpages.sty
+)
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pdfpages.sty
 Package: pdfpages 2022/01/29 v0.5u Insert pages of external PDF documents (AM)
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
 Package: ifthen 2020/11/24 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count346
 \calc@Bcount=\count347
@@ -938,7 +946,7 @@ LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count348
 \calc@Cskip=\skip79
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.sty
 Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
 \ESO@tempdima=\dimen304
 \ESO@tempdimb=\dimen305
@@ -947,7 +955,7 @@ Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
 \AM@pageheight=\dimen307
 \AM@fboxrule=\dimen308
 
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pppdftex.def
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pppdftex.def
 File: pppdftex.def 2022/01/29 v0.5u Pdfpages driver for pdfTeX (AM)
 )
 \pdfpages@includegraphics@status=\count349
@@ -957,7 +965,8 @@ File: pppdftex.def 2022/01/29 v0.5u Pdfpages driver for pdfTeX (AM)
 \AM@toc@title=\toks49
 \c@AM@survey=\count351
 \AM@templatesizebox=\box123
-) (C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
+)
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.sty
 \lst@mode=\count352
 \lst@gtempboxa=\box124
 \lst@token=\toks50
@@ -971,18 +980,18 @@ File: pppdftex.def 2022/01/29 v0.5u Pdfpages driver for pdfTeX (AM)
 \lst@lineno=\count357
 \lst@maxwidth=\dimen312
 
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
 \c@lstnumber=\count358
 \lst@skipnumbers=\count359
 \lst@framebox=\box125
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/listings\listings.cfg
 File: listings.cfg 2020/03/24 1.8d listings configuration
 ))
 Package: listings 2020/03/24 1.8d (Carsten Heinz)
 \matwidth=\skip80
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/lm\lmodern.sty
+ (C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/lm\lmodern.sty
 Package: lmodern 2009/10/30 v1.6 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
@@ -1020,11 +1029,11 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 15
 5.
 
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
-tex.def
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pd
+ftex.def
 File: l3backend-pdftex.def 2021-10-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count360
 \l__pdf_internal_box=\box126
@@ -1061,6 +1070,18 @@ LaTeX Warning: Label `Code' multiply defined.
 LaTeX Warning: Label `Code' multiply defined.
 
 
+LaTeX Warning: Label `fig: Interaktion mit dem Datatabel' multiply defined.
+
+
+LaTeX Warning: Label `fig: Header' multiply defined.
+
+
+LaTeX Warning: Label `fig: Header' multiply defined.
+
+
+LaTeX Warning: Label `tab:my-table' multiply defined.
+
+
 LaTeX Warning: Label `fig:CSS_System' multiply defined.
 
 
@@ -1092,6 +1113,9 @@ LaTeX Warning: Label `fig:CSS_System' multiply defined.
 
 
 LaTeX Warning: Label `Code' multiply defined.
+
+
+LaTeX Warning: Label `fig:HomeSeite1' multiply defined.
 
 
 LaTeX Warning: Label `fig:Energiesystem auswählen ' multiply defined.
@@ -1139,8 +1163,8 @@ LaTeX Font Info:    ... okay on input line 155.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 155.
 LaTeX Font Info:    ... okay on input line 155.
 
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
-ii
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.m
+kii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count361
 \scratchdimen=\dimen313
@@ -1154,14 +1178,14 @@ ii
 \makeMPintoPDFobject=\count366
 \everyMPtoPDFconversion=\toks52
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
-ase.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-
+base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 85.
 
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
-fg
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.
+cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package lastpage Info: Please have a look at the pageslts package at
@@ -1173,14 +1197,14 @@ Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring OFF on input line 155.
 
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 )
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettit
-lestring.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\getti
+tlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count367
@@ -1193,9 +1217,10 @@ LaTeX Info: Redefining \nameref on input line 155.
 \openout4 = `main.out'.
 
 
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape.st
+y
 Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/graphics\lscape.sty
+ (C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/graphics\lscape.sty
 Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
@@ -1203,30 +1228,29 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 \c@lstlisting=\count368
 \openout2 = `titlepage.aux'.
 
-
-(titlepage.tex
+ (titlepage.tex
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 4
 .
 
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 4
 .
 
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
 4.
 
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
 4.
 
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -1238,25 +1262,25 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    Trying to load font information for U+lasy on input line 4.
 
 
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/base\ulasy.fd
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/base\ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
 LaTeX Font Info:    Trying to load font information for U+msa on input line 4.
 
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
 
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 Package epstopdf Info: Source file: <images/LogoITHTL_white.eps>
-(epstopdf)                    date: 2022-02-14 13:57:38
+(epstopdf)                    date: 2022-02-16 11:46:26
 (epstopdf)                    size: 661626 bytes
 (epstopdf)             Output file: <images/LogoITHTL_white-eps-converted-to.pd
 f>
-(epstopdf)                    date: 2022-02-14 13:57:38
+(epstopdf)                    date: 2022-02-16 11:46:26
 (epstopdf)                    size: 37903 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=images/LogoITHTL_whi
 te-eps-converted-to.pdf images/LogoITHTL_white.eps>
@@ -1279,10 +1303,10 @@ Overfull \hbox (3.33333pt too wide) in paragraph at lines 6--7
  []
 
 Package epstopdf Info: Source file: <images/htl_logo.eps>
-(epstopdf)                    date: 2022-02-14 13:57:38
+(epstopdf)                    date: 2022-02-16 11:46:26
 (epstopdf)                    size: 403110 bytes
 (epstopdf)             Output file: <images/htl_logo-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-02-14 13:57:38
+(epstopdf)                    date: 2022-02-16 11:46:26
 (epstopdf)                    size: 13656 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=images/htl_logo-eps-
 converted-to.pdf images/htl_logo.eps>
@@ -1353,14 +1377,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 85--89
 
  []
 
-[1{C:/Users/david/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
+[1{C:/Users/Marcel/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
 
  <./images/LogoITHTL_white-eps-converted-to.pdf> <./images/htl_logo-eps-convert
 ed-to.pdf>])
 \openout2 = `erklaerung.aux'.
 
-(erklaerung.tex
+ (erklaerung.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--7
 
  []
@@ -1435,11 +1459,11 @@ Overfull \hbox (9.77362pt too wide) in paragraph at lines 14--22
 \feldA=\skip83
 \feldB=\skip84
 Package epstopdf Info: Source file: <images/htl_logo_beschnitten.eps>
-(epstopdf)                    date: 2022-02-14 13:57:38
+(epstopdf)                    date: 2022-02-16 11:46:26
 (epstopdf)                    size: 71142 bytes
 (epstopdf)             Output file: <images/htl_logo_beschnitten-eps-converted-
 to.pdf>
-(epstopdf)                    date: 2022-02-14 13:57:38
+(epstopdf)                    date: 2022-02-16 11:46:26
 (epstopdf)                    size: 12630 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=images/htl_logo_besc
 hnitten-eps-converted-to.pdf images/htl_logo_beschnitten.eps>
@@ -1474,11 +1498,11 @@ Package pdftex.def Info: images/Architektur.png  used on input line 76.
  <./images/htl_logo_beschnitten-eps-converted-to.pdf> <./images/Architektur.png
 >]
 Package epstopdf Info: Source file: <images/htl_logo_beschnitten.eps>
-(epstopdf)                    date: 2022-02-14 13:57:38
+(epstopdf)                    date: 2022-02-16 11:46:26
 (epstopdf)                    size: 71142 bytes
 (epstopdf)             Output file: <images/htl_logo_beschnitten-eps-converted-
 to.pdf>
-(epstopdf)                    date: 2022-02-14 13:57:38
+(epstopdf)                    date: 2022-02-16 11:46:26
 (epstopdf)                    size: 12630 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=images/htl_logo_besc
 hnitten-eps-converted-to.pdf images/htl_logo_beschnitten.eps>
@@ -1550,7 +1574,7 @@ Package pdftex.def Info: images/Team.png  used on input line 43.
 (pdftex.def)             Requested size: 227.61407pt x 227.61969pt.
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 5
 3.
- (C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
+ (C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 [4 <./images/Team.png>]) [5]
@@ -1671,15 +1695,14 @@ Overfull \hbox (44.60756pt too wide) in paragraph at lines 263--311
  []
 
 [19] [20]
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 363.
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 3
 64.
-
-(C:\Users\david\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
+(C:\Users\Marcel\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 ) [21]
 
@@ -1725,199 +1748,464 @@ Overfull \hbox (13.09334pt too wide) in paragraph at lines 588--589
 Kapitel 3.
 [30
 
-] [31] [32] [33] [34] [35]
-<images/ESerstellenPop.png, id=1054, 332.442pt x 274.626pt>
-File: images/ESerstellenPop.png Graphic file (type png)
-<use images/ESerstellenPop.png>
-Package pdftex.def Info: images/ESerstellenPop.png  used on input line 901.
-(pdftex.def)             Requested size: 256.0775pt x 227.62103pt.
+] [31] [32] [33]
+<images/DesignVorschlag1.png, id=1046, 909.3975pt x 510.40688pt>
+File: images/DesignVorschlag1.png Graphic file (type png)
+<use images/DesignVorschlag1.png>
+Package pdftex.def Info: images/DesignVorschlag1.png  used on input line 826.
+(pdftex.def)             Requested size: 341.43951pt x 170.71672pt.
+ [34 <./images/DesignVorschlag1.png>]
+<images/DesignVorschlag2.png, id=1053, 544.28343pt x 621.07031pt>
+File: images/DesignVorschlag2.png Graphic file (type png)
+<use images/DesignVorschlag2.png>
+Package pdftex.def Info: images/DesignVorschlag2.png  used on input line 833.
+(pdftex.def)             Requested size: 312.97716pt x 341.42862pt.
+<images/DesignVorschlag3.png, id=1054, 749.04843pt x 418.56375pt>
+File: images/DesignVorschlag3.png Graphic file (type png)
+<use images/DesignVorschlag3.png>
+Package pdftex.def Info: images/DesignVorschlag3.png  used on input line 839.
+(pdftex.def)             Requested size: 341.43477pt x 199.16472pt.
+ [35 <./images/DesignVorschlag2.png> <./images/DesignVorschlag3.png>]
+<images/FinalerVorschlag.png, id=1066, 598.48593pt x 333.49594pt>
+File: images/FinalerVorschlag.png Graphic file (type png)
+<use images/FinalerVorschlag.png>
+Package pdftex.def Info: images/FinalerVorschlag.png  used on input line 863.
+(pdftex.def)             Requested size: 341.44188pt x 199.17294pt.
+ [36 <./images/FinalerVorschlag.png>]
+<images/DefinierteFarben.png, id=1075, 171.039pt x 468.7914pt>
+File: images/DefinierteFarben.png Graphic file (type png)
+<use images/DefinierteFarben.png>
+Package pdftex.def Info: images/DefinierteFarben.png  used on input line 875.
+(pdftex.def)             Requested size: 113.81519pt x 426.79398pt.
+ [37 <./images/DefinierteFarben.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 880--904
+
+ []
+
+[38]
+<images/UberschrieftenImFließtext.png, id=1087, 1300.1072pt x 529.22719pt>
+File: images/UberschrieftenImFließtext.png Graphic file (type png)
+<use images/UberschrieftenImFließtext.png>
+Package pdftex.def Info: images/UberschrieftenImFließtext.png  used on input l
+ine 918.
+(pdftex.def)             Requested size: 398.32745pt x 227.61978pt.
+<images/ImpressumUberschrift.png, id=1088, 785.93625pt x 529.98pt>
+File: images/ImpressumUberschrift.png Graphic file (type png)
+<use images/ImpressumUberschrift.png>
+Package pdftex.def Info: images/ImpressumUberschrift.png  used on input line 92
+4.
+(pdftex.def)             Requested size: 398.35175pt x 227.62009pt.
+ [39 <./images/UberschrieftenImFließtext.png> <./images/ImpressumUberschrift.p
+ng>]
+<images/InteraktionDataTable.png, id=1097, 1336.24219pt x 634.62094pt>
+File: images/InteraktionDataTable.png Graphic file (type png)
+<use images/InteraktionDataTable.png>
+Package pdftex.def Info: images/InteraktionDataTable.png  used on input line 93
+4.
+(pdftex.def)             Requested size: 426.79066pt x 227.6209pt.
+<images/InteraktionDropDown.png, id=1098, 1332.47812pt x 651.93562pt>
+File: images/InteraktionDropDown.png Graphic file (type png)
+<use images/InteraktionDropDown.png>
+Package pdftex.def Info: images/InteraktionDropDown.png  used on input line 940
+.
+(pdftex.def)             Requested size: 426.78801pt x 227.62381pt.
+<images/HubaliBeispielstext.png, id=1099, 271.76532pt x 56.46094pt>
+File: images/HubaliBeispielstext.png Graphic file (type png)
+<use images/HubaliBeispielstext.png>
+Package pdftex.def Info: images/HubaliBeispielstext.png  used on input line 949
+.
+(pdftex.def)             Requested size: 142.26839pt x 56.90877pt.
+<images/BeispielstextSmothSans.png, id=1100, 200.24812pt x 61.73062pt>
+File: images/BeispielstextSmothSans.png Graphic file (type png)
+<use images/BeispielstextSmothSans.png>
+Package pdftex.def Info: images/BeispielstextSmothSans.png  used on input line 
+955.
+(pdftex.def)             Requested size: 142.27188pt x 56.90869pt.
+ [40 <./images/InteraktionDataTable.png> <./images/InteraktionDropDown.png>]
+<images/Header.png, id=1109, 877.77937pt x 82.05656pt>
+File: images/Header.png Graphic file (type png)
+<use images/Header.png>
+Package pdftex.def Info: images/Header.png  used on input line 964.
+(pdftex.def)             Requested size: 455.25586pt x 85.35933pt.
+ [41 <./images/HubaliBeispielstext.png> <./images/BeispielstextSmothSans.png> <
+./images/Header.png>]
+<images/Logo1.png, id=1120, 978.65625pt x 301.125pt>
+File: images/Logo1.png Graphic file (type png)
+<use images/Logo1.png>
+Package pdftex.def Info: images/Logo1.png  used on input line 974.
+(pdftex.def)             Requested size: 398.3397pt x 85.35744pt.
+<images/Logo2.jpg, id=1121, 1806.75pt x 301.125pt>
+File: images/Logo2.jpg Graphic file (type jpg)
+<use images/Logo2.jpg>
+Package pdftex.def Info: images/Logo2.jpg  used on input line 981.
+(pdftex.def)             Requested size: 398.34087pt x 85.35744pt.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 991.
+
+<images/Icons/AzSpeicherES.png, id=1122, 18.469pt x 18.469pt>
+File: images/Icons/AzSpeicherES.png Graphic file (type png)
+<use images/Icons/AzSpeicherES.png>
+Package pdftex.def Info: images/Icons/AzSpeicherES.png  used on input line 996.
+
+(pdftex.def)             Requested size: 28.45302pt x 28.45302pt.
+<images/Icons/AzETES.png, id=1123, 17.31468pt x 18.82031pt>
+File: images/Icons/AzETES.png Graphic file (type png)
+<use images/Icons/AzETES.png>
+Package pdftex.def Info: images/Icons/AzETES.png  used on input line 997.
+(pdftex.def)             Requested size: 28.45276pt x 28.45552pt.
+<images/Icons/BildET.png, id=1124, 33.45833pt x 29.44333pt>
+File: images/Icons/BildET.png Graphic file (type png)
+<use images/Icons/BildET.png>
+Package pdftex.def Info: images/Icons/BildET.png  used on input line 998.
+(pdftex.def)             Requested size: 28.45348pt x 28.45439pt.
+
+LaTeX Warning: Float too large for page by 207.2303pt on input line 1047.
+
+[42 <./images/Logo1.png> <./images/Logo2.jpg>] [43 <./images/Icons/AzSpeicherES
+.png> <./images/Icons/AzETES.png> <./images/Icons/BildET.png>]
+<images/MapIcons.png, id=1140, 802.49812pt x 459.21562pt>
+File: images/MapIcons.png Graphic file (type png)
+<use images/MapIcons.png>
+Package pdftex.def Info: images/MapIcons.png  used on input line 1053.
+(pdftex.def)             Requested size: 284.52759pt x 170.71992pt.
+<images/Icons/esrot.png, id=1141, 22.58438pt x 32.37094pt>
+File: images/Icons/esrot.png Graphic file (type png)
+<use images/Icons/esrot.png>
+Package pdftex.def Info: images/Icons/esrot.png  used on input line 1061.
+(pdftex.def)             Requested size: 28.45299pt x 28.4539pt.
+<images/Icons/etrot.png, id=1142, 22.87025pt x 38.42203pt>
+File: images/Icons/etrot.png Graphic file (type png)
+<use images/Icons/etrot.png>
+Package pdftex.def Info: images/Icons/etrot.png  used on input line 1067.
+(pdftex.def)             Requested size: 28.4537pt x 28.45236pt.
+<images/IconsInÜbersichten.png, id=1143, 277.78781pt x 456.95718pt>
+File: images/IconsInÜbersichten.png Graphic file (type png)
+<use images/IconsInÜbersichten.png>
+Package pdftex.def Info: images/IconsInÜbersichten.png  used on input line 107
+8.
+(pdftex.def)             Requested size: 142.2633pt x 284.53769pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[36]
-<images/ESerstellen.png, id=1060, 537.207pt x 259.56975pt>
+[44 <./images/MapIcons.png> <./images/Icons/esrot.png> <./images/Icons/etrot.pn
+g>]
+<images/IconsInFormularen.png, id=1155, 277.78781pt x 313.17pt>
+File: images/IconsInFormularen.png Graphic file (type png)
+<use images/IconsInFormularen.png>
+Package pdftex.def Info: images/IconsInFormularen.png  used on input line 1085.
+
+(pdftex.def)             Requested size: 142.2633pt x 170.71965pt.
+ [45 <./images/IconsInÜbersichten.png> <./images/IconsInFormularen.png>]
+<images/IconAutorVerlinkungen.png, id=1164, 270.25969pt x 267.24844pt>
+File: images/IconAutorVerlinkungen.png Graphic file (type png)
+<use images/IconAutorVerlinkungen.png>
+Package pdftex.def Info: images/IconAutorVerlinkungen.png  used on input line 1
+093.
+(pdftex.def)             Requested size: 199.17252pt x 284.55836pt.
+
+[46 <./images/IconAutorVerlinkungen.png>]
+<images/Icons/statistik.png, id=1171, 17.31468pt x 17.31468pt>
+File: images/Icons/statistik.png Graphic file (type png)
+<use images/Icons/statistik.png>
+Package pdftex.def Info: images/Icons/statistik.png  used on input line 1107.
+(pdftex.def)             Requested size: 28.45276pt x 28.45276pt.
+<images/Icons/delete.png, id=1172, 17.31468pt x 17.31468pt>
+File: images/Icons/delete.png Graphic file (type png)
+<use images/Icons/delete.png>
+Package pdftex.def Info: images/Icons/delete.png  used on input line 1108.
+(pdftex.def)             Requested size: 28.45276pt x 28.45276pt.
+<images/Icons/auge.png, id=1173, 22.58438pt x 15.05624pt>
+File: images/Icons/auge.png Graphic file (type png)
+<use images/Icons/auge.png>
+Package pdftex.def Info: images/Icons/auge.png  used on input line 1109.
+(pdftex.def)             Requested size: 42.68327pt x 28.4555pt.
+<images/Icons/stift.png, id=1174, 14.70982pt x 14.70982pt>
+File: images/Icons/stift.png Graphic file (type png)
+<use images/Icons/stift.png>
+Package pdftex.def Info: images/Icons/stift.png  used on input line 1110.
+(pdftex.def)             Requested size: 28.45418pt x 28.45418pt.
+
+Overfull \hbox (16.82939pt too wide) in paragraph at lines 1104--1112
+[][] 
+ []
+
+<images/IconsImDatatable.png, id=1175, 551.81157pt x 345.54094pt>
+File: images/IconsImDatatable.png Graphic file (type png)
+<use images/IconsImDatatable.png>
+Package pdftex.def Info: images/IconsImDatatable.png  used on input line 1117.
+(pdftex.def)             Requested size: 426.80756pt x 284.53171pt.
+[47 <./images/Icons/statistik.png> <./images/Icons/delete.png> <./images/Icons/
+auge.png> <./images/Icons/stift.png> <./images/IconsImDatatable.png>] [48]
+<images/ESerstellenPop.png, id=1192, 332.442pt x 274.626pt>
+File: images/ESerstellenPop.png Graphic file (type png)
+<use images/ESerstellenPop.png>
+Package pdftex.def Info: images/ESerstellenPop.png  used on input line 1177.
+(pdftex.def)             Requested size: 256.0775pt x 227.62103pt.
+
+[49 <./images/ESerstellenPop.png>]
+<images/ESerstellen.png, id=1200, 537.207pt x 259.56975pt>
 File: images/ESerstellen.png Graphic file (type png)
 <use images/ESerstellen.png>
-Package pdftex.def Info: images/ESerstellen.png  used on input line 911.
+Package pdftex.def Info: images/ESerstellen.png  used on input line 1187.
 (pdftex.def)             Requested size: 398.34666pt x 199.17223pt.
-<images/ESbearbeitenPop.png, id=1061, 217.41225pt x 554.67226pt>
+<images/ESbearbeitenPop.png, id=1201, 217.41225pt x 554.67226pt>
 File: images/ESbearbeitenPop.png Graphic file (type png)
 <use images/ESbearbeitenPop.png>
-Package pdftex.def Info: images/ESbearbeitenPop.png  used on input line 925.
+Package pdftex.def Info: images/ESbearbeitenPop.png  used on input line 1201.
 (pdftex.def)             Requested size: 170.71873pt x 455.2489pt.
- [37 <./images/ESerstellenPop.png> <./images/ESerstellen.png>] [38 <./images/ES
-bearbeitenPop.png>]
-<images/ESbearbeiten.png, id=1079, 543.2295pt x 268.00125pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[50 <./images/ESerstellen.png>] [51 <./images/ESbearbeitenPop.png>]
+<images/ESbearbeiten.png, id=1217, 543.2295pt x 268.00125pt>
 File: images/ESbearbeiten.png Graphic file (type png)
 <use images/ESbearbeiten.png>
-Package pdftex.def Info: images/ESbearbeiten.png  used on input line 950.
+Package pdftex.def Info: images/ESbearbeiten.png  used on input line 1226.
 (pdftex.def)             Requested size: 398.34465pt x 199.1684pt.
-<images/ESlöschen.png, id=1080, 532.389pt x 215.00325pt>
+<images/ESlöschen.png, id=1218, 532.389pt x 215.00325pt>
 File: images/ESlöschen.png Graphic file (type png)
 <use images/ESlöschen.png>
-Package pdftex.def Info: images/ESlöschen.png  used on input line 962.
+Package pdftex.def Info: images/ESlöschen.png  used on input line 1238.
 (pdftex.def)             Requested size: 398.3403pt x 199.17014pt.
- [39 <./images/ESbearbeiten.png>] [40 <./images/ESlöschen.png>]
-<images/ETerstellenPop.png, id=1094, 364.9635pt x 407.121pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[52 <./images/ESbearbeiten.png>]
+<images/ETerstellenPop.png, id=1226, 364.9635pt x 407.121pt>
 File: images/ETerstellenPop.png Graphic file (type png)
 <use images/ETerstellenPop.png>
-Package pdftex.def Info: images/ETerstellenPop.png  used on input line 972.
+Package pdftex.def Info: images/ETerstellenPop.png  used on input line 1248.
 (pdftex.def)             Requested size: 227.6227pt x 312.99959pt.
- [41 <./images/ETerstellenPop.png>]
-<images/ETerstellen.png, id=1102, 545.03625pt x 319.79475pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[53 <./images/ESlöschen.png>]
+<images/ETerstellen.png, id=1234, 545.03625pt x 319.79475pt>
 File: images/ETerstellen.png Graphic file (type png)
 <use images/ETerstellen.png>
-Package pdftex.def Info: images/ETerstellen.png  used on input line 998.
+Package pdftex.def Info: images/ETerstellen.png  used on input line 1274.
 (pdftex.def)             Requested size: 398.33888pt x 199.17343pt.
-<images/ETbearbeitenPop.png, id=1103, 368.577pt x 423.984pt>
+ [54 <./images/ETerstellenPop.png>]
+<images/ETbearbeitenPop.png, id=1241, 368.577pt x 423.984pt>
 File: images/ETbearbeitenPop.png Graphic file (type png)
 <use images/ETbearbeitenPop.png>
-Package pdftex.def Info: images/ETbearbeitenPop.png  used on input line 1009.
+Package pdftex.def Info: images/ETbearbeitenPop.png  used on input line 1285.
 (pdftex.def)             Requested size: 227.62677pt x 312.9863pt.
- [42 <./images/ETerstellen.png>]
-[43 <./images/ETbearbeitenPop.png>]
-<images/ETbearbeiten.png, id=1117, 536.60475pt x 337.86224pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[55 <./images/ETerstellen.png>]
+<images/ETbearbeiten.png, id=1249, 536.60475pt x 337.86224pt>
 File: images/ETbearbeiten.png Graphic file (type png)
 <use images/ETbearbeiten.png>
-Package pdftex.def Info: images/ETbearbeiten.png  used on input line 1023.
+Package pdftex.def Info: images/ETbearbeiten.png  used on input line 1299.
 (pdftex.def)             Requested size: 398.34222pt x 199.16685pt.
- [44 <./images/ETbearbeiten.png>]
-<images/ETlöschen.png, id=1125, 549.252pt x 283.0575pt>
+ [56 <./images/ETbearbeitenPop.png> <./images/ETbearbeiten.png>]
+<images/ETlöschen.png, id=1259, 549.252pt x 283.0575pt>
 File: images/ETlöschen.png Graphic file (type png)
 <use images/ETlöschen.png>
-Package pdftex.def Info: images/ETlöschen.png  used on input line 1034.
+Package pdftex.def Info: images/ETlöschen.png  used on input line 1310.
 (pdftex.def)             Requested size: 398.33578pt x 199.17548pt.
- [45 <./images/ETlöschen.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1049--1051
+ [57 <./images/ETlöschen.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1325--1327
 
  []
 
-<images/Adresssuchfeld.png, id=1133, 322.806pt x 40.35075pt>
+<images/Adresssuchfeld.png, id=1267, 322.806pt x 40.35075pt>
 File: images/Adresssuchfeld.png Graphic file (type png)
 <use images/Adresssuchfeld.png>
-Package pdftex.def Info: images/Adresssuchfeld.png  used on input line 1078.
+Package pdftex.def Info: images/Adresssuchfeld.png  used on input line 1354.
 (pdftex.def)             Requested size: 426.81944pt x 56.90933pt.
-[46 <./images/Adresssuchfeld.png>]
-<images/Vorschläge.png, id=1145, 325.81725pt x 177.66376pt>
+[58 <./images/Adresssuchfeld.png>]
+<images/Vorschläge.png, id=1279, 325.81725pt x 177.66376pt>
 File: images/Vorschläge.png Graphic file (type png)
 <use images/Vorschläge.png>
-Package pdftex.def Info: images/Vorschläge.png  used on input line 1097.
+Package pdftex.def Info: images/Vorschläge.png  used on input line 1373.
 (pdftex.def)             Requested size: 426.79387pt x 199.17451pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1093--1102
+Underfull \hbox (badness 10000) in paragraph at lines 1369--1378
 
  []
 
-[47 <./images/Vorschläge.png>]
-<images/Adresssuche.png, id=1152, 532.389pt x 269.808pt>
+[59 <./images/Vorschläge.png>]
+<images/Adresssuche.png, id=1286, 532.389pt x 269.808pt>
 File: images/Adresssuche.png Graphic file (type png)
 <use images/Adresssuche.png>
-Package pdftex.def Info: images/Adresssuche.png  used on input line 1110.
+Package pdftex.def Info: images/Adresssuche.png  used on input line 1386.
 (pdftex.def)             Requested size: 398.3403pt x 199.17311pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1104--1115
+Underfull \hbox (badness 10000) in paragraph at lines 1380--1391
 
  []
 
-[48 <./images/Adresssuche.png>] [49]
-<images/ESauswählen.png, id=1169, 567.92175pt x 327.624pt>
+[60 <./images/Adresssuche.png>]
+<images/HomeSeite1.png, id=1293, 1445.4pt x 465.99094pt>
+File: images/HomeSeite1.png Graphic file (type png)
+<use images/HomeSeite1.png>
+Package pdftex.def Info: images/HomeSeite1.png  used on input line 1409.
+(pdftex.def)             Requested size: 398.33534pt x 199.17053pt.
+<images/HomeSeite2.png, id=1294, 1439.3775pt x 707.64375pt>
+File: images/HomeSeite2.png Graphic file (type png)
+<use images/HomeSeite2.png>
+Package pdftex.def Info: images/HomeSeite2.png  used on input line 1415.
+(pdftex.def)             Requested size: 398.34482pt x 199.16469pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/EnergiesystemSeite.png, id=1295, 1444.64719pt x 683.55376pt>
+File: images/EnergiesystemSeite.png Graphic file (type png)
+<use images/EnergiesystemSeite.png>
+Package pdftex.def Info: images/EnergiesystemSeite.png  used on input line 1424
+.
+(pdftex.def)             Requested size: 398.32628pt x 170.71071pt.
+[61 <./images/HomeSeite1.png>] [62 <./images/HomeSeite2.png> <./images/Energies
+ystemSeite.png>]
+<images/GalerieSeite.png, id=1313, 1445.4pt x 663.22781pt>
+File: images/GalerieSeite.png Graphic file (type png)
+<use images/GalerieSeite.png>
+Package pdftex.def Info: images/GalerieSeite.png  used on input line 1434.
+(pdftex.def)             Requested size: 398.33534pt x 170.71475pt.
+<images/ImpressumSeite.png, id=1314, 1445.4pt x 721.94719pt>
+File: images/ImpressumSeite.png Graphic file (type png)
+<use images/ImpressumSeite.png>
+Package pdftex.def Info: images/ImpressumSeite.png  used on input line 1445.
+(pdftex.def)             Requested size: 398.33534pt x 170.71515pt.
+ [63 <./images/GalerieSeite.png> <./images/ImpressumSeite.png>]
+<images/DSGVOSeite.png, id=1325, 1445.4pt x 715.92468pt>
+File: images/DSGVOSeite.png Graphic file (type png)
+<use images/DSGVOSeite.png>
+Package pdftex.def Info: images/DSGVOSeite.png  used on input line 1454.
+(pdftex.def)             Requested size: 398.33534pt x 170.71117pt.
+<images/RegisterSeite.png, id=1326, 1445.4pt x 689.57625pt>
+File: images/RegisterSeite.png Graphic file (type png)
+<use images/RegisterSeite.png>
+Package pdftex.def Info: images/RegisterSeite.png  used on input line 1462.
+(pdftex.def)             Requested size: 398.33534pt x 199.1723pt.
+[64 <./images/DSGVOSeite.png> <./images/RegisterSeite.png>]
+<images/LoginFeld.png, id=1337, 334.24875pt x 228.10219pt>
+File: images/LoginFeld.png Graphic file (type png)
+<use images/LoginFeld.png>
+Package pdftex.def Info: images/LoginFeld.png  used on input line 1474.
+(pdftex.def)             Requested size: 199.17372pt x 142.26765pt.
+<images/RegisterFormular.png, id=1338, 338.01282pt x 249.18094pt>
+File: images/RegisterFormular.png Graphic file (type png)
+<use images/RegisterFormular.png>
+Package pdftex.def Info: images/RegisterFormular.png  used on input line 1489.
+(pdftex.def)             Requested size: 199.1731pt x 142.26653pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[65 <./images/LoginFeld.png>]
+<images/ESauswählen.png, id=1345, 567.92175pt x 327.624pt>
 File: images/ESauswählen.png Graphic file (type png)
 <use images/ESauswählen.png>
-Package pdftex.def Info: images/ESauswählen.png  used on input line 1155.
+Package pdftex.def Info: images/ESauswählen.png  used on input line 1506.
 (pdftex.def)             Requested size: 398.34843pt x 199.17545pt.
- [50 <./images/ESauswählen.png>]
-<images/ESabwählen.png, id=1178, 564.9105pt x 227.6505pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[66 <./images/RegisterFormular.png>]
+<images/ESabwählen.png, id=1353, 564.9105pt x 227.6505pt>
 File: images/ESabwählen.png Graphic file (type png)
 <use images/ESabwählen.png>
-Package pdftex.def Info: images/ESabwählen.png  used on input line 1167.
+Package pdftex.def Info: images/ESabwählen.png  used on input line 1518.
 (pdftex.def)             Requested size: 398.33954pt x 199.17632pt.
- [51 <./images/ESabwählen.png>]
-<images/SetESMarker.png, id=1186, 505.28775pt x 181.8795pt>
+ [67 <./images/ESauswählen.png> <./images/ESabwählen.png>]
+<images/SetESMarker.png, id=1363, 505.28775pt x 181.8795pt>
 File: images/SetESMarker.png Graphic file (type png)
 <use images/SetESMarker.png>
-Package pdftex.def Info: images/SetESMarker.png  used on input line 1184.
+Package pdftex.def Info: images/SetESMarker.png  used on input line 1535.
 (pdftex.def)             Requested size: 398.34026pt x 199.17165pt.
- [52 <./images/SetESMarker.png>]
-<images/SetETMarker.png, id=1194, 513.117pt x 313.77225pt>
+ [68 <./images/SetESMarker.png>]
+<images/SetETMarker.png, id=1372, 513.117pt x 313.77225pt>
 File: images/SetETMarker.png Graphic file (type png)
 <use images/SetETMarker.png>
-Package pdftex.def Info: images/SetETMarker.png  used on input line 1195.
+Package pdftex.def Info: images/SetETMarker.png  used on input line 1546.
 (pdftex.def)             Requested size: 398.35057pt x 199.17134pt.
 
-Overfull \hbox (23.06476pt too wide) in paragraph at lines 1191--1199
+Overfull \hbox (23.06476pt too wide) in paragraph at lines 1542--1550
 \T1/lmr/m/n/10 stellt und auf der Kar-te pr�-sen-tiert. Die Ab-bil-dung x.y ste
 llt den Ab-lauf f�r das Plat-zie-ren der Energietechnologien-
  []
 
-[53 <./images/SetETMarker.png>]
-<images/DataTableStandard.png, id=1202, 359.9046pt x 168.63pt>
+[69 <./images/SetETMarker.png>]
+<images/DataTableStandard.png, id=1380, 359.9046pt x 168.63pt>
 File: images/DataTableStandard.png Graphic file (type png)
 <use images/DataTableStandard.png>
-Package pdftex.def Info: images/DataTableStandard.png  used on input line 1243.
+Package pdftex.def Info: images/DataTableStandard.png  used on input line 1594.
 
 (pdftex.def)             Requested size: 398.36754pt x 199.17464pt.
-<images/DataTableIndividuell.png, id=1203, 357.0138pt x 172.0026pt>
+<images/DataTableIndividuell.png, id=1381, 357.0138pt x 172.0026pt>
 File: images/DataTableIndividuell.png Graphic file (type png)
 <use images/DataTableIndividuell.png>
-Package pdftex.def Info: images/DataTableIndividuell.png  used on input line 12
-56.
+Package pdftex.def Info: images/DataTableIndividuell.png  used on input line 16
+07.
 (pdftex.def)             Requested size: 398.34917pt x 199.17145pt.
- [54 <./images/DataTableStandard.png>] [55 <./images/DataTableIndividuell.png>]
-<images/MoveToMarker.png, id=1221, 500.46976pt x 188.50426pt>
+ [70 <./images/DataTableStandard.png>] [71 <./images/DataTableIndividuell.png>]
+<images/MoveToMarker.png, id=1399, 500.46976pt x 188.50426pt>
 File: images/MoveToMarker.png Graphic file (type png)
 <use images/MoveToMarker.png>
-Package pdftex.def Info: images/MoveToMarker.png  used on input line 1290.
+Package pdftex.def Info: images/MoveToMarker.png  used on input line 1641.
 (pdftex.def)             Requested size: 398.36029pt x 199.17212pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[56]
-<images/GalerieDropDown.png, id=1227, 455.301pt x 92.5056pt>
+[72]
+<images/GalerieDropDown.png, id=1404, 455.301pt x 92.5056pt>
 File: images/GalerieDropDown.png Graphic file (type png)
 <use images/GalerieDropDown.png>
-Package pdftex.def Info: images/GalerieDropDown.png  used on input line 1307.
+Package pdftex.def Info: images/GalerieDropDown.png  used on input line 1658.
 (pdftex.def)             Requested size: 398.35265pt x 85.36307pt.
- [57 <./images/MoveToMarker.png> <./images/GalerieDropDown.png>]
-<images/GalerieET.png, id=1236, 455.301pt x 184.5294pt>
+ [73 <./images/MoveToMarker.png> <./images/GalerieDropDown.png>]
+<images/GalerieET.png, id=1413, 455.301pt x 184.5294pt>
 File: images/GalerieET.png Graphic file (type png)
 <use images/GalerieET.png>
-Package pdftex.def Info: images/GalerieET.png  used on input line 1321.
+Package pdftex.def Info: images/GalerieET.png  used on input line 1672.
 (pdftex.def)             Requested size: 398.35265pt x 170.72644pt.
- [58 <./images/GalerieET.png>] [59]
+ [74 <./images/GalerieET.png>] [75] [76]
 Kapitel 4.
-[60
+[77
 
 ]
 Kapitel 5.
-[61
+[78
 
-] (main.lof [62
+] (main.lof [79
 
-])
+] [80])
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
- [63] (main.lot)
+ [81] (main.lot)
 \tf@lot=\write7
 \openout7 = `main.lot'.
 
- [64
+ [82
 
 ]
 Kapitel 6.
-[65
+[83
 
 ]
 Kapitel 7.
-[66
+[84
 
 ]
 Kapitel 8.
-[67
+[85
 
-] [68]) [69] 
+] [86]) [87] 
 AED: lastpage setting LastPage
 (main.aux (titlepage.aux) (erklaerung.aux) (kurzfassung.aux) (danksagung.aux)
 (einleitung.aux) (doku.aux))
@@ -1928,34 +2216,34 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: EAA868D947143793BCB96EE1D23883B1;23055.
+(rerunfilecheck)             Checksum: D9A9591FB017728888087E3352BC54F0;23055.
  ) 
 Here is how much of TeX's memory you used:
- 29587 strings out of 478659
- 545365 string characters out of 2845920
- 972787 words of memory out of 3000000
- 46683 multiletter control sequences out of 15000+600000
+ 30078 strings out of 478659
+ 559041 string characters out of 2845446
+ 974483 words of memory out of 3000000
+ 47085 multiletter control sequences out of 15000+600000
  482657 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  100i,18n,104p,1185b,2043s stack positions out of 5000i,500n,10000p,200000b,80000s
-{C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{
-C:/Users/david/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/U
-sers/david/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}<C:/U
-sers/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/U
-sers/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/U
-sers/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/
-Users/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/U
-sers/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Us
-ers/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Use
-rs/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users
-/david/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/d
-avid/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/dav
-id/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/david
-/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro10.pfb><C:/Users/david
-/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt8.pfb>
-Output written on main.pdf (80 pages, 2380204 bytes).
+{C:/Users/Marcel/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}
+{C:/Users/Marcel/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:
+/Users/Marcel/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}<C
+:/Users/Marcel/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><
+C:/Users/Marcel/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb>
+<C:/Users/Marcel/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pf
+b><C:/Users/Marcel/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pf
+b><C:/Users/Marcel/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pf
+b><C:/Users/Marcel/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pf
+b><C:/Users/Marcel/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb
+><C:/Users/Marcel/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb>
+<C:/Users/Marcel/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><
+C:/Users/Marcel/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C
+:/Users/Marcel/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro10.pfb><
+C:/Users/Marcel/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt8.pfb>
+Output written on main.pdf (98 pages, 8030914 bytes).
 PDF statistics:
- 1462 PDF objects out of 1728 (max. 8388607)
- 354 named destinations out of 1000 (max. 500000)
- 1312 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1692 PDF objects out of 1728 (max. 8388607)
+ 405 named destinations out of 1000 (max. 500000)
+ 1497 words of extra memory for PDF output out of 10000 (max. 10000000)
 

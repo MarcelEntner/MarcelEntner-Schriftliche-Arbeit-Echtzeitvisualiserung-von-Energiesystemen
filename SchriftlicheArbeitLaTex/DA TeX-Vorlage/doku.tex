@@ -749,6 +749,7 @@ Eine Änderung war es, die Datenbank Anmeldeinformationen auf die richtigen Eins
 	\item DB\_USERNAME
 	\item DB\_PASSWORD
 \end{itemize}
+
 DB\_CONNECTION symbolisiert die Zugriffsvariante auf die Datenbank. DB\_HOST bezeichnet die Domain des Datenbankservers, beispielsweise 127.0.0.1, wenn der Datenbankserver über den Localhost bereitgestellt wird. DB\_PORT ist dementsprechend der Port, auf welchem die Datenbank erreichbar ist. DB\_DATABASE ist der Name der Datenbank, auf die zugegriffen werden soll. DB\_USERNAME der Benutzername, mit welchem man auf die Datenbank zugreifen möchte. Diese Einstellungen sind vom Projekt Team vorgenommen worden, um eine Datenbank verwenden zu können und diese löschen beziehungsweise erstellen zu können.
 \subsection{Mail Server Konfigurationen}
 Um auf der Weboberfläche das Passwort Resetten mittels E-Mail zu ermöglichen, muss Laravel eine E-Mail versenden. Dazu braucht es die nötigen Konfigurationen in der .env Datei. Folgende Attribute müssen gesetzt werden: 
@@ -819,53 +820,328 @@ Vom Projektteam wurde ein Corporate Design Manual erstellt. Dieses befindet sich
 \end{itemize}
 Auf die wichtigsten Elemente wird in den nachfolgen Kapiteln eingegangen.
 \subsection{Vorschläge}
-Text
+Nach Absprache der Grundanforderung des Produktes wurden, mithilfe der Adobe xd Software,  drei Designvorschläge verfasst. Diese sind auch auf der DVD der Diplomarbeit einsehbar. Um diese aussagekräftig zu vergleichen, wird von jedem Vorschlag, in den nachfolgenden drei Abbildungen, die Energiesystem Seite visuell dargestellt.
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=6cm,width=12cm]{images/DesignVorschlag1}
+	\caption{Design Vorschlag 1}
+	\label{fig:Design Vorschlag 1}
+\end{figure}
+\newpage
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=12cm,width=11cm]{images/DesignVorschlag2}
+	\caption{Design Vorschlag 2}
+	\label{fig:Design Vorschlag 2}
+\end{figure}
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=7cm,width=12cm]{images/DesignVorschlag3}
+	\caption{Design Vorschlag 3}
+	\label{fig:Design Vorschlag 3}
+\end{figure}
+\subsection{Änderungsvorschläge} \label{sec:Änderungsvorschläge}
+Die oben ersichtlichen Design Vorschläge wurden dem Auftraggeber über Skype präsentiert. Dieser favorisierte die Vorschläge \ref{fig:Design Vorschlag 1} und  \ref{fig:Design Vorschlag 2}. 
+Von Seiten des Auftraggebers kamen viele Verbesserungsvorschläge und Ideen. Einige davon sind:
+\begin{itemize}
+	\item Die Liste soll neben der Map platziert werden.
+	\item Es soll folgende Unterseiten geben:
+	\subitem Home
+	\subitem Energiesysteme
+	\subitem Galerie
+	\item Es soll Icons geben, welche es ermöglichen, Energiesysteme und Energietechnologien in der Liste zu löschen, bearbeiten oder einzusehen. 
+	\item Es sollen die Farben aus der CSS Datei der bereits vorhanden Website extrahiert werden.
+	
+\end{itemize}
 
-\subsection{Änderungsvorschläge}
-Text
 
 \subsection{Finales Design}
-Text
+Nach genauer Definition der Änderungsvorschläge in Kapitel \ref{sec:Änderungsvorschläge}, wurde erneut in Adobe XD ein Design Vorschlag erstellt. Dieser Vorschlag war eine Mischung aus dem Vorschlag 1 und dem Vorschlag 2 mit den gewünschten Änderungen des Auftraggebers. Auch dieser Vorschlag ist auf der DVD der Diplomarbeit einsehbar. Um einen Vergleich zwischen Vorschlag 1 , Vorschlag 2 und dem finalen Design zu ermöglichen, wird nachfolgend auch die Energiesystem Seite des finalen Vorschlags visuelle dargestellt.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=7cm,width=12cm]{images/FinalerVorschlag}
+	\caption{Finaler Design Vorschlag}
+	\label{fig:Finaler Design Vorschlag}
+\end{figure}
+\newpage
+Am Vorschlag in \ref{fig:Finaler Design Vorschlag}, wurde sich während der Entwicklung gerichtet. Aufgrund laufender Änderungswünsche des Auftraggebers variiert das finale Produktdesign jedoch stark vom finalen Vorschlag. Das finale Design ist im Kapitel \ref{sec: Front-End} einsehbar. 
 
 \subsection{Definierte Farben}
-Text
+Das Produktdesign basiert auf dem Front-End Framework Bootstrap. In Bootstrap werden alle Farben in der Datei “app.css” definiert. Hier ein textueller Ausschnitt, der vom Projektteam verwendeten Farben:
+\\
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=15cm,width=4cm]{images/DefinierteFarben}
+	\caption{Farben in Bootstrap}
+	\label{fig: Farben in Bootstrap}
+\end{figure}
+\newpage
+Auf Wunsch des Auftraggebers wurden jedoch einige Farben aus den CSS Dateien der bereits vorhanden Website extrahiert und bei diesem Produkt verwendet. Folgende Farben wurden extrahiert:
+\\
+\\
+\begin{tabular}{|c|c|c|c|c|}
+	\hline
+	Hex & CMYK & RGB & HSV & HSL \\
+	\hline
+	\#1b8836 & 80\%, 0\%, 60\%, 47\% & 27, 136, 54 & 135, 80\%, 53\% & 135, 67\%, 32\%  \\
+	\hline 
+	\#f8f9fa & 1\%, 0\%, 0\%, 2\% & 247, 250, 250 & 80, 1\%, 98\% & 80, 23\%, 97\% \\
+	\hline
+	\#e84d3d & 0\%, 67\%, 74\%, 9\% & 232, 77, 61 & 6, 74\%, 91\% & 6, 79\%, 57\% \\
+	\hline
+	\#212529 & 20\%, 10\%, 0\%, 84\% & 33, 37, 41 & 210, 20\%, 16\% & 210, 11\%, 15\% \\
+	\hline
+	\#f1f1f1 & 19\%, 10\%, 0\%, 84\% & 241, 241, 241 & 210, 20\%, 16\% & 210, 11\%, 15\% \\
+	\hline
+	\#0d6efd & 95\%, 57\%, 0\%, 1\% & 13, 109, 252 & 216, 95\%, 99\% & 216, 98\%, 52\% \\
+	\hline
+	\#21a500 & 80\%, 0\%, 100\%, 35\% & 33, 166, 0 & 108, 100\%, 65\% & 108, 100\%, 33\% \\
+	\hline
+	
+	
+\end{tabular}
 
 \subsection{Überschriften}
-Text
+Überschriften werden bei diesem Produkt vorrangig verwendet, um anzuzeigen, über welches Thema der Fließtext, der sich meist direkt unter einer Überschrift befindet, handelt. Bei diesem Produkt wurden Überschriften der Gattung <h1>, <h2> und <h3> verwendet. Aus Design technischen Gründen, befindet sich jede Überschrift immer direkt in der Mitte der Website. Jede Überschrift, welche außerhalb eines Fließtextes steht, ist in der Farbe \#1b8836 eingefärbt und in der Schriftart Smooch Snans formatiert. Überschriften, welche sich in einem Fließtext befinden, werden in der Farbe \#212529 eingefärbt. Folgende Überschriften sind auf unserem Produkt vorhanden: 
+\begin{itemize}
+	\item Intelligente Strom- und Mikronetze
+	\item Entwicklungsfelder und Anwendungsgebiete
+	\item Forschungsprojekt Microgrid Lab
+	\item Datenschutzerklärung
+	\item DSGVO
+	\item Impressum
+\end{itemize}
+\newpage
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=8cm,width=14cm]{images/UberschrieftenImFließtext}
+	\caption{Überschriften im Fließtext}
+	\label{fig: Überschriften im Fließtext}
+\end{figure}
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=8cm,width=14cm]{images/ImpressumUberschrift}
+	\caption{Überschriften außerhalb des Fließtextes}
+	\label{fig: Überschriften außerhalb des Fließtextes}
+\end{figure}
+\newpage
 
 \subsection{Interaktionsfarben}
-Text
+Interaktionsfarben werden verwendet, um eine Aktion zu kennzeichnen. Bei diesem  Produkt gibt es zwei verschiedene Interaktionsfarben. Die erste Farbe ist „\#21a500“ und die zweite „\#f1f1f1“. Die erste Farbe ist ersichtlich, wenn mit dem Mauszeiger über den Datatable gefahren wird. Und die zweite Farbe wird ersichtlich, wenn mit dem Mauszeiger auf das Drop-Down in der Galerie gefahren wird, um ein Energiesystem auszuwählen. Wenn dies geschieht, verfärben sich die einzelnen Auswahlelemente in die Farbe „\#f1f1f1“. 
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=8cm,width=15cm]{images/InteraktionDataTable}
+	\caption{Interaktion mit dem Datatable}
+	\label{fig: Interaktion mit dem Datatabel}
+\end{figure}
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=8cm,width=15cm]{images/InteraktionDropDown}
+	\caption{Interaktion mit dem Drop-Down in der Galerie}
+	\label{fig: Interaktion mit dem Datatabel}
+\end{figure}
 
 \subsection{Schriftarten}
-Text
-
+Unser Produkt verwendet die Schriftarten Smooch Sans und Hubballi. Diese Schriftarten sind von Google Fonts frei zur Verfügung und zur Verwendung gestellt. Hubballi wurde für jede Art von Fließtext verwendet. Smooch Snans wurde verwendet, um die Überschriften zu formatieren. Nachfolgend ein textueller Ausschnitt, um eine bessere Vorstellung über die Schriften zu bekommen:
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=2cm,width=5cm]{images/HubaliBeispielstext}
+	\caption{Beispielstext Hubballi}
+	\label{fig: Beispielstext Hubballi}
+\end{figure}
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=2cm,width=5cm]{images/BeispielstextSmothSans}
+	\caption{Beispielstext Smooch Snans}
+	\label{fig: BeispielstextSmothSans}
+\end{figure}
 \subsection{Schriftgrade}
-Text
-
+Die Schriftgrade variieren bei diesem Produkt nur bei der Anzeige der aktuellen Seite.
+Die Überschriften Home, Energiesysteme und Galerie werden mithilfe des <b> Tags beim Besuchen der gleichnamigen Seite fett gemacht. Dadurch, dass die aktuelle Seite immer fett geschrieben wird, wird die Navigation durch das Produkt erleichtert.
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=3cm,width=16cm]{images/Header}
+	\caption{Header auf der Website}
+	\label{fig: Header}
+\end{figure}
+\newpage
 \subsection{Logo}
-Text
+Beim Logo hat sich das Projektteam an den Wunsch des Auftraggebers gehalten und ein Logo, welches von Seitens des Auftraggebers zur Verfügung gestellt wurde, verwendet. Zwei Logos wurden zur Verfügung gestellt und gemeinsam wurde sich auf das Logo in Abbildung xy Logo 1 geeinigt. Das Projektteam rät jedoch dazu, bei Logos SVG Grafiken zu verwenden und nicht wie in diesem Fall eine JPG Grafik. Da dies jedoch für den Auftraggeber keine Relevanz hatte, wurde wie besprochen das Logo in Abbildung xy Logo 1 verwendet.
+\\
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=3cm,width=14cm]{images/Logo1}
+	\caption{Header auf der Website}
+	\label{fig: Header}
+\end{figure}
+\\
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=3cm,width=14cm]{images/Logo2}
+	\caption{Header auf der Website}
+	\label{fig: Header}
+\end{figure}
+
 
 \subsection{Verwendete Icons und deren Bedeutungen} \label{sec:Verwendete Icons und deren Bedeutungen}
-Text
+Bei diesem Produkt werden Icons verwendet, um Energiesysteme oder Energietechnologien auf der Map visuell darzustellen. Ein weiteres Einsatzgebiet der Icons sind Formulare oder Übersichten, wo sie Auskunft über die geforderten oder angezeigten Daten geben. Eine Liste mit allen Icons und deren Bedeutung ist hier zusammengefasst:
 
+
+\begin{table}[]
+	\caption{}
+	\label{tab:my-table}
+	\begin{tabular}{|l|l|}
+		\hline
+		\includegraphics[height=1cm,width=1cm]{images/Icons/AzSpeicherES} & Zeigt die gesamte Verbraucher Energie                    \\ \hline
+		\includegraphics[height=1cm,width=1cm]{images/Icons/AzETES} & Zeigt die Anzahl der Energietechnologien                 \\ \hline
+		\includegraphics[height=1cm,width=1cm]{images/Icons/BildET}& Zeigt die Anzahl der Speicher in einem Energiesystem     \\ \hline
+		\# & Zeigt die Anzahl der Verbraucher in einem Energiesystem  \\ \hline
+		\# & Zeigt die  Gesamte Erzeuger und deren Leistung           \\ \hline
+		\# & Zeigt die Katastralgemeinde in der sich ein Energiesystem befindet                     \\ \hline
+		\# & Zeigt den Längengrad eines Energiesystems oder einer Energietechnologie                \\ \hline
+		\# & Zeigt den Ort eines Energiesystems                       \\ \hline
+		\# & Zeigt die Postleitzahl eines Energiesystems              \\ \hline
+		\# & Zeigt den Typ der Energietechnologie                     \\ \hline
+		\# & Zeigt die Beschreibung der Energietechnologie            \\ \hline
+		\# & Zeigt die Bezeichnung des Energiesystems                 \\ \hline
+		\# & Zeigt ein Bild der Energietechnologie                    \\ \hline
+		\# & Zeigt den Breitengrad einer Energietechnologie oder eines Energiesystems               \\ \hline
+		\# & Zeigt die gesamte  gesamte Energie einer Energietechnologie                            \\ \hline
+		\# & Zeigt die gesamte Nennleistung eines Energiesystems      \\ \hline
+		\# & Zeigt die gesamte Erzeuger Leistung eines Energiesystems \\ \hline
+		\# & Zeigt die gesamte Erzeuger Energie in einem Energiesystem                              \\ \hline
+		\# & Zeigt den aktuellen Netzbezug eines Energiesystems       \\ \hline
+		\# & Symbolisiert ein Windkraftwerk                           \\ \hline
+		\# & Symbolisiert eine Batterie                               \\ \hline
+		\# & Symbolisiert einen Wärmespeicher                         \\ \hline
+		\# & Symbolisiert ein Wasserstoffspeicher                     \\ \hline
+		\# & Symbolisiert ein Wohnhaus                                \\ \hline
+		\# & Symbolisiert einen Stromnetzbezug                        \\ \hline
+		\# & Symbolisiert eine Solartherme                            \\ \hline
+		\# & Symbolisiert einen saisonalen Wärmespeicher              \\ \hline
+		\# & Symbolisiert eine Pv-Anlage                              \\ \hline
+		\# & Symbolisiert ein E-Tankstelle                            \\ \hline
+		\# & Symbolisiert eine Gemeinde                               \\ \hline
+		\# & Symbolisiert ein Haus                                    \\ \hline
+		\# & Symbolisiert eine Raffinerie                             \\ \hline
+		\# & Symbolisiert eine Wärmepumpe                             \\ \hline
+		\# & Symbolisiert eine Ab oder Absorptionskältemaschine       \\ \hline
+		\# & Symbolisiert eine Kompressionskältemaschine              \\ \hline
+		\# & Symbolisiert einen Kältespeicher                         \\ \hline
+		\# & Symbolisiert eine Industrie                              \\ \hline
+		\# & Symbolisiert einen Gebäude Kältebedarfszähler            \\ \hline
+		\# & Symbolisiert einen Elektrolyseur                         \\ \hline
+		\# & Symbolisiert ein Biomasseheizkraftwerk                   \\ \hline
+		\# & Symbolisiert einen Biomassekessel                        \\ \hline
+		\# & Symbolisiert ein Elektroauto                             \\ \hline
+		\# & Symbolisiert eine Brennstoffzelle                        \\ \hline
+		\# & Symbolisiert ein Energiesystem auf der Karte             \\ \hline
+		\# & Symbolisiert ein Energiesystem auf der Karte, sobald dieses ausgewählt wurde           \\ \hline
+		\# & Symbolisiert eine Energietechnologie auf der Karte       \\ \hline
+		\# & Statistiken eines Energiesystems bei klick auf Auge Icon \\ \hline
+		\# & Löschen eines Energiesystems oder einer Energietechnologie bei Klick auf den Mülleimer \\ \hline
+		\# & Grafana Statistiken bei Klick auf das Icon               \\ \hline
+		\# & Bearbeiten einer Energietechnologie oder eines Energiesystems                          \\ \hline
+	\end{tabular}
+\end{table}
+\newpage
 \subsection{Map Icons}
-Text
+Das Produkt verwendet die vom Auftraggeber bereitgestellte Icons, um Energietechnologien oder Energiesystem auf der Karte visuelle darzustellen. Die Icons auf der Map sehen folgendermaßen aus:
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=6cm,width=10cm]{images/MapIcons}
+	\caption{Icons auf der Map}
+	\label{fig: Icons auf der Map}
+\end{figure}
+\\
+Um Energiesysteme oder Energietechnologien zu verzeichnen, werden folgende Icons verwendet: 
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=1cm,width=1cm]{images/Icons/esrot}
+	\caption{Icon markiert ein Energiesystem}
+	\label{fig: EnergiesystemIcon}
+\end{figure}
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=1cm,width=1cm]{images/Icons/etrot}
+	\caption{Icon markiert eine Energietechnologie}
+	\label{fig: EnergietechnologieIcon}
+\end{figure}
+
+
 
 \subsection{Icons in Formularen}
-Text
+Alle weiteren verwendeten Icons wurden von flaticons.com implementiert. Diese Icons werden dazu genutzt, um in Formularen anzuzeigen, welche Art von Wert verlangt wird. Des Weiteren werden diese Icons in Übersichten verwendet, um dem Benutzer anzuzeigen, um welchen Wert es sich handelt. Um diese Icons jedoch verwenden zu dürfen, mussten alle Autoren in der Datenschutzseite verlinkt werden. Hier ein Beispiel, wie diese Anwendungsfälle auf der Website aussehen:
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=10cm,width=5cm]{images/IconsInÜbersichten}
+	\caption{Icon in Übersichten}
+	\label{fig: Icons in Übersichten}
+\end{figure}
+\newpage
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=6cm,width=5cm]{images/IconsInFormularen}
+	\caption{Icon in Formularen}
+	\label{fig: Icons in Formularen}
+\end{figure}
+\newpage
+Aus Lizenztechnischen Gründen wurde jeder Autor eines Icons auf unserer Seite im Datenschutz verlinkt. Dies sieht folgendermaßen aus:
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=10cm,width=7cm]{images/IconAutorVerlinkungen}
+	\caption{Autoren Verlinkungen}
+	\label{fig: Autoren Verlinkungen}
+\end{figure}
 
+\newpage
 \subsection{Icons im DataTable}
-Text
+Folgende Icons werden  verwendet, um Energiesystem oder Energietechnologien zu bearbeiten, zu löschen oder auf deren Grafana Statistiken zuzugreifen.
+\begin{table}[h]
+	\caption{}
+	\label{tab:my-table}
+	\begin{tabular}{|l|l|}
+		\hline
+		Icon & Funktion                                                                                     \\ \hline
+			\includegraphics[height=1cm,width=1cm]{images/Icons/statistik}& Mit einem Klick auf dieses Icon öffnet sich ein Pop-up,\\& auf welchem die dazugehörigen  Grafana Statistiken präsentiert werden       \\ \hline
+			\includegraphics[height=1cm,width=1cm]{images/Icons/delete}  & Mit einem Klick auf dieses Icon wird das ausgewählte Energiesystem gelöscht                  \\ \hline
+			\includegraphics[height=1cm,width=1.5cm]{images/Icons/auge} & Mit einem Klick auf dieses Icon werden erweiterte Infos zu dem ausgewählten System angezeigt \\ \hline
+			\includegraphics[height=1cm,width=1cm]{images/Icons/stift} & Mit einem Klick auf dieses Icon öffnet sich eine Bearbeitungsmöglichkeit,\\& auf welcher man die Eigenschaften des Systems ändern kann \\ \hline
+	\end{tabular}
+\end{table}
+
+Auf der Website werden diese Icons im Datatable hinter einer Energietechnologie oder einem Energiesystem eingeblendet. Dies sieht folgendermaßen aus:
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=10cm,width=15cm]{images/IconsImDatatable}
+	\caption{Icons im Datatable}
+	\label{fig: Icons im Datatable}
+\end{figure}
+
 
 \subsection{Buttons}
-Text
+Buttons werden bei diesem Produkt ausschließlich genutzt, um Formulare abzusenden. Buttons befinden sich immer mittig unter einem Formular und  haben die Hintergrundfarbe \#1b8836. Folgende Buttons wurden verwendet: 
 
 \subsection{Tabelle mit generellen Informationen über einzelne HTML Elemente}
-Text
+Hier ist wichtig zu definieren für was welches HTML Element verwendet wurde. <h1>,  <h2> und <h3> wurden verwendet um Überschriften zu definieren. In einem <p> Element befindet sich immer ein Fließtext. Mit dem <a> Element werden Links definiert. Bei diesem Produkt wurden im Header die Navigationsmöglichkeiten mit diesem Element versehen. 
+\begin{table}[h]
+	\caption{}
+	\label{tab:genrelle Infos}
+	\begin{tabular}{|l|l|l|l|l|}
+		\hline
+		HTML Element                & Schriftart  & Größe  & Farbe              & Style class oder id   \\ \hline
+		\textless{}h1\textgreater{} & Smooch Sans & 2em & \#1b8836  \#212529 & \begin{tabular}[c]{@{}l@{}}DsgvoUberschrift\\ ImpressumUberschrieft\end{tabular} \\ \hline
+		\textless{}h2\textgreater{} & Smooch Sans & 1.5em  & \#1b8836  \#212529 & NavUberschrift        \\ \hline
+		\textless{}h3\textgreater{} & Smooch Sans & 1.17em & \#1b8836  \#212529 & FliesstextUberschrift \\ \hline
+		\textless{}p\textgreater{}  & Hubballi    & -      & \#000000           & text-primary          \\ \hline
+		\textless{}a\textgreater{}  & Hubballi    & -      & \#1b8836           & dropdown-item         \\ \hline
+	\end{tabular}
+\end{table}
+
 
 \subsection{Datenformate}
-Text
-
+Auf dem Produkt befindet sich eine Diashow, die Bilder des Projektes Micro Grid Lab der Best GmbH präsentiert. Alle diese Bilder haben das Dateiformat JPG. Eines der präsentierten Bilder ist im Dateiformat PNG. Alle verwendeten Icons sind als PNG auf dem Produkt eingebunden. Die Fotos der Sponsoren aus dem Footer sind gemischt im PNG und im JPG Format. Das Logo, wie bereits im Kapitel 2.6.5.6 erwähnt, ist im Format JPG. Hier rät das Projektteam jedoch dazu, eine Vektorgrafik mit dem Dateiformat SVG zu verwenden.
 
 
 \section{Weboberfläche}
@@ -1114,34 +1390,109 @@ Sobald die Adresssuche durchgeführt wird, werden für die eingegebene Adresse d
 \\
 
 \newpage
-\subsection{Front-End}
-Text
+\subsection{Front-End} \label{sec: Front-End}
+Das Projektteam hat sich bei der Front-End Gestaltung an die Vorgabe des Auftraggebers gehalten und sich an der bereits vorhanden Website der Best Gmbh orientiert. Das Produkt wurde dann mithilfe der Laravel Layout Funktion in Header Footer und Content unterteilt. Nähere Informationen dazu sind im Kapitel 3.5.4 vermerkt. Generell ist das Produkt gegliedert in folgende Unterseiten: 
+\begin{itemize}
+	\item Home 
+	\item Energiesysteme
+	\item Galerie 
+	\item Impressum 
+	\item Datenschutz
+	\item Registrierungsseite
+\end{itemize}
+Auf die oben aufgezählten Unterseiten wird in den nachfolgenden Kapiteln genauer eingegangen.
 
 \subsubsection{Home}
-Text
+Die Home Seite ist die erste Seite, die ein Benutzer zu Gesicht bekommt, wenn er das Produkt aufruft. Die Seite besteht aus einer Diashow, die Bilder des Micro Grid Lab Projekts der Best GmbH zeigt. Unter dieser befindet sich ein Textbereich, auf welchem sich das Projekt “Micro Grid Lab” kurz vorgestellt wird. Hier ein Bild der besagten Seite:
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=7cm,width=14cm]{images/HomeSeite1}
+	\caption{oberer Teil der Home Seite}
+	\label{fig:HomeSeite1}
+\end{figure}
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=7cm,width=14cm]{images/HomeSeite2}
+	\caption{unterer Teil der Home Seite}
+	\label{fig:HomeSeite1}
+\end{figure}
 
 \subsubsection{Energiesysteme}
-Text
+Die Energiesysteme Seite ist die Seite, wo die Hauptfunktion des Produkts verwendet werden kann. Auf dieser wird die Verwaltung der Energiesysteme und Energietechnologien mithilfe einer Map visuell dargestellt. Diese Seite besteht aus einer Google Maps Karte, welche sich auf der linken Seite der Website befindet. Ebenso einem Datatable auf der rechten Hälfte der Website. Hier ein Bild der eben beschriebenen Seite:
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=6cm,width=14cm]{images/EnergiesystemSeite}
+	\caption{die Energiesystem Seite}
+	\label{fig:Energiesystem Seite}
+\end{figure}
+\newpage
 
 \subsubsection{Galerie}
-Text
+Das Produkt bietet auch die Möglichkeit, zu jeder Energietechnologie ein dementsprechendes Bild zu speichern. Dieses Bild wird dann in der Bildergalerie angezeigt. Durch einen Dropdown, welches sich oben in der Mitte der Seite befindet, kann ein Energiesystem auswählt werden. Von diesem ausgewählten Energiesystem werden dann alle dazugehörigen Energietechnologien mit dem entsprechendem Bild angezeigt. Die Galerie sieht folgendermaßen aus:
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=6cm,width=14cm]{images/GalerieSeite}
+	\caption{die Galerie}
+	\label{fig:Galerie}
+\end{figure}
+
 
 \subsubsection{Impressum}
-Text
+Auf der Impressumsseite, welche durch den Footer erreichbar ist, ist das Impressum der Website einsehbar. Die Seite hat eine Überschrift  “Impressum” und darunter befindet sich ein Textbereich  mit dem dazugehörigen Impressum. Am Ende des Impressums befindet sich noch ein Link, welcher auf die Homepage der Best GmbH weiterleitet. Hier ist ein Foto der Impressum Seite:
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=6cm,width=14cm]{images/ImpressumSeite}
+	\caption{das Impressum}
+	\label{fig:Impressum}
+\end{figure}
+\newpage
 \subsubsection{Datenschutz}
-Text
-
+Wie auch die Impressumsseite ist die Datenschutzseite durch den Footer erreichbar. Diese ist gleich aufgebaut wie die Impressumsseite. Auch hier gibt es wieder mittig eine Überschrift “Datenschutz”, unter welcher wieder ein Textbereich vorhanden ist. In diesem Textbereich  ist die Datenschutzgrundverordnung des Produkts einsehbar.  Hier ein Foto der Datenschutzseite:
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=6cm,width=14cm]{images/DSGVOSeite}
+	\caption{die Datenschutz Seite}
+	\label{fig:DSGVO}
+\end{figure}
 \subsubsection{Registrierungsseite}
-Text
+Die Registrierungsseite kann nur von einem Administrator erreicht werden. Auf dieser Seite ist es möglich, neue Benutzer zu registrieren und bereits vorhandene Benutzer zu löschen. Genauere Informationen zu dieser Seite sind im Kapitel 3.5.3 nachlesbar. Hier ein Foto der Registerseite:
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=7cm,width=14cm]{images/RegisterSeite}
+	\caption{die Registrierungsseite }
+	\label{fig:RegisterSeite}
+\end{figure}
+\newpage
+
 
 \subsection{Login}
-Text
+Möchte sich ein Benutzer beim Produkt anmelden, kann er dies beim Login Feld, welches in  Abbildung xy Login Feld ersichtlich ist. Dort meldet er sich mit einer E-Mail-Adresse und einem Passwort an, welche vorher auf der Registrierungsseite angelegt wurde. Nach Eingabe  der Daten ,wird überprüft ob die Daten in der Datenbank vorhanden sind und das Passwort richtig eingegeben wurde. Das Login feld sieht folgendermaßen aus :
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=5cm,width=7cm]{images/LoginFeld}
+	\caption{das Login Formular}
+	\label{fig:LoginFormular}
+\end{figure}
 
 \subsection{Registrierung}
-Text
-
+Um neue Benutzer registrieren zu können, gibt es eine eigene Registrierungsseite. Diese Seite, ersichtlich in Abbildung xy Registrierungsseite, besteht aus einem Formular und einem Datatable und kann nur von Benutzern mit der Rolle Admin aufgerufen werden. Auf dem Datatable werden alle vorhandenen Benutzer angezeigt. Des Weiteren bietet er die Möglichkeit, vorhandene Benutzer zu löschen. Das Formular ermöglicht es, Benutzer mit folgenden Werten anzulegen:
+\begin{itemize}
+	\item Name  
+	\item E-Mail-Adresse
+	\item Passwort  
+	\item Rolle 
+\end{itemize}
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=5cm,width=7cm]{images/RegisterFormular}
+	\caption{das Register Formular}
+	\label{fig:Register Formular}
+\end{figure}
 \newpage
+
+
 \subsection{Kartendienst Funktionalitäten}
 Neben den bekannten Kartendienst-Funktionen wie das Erstellen eines Energiesystems oder einer Energietechnologie bietet die Karte weitere Funktionen. Diese weiteren Funktionen sind das Auswählen und Abwählen eines Energiesystems.
 
@@ -1340,24 +1691,33 @@ Text
 
 
 \section{Einbindung von Google Maps}
-Text
+Um eine Karte zur Verwaltung und Visualisierung auf dem Produkt zu Verfügung zu stellen, hat sich das Projektteam für den Kartendienst Anbieter Google Maps entschieden. Um die Funktionen von Google Maps zu nutzen, muss ein Google Cloud Account erstellt und eingebunden werden. Was Google Cloud ist und wie es verwendet wird, ist in den nachfolgenden Kapiteln genauer erklärt.
 
 \subsection{Google Cloud}
-Text
+Google Cloud ist die zentrale Verwaltung aller von Google bereitgestellten Cloud Dienste. Das Projektteam benötigt diese Plattform, um die Google Maps Karte in das Produkt einzubinden. In den nachfolgenden Kapiteln werden alle Schritte erklärt, die es benötigt, um das Projekt zusammen mit Google Cloud verwenden zu können.
+
 
 \subsection{Google Cloud Platform Account erstellen}
-Text
+Um Zugriff auf die Google Cloud Dienste zu erlangen ist es nötig, sich ein Konto dort zu erstellen. Aufrufbar ist die Seite über den Link : https://cloud.google.com.  Um eine genaue Anleitung zu bekommen wie man einen Account auf dieser Seite erstellt, ist im Dokument Google Maps Api zu finden.
 
 \subsection{Apis aktivieren und einbinden}
-Text
+Um diverse Funktionen auf der Map zu ermöglichen, werden die von Google bereitgestellten API Dienste benötigt.  Diese Api Dienst müssen auf der Google Cloud Website aktiviert werden. Folgende Apis werden benötigt:
+\begin{itemize}
+	\item Geocoding Api 
+	\item Javascript Api
+	\item Places Api  
+\end{itemize}
+Nach Aktivierung der oben aufgezählten Apis , muss ein dazugehöriger Api Key erstellt werden. Dieser Api Key ermöglicht es, mit dem Produkt auf die Google Cloud Dienst zuzugreifen. Auf Google Cloud sind die Keys unter der Navigier Möglichkeit  “Anmeldedaten” ersichtlich. Dort können diese auch  erstellt oder gegebenenfalls gelöscht werden. Wenn ein Api Key erstellt wurde, muss dieser im Programm eingebunden werden. Er wird überall dort eingebunden, wo diese Dienste verwendet werden oder eine Anfrage an die Api gesendet wird. Um genauere Informationen und eine Step by Step Anleitung zu bekommen, lesen sie in der Datei Google Maps Api nach.
 
+\newpage
 \subsection{Individuelle Map erstellen und einbinden}
-Text
+Eine weitere Funktion, die von Google Cloud angeboten wird, ist das Erstellen einer eigenen Map. 
+Um eine eigene Map einzurichten, muss zuerst ein Map Design erstellt werden, welches später mit der Map verknüpft wird. Das Map Design bietet die Möglichkeit, diverse Orte ,Gebäude und Lokale  ein oder auszublenden. Straßen oder Straßenbezeichnungen können angezeigt oder verstecken werden. Wenn die erstellte Map mit dem richtigen Map Design verbunden ist, muss ein dazugehöriger Map Key erstellt werden. Dieser Map Key muss dann in jeder Stelle im Code eingebunden werden, wo eine Google Maps Karte initialisiert wird. Um eine Step by Step Anleitung zu bekommen, lesen sie in der Datei Google Maps Api nach.
 
 
 
 \chapter{Resümee und Ausblick}
-Text
+Die Diplomarbeit ist sehr gut verlaufen, jedoch würde das Projektteam andere Ansätze wählen bei einem Projekt gleicher Art. Die Kommunikation mit dem Auftraggeber hat sehr gut funktioniert, jedoch sind bei den laufenden Meetings immer wieder neue Änderungsvorschläge vonseiten des Auftraggebers gekommen. Dadurch entstanden für das Projektteam immer wieder neue Herausforderungen welche zusätzlich zum definierten Projektziel umgesetzt werden sollten. Am Start der Entwicklung hatte das Projektteam mehrere Komplikationen bei der Verwendung  von Git, da dabei immer wieder unerklärliche Fehler aufgetreten sind. Diese Fehler konnten jedoch mit der Zeit vom Projektteam gelöst werden womit eine reibungslose Zusammenarbeit möglich wurde.Das Projektteam wird sich nach Abschluss der Diplomarbeit darum kümmern, die letzten Änderungsvorschläge des Auftraggebers umzusetzen. Anschließend ist das Projektteam nicht länger für das Produkt und dessen Verwaltung zuständig.
 
 
 \chapter{Quellen und Literatur}
