@@ -528,24 +528,162 @@ Für genauere Informationen, wie eine Berechtigungsüberprüfung in Laravel umge
 
 
 \section{Ui/Ux Design}
+Im Wort Ui/Ux Design steht das Ui für User Interface und Ux für User Experience. Es handelt davon, wie eine Website von einem Nutzer aufgefasst und wahrgenommen wird. Es beschreibt die Wirkung, die das Design auf einen Nutzer hat. Genauer beschreibt die User Experience wie sich ein Nutzer auf der Website fühlt oder wie er auf ihr navigieren kann. 
+Ziel ist es, dem Benutzer ein möglichst entspanntes Gefühl zu geben und ihm bei Allem zu helfen. Das User Interface beschäftigt sich vielmehr mit der Website an sich. Man macht sich hierbei Gedanken, ob der Benutzer das Design ansprechend finden könnte, oder ob überall die idealen Elemente oder Elementgrößen gewählt wurden. Eine weitere Frage, die man sich im User Interface überlegt, ist was wirkt auf den Benutzer positiv was negativ. Einige Methoden das Ui/Ux Design umzusetzen sind : 
+
+\begin{itemize}
+	\item Erstellen eines Wireframes 
+	\item Umfragen an Usern durchführen
+	\item Fragebögen auf der Seite selbst 
+	\item erstellen einer Übersicht mit den Anforderungen der Benutzer
+\end{itemize}
+Nützliche Programme zum Erstellen der besagten Dokumente  sind folgende : 
+\begin{itemize}
+	\item Kissmetrics
+	\item Figma
+	\item SimilarWeb
+\end{itemize}
 
 \subsection{Wireframe}
-
+Ein Wireframe hilfe dem Design Team eine grobe Struktur der Website vorzudefinieren. Bei der Erstellung eines Wireframes wird der Visuelle Design Part komplett vernachlässigt. Bei einem Wireframe wird sich auf den Aufbau und die Position der Elemente konzentriert. Es ist meist in schwarz und weiß gehalten, da Farben bei diesem Aufbauprozess nur behindern würden. 
 \subsection{Persona}
-
+Eine Persona dient dazu, die Bedürfnisse und Ziele der Zielgruppe zu erfassen. Mit hilfe der Persona kann auf Wünsche und Bedürfnisse der Benutzer während der Entwicklung eingegangen werden. Empfohlen wird pro Zielgruppe um die fünf bis sechs Personen das Produkt testen zu lassen. Erstellt werden sie dann auf Grundlage von :
+\begin{itemize}
+	\item Interviews mit dem Benutzer
+	\item Benutzertests
+	\item Umfragen
+\end{itemize}
 
 \section{Template Layout}
+Laravel bietet die Möglichkeit, mithilfe einer Layout Datei, Codeabschnitte auf mehreren Seiten zu verwenden. Hauptsächlich wird diese Funktion genutzt, um statische Elemente, die auf jeder Unterseite gleich sind, nur einmal zu programmieren. Ein gutes Beispiel wäre der Header oder auch der Footer, da sich diese Elemente auf den Unterseiten meist nicht variieren. 
 
 \subsection{Platzhalter Yield}
+In der Layout Datei kann \@yield verwendet werden, um Platz zu halten. Dies ermöglicht es, beispielsweise den Titel der Website individuell für jede Unterseite zu setzen. Der Platzhalter wird in der Layout Datei folgendermaßen konfiguriert:  <title>\@yield('title')</title> .  Möchte man diesen Platzhalter dann auf einer der Unterseiten, welche die Layout Datei verwenden, setzen, ist das folgendermaßen möglich : \@section('title', 'titlename'). Das Projektteam verwendet dieses Statement auf jeder Unterseite, um den Titel zu setzen.
 
 \subsection{Sections}
+Sections ermöglichen es, die Layout Datei in Abschnitte zu unterteilen. Der Beginn einer Section wird mit dem Befehl: \@section('sectionname) gekennzeichnet. Um die Section wieder zu schließen, muss folgendes Statement benutzt werden: \@endsection. Die Einteilung des Codes in Section erlaubt es, dieses Codestück auf einer anderen Seite mit nur einem Stichwort einzubinden. 
 \subsection{Einbindung der definierten Sections}
-
+Um diese im Layout File definierten Sections im Code einbinden zu können, müssen einige Einstellungen vorgenommen werden. Am Anfang einer neuen Seite muss dieser Code eingefügt werden: \@extends('layoutfilenname'). Damit wird der Seite mitgeteilt, dass die angegebene Seite als Layout Vorlage verwenden werden soll. Wenn diese Zeile vorhanden ist, können mittels\@section('sectioname') die im Layout File definierten Sections eingebunden werden. Wichtig ist,  jedesmal nach dem \@section auch ein \@endsection einzugeben, sonst wird die Section nicht angezeigt. Zur Ergänzung der Section kann man den zu ergänzenden Code einfach zwischen dem \@section und dem \@endsection platzieren. Dieser wird dann zum bereits vordefinierten Code ergänzt.
 
 \section{Laravel Befehle}
-
+Laravel bietet die Möglichkeit, viele Dinge mithilfe der Konsole Models,Controller oder Views, automatisch generieren zu lassen. In den folgenden Unterkapiteln werden die Wichtigsten dieser Befehle aufgelistet und kurz erklärt.
 \subsection{Migration Befehle}
+Um eine neue Migration zu erstellen, muss folgendes Kommando in der Commandline ausgeführt werden:
+\definecolor{mygray}{RGB}{252,251,244}
+\renewcommand{\lstlistingname}{Quellcode}
+
+\begin{lstlisting}[
+	caption={Erstellen einer neuen Migration},
+	label=Code,
+	language=octave,
+	numbers=left,
+	firstnumber=1,
+	numberfirstline=false,
+	backgroundcolor=\color{mygray},
+	basicstyle=\footnotesize=15,
+	keywordstyle=\color{blue}
+	]
+php artisan make:migration migration_name
+\end{lstlisting}
+Wenn die Migration erfolgreich erstellt und initialisiert wurde, kann man mit folgendem Kommando die up() Methode aller Migrations aufrufen:
+\definecolor{mygray}{RGB}{252,251,244}
+\renewcommand{\lstlistingname}{Quellcode}
+
+\begin{lstlisting}[
+	caption={Erstellen einer neuen Migration},
+	label=Code,
+	language=octave,
+	numbers=left,
+	firstnumber=1,
+	numberfirstline=false,
+	backgroundcolor=\color{mygray},
+	basicstyle=\footnotesize=15,
+	keywordstyle=\color{blue}
+	]
+	php artisan migrate
+\end{lstlisting}
+Nach Ausführung dieses Kommandos sind alle Tabellen in der Datenbank so wie gewünscht erstellt. 
+Um alle ausgeführten Migrations anzeigen zu lassen, muss dieses Kommando verwendet werden:
+\definecolor{mygray}{RGB}{252,251,244}
+\renewcommand{\lstlistingname}{Quellcode}
+
+\begin{lstlisting}[
+	caption={Erstellen einer neuen Migration},
+	label=Code,
+	language=octave,
+	numbers=left,
+	firstnumber=1,
+	numberfirstline=false,
+	backgroundcolor=\color{mygray},
+	basicstyle=\footnotesize=15,
+	keywordstyle=\color{blue}
+	]
+php artisan migrate:status
+\end{lstlisting}
+Wenn die zuletzt erstellten Tabellen rückgängig gemacht werden sollen, gibt es die Möglichkeit, folgendes Kommando auszuführen:
+\definecolor{mygray}{RGB}{252,251,244}
+\renewcommand{\lstlistingname}{Quellcode}
+
+\begin{lstlisting}[
+	caption={Erstellen einer neuen Migration},
+	label=Code,
+	language=octave,
+	numbers=left,
+	firstnumber=1,
+	numberfirstline=false,
+	backgroundcolor=\color{mygray},
+	basicstyle=\footnotesize=15,
+	keywordstyle=\color{blue}
+	]
+	php artisan migrate:rollback 
+\end{lstlisting}
+Weitere nützliche Befehle sind unter  der Quelle xy () zu finden.
+
 \subsection{Seeder und Factory Befehle}
+Um einen Datenbank Seeder zu erstellen, ist folgendes Kommando notwendig: 
+\begin{lstlisting}[
+	caption={Erstellen einer neuen Migration},
+	label=Code,
+	language=octave,
+	numbers=left,
+	firstnumber=1,
+	numberfirstline=false,
+	backgroundcolor=\color{mygray},
+	basicstyle=\footnotesize=15,
+	keywordstyle=\color{blue}
+	]
+php artisan make:seeder seeder_name
+\end{lstlisting}
+Wenn eine Factory erstellt werden soll, gibt es folgende Möglichkeit:
+\begin{lstlisting}[
+	caption={Erstellen einer neuen Migration},
+	label=Code,
+	language=octave,
+	numbers=left,
+	firstnumber=1,
+	numberfirstline=false,
+	backgroundcolor=\color{mygray},
+	basicstyle=\footnotesize=15,
+	keywordstyle=\color{blue}
+	]
+	php artisan make:factory factory_name
+\end{lstlisting}
+
+Um den Seeder nach Initialisierung auszuführen, gibt es folgende Möglichkeit:
+\begin{lstlisting}[
+	caption={Erstellen einer neuen Migration},
+	label=Code,
+	language=octave,
+	numbers=left,
+	firstnumber=1,
+	numberfirstline=false,
+	backgroundcolor=\color{mygray},
+	basicstyle=\footnotesize=15,
+	keywordstyle=\color{blue}
+	]
+	php artisan db:seed
+\end{lstlisting}
+Weitere nützliche Befehle und Individualizations Möglichkeiten sind unter der Quelle xy() verzeichnet.
 \subsection{Model und Controller Befehle}
 \subsection{Starten des Laravel Develop Servers}
 \subsection{Befehle nach dem Git Pull} 
@@ -577,18 +715,42 @@ Text
 
 
 \section{Datenbankanbindung in Laravel}
-Text
+Um die Datenbank an das Programm anzubinden, müssen einige Änderungen in der .env Datei vorgenommen werden. Genauere Information zur .env Datei befinden sich im Kapitel  2.3.9.1. Welche Konfigurationen genau getätigt werden, können in den nachfolgenden Kapiteln nachgelesen werden. 
 
 \subsection{Datenbank Anmeldeinformationen}
-Text
-
+Eine Änderung war es, die Datenbank Anmeldeinformationen auf die richtigen Einstellungen zu setzen. Es können folgende Parameter gesetzt werden : 
+\begin{itemize}
+	\item DB\_CONNECTION
+	\item DB\_HOST
+	\item DB\_PORT
+	\item DB\_DATABASE
+	\item DB\_USERNAME
+	\item DB\_PASSWORD
+\end{itemize}
+DB\_CONNECTION symbolisiert die Zugriffsvariante auf die Datenbank. DB\_HOST bezeichnet die Domain des Datenbankservers, beispielsweise 127.0.0.1, wenn der Datenbankserver über den Localhost bereitgestellt wird. DB\_PORT ist dementsprechend der Port, auf welchem die Datenbank erreichbar ist. DB\_DATABASE ist der Name der Datenbank, auf die zugegriffen werden soll. DB\_USERNAME der Benutzername, mit welchem man auf die Datenbank zugreifen möchte. Diese Einstellungen sind vom Projekt Team vorgenommen worden, um eine Datenbank verwenden zu können und diese löschen beziehungsweise erstellen zu können.
 \subsection{Mail Server Konfigurationen}
-Text
-
+Um auf der Weboberfläche das Passwort Resetten mittels E-Mail zu ermöglichen, muss Laravel eine E-Mail versenden. Dazu braucht es die nötigen Konfigurationen in der .env Datei. Folgende Attribute müssen gesetzt werden: 
+\begin{itemize}
+	\item MAIL\_MAILER
+	\item MAIL\_HOST 
+	\item MAIL\_PORT 
+	\item MAIL\_USERNAME 
+	\item MAIL\_PASSWORD
+	\item MAIL\_ENCRYPTION 
+	\item MAIL\_FROM\_ADDRESS
+	\item MAIL\_FROM\_NAME 
+\end{itemize}
+Bei MAIL\_MAILER wird das Protokoll eingetragen. Bei MAIL\_HOST wird die Host Domain  eingegeben, also welcher SMTP Server verwendet werden soll. MAIL\_PORT gibt an, unter welchem Port der Server erreicht werden soll. MAIL\_USERNAME: hier muss die E-Mail Adresse, welche zum Absenden der Mail verwendet wird, eingetragen werden. Beim MAIL\_PASSWORD muss das dazugehörige Passwort eingetragen werden. MAIL\_ENCRYPTION gibt an, mit welchem Verfahren verschlüsselt werden soll. MAIL\_FROM\_ADDRESS ist die Adresse, welche beim Empfänger als Sender E-Mail angezeigt wird. MAIL\_FROM\_NAME ist der Name der beim Empfänger angezeigt wird. Das Produkt verwendet diese Einstellungen um eine Passwort Reset Email an den Benutzer zu senden. Alle geforderten Einstellungen wurden nach Übergabe an den Auftraggeber von diesem Konfiguriert. 
 \subsection{Migrations}
-Text
-
-
+Die Migrations wurden dazu verwendet, um Tabellen zu gestalten. In ihnen wurden alle nötigen Attributnamen und deren Datentypen konfiguriert. Das Produkt verwendet folgende von Laravel automatisch erzeugte Migrations für die Benutzerauthentifizierung: 
+\begin{itemize}
+\item 2014\_10\_12\_000000\_create\_users\_table.php
+\item 2014\_10\_12\_100000\_create\_password\_resets\_table.php
+\item 2019\_08\_19\_000000\_create\_failed\_jobs\_table.php
+\item 2019\_12\_14\_000001\_create\_personal\_access\_tokens\_table.php
+\end{itemize}
+Zusätzlich zu diesen bereits erstellten Migrations wurde für jede Energietechnologieart eine eigene Migration angelegt. Darüber hinaus wurden Templates\footnote{ein Template ist ein Grundbauplan} für ein Energiesystem und eine Energietechnologie erstellt. Im Energietechnologien Template sind alle Attribute, die bei jeder Energietechnologie gleich sind. Alle individuellen Attribute werden dann mithilfe der eigener Migrations abgebildet.
+\newpage
 \section{Routen in Laravel}
 Text
 
@@ -616,8 +778,24 @@ Text
 
 
 \section{Corporate Design}
-Text
+Vom Projektteam wurde ein Corporate Design Manual erstellt. Dieses befindet sich auch auf der DVD der Diplomarbeit. In diesem Corporate Design Manual wurden folgende Themen bearbeitet: 
+\begin{itemize}
+	\item Oberfläche
+	\item Definierte Farben
+	\item Verwendung der definierten Farben
+	\item Überschriften
+	\item Buttons 
+	\item Interaktionsfarben
+	\item Schriftarten
+	\item Schriftgrade
+	\item Logo
+	\item Verwendete Icons
+	\item Bedeutung der Icons 
+	\item Icons mit Funktionalitäten 	
+	\item Website Design
 
+\end{itemize}
+Auf die wichtigsten Elemente wird in den nachfolgen Kapiteln eingegangen.
 \subsection{Vorschläge}
 Text
 
@@ -692,17 +870,17 @@ Automatisch ausgefüllte Attribute, welche nicht im Pop-up dargestellt werden:
 \begin{itemize}
 	\item Längengrad 
 	\item Breitengrad
-	\item User-ID
+	\item User\_ID
 \end{itemize}
 
-Die Attribute Längengrad und Breitengrad werden automatisch mithilfe des Mausklicks auf der Karte mit den entsprechenden Koordinaten beim Erstellen des Energiesystems befüllt. Das Attribut User-ID wird automatisch mit der ID des gerade angemeldeten Benutzers ausgefüllt, um das Energiesystem einem Benutzer zuteilen zu können.
+Die Attribute Längengrad und Breitengrad werden automatisch mithilfe des Mausklicks auf der Karte mit den entsprechenden Koordinaten beim Erstellen des Energiesystems befüllt. Das Attribut User\_ID wird automatisch mit der ID des gerade angemeldeten Benutzers ausgefüllt, um das Energiesystem einem Benutzer zuteilen zu können.
 Nachdem der Benutzer alle Daten eingegeben hat, werden diese Daten an den Controller übermittelt, wo anschließend das Energiesystem erstellt und in der Datenbank erfasst wird. Als nächstes werden die gespeicherten Informationen wieder zurück an die Weboberfläche übergeben, um die Energiesysteme-Marker auf der Karte zu platzieren sowie den Inhalt der Liste aller vorhandenen Energiesysteme zu aktualisieren. Die folgende Abbildung zeigt den Ablauf, um ein Energiesystem zu erstellen:
 
 
 
 
 \subsubsection{Energiesystem Bearbeiten}
-Mit dem Stift-Icon beim Energiesystem in der Liste ist es möglich, die Kerndaten eines Energiesystems zu bearbeiten. Die zu bearbeitenden Daten, welche einen weißen Hintergrund  aufweisen, lauten auf „Bezeichnung“, „Katastralgemeinde“ und „Postleitzahl“. Die Koordinaten sowie die User-ID des Energiesystems bleiben konstant und sind nicht änderbar und nicht im Pop-up ersichtlich.
+Mit dem Stift-Icon beim Energiesystem in der Liste ist es möglich, die Kerndaten eines Energiesystems zu bearbeiten. Die zu bearbeitenden Daten, welche einen weißen Hintergrund  aufweisen, lauten auf „Bezeichnung“, „Katastralgemeinde“ und „Postleitzahl“. Die Koordinaten sowie die User\_ID des Energiesystems bleiben konstant und sind nicht änderbar und nicht im Pop-up ersichtlich.
 Folgende weitere Attribute werden bei jedem Energiesystem automatisch berechnet, angezeigt und sind nicht bearbeitbar, sondern dienen nur als weitere Information über das ausgewählte Energiesystem. Das Pop-up zum Bearbeiten eines Energiesystems ist in der Abbildung x.y ersichtlich.
 
 \begin{itemize}
@@ -748,7 +926,7 @@ Automatisch ausgefüllt und nicht im Pop-up dargestellt:
 	\item Längengrad 
 	\item Breitengrad
 	\item Ensys-ID
-	\item User-ID
+	\item User\_ID
 \end{itemize}
 
 Nachdem der Benutzer die Daten im Pop-up ausgefüllt hat, werden diese Informationen über den Controller in der Datenbank erfasst. Anschließend werden die Energietechnologie-Daten an die Weboberfläche übermittelt, um die Energietechnologien auf der Karte darzustellen sowie in der Liste anzuzeigen. Der Ablauf, um eine Energietechnologie zu erstellen, wird in der Abbildung x.y dargestellt:
@@ -757,7 +935,7 @@ Nachdem der Benutzer die Daten im Pop-up ausgefüllt hat, werden diese Informati
 \subsubsection{Energietechnologie Bearbeiten}
 Um eine Energietechnologie zu bearbeiten, muss zuerst ein Energiesystem mit einem Doppelklick ausgewählt werden. Anschließend befinden sich rechts in der Liste alle dazugehörigen Energietechnologien, welche man mit dem Stift-Icon bearbeiten kann. Nach dem Betätigen des Stift-Icons öffnet sich ein Pop-up-Fenster, um die Attribute zu bearbeiten. Dieses Pop-up-Fenster ist in der Abbildung x.y ersichtlich.
 Dabei sind die Attribute „Bezeichnung“, „Ort“, „Bild“ und „Beschreibung“ bearbeitbar. Um dem Benutzer dies deutlich zu machen, weisen diese Attribute einen weißen Hintergrund auf. 
-Die Attribute „Typ“, „Längengrad“, „Breitengrad“, „Ensys-ID“ sowie „User-ID“ sind nicht bearbeitbar.
+Die Attribute „Typ“, „Längengrad“, „Breitengrad“, „Ensys\_ID“ sowie „User\_ID“ sind nicht bearbeitbar.
 Nachdem der Benutzer die Daten bearbeitet hat, werden diese über den Controller in die Datenbank geschrieben. Anschließend werden die Energietechnologie-Daten an die Weboberfläche übergeben, um die Marker auf der Karte zu platzieren sowie den Inhalt der Liste zu aktualisieren. Das nachfolgende Diagramm beschreibt den Ablauf für das Bearbeiten einer Energietechnologie:
 
 
