@@ -324,7 +324,7 @@ In der down() Methode wird die Tabelle von der Datenbank gelöscht. Die beiden M
 Erstellt werden Migrations mithilfe eines weiteren Laravel Befehls, welcher ebenfalls  im Kapitel 3.10.1 beschrieben wird. Wenn die Migration erfolgreich erstellt wurde, ist diese folgendermaßen benannt : JJJJ.MM.DD\_tempname.php und befindet sich im Ordner Projektname\textbackslash database \textbackslash migrations.
 
 
-Alle Informationen liegen der Qulle xy (https://laravel.com/docs/9.x/migrations) zugrunde.
+Alle Informationen liegen der Quelle (https://laravel.com/docs/9.x/migrations) zugrunde.
 \newpage
 \subsubsection{Seeder und Factories}
 Factories ermöglichen es,  Fake Models\footnote{Fake Models sind Models die nur temporär angelegt werden} zu erstellen und mithilfe dieser auf die Datensätze in der Datenbank  zuzugreifen und diese zu verändern. Daten werden mithilfe der Open Source-Bibliothek Faker generiert. Die Faker Bibliothek kann folgende Daten generieren: 
@@ -815,17 +815,66 @@ Um sicher zu stellen, dass alle nötigen Pakete installiert wurden, kann folgend
 Nach Durchführung dieser Schritte sollte sich das Programm problemlos starten und verändern lassen.
 
 
+
+\section{Routen in Laravel}
+Laravel Verfügt über ein Ausgedehntes Routing System über welches Views aber auch ganze Gruppen von Elementen angesprochen und angezeigt werden können. Diese Routen werden in der Datei “web.php” angelegt und verwaltet.
+\subsection{Ressource Routen} 
+Mit der Ressource Route wird ein ganzer Controller angesprochen, so können über diese Route alle Methoden in diesem Controller angesprochen und verwendet werden. Im Produkt wird jeder Controller welcher wiederum für jede Tabelle vorhanden ist durch eine Ressource Route adressiert. Dieser Vorgang wird in Abbildung 2.14 veranschaulicht.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=6cm,width=9cm]{images/ResourceRoute}
+	\caption{Aufbau einer Ressource Route}
+	\label{fig:ResourceRoute}
+\end{figure}
+
+\subsection{GET Routen}
+Mit diesem Typ von Routen lässt sich eine bestimmte Methode in einem ausgewählten Controller adressieren. Außerdem ist es möglich in einer GET Route einen Parameter mitzugeben welcher dann in der ausgewählten Methode im Controller verarbeitet wird. Im Produkt werden dieser Typ von Methoden verwendet um beispielsweise die Startseite anzuzeigen. Weiters werden sie verwendet um bestimmte Methoden in Controllern zB. löschen von Energiesystemen mit der Id des ausgewählten Objektes auszuführen. Am meisten kommt dieser Typ von Routen beim erstellen, editieren oder Löschen von Datenbankeinträgen zum Einsatz, da hier ein gewisser Eintrag mit dem mitgelieferten Parameter einer Route adressiert werden kann. Der Aufbau dieser Route wird in Abbildung 2.15 verdeutlicht.
+
+\newpage
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=6cm,width=16cm]{images/GETRoute}
+	\caption{Aufbau einer GET Route}
+	\label{fig:GETRoute}
+\end{figure}
+
+\subsection{Auth Routen}
+Sobald in Laravel das Authentifizierungssystem aktiviert wird werden diese Routen automatisch erstellt. Diese Routen adressieren die ebenfalls durch Laravel erstellen auth Controller in der die Benutzeranmeldung sowie Registrierung bearbeitet wird.
+
+\section{MVC}
+Das Produkt verwendet das von Laravel bereitgestellte Design Pattern MVC (Model, View, Controller) welches in der Abbildung 2.16 Dargestellt wird. 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=6cm,width=18cm]{images/MVC}
+	\caption{MVC Design Pattern}
+	\label{fig:MVC}
+\end{figure}
+
+\subsection{Model}
+Für jede durch eine Migration (Kapitel 3.2.2)  erstellte Tabelle gibt es ein Model, in diesem wird wie der Name suggeriert das Datenmodell abgebildet. Durch diesen Ansatz kann von jedem Model eine Instanz erstellt werden und so die Entsprechende Tabelle in einem beliebigen Programmabschnitt verwendet werden. Weiters werden in den Models die Relationen zwischen den einzelnen Tabellen beschrieben.
+\subsection{View}
+Das Produkt baut auf 8 Views auf in diesen Views werden die Daten welche von den Controllern übergeben werden mithilfe von Datatables (Kapitel 3.6) dem User angezeigt. Weiters gibt es in den Views verschiedene Möglichkeiten der User interaktion.
+\subsection{Controller}
+In den Controllern wird der Datenweg zwischen den Views also den User Interaktionen und der Datenbank gesteuert. Für jede durch eine Migration in der Datenbank erstelle Tabelle gibt es einen Controller welcher das Speichern, die Ausgabe, das Editieren sowie das Löschen von einzelnen Tupeln aus der Datenbank steuert. Weiters werden in den store und destroy Methoden des EnTechControllers sowie des EnSysControllers die Api Aufrufe an die Grafana http Api mit den vom User eingegebenen Daten ausgeführt.
+
 \chapter{Ergebnisdokumentation }
 Dieser Abschnitt beinhaltet eine Dokumentation der verwendeten Werkzeuge zur Umsetzung der einzelnen Funktionen. Es werden alle behandelten Teilbereiche erläutert.
 
 \section{Laravel }
-Text
+In diesem Kapitel werden die Ereignisse und Erfahrungen dokumentiert welche sich im laufe der Produktentwicklung mit dem Laravel Framework herausgestellt haben.
 
 \subsection{Installation}
-Text
+Die Installation von Laravel erfolgt mithilfe des PHP Installations Tool Composer. Composer installiert hierzu die Paketquellen Lokal auf dem System. Beim Erstellen eines neuen Laravel Projektes werden die von Composer installierten Quelldateien in das Verzeichnis des neu zu erstellenden Projektes kopiert und installiert. Im nachfolgenden Link ist mehr über die Installation von Laravel zu lesen:
+\href{https://laravel.com/docs/9.x#installation-via-composer}{Dokumentation der Installation}
+
 
 \subsection{Bootstrap Einbindung}
-Text
+Für das Design des Frontends wird die CSS Bibliothek “Bootstrap” (Kapitel 2.3.6.1) verwendet, hierzu werden die Quelldateien von Bootstrap durch Composer lokal abgespeichert und durch den Laravel Befehl "php artisan ui bootstrap“ dem Laravel Projekt hinzugefügt. Laravel bietet die Möglichkeit beim hinzufügen von Bootstrap mit der Option “-- auth” direkt die Beispielseiten (Login, Registrieren) für den Authentifizierungsvorgang zu erstellen. Im nachfolgenden Link ist mehr über die Installation von Bootstrap zu lesen:
+\href{https://www.positronx.io/how-to-properly-install-and-use-bootstrap-in-laravel/}{Dokumentation der Installation}
+
+
 \subsection{Grafana Einbindung}
 Text
 
