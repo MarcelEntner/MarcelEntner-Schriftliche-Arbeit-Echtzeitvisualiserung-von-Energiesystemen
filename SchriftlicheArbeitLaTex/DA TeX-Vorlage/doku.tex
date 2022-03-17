@@ -517,6 +517,8 @@ Um die Anbieter auf die gewünschten Anforderungen zu Überprüfen wurde die Lis
 		ja &
 		\begin{tabular}[c]{@{}l@{}}keine Apis;\\ sehr viel Aufwand;\\ erfüllt den gleichen Zweck \\wie eine Karte\end{tabular} \\ \hline
 	\end{tabular}
+	\caption{Vor- und Nachteile der Anbieter}
+\label{tab:Vor- und Nachteile der Anbieter}
 \end{table}
 
 
@@ -633,7 +635,7 @@ Um alle ausgeführten Migrations anzeigen zu lassen, muss dieses Kommando verwen
 \renewcommand{\lstlistingname}{Quellcode}
 
 \begin{lstlisting}[
-	caption={Erstellen einer neuen Migration},
+	caption={Status der durcheführten Migrations},
 	label=Code,
 	language=octave,
 	numbers=left,
@@ -650,7 +652,7 @@ Wenn die zuletzt erstellten Tabellen rückgängig gemacht werden sollen, gibt es
 \renewcommand{\lstlistingname}{Quellcode}
 
 \begin{lstlisting}[
-	caption={Erstellen einer neuen Migration},
+	caption={Migratios rückgängig machen},
 	label=Code,
 	language=octave,
 	numbers=left,
@@ -667,7 +669,7 @@ Weitere nützliche Befehle sind unter  der Quelle xy () zu finden.
 \subsection{Seeder und Factory Befehle}
 Um einen Datenbank Seeder zu erstellen, ist folgendes Kommando notwendig: 
 \begin{lstlisting}[
-	caption={Erstellen einer neuen Migration},
+	caption={Erstellen eines Datenbank Seeders},
 	label=Code,
 	language=octave,
 	numbers=left,
@@ -681,7 +683,7 @@ php artisan make:seeder seeder_name
 \end{lstlisting}
 Wenn eine Factory erstellt werden soll, gibt es folgende Möglichkeit:
 \begin{lstlisting}[
-	caption={Erstellen einer neuen Migration},
+	caption={Erstellen einer neuen Factory},
 	label=Code,
 	language=octave,
 	numbers=left,
@@ -693,10 +695,10 @@ Wenn eine Factory erstellt werden soll, gibt es folgende Möglichkeit:
 	]
 	php artisan make:factory factory_name
 \end{lstlisting}
-
+\newpage
 Um den Seeder nach Initialisierung auszuführen, gibt es folgende Möglichkeit:
 \begin{lstlisting}[
-	caption={Erstellen einer neuen Migration},
+	caption={Einen Seeder ausführen},
 	label=Code,
 	language=octave,
 	numbers=left,
@@ -712,7 +714,7 @@ Weitere nützliche Befehle und Individualizations Möglichkeiten sind unter der 
 \subsection{Model und Controller Befehle}
 Um ein neues Model zu erstellen, verwendet man dieses Kommando:
 \begin{lstlisting}[
-	caption={Erstellen einer neuen Migration},
+	caption={Erstellen eines neuen Models},
 	label=Code,
 	language=octave,
 	numbers=left,
@@ -726,7 +728,7 @@ php artisan make:model model_name
 \end{lstlisting}
 Um einen normalen Controller anzulegen, gibt es folgendes Kommando:
 \begin{lstlisting}[
-	caption={Erstellen einer neuen Migration},
+	caption={Erstellen eines neuen Controllers},
 	label=Code,
 	language=octave,
 	numbers=left,
@@ -751,7 +753,7 @@ Ein Resource Controller hat den Vorteil, dass er vorgenerierte Methoden besitzt,
 \end{itemize}
 Erstellt wird ein Resource Controller folgendermaßen:
 \begin{lstlisting}[
-	caption={Erstellen einer neuen Migration},
+	caption={Erstellen eines neuen Resource Controllers},
 	label=Code,
 	language=octave,
 	numbers=left,
@@ -768,7 +770,7 @@ Genauere Informationen zu der Erstellung von Models und Controllern finden sie u
 \subsection{Starten des Laravel Develop Servers}
 Laravel bietet die Möglichkeit, wenn PHP auf dem Entwicklungssystem installiert ist, einen PHP Development Server zu hosten und das Projekt über den Localhost anzuzeigen. Um den Server zu starten, muss folgende Zeile eingeben werden:
 \begin{lstlisting}[
-	caption={Erstellen einer neuen Migration},
+	caption={Start des Develop Servers},
 	label=Code,
 	language=octave,
 	numbers=left,
@@ -787,7 +789,7 @@ Nach Ausführen dieses Kommandos kann man das Projekt unter http://localhost:800
 Bei Team Projekten in Laravel ist Git die beste Lösung. Jedoch kommt es oft zu Komplikationen beim Herunterladen des Projektes durch Git. Es gibt aber einige Befehle, die es ermöglichen, das Laravel Projekt komplikationsfrei zu starten.
 Dieser Kommand sorgt dafür, dass der APP\_KEY in der .env Datei richtig gesetzt wird:
 \begin{lstlisting}[
-	caption={Erstellen einer neuen Migration},
+	caption={APP\_KEY richtig setzen},
 	label=Code,
 	language=octave,
 	numbers=left,
@@ -802,7 +804,7 @@ php artisan key:generate
 \end{lstlisting}
 Um sicher zu stellen, dass alle nötigen Pakete installiert wurden, kann folgender Befehl verwendet werden:
 \begin{lstlisting}[
-	caption={Erstellen einer neuen Migration},
+	caption={Sicherstellung, dass alle Parkete installiert sind},
 	label=Code,
 	language=octave,
 	numbers=left,
@@ -816,7 +818,7 @@ Um sicher zu stellen, dass alle nötigen Pakete installiert wurden, kann folgend
 	
 \end{lstlisting}
 Nach Durchführung dieser Schritte sollte sich das Programm problemlos starten und verändern lassen.
-
+\newpage
 
 
 \section{Routen in Laravel}
@@ -893,7 +895,7 @@ Das Produkt kommuniziert mit dem Grafana Server über die von Grafana bereitgest
 
 
 \section{Datenbankanbindung in Laravel}
-Um die Datenbank an das Programm anzubinden, müssen einige Änderungen in der .env Datei vorgenommen werden. Genauere Information zur .env Datei befinden sich im Kapitel  2.3.9.1. Welche Konfigurationen genau getätigt werden, können in den nachfolgenden Kapiteln nachgelesen werden. 
+Um die Datenbank an das Programm anzubinden, müssen einige Änderungen in der .env Datei vorgenommen werden. Genauere Information zur .env Datei befinden sich im Kapitel \ref{sec:Laravel .env Datei} vorzufinden .Welche Konfigurationen genau getätigt werden, können in den nachfolgenden Kapiteln nachgelesen werden. 
 
 \subsection{Datenbank Anmeldeinformationen}
 Eine Änderung war es, die Datenbank Anmeldeinformationen auf die richtigen Einstellungen zu setzen. Es können folgende Parameter gesetzt werden : 
@@ -974,7 +976,7 @@ Vom Projektteam wurde ein Corporate Design Manual erstellt. Dieses befindet sich
 \end{itemize}
 Auf die wichtigsten Elemente wird in den nachfolgen Kapiteln eingegangen.
 \subsection{Vorschläge}
-Nach Absprache der Grundanforderung des Produktes wurden, mithilfe der Adobe xd Software,  drei Designvorschläge verfasst. Diese sind auch auf der DVD der Diplomarbeit einsehbar. Um diese aussagekräftig zu vergleichen, wird von jedem Vorschlag, in den nachfolgenden drei Abbildungen, die Energiesystem Seite visuell dargestellt.
+Nach Absprache der Grundanforderung des Produktes wurden, mithilfe der Adobe XD Software,  drei Designvorschläge verfasst. Diese sind auch auf der DVD der Diplomarbeit einsehbar. Um diese aussagekräftig zu vergleichen, wird von jedem Vorschlag, in den nachfolgenden drei Abbildungen, die Energiesystem Seite visuell dargestellt.
 \begin{figure}[h]
 	\centering
 	\includegraphics[height=6cm,width=12cm]{images/DesignVorschlag1}
@@ -1033,7 +1035,7 @@ Das Produktdesign basiert auf dem Front-End Framework Bootstrap. In Bootstrap we
 \newpage
 Auf Wunsch des Auftraggebers wurden jedoch einige Farben aus den CSS Dateien der bereits vorhanden Website extrahiert und bei diesem Produkt verwendet. Folgende Farben wurden extrahiert:
 \\
-\\
+\begin{table}[h]
 \begin{tabular}{|c|c|c|c|c|}
 	\hline
 	Hex & CMYK & RGB & HSV & HSL \\
@@ -1052,12 +1054,14 @@ Auf Wunsch des Auftraggebers wurden jedoch einige Farben aus den CSS Dateien der
 	\hline
 	\#21a500 & 80\%, 0\%, 100\%, 35\% & 33, 166, 0 & 108, 100\%, 65\% & 108, 100\%, 33\% \\
 	\hline
-	
+
 	
 \end{tabular}
-
+	\caption{Tabelle mit generellen Informationen}
+\label{tab:Tabelle mit generellen Informationen}
+\end{table}
 \subsection{Überschriften}
-Überschriften werden bei diesem Produkt vorrangig verwendet, um anzuzeigen, über welches Thema der Fließtext, der sich meist direkt unter einer Überschrift befindet, handelt. Bei diesem Produkt wurden Überschriften der Gattung <h1>, <h2> und <h3> verwendet. Aus Design technischen Gründen, befindet sich jede Überschrift immer direkt in der Mitte der Website. Jede Überschrift, welche außerhalb eines Fließtextes steht, ist in der Farbe \#1b8836 eingefärbt und in der Schriftart Smooch Snans formatiert. Überschriften, welche sich in einem Fließtext befinden, werden in der Farbe \#212529 eingefärbt. Folgende Überschriften sind auf unserem Produkt vorhanden: 
+Überschriften werden bei diesem Produkt vorrangig verwendet, um anzuzeigen, über welches Thema der Fließtext, der sich meist direkt unter einer Überschrift befindet, handelt. Bei diesem Produkt wurden Überschriften der Gattung <h1>, <h2> und <h3> verwendet. Aus Design technischen Gründen, befindet sich jede Überschrift immer direkt in der Mitte der Website. Jede Überschrift, welche außerhalb eines Fließtextes steht, ist in der Farbe \#1b8836 eingefärbt und in der Schriftart Smooch Snans formatiert. Überschriften, welche sich in einem Fließtext befinden, werden in der Farbe \#212529 eingefärbt. Folgende Überschriften sind auf dem Produkt vorhanden: 
 \begin{itemize}
 	\item Intelligente Strom- und Mikronetze
 	\item Entwicklungsfelder und Anwendungsgebiete
@@ -1097,7 +1101,7 @@ Interaktionsfarben werden verwendet, um eine Aktion zu kennzeichnen. Bei diesem 
 \end{figure}
 
 \subsection{Schriftarten}
-Unser Produkt verwendet die Schriftarten Smooch Sans und Hubballi. Diese Schriftarten sind von Google Fonts frei zur Verfügung und zur Verwendung gestellt. Hubballi wurde für jede Art von Fließtext verwendet. Smooch Snans wurde verwendet, um die Überschriften zu formatieren. Nachfolgend ein textueller Ausschnitt, um eine bessere Vorstellung über die Schriften zu bekommen:
+Das Produkt verwendet die Schriftarten Smooch Sans und Hubballi. Diese Schriftarten sind von Google Fonts frei zur Verfügung und zur Verwendung gestellt. Hubballi wurde für jede Art von Fließtext verwendet. Smooch Snans wurde verwendet, um die Überschriften zu formatieren. Nachfolgend ein textueller Ausschnitt, um eine bessere Vorstellung über die Schriften zu bekommen:
 \begin{figure}[h]
 	\centering
 	\includegraphics[height=2cm,width=5cm]{images/HubaliBeispielstext}
@@ -1115,7 +1119,7 @@ Die Schriftgrade variieren bei diesem Produkt nur bei der Anzeige der aktuellen 
 Die Überschriften Home, Energiesysteme und Galerie werden mithilfe des <b> Tags beim Besuchen der gleichnamigen Seite fett gemacht. Dadurch, dass die aktuelle Seite immer fett geschrieben wird, wird die Navigation durch das Produkt erleichtert.
 \begin{figure}[h]
 	\centering
-	\includegraphics[height=3cm,width=16cm]{images/Header}
+	\includegraphics[height=2cm,width=15cm]{images/Header}
 	\caption{Header auf der Website}
 	\label{fig: Header}
 \end{figure}
