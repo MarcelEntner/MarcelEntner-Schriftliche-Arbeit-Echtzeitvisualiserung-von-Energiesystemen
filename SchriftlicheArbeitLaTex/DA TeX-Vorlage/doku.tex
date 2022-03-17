@@ -65,6 +65,7 @@ Der Begriff Front-End beschreibt die Weboberfläche auf welcher der Benutzer ver
 \subsubsection{Back-End} \label{sec:Back-End}
 Mit dem Begriff Back-End ist das Laravel-Projekt, welches für die Ereignisse der Benutzer-Interaktionen zuständig ist, gemeint. Zusätzlich sind in diesem Begriff die Zugriffe auf die Datenbank sowie auf den Grafana Server mit eingebunden, welche durch das Laravel-Projekt durchgeführt werden.
 
+\newpage
 \section{Anforderungen an das Produkt}
 Die Datenbank des Auftraggebers ist die größte Schwachstelle des vorhanden Systems.
 Aufgrund dessen wird ein neues Datenbankschema entwickelt. Neben der Entwicklung eines neuen Datenbankschemas sind folgende Anforderungen an das Produkt gegeben:
@@ -82,10 +83,11 @@ Sämtliche Daten wie Adressen, Standorte (in Form von Koordinaten) oder die Name
 
 
 \subsection{Statistische Auswertung}
-Text
+Zur statistischen Auswertung wird das Daten visualisierungs Framework Grafana verwendet. In Grafana werden einzelne Energiesysteme als “Dashboards” abgebildet, in diesen Dashboards werden die Energietechnologien als “Panels” erstellt. In der Konfiguration der Panels werden die SQL Abfragen definiert aus welchen sich die Statistiken zusammensetzen. Die Statistiken bilden sowohl Echtzeit Daten als auch Daten der letzten 24 Stunden ab. Die Statistiken werden hier als Zeitreihen \footnote{ *In diesen Diagrammen werden Zahlenwerte in Abhängigkeit von Zeitwerten angezeigt.	
+ }. Diagramme abgebildet.
 
 
-
+\newpage
 \section{Architektur des Zielsystems}
 Die \autoref{fig:Architektur} repräsentiert die Architektur des Zielsystems. Der Benutzer greift über die Weboberfläche auf den Webserver zu, wo sich das Laravel-Projekt befindet. Auf dieser Website kann der Benutzer verschiedene Interaktionen durchführen. Dabei ist die Weboberfläche ständig in Verbindung mit der Datenbank sowie dem Grafana Server. Sobald der Benutzer auf die Energiesysteme-Seite der Weboberfläche wechselt, wird eine Datenbankabfrage aller vorhandenen Energiesysteme durchgeführt. Zusätzlich dazu wird mittels API-Abfrage auf den Grafana Server zugegriffen, um Statistiken einer Energietechnologie anzuzeigen, falls dies vom Benutzer angefordert wird.
 
@@ -106,7 +108,7 @@ Das Produkt wurde als Browser Anwendung entwickelt, um überall lauffähig zu se
 \end{itemize}
 
 \subsection{Serverseitig}
-Text
+Bei PHP handelt es sich zum einen Serverseitige zu laufzeit interpretierte Skriptsprache mit welcher sich Daten dynamisch auf Website anzeigen lassen. Da es sich bei Laravel um ein Php Framework handelt, wird der Code am Webserver beim Laden der Website interpretiert. Laravel kommuniziert Serverseitig mithilfe eines sogenannten ORM (Object Relational Mapper) mit der Datenbank. Hiermit kann der Programmierer auf vorgefertigte Funktionen des ORM zurückgreifen und muss Datenbankoperationen wie Abfragen oder das erstellen von Tabelleneinträgen nicht als SQL Abfragen Formatieren.
 
 \subsection{Clientseitige Interaktion des Benutzers}
 Bei dem Punkt Clientseitig befindet man sich in der Architektur des Zielsystems bei dem Element JavaScript und mit den damit verbundenen Interaktionen des Benutzers. Map-Interaktionen sind Interaktionen mit einer Karte, dazu gehört das Erstellen, Bearbeiten und Löschen von Energiesystemen sowie Energietechnologien. Eine weitere Interaktion wäre die Verwendung des Adresssuchfeldes, welche mit einem Klick auf den Button „Suche“ oder durch Drücken der Enter-Taste durchgeführt wird. Tabellen-Interaktionen sind eine zusätzliche clientseitige Aktion, da die vom DataTable\footnote{Eine genaue Begriffserklärung befindet sich in \ref{sec:DataTable}} bereitgestellten Funktionen wie die Suchfunktion, Sortierfunktion oder Seitennummerierung allesamt clientseitig stattfinden und somit keinen Einfluss auf das Back-End haben.
@@ -119,7 +121,7 @@ Folgende Abbildung zeigt den Aufbau der einzelnen Elemente, die zusammenarbeiten
 	\caption{clientseitig}
 	\label{fig:clientseitig}
 \end{figure}
-
+\newpage
 \subsection{Framework}
 Die Wahl des Frameworks ist für die Umsetzung des Projekts entscheidend. Unter dem Begriff Framework versteht man eine Art Programmiergerüst, die es dem Programmierer deutlich erleichtert, ein Produkt zu erstellen. Jedes Framework bietet spezielle Lösungen und Lösungsansätze an und damit hat jedes einzelne sein eigenes Einsatzgebiet. In den nachfolgenden Unterkapiteln werden mögliche Frameworks für die Umsetzung des Projekts kurz erklärt. In \ref{sec:Entscheidung des Frameworks} wird genauer darauf eingegangen, welches Framework gewählt wurde und aus welchem Grund.
 
@@ -169,6 +171,7 @@ Durch die vordefinierte Datenstruktur, die ASP.NET bereitstellt, hilft es dem Pr
 
 
 Genaure Informatione zu ASP.Net können unter der Quelle xy (https://asp.mvc-tutorial.com/de/421/einfuhrung/was-ist-asp-net-mvc/) nachgelesen werden.
+\newpage
 \subsubsection{React}
 React ist eine JavaScript-Softwarebibliothek, die es erleichtert, Benutzeroberflächen in Form von Web Applikationen zu erstellen. Es ist komponentenbasiert, was bedeutet, dass jedes Element in Blöcken aufgebaut ist und durch Zusammenfügen dieser einzelnen Codebits kann dann eine sogenannte View erstellt werden. Dies bietet die Möglichkeit, bereits erstellte Codebits auch in anderen Views zu verwenden. React wird oft zusammen mit ASP.NET verwendet.
 
@@ -212,7 +215,7 @@ Positive und negative Aspekte jedes Framworks wurden vom Projektteam, mithilfe d
 	\end{tabular}
 	\caption{Entscheidung des Frameworks}
 \end{table}
-\newpage
+
 Nach Begutachtung der Tabelle \ref{sec:Entscheidung des Frameworks} und aufgrund der überwiegenden positiven Aspekte , entschied sich das Projektteam für das Framework Laravel.Entscheidend war beispielsweise die einfache Handhabung und die Möglichkeit Bootstrap in Kombination zu verwenden. Da dieses Framework auch im Schulfach Softwareentwicklung genauer bearbeitet wurde, besitzt das Projektteam bereits ein gutes Grundwissen. Es wurde darüber hinaus überlegt, ob auch das Front-End Framework Vue.js zusätzlich verwendet werden soll. Da Vue.js nur zusätzliche Komplexität ohne einen wirklichen Nutzen mit sich bringen würde, wurde diese Option vernachlässigt. Das Framework Laravel bietet alle nötigen Front- und Back-End Möglichkeiten, die es ermöglichen, Laravel im Front wie auch im Back-End zu verwenden. Entscheidender Faktor war auch, dass das Projektteam noch nie mit einem anderen Framework gearbeitet hat, und so eigentlich nur Laravel in Frage gekommen ist.
 
 
@@ -472,7 +475,7 @@ Eine weitere Option ist es, die Energiesysteme und Technologien mittels CSS auf 
 	\label{fig:CSS_System}
 \end{figure}
 
-
+\newpage
 \subsection{Auswahl des Anbieters}
 	Bei der Wahl des Anbieters, müsste der Auftraggeber Best GmbH berücksichtigt werden. Folgende Punkte muss der Anbieter erfüllen:
 	\begin{itemize}
@@ -517,7 +520,7 @@ Um die Anbieter auf die gewünschten Anforderungen zu Überprüfen wurde die Lis
 \end{table}
 
 
-
+\newpage
 \section{Berechtigungssystem Benutzer}
 Im folgenden Abschnitt wird näher auf das Benutzerverwaltungssystem eingegangen sowie auf die vorhandenen Benutzerrollen, die einem Benutzer zugeteilt werden können.
 
@@ -831,7 +834,7 @@ Mit der Ressource Route wird ein ganzer Controller angesprochen, so können übe
 \subsection{GET Routen}
 Mit diesem Typ von Routen lässt sich eine bestimmte Methode in einem ausgewählten Controller adressieren. Außerdem ist es möglich in einer GET Route einen Parameter mitzugeben welcher dann in der ausgewählten Methode im Controller verarbeitet wird. Im Produkt werden dieser Typ von Methoden verwendet um beispielsweise die Startseite anzuzeigen. Weiters werden sie verwendet um bestimmte Methoden in Controllern zB. löschen von Energiesystemen mit der Id des ausgewählten Objektes auszuführen. Am meisten kommt dieser Typ von Routen beim erstellen, editieren oder Löschen von Datenbankeinträgen zum Einsatz, da hier ein gewisser Eintrag mit dem mitgelieferten Parameter einer Route adressiert werden kann. Der Aufbau dieser Route wird in Abbildung 2.15 verdeutlicht.
 
-\newpage
+
 \begin{figure}[h]
 	\centering
 	\includegraphics[height=6cm,width=16cm]{images/GETRoute}
@@ -842,6 +845,7 @@ Mit diesem Typ von Routen lässt sich eine bestimmte Methode in einem ausgewähl
 \subsection{Auth Routen}
 Sobald in Laravel das Authentifizierungssystem aktiviert wird werden diese Routen automatisch erstellt. Diese Routen adressieren die ebenfalls durch Laravel erstellen auth Controller in der die Benutzeranmeldung sowie Registrierung bearbeitet wird.
 
+\newpage
 \section{MVC}
 Das Produkt verwendet das von Laravel bereitgestellte Design Pattern MVC (Model, View, Controller) welches in der Abbildung 2.16 Dargestellt wird. 
 
@@ -876,16 +880,16 @@ Für das Design des Frontends wird die CSS Bibliothek “Bootstrap” (Kapitel 2
 
 
 \subsection{Grafana Einbindung}
-Text
+Das Produkt kommuniziert mit dem Grafana Server über die von Grafana bereitgestellte http Api . Laravel verfügt hierzu über das Paket “guzzle-http” welches es ermöglicht mithilfe von wenigen Zeilen PHP Code einen http Aufruf an eine bestimmte Quelle abzusenden.
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=6cm,width=18cm]{images/GrafanaEinbindung}
+	\caption{GrafanaEinbindung}
+	\label{fig:GrafanaEinbindung}
+\end{figure}
 
-\subsection{MVC}\label{sec:MVC}
-Text
-\subsubsection{Model}
-Text
-\subsubsection{View}
-Text
-\subsubsection{Controller}
-Text
+
+
 
 
 \section{Datenbankanbindung in Laravel}
@@ -916,6 +920,7 @@ Um auf der Weboberfläche das Passwort Resetten mittels E-Mail zu ermöglichen, 
 	\item MAIL\_FROM\_NAME 
 \end{itemize}
 Bei MAIL\_MAILER wird das Protokoll eingetragen. Bei MAIL\_HOST wird die Host Domain  eingegeben, also welcher SMTP Server verwendet werden soll. MAIL\_PORT gibt an, unter welchem Port der Server erreicht werden soll. MAIL\_USERNAME: hier muss die E-Mail Adresse, welche zum Absenden der Mail verwendet wird, eingetragen werden. Beim MAIL\_PASSWORD muss das dazugehörige Passwort eingetragen werden. MAIL\_ENCRYPTION gibt an, mit welchem Verfahren verschlüsselt werden soll. MAIL\_FROM\_ADDRESS ist die Adresse, welche beim Empfänger als Sender E-Mail angezeigt wird. MAIL\_FROM\_NAME ist der Name der beim Empfänger angezeigt wird. Das Produkt verwendet diese Einstellungen um eine Passwort Reset Email an den Benutzer zu senden. Alle geforderten Einstellungen wurden nach Übergabe an den Auftraggeber von diesem Konfiguriert. 
+\newpage
 \subsection{Migrations}
 Die Migrations wurden dazu verwendet, um Tabellen zu gestalten. In ihnen wurden alle nötigen Attributnamen und deren Datentypen konfiguriert. Das Produkt verwendet folgende von Laravel automatisch erzeugte Migrations für die Benutzerauthentifizierung: 
 \begin{itemize}
@@ -926,30 +931,27 @@ Die Migrations wurden dazu verwendet, um Tabellen zu gestalten. In ihnen wurden 
 \end{itemize}
 Zusätzlich zu diesen bereits erstellten Migrations wurde für jede Energietechnologieart eine eigene Migration angelegt. Darüber hinaus wurden Templates\footnote{ein Template ist ein Grundbauplan} für ein Energiesystem und eine Energietechnologie erstellt. Im Energietechnologien Template sind alle Attribute, die bei jeder Energietechnologie gleich sind. Alle individuellen Attribute werden dann mithilfe der eigener Migrations abgebildet.
 \newpage
-\section{Routen in Laravel}
-Text
-
-\subsection{Resource Routen}
-Text
-
-\subsection{GET Routen}
-Text
-
-\subsection{Auth Routen}
-Text
-
 
 \section{Datenbankdesign}
-Text
+In diesem Kapitel der Diplomarbeit wird das redesign der Datenbank und der relationen zwischen den einzelnen Tabellen behandelt.
+
 
 \subsection{Erstellen eines neuen Schemas}
-Text
+Für das Produkt wurde ein neues vom alten unabhängiges Datenbankschema entwickelt, Hauptgründe hierfür waren die in Kapitel 2.1.2 festgestellten Mängel und Designfehler. Im neuen Design wurde darauf geachtet alle modernen Design Richtlinien welche für Relationale Datenbanken gelten einzuhalten. Das neue Datenbankschema besteht aus 21 Tabellen für Individuelle Energietechnologien sowie aus einer Tabelle für Benutzer, einer Tabelle für erstellte Energiesysteme und einer Tabelle für die generalisierung einiger Attribute von Energietechnologien.
 
 \subsubsection{ER-Model}
-Text
+Um das Datenbankdesign zu veranschaulichen und Unklarheiten mit dem Auftraggeber vorzubeugen wurden mit hilfe des Programms “MySql Workbench” ein EER (Extended Entity Relationship) Diagramm erstellt. In diesem Diagramm ist jede Tabelle mit ihren Attributen sowie Primär und Fremdschlüsseln abgebildet. Weiters sind auch die Einzelnen Relationen zwischen einer oder Mehreren Tabellen veranschaulicht. Das vollständige EER Modell der Datenbank ist in der Abbildung xx zu sehen.
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=6cm,width=18cm]{images/ERModel}
+	\caption{ERModel}
+	\label{fig:ERModel}
+\end{figure}
+\newpage
 \subsubsection{Fremdschlüssel}
-Text
+Wie in Kapitel 3.4.1.1 wurden zwischen den Tabellen verschiedene Relationen verwendet. Zwischen den Tabellen “users” und “EnSys” besteht eine 1:N Relation. Dies bedeutet das in jedem Eintrag in der “EnSys” Tabelle der Primärschlüssel des users welcher den Eintrag durchführt als Fremdschlüssel gespeichert wird. Zwischen den Tabellen “EnSys” und “EnTech” besteht ebenfalls eine 1:N Relation, in diesem Fall werden die Primärschlüssel der “users” sowie der “EnSys” Tabelle als Fremdschlüssel in der “EnTech” Tabelle gespeichert. Zwischen der “EnTech” sowie jeder der 21 Tabellen für individuelle Energietechnologien besteht eine 1:1 beziehung. Es gibt also zu jedem Eintrag in der “EnTech” Tabelle genau einen Eintrag in einer der 21 Tabellen für Energietechnologien. Hierbei wird der Primärschlüssel des Eintrages der “EnTech” Tabelle als Fremdschlüssel im Korrespondierenden Eintrag in einer der 21 Tabellen für Energietechnologien gespeichert.
+
 
 
 \section{Corporate Design}
@@ -1141,8 +1143,6 @@ Bei diesem Produkt werden Icons verwendet, um Energiesysteme oder Energietechnol
 
 
 \begin{table}[]
-	\caption{}
-	\label{tab:my-table}
 	\begin{tabular}{|l|l|}
 		\hline
 		\includegraphics[height=1cm,width=1cm]{images/Icons/AzSpeicherES} & Zeigt die gesamte Verbraucher Energie                    \\ \hline
@@ -1196,6 +1196,8 @@ Bei diesem Produkt werden Icons verwendet, um Energiesysteme oder Energietechnol
 		\# & Grafana Statistiken bei Klick auf das Icon               \\ \hline
 		\# & Bearbeiten einer Energietechnologie oder eines Energiesystems                          \\ \hline
 	\end{tabular}
+	\caption{Verwendete Icons}
+\label{tab: Verwendete Icons }
 \end{table}
 \newpage
 \subsection{Map Icons}
@@ -1251,8 +1253,6 @@ Aus Lizenztechnischen Gründen wurde jeder Autor eines Icons auf unserer Seite i
 \subsection{Icons im DataTable}
 Folgende Icons werden  verwendet, um Energiesystem oder Energietechnologien zu bearbeiten, zu löschen oder auf deren Grafana Statistiken zuzugreifen.
 \begin{table}[h]
-	\caption{}
-	\label{tab:my-table}
 	\begin{tabular}{|l|l|}
 		\hline
 		Icon & Funktion                                                                                     \\ \hline
@@ -1261,6 +1261,8 @@ Folgende Icons werden  verwendet, um Energiesystem oder Energietechnologien zu b
 			\includegraphics[height=1cm,width=1.5cm]{images/Icons/auge} & Mit einem Klick auf dieses Icon werden erweiterte Infos zu dem ausgewählten System angezeigt \\ \hline
 			\includegraphics[height=1cm,width=1cm]{images/Icons/stift} & Mit einem Klick auf dieses Icon öffnet sich eine Bearbeitungsmöglichkeit,\\& auf welcher man die Eigenschaften des Systems ändern kann \\ \hline
 	\end{tabular}
+	\caption{Icons im DataTabale}
+\label{tab: Icons im DataTabales}
 \end{table}
 
 Auf der Website werden diese Icons im Datatable hinter einer Energietechnologie oder einem Energiesystem eingeblendet. Dies sieht folgendermaßen aus:
@@ -1278,8 +1280,7 @@ Buttons werden bei diesem Produkt ausschließlich genutzt, um Formulare abzusend
 \subsection{Tabelle mit generellen Informationen über einzelne HTML Elemente}
 Hier ist wichtig zu definieren für was welches HTML Element verwendet wurde. <h1>,  <h2> und <h3> wurden verwendet um Überschriften zu definieren. In einem <p> Element befindet sich immer ein Fließtext. Mit dem <a> Element werden Links definiert. Bei diesem Produkt wurden im Header die Navigationsmöglichkeiten mit diesem Element versehen. 
 \begin{table}[h]
-	\caption{}
-	\label{tab:genrelle Infos}
+
 	\begin{tabular}{|l|l|l|l|l|}
 		\hline
 		HTML Element                & Schriftart  & Größe  & Farbe              & Style class oder id   \\ \hline
@@ -1289,13 +1290,15 @@ Hier ist wichtig zu definieren für was welches HTML Element verwendet wurde. <h
 		\textless{}p\textgreater{}  & Hubballi    & -      & \#000000           & text-primary          \\ \hline
 		\textless{}a\textgreater{}  & Hubballi    & -      & \#1b8836           & dropdown-item         \\ \hline
 	\end{tabular}
+	\caption{HTML Elemente}
+\label{tab: HTML Elemente }
 \end{table}
 
 
 \subsection{Datenformate}
 Auf dem Produkt befindet sich eine Diashow, die Bilder des Projektes Micro Grid Lab der Best GmbH präsentiert. Alle diese Bilder haben das Dateiformat JPG. Eines der präsentierten Bilder ist im Dateiformat PNG. Alle verwendeten Icons sind als PNG auf dem Produkt eingebunden. Die Fotos der Sponsoren aus dem Footer sind gemischt im PNG und im JPG Format. Das Logo, wie bereits im Kapitel 2.6.5.6 erwähnt, ist im Format JPG. Hier rät das Projektteam jedoch dazu, eine Vektorgrafik mit dem Dateiformat SVG zu verwenden.
 
-
+\newpage
 \section{Weboberfläche}
 Im Abschnitt Weboberfläche wird speziell auf das Front-End sowie das Back-End des Produktes eingegangen. Bei dem Punkt Back-End vor allem auf die Funktionen, die für die Benutzer-Interaktionen zuständig sind, und bei dem Punkt Front-End auf das Layout sowie das Design der Weboberfläche.
 
@@ -1395,14 +1398,9 @@ Nachdem dieses Icon betätigt wurde, wird die Information, dass ein Energiesyste
 \newpage
 \subsubsection{Energietechnologie Erstellen}
 Für das Erstellen einer Energietechnologie ist das Auswählen eines Energiesystems mit einem Doppelklick notwendig. Anschließend verwandelt sich der Cursor in das Energietechnologie-Icon, welches darauf hindeutet, dass jetzt das Hinzufügen einer Energietechnologie mittels eines Klicks auf der gewünschten Position auf der Karte möglich ist. Nach dem Klick auf der Karte öffnet sich ein Pop-up-Fenster, um die Kerndaten der Energietechnologie einzugeben. Dieses Pop-up ist in der Abbildung x.y ersichtlich. 
-\begin{figure}[h]
-	\centering
-	\includegraphics[height=11cm,width=8cm]{images/ETerstellenPop}
-	\caption{Energietechnologie Erstellen Pop-up}
-	\label{fig:CSS_System}
-\end{figure}
 
-\newpage
+
+
 Eingabe des Benutzers:
 \begin{itemize}
 	\item Bezeichnung 
@@ -1419,7 +1417,13 @@ Automatisch ausgefüllt und nicht im Pop-up dargestellt:
 	\item Ensys\_ID
 	\item User\_ID
 \end{itemize}
-
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=8cm,width=6cm]{images/ETerstellenPop}
+	\caption{Energietechnologie Erstellen Pop-up}
+	\label{fig:CSS_System}
+\end{figure}
+\newpage
 Nachdem der Benutzer die Daten im Pop-up ausgefüllt hat, werden diese Informationen über den Controller in der Datenbank erfasst. Anschließend werden die Energietechnologie-Daten an die Weboberfläche übermittelt, um die Energietechnologien auf der Karte darzustellen sowie in der Liste anzuzeigen. Der Ablauf, um eine Energietechnologie zu erstellen, wird in der Abbildung x.y dargestellt:
  \begin{figure}[h]
  	\centering
@@ -1428,7 +1432,7 @@ Nachdem der Benutzer die Daten im Pop-up ausgefüllt hat, werden diese Informati
  	\label{fig:CSS_System}
  \end{figure}
 
-
+\newpage
 \subsubsection{Energietechnologie Bearbeiten}
 Um eine Energietechnologie zu bearbeiten, muss zuerst ein Energiesystem mit einem Doppelklick ausgewählt werden. Anschließend befinden sich rechts in der Liste alle dazugehörigen Energietechnologien, welche man mit dem Stift-Icon bearbeiten kann. Nach dem Betätigen des Stift-Icons öffnet sich ein Pop-up-Fenster, um die Attribute zu bearbeiten. Dieses Pop-up-Fenster ist in der Abbildung x.y ersichtlich.
 \newline
@@ -1449,7 +1453,7 @@ Das nachfolgende Diagramm beschreibt den Ablauf für das Bearbeiten einer Energi
 \begin{figure}[h]
 	\centering
 	\includegraphics[height=7cm,width=14cm]{images/ETbearbeiten}
-	\caption{Energietechnologie Löschen}
+	\caption{Energietechnologie Bearbeiten}
 	\label{fig:CSS_System}
 \end{figure}
 
@@ -1638,7 +1642,7 @@ Um neue Benutzer registrieren zu können, gibt es eine eigene Registrierungsseit
 \end{itemize}
 \begin{figure}[h]
 	\centering
-	\includegraphics[height=5cm,width=7cm]{images/RegisterFormular}
+	\includegraphics[height=3cm,width=5cm]{images/RegisterFormular}
 	\caption{das Register Formular}
 	\label{fig:Register Formular}
 \end{figure}
@@ -1702,7 +1706,15 @@ Sobald ein Energiesystem ausgewählt wurde, werden die dazugehörigen Energietec
 
 
 \subsection{Layoutvorlage der Website}
-Text
+Das Produkt verwendet die Layout Funktion vom Framework Laravel. Genauer Informationen wie dieses Layout funktioniert können im Kapitel 2.7 nachgelesen werden. Jede Unterseite des Produkts ist in folgende Sections gegliedert:
+\begin{itemize}
+	\item Header  
+	\item Content
+	\item Footer  
+\end{itemize}
+
+In der Section Header ist die Navigationsleiste vordefiniert. Die Section Content ist leer, da hier der individuelle Inhalt der einzelnen Unterseiten hineinkommt. In der Section Footer wurde ein selbst erstellter Footer eingefügt.
+
 
 
 \newpage
@@ -1827,18 +1839,38 @@ Bei den einzelnen Energietechnologien, die dargestellt werden, wird zuerst das e
 \end{figure}
 
 
-
+\newpage
 \section{Grafana}
-Text
+In diesem Kapitel wird das automatische Erstellen von Dashboards via der Grafana http Api beschrieben. 
 
 \subsection{Automatisches Erstellen der Dashboards}
-Text
+Sobald in der Benutzeroberfläche ein Energiesystem erstellt wird, werden die Daten an die “store” Methode im “EnSysController” weitergereicht in welcher der Api Aufruf zum Erstellen eines Dashboards getätigt wird. Hierzu werden die Daten welche vom Benutzer eingegeben wurden in das “json” Grundgerüst eingesetzt welches dann an die Api gesendet wird. Grafana setzt auf eine Bereichsverwaltung mit sogenannten “Organisations”, das Produkt erstellt die Dashboards und in diesen enthaltenen Panels in der sogenannten “annonymus organisation”. Diese Organisation ist von jedem einsehbar und erfordert keine Benutzerauthentifizierung. 
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=7cm,width=14cm]{images/DashboardErstellen}
+	\caption{DashboardErstellen}
+	\label{fig:DashboardErstellen }
+\end{figure}
+
 
 \subsection{Automatisches Erstellen der Panels}
-Text
+Wird in einem Energiesystem eine Energietechnologie erstellt so werden die Daten wiederum an die Methode “store” im “EnTechController” übergeben. In dieser Methode werden alle in einem Dashboard bereits vorhandenen Panels per Api Aufruf ausgelesen und in einem Array gespeichert, wird nun ein neues Panel erstellt so wird dieses dem Array hinzugefügt und mit einem Api  Aufruf an Grafana gesendet. Weiters wird beim erstellen des Panels mit hilfe einer “switch” anweisung unterschieden um welchen Typ von Energietechnologie es sich handelt um dann die richtige SQL Abfrage zu formulieren welche die Daten aus der Datenbank in das Panel liefert. 
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=7cm,width=14cm]{images/PanelErstellen}
+	\caption{PanelErstellen}
+	\label{fig:PanelErstellen }
+\end{figure} 
+
 
 \subsection{Energietechnologien Statistiken anzeigen}
-Text
+Um nun in der Benutzeroberfläche des Produktes die mit den ApiI Aufrufen erstellten Grafana Statistiken anzeigen zu können ist auf der Benutzeroberfläche ein Statistik Icon Vorhanden. Wird dieses vom Benutzer ausgewählt so wird eine JavaScript Funktion welche die ID der Energietechnologie als Parameter hat ausgeführt. In dieser JavaScript Funktion wird ein Pop-Up Fenster aufgerufen sowie der “src” Parameter eines HTML “iframe” Elementes gesetzt. Dieses “iframe” Element wird nun in dem Pop-Up Fenster angezeigt.
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=7cm,width=14cm]{images/Statistikanzeigen}
+	\caption{Statistikanzeigen}
+	\label{fig:Statistikanzeigen }
+\end{figure} 
 
 
 
@@ -1887,6 +1919,7 @@ Text
 Text
 \section{Begleitprotokoll David Pöchacker}
 Text
+
 \section{Begleitprotokoll Marcel Entner}
 Text
 \section{Begleitprotokoll Tobias Kronsteiner}
@@ -1900,58 +1933,58 @@ Text
 \section{Verfasser der Kapitel}
 Text
 \subsection{David Pöchacker}
-Kurzfassung der Diplomarbeit / Abstract
-Danksagung
-1.1 Zielsetzung und Aufgabenstellung 
-1.2.1 David Pöchacker
-2.1 Analyse des vorhandenen Systems 	
-2.1.1 Begriffe
-2.2.1 Schutz von vertraulichen Informationen 
-2.2.2 Verteilung der Verwaltung von Energiesystemen und Energietechnologien 	
-2.2.3 Visuelle Darstellung der Energiesysteme / Energietechnologien auf einer Karte
-2.3 Architektur des Zielsystems 
-2.3.4 Clientseitig 
-2.3.6  Front-End Templates 
-2.4 Berechtigungssystem Benutzer 
-3.5.1 Back-End 
-3.5.5  Kartendienst Funktionalitäten 
-3.5.6  Anzeige von Energiesystemen/Energietechnologien auf der Karte 
-3.6 DataTable 
-3.7 Galerie Funktionen 
-7.1 Begleitprotokoll David Pöchacker	
-8.1.1 David Pöchacker
-8.2.1 Visual Studio Code 
-8.2.7 Adobe XD 
-8.2.8 Adobe Photoshop 
+Kurzfassung der Diplomarbeit / Abstract \\
+Danksagung \\
+1.1 Zielsetzung und Aufgabenstellung  \\
+1.2.1 David Pöchacker \\
+2.1 Analyse des vorhandenen Systems 	 \\
+2.1.1 Begriffe \\
+2.2.1 Schutz von vertraulichen Informationen  \\
+2.2.2 Verteilung der Verwaltung von Energiesystemen und Energietechnologien 	 \\
+2.2.3 Visuelle Darstellung der Energiesysteme / Energietechnologien auf einer Karte \\
+2.3 Architektur des Zielsystems  \\
+2.3.4 Clientseitig  \\
+2.3.6  Front-End Templates  \\
+2.4 Berechtigungssystem Benutzer  \\
+3.5.1 Back-End  \\
+3.5.5  Kartendienst Funktionalitäten  \\
+3.5.6  Anzeige von Energiesystemen/Energietechnologien auf der Karte  \\
+3.6 DataTable  \\
+3.7 Galerie Funktionen  \\
+7.1 Begleitprotokoll David Pöchacker	 \\
+8.1.1 David Pöchacker \\
+8.2.1 Visual Studio Code  \\
+8.2.7 Adobe XD  \\
+8.2.8 Adobe Photoshop  \\
 
 
 \subsection{Marcel Entner}
-1.2.2 Marcel Entner
-2.3.1 Endgeräte
-2.3.5 Framework
-2.3.7 Verbindung der Datenbank mit Laravel
-2.4 Visuelle Darstellung der Energiesysteme/ Energietechnologien 
-2.6 Ui/Ux Design 
-2.7 Template-Layout 
-2.8 Laravel Befehle
-3.2 Datenbankanbindung in Laravel
-3.5 Corporate Design
-3.5.2 Front-End
-3.5.3 Login
-3.5.3 Reisterstierung
-3.5.7 Layoutvorlage der Webseite
-3.9 Einbindung von Google Maps
-8.1.2 Marcel Entner
-8.2.3 Composer
-8.2.4 Windows Eingabeaufforderung (CMD)
-8.2.9 LaTex 
-8.3.5 Terminplan
-8.3.4 Meilensteinplan
+1.2.2 Marcel Entner \\
+2.3.1 Endgeräte \\ 
+2.3.5 Framework \\
+2.3.7 Verbindung der Datenbank mit Laravel \\
+2.4 Visuelle Darstellung der Energiesysteme/ Energietechnologien  \\
+2.6 Ui/Ux Design  \\
+2.7 Template-Layout  \\
+2.8 Laravel Befehle \\
+3.2 Datenbankanbindung in Laravel \\
+3.5 Corporate Design \\
+3.5.2 Front-End \\
+3.5.3 Login \\
+3.5.3 Reisterstierung \\
+3.5.7 Layoutvorlage der Webseite \\
+3.9 Einbindung von Google Maps \\
+8.1.2 Marcel Entner \\
+8.2.3 Composer \\
+8.2.4 Windows Eingabeaufforderung (CMD) \\
+8.2.9 LaTex  \\
+8.3.5 Terminplan \\
+8.3.4 Meilensteinplan \\
 
 \subsection{Tobias Kronsteiner}
 Text
 
-
+\newpage
 \section{Verwendete Software}
 Im folgenden Abschnitt wird die bei dieser Diplomarbeit verwendete Software präsentiert.
 
@@ -1968,6 +2001,8 @@ Composer ist ein Paketmanager für PHP. Composer wird über die Kommandozeile au
 Das CMD (“Craniomandibuläre Dysfunktion“) auch Windows-Eingabeaufforderung genannt, wurde vom Projektteam hauptsächlich verwendet, um die Befehle aus Kapitel 2.3.9.4 auszuführen. CMD ist der Kommandozeileninterpreter von Microsoft Windows und wird gebraucht, um Text Befehle in dem System auszuführen. 
 \subsection{Github VCS und Github Desktop GUI}
 Bei Github handelt es sich um einen sogenannten “Version Control Service” welcher seit 2008 auf dem Mark ist und seit 2016 zu Microsoft gehört. Github Desktop ist die Implementation einer GUI für github und ist für Windows Mac und Linux erhältlich
+
+\newpage
 \subsection{ phpMyAdmin}
 Bei phpMyAdmin handelt es sich um eine quelloffene Implementierung eines Grafischen Editors für MySql und deren Fork MariaDB. Mit phpmyadmin ist es möglich komplette Datenbank Systeme zu administriere, es ist dabei nicht erforderlich manuel SQL Abfragen zu schreiben, dies kann alles über eine Grafische Oberfläche erfolgen.  
 \subsection{Adobe XD}
@@ -1992,26 +2027,69 @@ Im Laufe der Diplomarbeit wurden zahlreiche Besprechungen mit unserem Diplomarbe
 
 \subsection{Projektstrukturplan}
 Für eine bessere Darstellung der einzelnen Projektphasen wurde ein Projektstrukturplan erstellt. In der Abb. x.y ist der Projektstrukturplan ersichtlich.
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=12cm,width=12cm]{images/Projektstrukturplan}
+	\caption{Projektstrukturplan}
+	\label{fig:Projektstrukturplan }
+\end{figure} 
+
+
+
 \subsection{Verantwortungsmatrix und Aufwandsschätzung}
 Folgende Abbildung repräsentiert die Zuständigkeiten der Mitarbeiter zu den Arbeitspaketen.
 Dabei wurden folgende Abkürzungen verwendet:
+\begin{itemize}
+	\item  Verantwortlicher (V)
+	\item Mitarbeiter (M)
+	\item wird informiert (I)
+\end{itemize}
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=12cm,width=12cm]{images/Verantwortungsmatrix}
+	\caption{Verantwortungsmatrix}
+	\label{fig:Verantwortungsmatrix }
+\end{figure}
+ DPö…. David Pöchacker \\
+ MEn… Marcel Entner \\
+ TKr…. Tobias Kronsteiner \\
+ JBu… Johann Burgstaller \\
+ SAi…. Stefan Aigenbauer (Kooperationspartner) \\
+
+\newpage
 \subsection{Meilensteinplan}
 Das Projektteam hat zum Plan der Diplomarbeit, einen Meilenstein Plan verwendet. Auf diesem Plan sind Meilensteine mit einem dazugehörigen Datum vermerkt. Das Datum gibt an, zu welchem Zeitpunkt dieser Meilenstein erfüllt werden soll. Der vom Projektteam angefertigte Meilensteinplan ist in Abbildung xy ersichtlich.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=12cm,width=12cm]{images/Meilensteinplan}
+	\caption{Meilensteinplan}
+	\label{fig:Meilensteinplan }
+\end{figure}
+
+\newpage
 \subsection{Terminplan}
 Während der Diplomarbeit gab es viele Termine, die vom Projektteam eingehalten werden mussten. Diese Termine wurden meistens mit unserem Ansprechpartner der Best GmbH Stefan Aigenbauer, oder mit dem Diplomarbeitsbetreuer Johann Burgstaller beschlossen.
 Unten eine Liste mit allen Terminen, die für diese Diplomarbeit relevant waren.
-05.07.2021 Start des Projekts
-31.07.2021 Projektmanagement abschließen ( Diplomarbeit Antrag fertigstellen, Arbeitspakete definieren, Projekt Controlling durchführen)
-31.08.2021 Recherche Abgeschlossen und alle nötigen Tools/Programme/Software installiert.
-01.09.2021 Start der Produktentwicklung
-09.09.2021 Start Präsentation halten
-28.11.2021 Front End Vorlagen mit dem Auftraggeber abgestimmt
-03.02.2022 Fertigstellung einer Alpha Prototypen 
-03.03.2022 Übergabe an den Auftraggeber und beginn der Testphase
-31.03.2022 Fertigstellung der Schriftlichen Arbeit
-04.04.2022 Abgabe der Schriftlichen Arbeit 
-08.04.2022 Ende des Projekts 
+
+\begin{itemize}
+	\item  05.07.2021 Start des Projekts
+	\item 31.07.2021 Projektmanagement abschließen ( Diplomarbeit Antrag fertigstellen, Arbeitspakete definieren, Projekt Controlling durchführen)
+	\item  31.08.2021 Recherche Abgeschlossen und alle nötigen Tools/Programme/Software installiert.
+	\item 01.09.2021 Start der Produktentwicklung
+	\item 09.09.2021 Start Präsentation halten
+	\item 28.11.2021 Front End Vorlagen mit dem Auftraggeber abgestimmt
+	\item 03.02.2022 Fertigstellung einer Alpha Prototypen 
+	\item 03.03.2022 Übergabe an den Auftraggeber und beginn der Testphase
+	\item 31.03.2022 Fertigstellung der Schriftlichen Arbeit
+	\item 04.04.2022 Abgabe der Schriftlichen Arbeit 
+	\item 08.04.2022 Ende des Projekts 
+	
+\end{itemize}
+
+
+
 
 
 
