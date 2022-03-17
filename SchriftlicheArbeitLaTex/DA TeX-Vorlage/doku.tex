@@ -151,7 +151,7 @@ Angular ist ein clientseitiges JavaScript-Web-Framework und wird meistens zum Er
 Weitere Informationen zu Angular können unter der Qulle xy (https://angular.de/artikel/was-ist-angular/) nachgelsen werden.
 \begin{figure}[h]
 	\centering
-	\includegraphics[height=6cm,width=9cm]{images/Angular_Logo}
+	\includegraphics[height=6cm,width=8cm]{images/Angular_Logo}
 	\caption{Angular Logo}
 	\label{fig:Angular Logo}
 \end{figure}
@@ -707,9 +707,112 @@ Um den Seeder nach Initialisierung auszuführen, gibt es folgende Möglichkeit:
 \end{lstlisting}
 Weitere nützliche Befehle und Individualizations Möglichkeiten sind unter der Quelle xy() verzeichnet.
 \subsection{Model und Controller Befehle}
-\subsection{Starten des Laravel Develop Servers}
-\subsection{Befehle nach dem Git Pull} 
+Um ein neues Model zu erstellen, verwendet man dieses Kommando:
+\begin{lstlisting}[
+	caption={Erstellen einer neuen Migration},
+	label=Code,
+	language=octave,
+	numbers=left,
+	firstnumber=1,
+	numberfirstline=false,
+	backgroundcolor=\color{mygray},
+	basicstyle=\footnotesize=15,
+	keywordstyle=\color{blue}
+	]
+php artisan make:model model_name
+\end{lstlisting}
+Um einen normalen Controller anzulegen, gibt es folgendes Kommando:
+\begin{lstlisting}[
+	caption={Erstellen einer neuen Migration},
+	label=Code,
+	language=octave,
+	numbers=left,
+	firstnumber=1,
+	numberfirstline=false,
+	backgroundcolor=\color{mygray},
+	basicstyle=\footnotesize=15,
+	keywordstyle=\color{blue}
+	]
+	php artisan make:controller controller_name
+\end{lstlisting}
+Es gibt ergänzend die Möglichkeit, einen Resource Controller anzulegen. 
+Ein Resource Controller hat den Vorteil, dass er vorgenerierte Methoden besitzt, wie zum Beispiel:
+\begin{itemize}
+	\item index()
+	\item create()
+	\item store()
+	\item show()
+	\item edit()
+	\item update()
+	\item destroy()
+\end{itemize}
+Erstellt wird ein Resource Controller folgendermaßen:
+\begin{lstlisting}[
+	caption={Erstellen einer neuen Migration},
+	label=Code,
+	language=octave,
+	numbers=left,
+	firstnumber=1,
+	numberfirstline=false,
+	backgroundcolor=\color{mygray},
+	basicstyle=\footnotesize=15,
+	keywordstyle=\color{blue}
+	]
+	php artisan make:controller controller_name --resource
+\end{lstlisting}
+Genauere Informationen zu der Erstellung von Models und Controllern finden sie unter der Quelle xy ().
 
+\subsection{Starten des Laravel Develop Servers}
+Laravel bietet die Möglichkeit, wenn PHP auf dem Entwicklungssystem installiert ist, einen PHP Development Server zu hosten und das Projekt über den Localhost anzuzeigen. Um den Server zu starten, muss folgende Zeile eingeben werden:
+\begin{lstlisting}[
+	caption={Erstellen einer neuen Migration},
+	label=Code,
+	language=octave,
+	numbers=left,
+	firstnumber=1,
+	numberfirstline=false,
+	backgroundcolor=\color{mygray},
+	basicstyle=\footnotesize=15,
+	keywordstyle=\color{blue}
+	]
+	php artisan serve
+\end{lstlisting}
+Nach Ausführen dieses Kommandos kann man das Projekt unter http://localhost:8000 aufgerufen werden.
+
+
+\subsection{Befehle nach dem Git Pull} 
+Bei Team Projekten in Laravel ist Git die beste Lösung. Jedoch kommt es oft zu Komplikationen beim Herunterladen des Projektes durch Git. Es gibt aber einige Befehle, die es ermöglichen, das Laravel Projekt komplikationsfrei zu starten.
+Dieser Kommand sorgt dafür, dass der APP_KEY in der .env Datei richtig gesetzt wird:
+\begin{lstlisting}[
+	caption={Erstellen einer neuen Migration},
+	label=Code,
+	language=octave,
+	numbers=left,
+	firstnumber=1,
+	numberfirstline=false,
+	backgroundcolor=\color{mygray},
+	basicstyle=\footnotesize=15,
+	keywordstyle=\color{blue}
+	]
+php artisan key:generate 
+
+\end{lstlisting}
+Um sicher zu stellen, dass alle nötigen Pakete installiert wurden, kann folgender Befehl verwendet werden:
+\begin{lstlisting}[
+	caption={Erstellen einer neuen Migration},
+	label=Code,
+	language=octave,
+	numbers=left,
+	firstnumber=1,
+	numberfirstline=false,
+	backgroundcolor=\color{mygray},
+	basicstyle=\footnotesize=15,
+	keywordstyle=\color{blue}
+	]
+	composer update
+	
+\end{lstlisting}
+Nach Durchführung dieser Schritte sollte sich das Programm problemlos starten und verändern lassen.
 
 
 \chapter{Ergebnisdokumentation }
@@ -1748,9 +1851,54 @@ Text
 \section{Verfasser der Kapitel}
 Text
 \subsection{David Pöchacker}
-Text
+Kurzfassung der Diplomarbeit / Abstract
+Danksagung
+1.1 Zielsetzung und Aufgabenstellung 
+1.2.1 David Pöchacker
+2.1 Analyse des vorhandenen Systems 	
+2.1.1 Begriffe
+2.2.1 Schutz von vertraulichen Informationen 
+2.2.2 Verteilung der Verwaltung von Energiesystemen und Energietechnologien 	
+2.2.3 Visuelle Darstellung der Energiesysteme / Energietechnologien auf einer Karte
+2.3 Architektur des Zielsystems 
+2.3.4 Clientseitig 
+2.3.6  Front-End Templates 
+2.4 Berechtigungssystem Benutzer 
+3.5.1 Back-End 
+3.5.5  Kartendienst Funktionalitäten 
+3.5.6  Anzeige von Energiesystemen/Energietechnologien auf der Karte 
+3.6 DataTable 
+3.7 Galerie Funktionen 
+7.1 Begleitprotokoll David Pöchacker	
+8.1.1 David Pöchacker
+8.2.1 Visual Studio Code 
+8.2.7 Adobe XD 
+8.2.8 Adobe Photoshop 
+
+
 \subsection{Marcel Entner}
-Text
+1.2.2 Marcel Entner
+2.3.1 Endgeräte
+2.3.5 Framework
+2.3.7 Verbindung der Datenbank mit Laravel
+2.4 Visuelle Darstellung der Energiesysteme/ Energietechnologien 
+2.6 Ui/Ux Design 
+2.7 Template-Layout 
+2.8 Laravel Befehle
+3.2 Datenbankanbindung in Laravel
+3.5 Corporate Design
+3.5.2 Front-End
+3.5.3 Login
+3.5.3 Reisterstierung
+3.5.7 Layoutvorlage der Webseite
+3.9 Einbindung von Google Maps
+8.1.2 Marcel Entner
+8.2.3 Composer
+8.2.4 Windows Eingabeaufforderung (CMD)
+8.2.9 LaTex 
+8.3.5 Terminplan
+8.3.4 Meilensteinplan
+
 \subsection{Tobias Kronsteiner}
 Text
 
@@ -1764,15 +1912,15 @@ Visual Studio Code ist ein von Microsoft entwickelter Quelltext Editor. Dieser E
 
 
 \subsection{Apache WebServer}
-Text
+Bei dem Apache Webserver handelt es sich um eine quelloffenes Projekt welches im Jahr 1995 erschienen ist. Aktuell wird der Apache Webserver in der version 2.4 Angeboten.
 \subsection{Composer}
-Text
+Composer ist ein Paketmanager für PHP. Composer wird über die Kommandozeile ausgeführt und installiert zugehörige Abhängigkeiten eines PHP-Programmes. Informationen über Pakete, die mit Composer installiert werden können, sind auf der Website Packagist auffindbar. Das Projektteam hat dieses Programm dafür verwendet, um nach dem Git Pull, wie im Kapitel 3.10.5 beschrieben, alle neuen Pakete zu installieren und um Laravel generell zu downloaden.
 \subsection{Windows Eingabeaufforderung (CMD)}
-Text
+Das CMD (“Craniomandibuläre Dysfunktion“) auch Windows-Eingabeaufforderung genannt, wurde vom Projektteam hauptsächlich verwendet, um die Befehle aus Kapitel 2.3.9.4 auszuführen. CMD ist der Kommandozeileninterpreter von Microsoft Windows und wird gebraucht, um Text Befehle in dem System auszuführen. 
 \subsection{Github VCS und Github Desktop GUI}
-Text
+Bei Github handelt es sich um einen sogenannten “Version Control Service” welcher seit 2008 auf dem Mark ist und seit 2016 zu Microsoft gehört. Github Desktop ist die Implementation einer GUI für github und ist für Windows Mac und Linux erhältlich
 \subsection{ phpMyAdmin}
-Text
+Bei phpMyAdmin handelt es sich um eine quelloffene Implementierung eines Grafischen Editors für MySql und deren Fork MariaDB. Mit phpmyadmin ist es möglich komplette Datenbank Systeme zu administriere, es ist dabei nicht erforderlich manuel SQL Abfragen zu schreiben, dies kann alles über eine Grafische Oberfläche erfolgen.  
 \subsection{Adobe XD}
 Adobe XD ist eine von Adobe Systems entwickelte Grafik-Software zum Erstellen von grafischen Benutzeroberflächen für Web-Anwendungen. Verwendbar ist dieses Tool auf mehreren Betriebssystemen wie Windows, MacOS oder Linux. Diese Software wurde dem Projektteam von der Schule bereitgestellt, da Adobe-Programme nicht kostenfrei sind. Die erstellten Design-Vorschläge für die Weboberfläche wurden mit dieser Software erstellt. 
 
@@ -1780,7 +1928,8 @@ Adobe XD ist eine von Adobe Systems entwickelte Grafik-Software zum Erstellen vo
 \subsection{Adobe Photoshop}
 Adobe Photoshop ist ein von Adobe Inc. entwickeltes Bildbearbeitungsprogramm, welches bereits weltweit sehr verbreitet und beliebt ist. Dieses Programm ist im Jahre 1990 erschienen und ist nicht lizenzfrei, aufgrund dessen wurde uns dieses Programm ebenso von der Schule zur Verfügung gestellt. Mit dieser Software wurden alle Bilder auf der Weboberfläche auf die passende Größe skaliert und bearbeitet. 
 
-
+\subsection{LaTex}
+LaTex wird vom Projektteam zum Verfassen der Diplomarbeit benutzt. Es vereinfacht mit Makros das Schreiben im Textsystem Tex. Es hat den Vorteil, dass viele Layout Strukturen bereits vorkonfiguriert sind und so jedes in LaTex verfasste Dokument ähnlich aussieht. Latex wird vorrangig auf Universitäten und Fachhochschulen verwendet.
 
 \newpage
 \section{Projektplanung}
@@ -1793,17 +1942,32 @@ Im Laufe der Diplomarbeit wurden zahlreiche Besprechungen mit unserem Diplomarbe
 
 
 \subsection{Projektstrukturplan}
-Text
+Für eine bessere Darstellung der einzelnen Projektphasen wurde ein Projektstrukturplan erstellt. In der Abb. x.y ist der Projektstrukturplan ersichtlich.
 \subsection{Verantwortungsmatrix und Aufwandsschätzung}
-Text
+Folgende Abbildung repräsentiert die Zuständigkeiten der Mitarbeiter zu den Arbeitspaketen.
+Dabei wurden folgende Abkürzungen verwendet:
+
 \subsection{Meilensteinplan}
-Text
+Das Projektteam hat zum Plan der Diplomarbeit, einen Meilenstein Plan verwendet. Auf diesem Plan sind Meilensteine mit einem dazugehörigen Datum vermerkt. Das Datum gibt an, zu welchem Zeitpunkt dieser Meilenstein erfüllt werden soll. Der vom Projektteam angefertigte Meilensteinplan ist in Abbildung xy ersichtlich.
 \subsection{Terminplan}
-Text
+Während der Diplomarbeit gab es viele Termine, die vom Projektteam eingehalten werden mussten. Diese Termine wurden meistens mit unserem Ansprechpartner der Best GmbH Stefan Aigenbauer, oder mit dem Diplomarbeitsbetreuer Johann Burgstaller beschlossen.
+Unten eine Liste mit allen Terminen, die für diese Diplomarbeit relevant waren.
+05.07.2021 Start des Projekts
+31.07.2021 Projektmanagement abschließen ( Diplomarbeit Antrag fertigstellen, Arbeitspakete definieren, Projekt Controlling durchführen)
+31.08.2021 Recherche Abgeschlossen und alle nötigen Tools/Programme/Software installiert.
+01.09.2021 Start der Produktentwicklung
+09.09.2021 Start Präsentation halten
+28.11.2021 Front End Vorlagen mit dem Auftraggeber abgestimmt
+03.02.2022 Fertigstellung einer Alpha Prototypen 
+03.03.2022 Übergabe an den Auftraggeber und beginn der Testphase
+31.03.2022 Fertigstellung der Schriftlichen Arbeit
+04.04.2022 Abgabe der Schriftlichen Arbeit 
+08.04.2022 Ende des Projekts 
+
 
 
 \section{Inhalt von GitHub}
-Text
+Das Produkt ist unter dem Link https://github.com/MarcelEntner/Echtzeit_Visualisierung_Energiesysteme.git  aufrufbar.
 
 
 
