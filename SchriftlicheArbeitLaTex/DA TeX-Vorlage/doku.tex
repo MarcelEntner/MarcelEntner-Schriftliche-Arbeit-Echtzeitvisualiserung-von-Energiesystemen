@@ -136,7 +136,7 @@ Das PHP-Framework Laravel, welches 2011 entwickelt wurde, basiert auf dem MVC Mu
 	\item Routen 
 \end{itemize}
 
-Migrations sind die Abbildung der Tabellenstruktur und ermöglichen es, bei richtiger .env Datei Konfiguration, mit artisan Befehlen, ganz einfach eine Datenbank und die dazugehörigen Tabellen zu erstellen und diese auch genauso einfach wieder zu löschen oder zu leeren. Views fungieren als visueller Gliederungspart zwischen den Controllern und den Benutzern. In ihnen wird alles, was auf der Oberfläche ersichtlich ist, ausprogrammiert und gestaltet. Controller bilden die Verbindung zwischen den Views und den Models und ermöglichen es dem Benutzer, Daten mithilfe eines Zugriffs auf das Models zu verändern. Models bilden die Datenstruktur ab und ermöglichen den Zugriff auf die Daten und die Änderung dieser. Routen vermitteln die Benutzerabfrage von der View mit dem dazugehörigen Controller und werden in der Datei “web.php” definiert. Der ganze Prozess ist in \autoref{fig:Laravel MVC} visuell dargestellt. 
+Migrations sind die Abbildung der Tabellenstruktur und ermöglichen es, bei richtiger .env Datei Konfiguration, mit artisan Befehlen, ganz einfach eine Datenbank und die dazugehörigen Tabellen zu erstellen und diese auch genauso einfach wieder zu löschen oder zu leeren. Views fungieren als visueller Gliederungspart zwischen den Controllern und den Benutzern. In ihnen wird alles, was auf der Oberfläche ersichtlich ist, ausprogrammiert und gestaltet. Controller bilden die Verbindung zwischen den Views und den Models und ermöglichen es dem Benutzer, Daten mithilfe eines Zugriffs auf das Models zu verändern. Models bilden die Datenstruktur ab und ermöglichen den Zugriff auf die Daten und die Änderung dieser. Routen vermitteln die Benutzerabfrage von der View mit dem dazugehörigen Controller und werden in der Datei “web.php” definiert. Der ganze Prozess ist in \ref{fig:Laravel MVC} visuell dargestellt. 
 \begin{figure}[h]
 	\centering
 	\includegraphics[height=8cm,width=15cm]{images/LaravelMVC}
@@ -848,7 +848,7 @@ Mit diesem Typ von Routen lässt sich eine bestimmte Methode in einem ausgewähl
 Sobald in Laravel das Authentifizierungssystem aktiviert wird werden diese Routen automatisch erstellt. Diese Routen adressieren die ebenfalls durch Laravel erstellen auth Controller in der die Benutzeranmeldung sowie Registrierung bearbeitet wird.
 
 \newpage
-\section{MVC}
+\section{MVC}\label{sec:MVC}
 Das Produkt verwendet das von Laravel bereitgestellte Design Pattern MVC (Model, View, Controller) welches in der Abbildung 2.16 Dargestellt wird. 
 
 \begin{figure}[h]
