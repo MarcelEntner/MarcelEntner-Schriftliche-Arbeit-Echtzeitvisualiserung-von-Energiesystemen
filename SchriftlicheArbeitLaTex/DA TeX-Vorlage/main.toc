@@ -68,7 +68,7 @@
 \contentsline {subsection}{\numberline {2.8.1}Migration Befehle}{30}{subsection.2.8.1}%
 \contentsline {subsection}{\numberline {2.8.2}Seeder und Factory Befehle}{30}{subsection.2.8.2}%
 \contentsline {subsection}{\numberline {2.8.3}Model und Controller Befehle}{31}{subsection.2.8.3}%
-\contentsline {subsection}{\numberline {2.8.4}Starten des Laravel Develop Servers}{31}{subsection.2.8.4}%
+\contentsline {subsection}{\numberline {2.8.4}Starten des Laravel Entwicklungs Servers}{31}{subsection.2.8.4}%
 \contentsline {subsection}{\numberline {2.8.5}Befehle nach dem Git Pull}{32}{subsection.2.8.5}%
 \contentsline {section}{\numberline {2.9}Routen in Laravel}{32}{section.2.9}%
 \contentsline {subsection}{\numberline {2.9.1}Ressource Routen}{32}{subsection.2.9.1}%
