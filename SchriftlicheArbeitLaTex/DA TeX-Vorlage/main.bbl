@@ -1,0 +1,50 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{asp}{online}{}
+      \name{author}{1}{}{%
+        {{hash=8daa64cec109d9f8083412d8e4ee22dc}{%
+           family={TEst},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{8daa64cec109d9f8083412d8e4ee22dc}
+      \strng{fullhash}{8daa64cec109d9f8083412d8e4ee22dc}
+      \strng{bibnamehash}{8daa64cec109d9f8083412d8e4ee22dc}
+      \strng{authorbibnamehash}{8daa64cec109d9f8083412d8e4ee22dc}
+      \strng{authornamehash}{8daa64cec109d9f8083412d8e4ee22dc}
+      \strng{authorfullhash}{8daa64cec109d9f8083412d8e4ee22dc}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Testtitle}
+      \verb{urlraw}
+      \verb https://asp.mvc-tutorial.com/de/421/einfuhrung/was-ist-asp-net-mvc/
+      \endverb
+      \verb{url}
+      \verb https://asp.mvc-tutorial.com/de/421/einfuhrung/was-ist-asp-net-mvc/
+      \endverb
+      \warn{\item Entry 'asp' (Verzeichniss.bib): Invalid format '18.03.2022' of date field 'urldate' - ignoring}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

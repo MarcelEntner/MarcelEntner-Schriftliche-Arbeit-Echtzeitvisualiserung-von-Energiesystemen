@@ -1,0 +1,8 @@
+@WWW{asp,
+  author  = {TEst},
+  title   = {Testtitle},
+  url     = {https://asp.mvc-tutorial.com/de/421/einfuhrung/was-ist-asp-net-mvc/},
+  urldate = {18.03.2022},
+}
+
+@Comment{jabref-meta: databaseType:biblatex;}

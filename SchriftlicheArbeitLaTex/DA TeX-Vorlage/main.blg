@@ -1,0 +1,17 @@
+[0] Config.pm:311> INFO - This is Biber 2.16
+[0] Config.pm:314> INFO - Logfile is 'main.blg'
+[158] biber-MSWIN64:340> INFO - === 
+[205] Biber.pm:415> INFO - Reading 'main.bcf'
+[359] Biber.pm:952> INFO - Found 1 citekeys in bib section 0
+[380] Biber.pm:4340> INFO - Processing section 0
+[396] Biber.pm:4531> INFO - Looking for bibtex format file 'Verzeichniss.bib' for section 0
+[455] bibtex.pm:1689> INFO - LaTeX decoding ...
+[463] bibtex.pm:1494> INFO - Found BibTeX data source 'Verzeichniss.bib'
+[497] Utils.pm:395> WARN - Entry 'asp' (Verzeichniss.bib): Invalid format '18.03.2022' of date field 'urldate' - ignoring
+[518] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[518] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[518] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
+[518] Biber.pm:4174> INFO - No sort tailoring available for locale 'de-DE'
+[526] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[526] bbl.pm:757> INFO - Output to main.bbl
+[527] Biber.pm:128> INFO - WARNINGS: 1

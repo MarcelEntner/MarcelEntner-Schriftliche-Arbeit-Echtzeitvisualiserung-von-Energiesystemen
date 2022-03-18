@@ -63,7 +63,7 @@
 %Zeilenumbruch in URLs
 \usepackage[hyphens]{url}
 \usepackage{hyperref}
-\usepackage{breakurl}
+\usepackage[hyphenbreaks]{breakurl}
 
 %zum Einbinden von PDF-Dateien
 \usepackage{pdfpages}
@@ -152,6 +152,9 @@
 % Einbinden einer Schriftart mit angepasster Kerningtabelle und guten Ligaturen
 \usepackage{lmodern}
 
+\usepackage[backend=biber]{biblatex}
+\addbibresource{Verzeichniss.bib}
+
 \begin{document}
 
 
@@ -177,6 +180,7 @@
 \setlength{\parskip}{5pt plus 2pt minus 1pt}
 \include{einleitung}
 \include{doku}
+
 
 \end{document}
 
