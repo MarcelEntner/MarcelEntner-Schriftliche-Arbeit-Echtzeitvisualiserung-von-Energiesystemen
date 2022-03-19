@@ -93,19 +93,28 @@ Die \autoref{fig:Architektur} repräsentiert die Architektur des Zielsystems. De
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[height=8cm,width=15cm]{images/Architektur}
+	\includegraphics[height=7cm,width=15cm]{images/Architektur}
 	\caption{Architektur}
 	\label{fig:Architektur}
 \end{figure}
 
 \subsection{Endgeräte}
-Das Produkt wurde als Browser Anwendung entwickelt, um überall lauffähig zu sein. Es ist in Chrome, Firefox und Edge Browser getestet worden und ist dort voll funktionsfähig. Die Oberfläche wurde für einen 13 bis 27 Zoll Monitor entwickelt und funktioniert dort in jeder Zoomstufe einwandfrei. Klares Ziel war es, das Produkt nicht für den Mobiltelefongebrauch zu programmieren. Bewusst wurde sich gegen eine native Anwendungsentwicklung entschieden, um so die Verwendbarkeit auf allen Plattformen zu garantieren. Darüber hinaus würde eine parallele Anwendungsentwicklung auf den drei gängigen Betriebssystemen (Windows, MacOS, Linux) den zeitlichen Rahmen der Diplomarbeit sprengen. Getestet wurde das Produkt in den Versionen:
+Das Produkt wurde als Browser Anwendung entwickelt, um überall lauffähig zu sein. Es ist in Chrome, Firefox und Edge Browser getestet worden und ist dort voll funktionsfähig. Die Oberfläche wurde für einen 13 bis 27 Zoll Monitor entwickelt und funktioniert dort in jeder Zoomstufe einwandfrei. Klares Ziel war es, das Produkt nicht für den Mobiltelefongebrauch zu programmieren. Das Team hat sich bewusst gegen eine native Anwendungsentwicklung entschieden, um so die Verwendbarkeit auf allen Plattformen zu garantieren. Darüber hinaus würde eine parallele Anwendungsentwicklung auf den drei gängigen Betriebssystemen (Windows, MacOS, Linux) den zeitlichen Rahmen der Diplomarbeit sprengen. In welchen Browser Versionen das Produkt getestet wurde ist in der Tabelle \ref{tab:Browser und Versionen in denen das Produkt getestet wurde} ersichtlich. 
 
-\begin{itemize}
-	\item Chrom 99.0.4844.51
-	\item Firefox 98.0
-	\item Edge 99.0
-\end{itemize}
+\newpage
+\begin{table}[h]
+
+	\begin{tabular}{|l|l|}
+		\hline
+		Browser & Version      \\ \hline
+		Firefox & 99.0beta     \\ \hline
+		Chrome  & 99.0.4844.51 \\ \hline
+		Edge    & 99.0         \\ \hline
+	\end{tabular}
+\caption{Browser und Versionen in denen das Produkt getestet wurde}
+\label{tab:Browser und Versionen in denen das Produkt getestet wurde}
+\end{table}
+
 
 \subsection{Serverseitig}
 Bei PHP handelt es sich zum einen Serverseitige zu laufzeit interpretierte Skriptsprache mit welcher sich Daten dynamisch auf Website anzeigen lassen. Da es sich bei Laravel um ein Php Framework handelt, wird der Code am Webserver beim Laden der Website interpretiert. Laravel kommuniziert Serverseitig mithilfe eines sogenannten ORM (Object Relational Mapper) mit der Datenbank. Hiermit kann der Programmierer auf vorgefertigte Funktionen des ORM zurückgreifen und muss Datenbankoperationen wie Abfragen oder das erstellen von Tabelleneinträgen nicht als SQL Abfragen Formatieren.
@@ -124,10 +133,10 @@ Folgende \autoref{fig:clientseitig}
 \end{figure}
 \newpage
 \subsection{Framework}
-Die Wahl des Frameworks ist für die Umsetzung des Projekts entscheidend. Unter dem Begriff Framework versteht man eine Art Programmiergerüst, die es dem Programmierer deutlich erleichtert, ein Produkt zu erstellen. Jedes Framework bietet spezielle Lösungen und Lösungsansätze an und damit hat jedes einzelne sein eigenes Einsatzgebiet. In den nachfolgenden Unterkapiteln werden mögliche Frameworks für die Umsetzung des Projekts kurz erklärt. In \ref{sec:Entscheidung des Frameworks} wird genauer darauf eingegangen, welches Framework gewählt wurde und aus welchem Grund.
+Die Wahl des Frameworks ist für die Umsetzung des Projekts entscheidend. Unter dem Begriff Framework versteht man eine Art Programmiergerüst, die es dem Programmierer deutlich erleichtert, ein Produkt zu erstellen. Jedes Framework bietet spezielle Lösungen und Lösungsansätze an und damit hat jedes einzelne sein eigenes Einsatzgebiet. Zusätzlich wurde noch die Software-Bibliothek React ergänzt, da auch diese eine mögliche Umsatzungsvariante ist. In den nachfolgenden Unterkapiteln werden mögliche Frameworks für die Umsetzung des Projekts kurz erklärt. In \ref{sec:Entscheidung des Frameworks} wird genauer darauf eingegangen, welches Framework gewählt wurde und aus welchem Grund.
 
 \subsubsection{Laravel}
-Das PHP-Framework Laravel, welches 2011 entwickelt wurde, basiert auf dem MVC Muster\footnote{wird in  \autoref{sec:MVC} genauer erläutert} und bietet damit eine sehr gute Strukturierung und Übersicht beim Arbeiten. Laravel wird in den meisten Fällen als Back-End Framework verwendet. Die meisten Projekte werden mit Laravel im Back-End in Kombination mit Vue.js im Front-End umgesetzt. Genauere Informationen  zu Vue.js sind im Kapitel 2.6.3 nachzulesen. Laravel bietet jedoch die Möglichkeit, im Back- als auch im Front-End verwendet zu werden. Es lässt sich in folgende Einzelteile strukturieren:
+Das PHP-Framework Laravel, welches 2011 entwickelt wurde, basiert auf dem MVC Muster\footnote{wird in  \autoref{sec: MVC} genauer erläutert} und bietet damit eine sehr gute Strukturierung und Übersicht beim Arbeiten. Laravel wird in den meisten Fällen als Back-End Framework verwendet. Die meisten Projekte werden mit Laravel im Back-End in Kombination mit Vue.js im Front-End umgesetzt. Genauere Informationen  zu Vue.js sind in \ref{sec: Vue.js} nachzulesen. Laravel bietet jedoch die Möglichkeit, im Back- als auch im Front-End verwendet zu werden. Es lässt sich in folgende Einzelteile strukturieren:
 
 \begin{itemize}
 	\item Migrations 
@@ -137,7 +146,7 @@ Das PHP-Framework Laravel, welches 2011 entwickelt wurde, basiert auf dem MVC Mu
 	\item Routen 
 \end{itemize}
 
-Migrations sind die Abbildung der Tabellenstruktur und ermöglichen es, bei richtiger .env Datei Konfiguration, mit artisan Befehlen, ganz einfach eine Datenbank und die dazugehörigen Tabellen zu erstellen und diese auch genauso einfach wieder zu löschen oder zu leeren. Views fungieren als visueller Gliederungspart zwischen den Controllern und den Benutzern. In ihnen wird alles, was auf der Oberfläche ersichtlich ist, ausprogrammiert und gestaltet. Controller bilden die Verbindung zwischen den Views und den Models und ermöglichen es dem Benutzer, Daten mithilfe eines Zugriffs auf das Models zu verändern. Models bilden die Datenstruktur ab und ermöglichen den Zugriff auf die Daten und die Änderung dieser. Routen vermitteln die Benutzerabfrage von der View mit dem dazugehörigen Controller und werden in der Datei “web.php” definiert. Der ganze Prozess ist in \autoref{fig:Laravel MVC} visuell dargestellt. 
+Migrations sind die Abbildung der Tabellenstruktur und ermöglichen es, bei richtiger .env Datei Konfiguration, mit artisan\footnote{artisan ist die in Laravel enthaltene Befehlszeilenschnittstelle} Befehlen, ganz einfach eine Datenbank und die dazugehörigen Tabellen zu erstellen und diese auch genauso einfach wieder zu löschen oder zu leeren. Views fungieren als visueller Gliederungspart zwischen den Controllern und den Benutzern. In ihnen wird alles, was auf der Oberfläche ersichtlich ist, ausprogrammiert und gestaltet. Controller bilden die Verbindung zwischen den Views und den Models und ermöglichen es dem Benutzer, Daten mithilfe eines Zugriffs auf das Models zu verändern. Models bilden die Datenstruktur ab und ermöglichen den Zugriff auf die Daten und die Änderung dieser. Routen vermitteln die Benutzerabfrage von der View mit dem dazugehörigen Controller und werden in der Datei “web.php” definiert. Der ganze Prozess ist in \autoref{fig:Laravel MVC} visuell dargestellt. 
 \begin{figure}[h]
 	\centering
 	\includegraphics[height=8cm,width=15cm]{images/LaravelMVC}
@@ -150,29 +159,29 @@ Migrations sind die Abbildung der Tabellenstruktur und ermöglichen es, bei rich
 
 
 \subsubsection{Angular}
-Angular ist ein clientseitiges JavaScript-Web-Framework und wird meistens zum Erstellen von sogenannten Single Page Applications, wie beispielsweise ein einfaches Bedienelement zur Steuerung einer Maschine, verwendet. Angular ist speziell für Web-,Desktop- und Mobile-Anwendungen entworfen. Ein weiterer Aspekt des Frameworks ist es, dass es von Google entwickelt wurde, und so ein langfristiger Support gewährleistet ist. Angular macht es mit der Kombination aus HTML und TypeScript möglich, so ziemlich jede mögliche Aufgabenstellung zu bewältigen. Es bietet auch besondere Features wie eine bidirektionale Datenbindung an und ist somit gut für Echtzeitanwendungen geeignet. 
+Angular ist ein clientseitiges JavaScript-Web-Framework und wird meistens zum Erstellen von sogenannten Single Page Applications\footnote{Anwendung die nur auf einer Seite zu bedienen ist}, wie beispielsweise ein einfaches Bedienelement zur Steuerung einer Maschine, verwendet. Angular ist speziell für Web-,Desktop- und Mobile-Anwendungen entworfen. Ein weiterer Aspekt des Frameworks ist es, dass es von Google entwickelt wurde, und so ein langfristiger Support gewährleistet ist. Angular macht es mit der Kombination aus HTML und TypeScript möglich, so ziemlich jede mögliche Aufgabenstellung zu bewältigen. Es bietet auch besondere Features wie eine bidirektionale Datenbindung an und ist somit gut für Echtzeitanwendungen geeignet. 
 Weitere Informationen zu Angular können unter der Qulle xy (https://angular.de/artikel/was-ist-angular/) nachgelsen werden.
 \begin{figure}[h]
 	\centering
-	\includegraphics[height=6cm,width=8cm]{images/Angular_Logo}
+	\includegraphics[height=4cm,width=5cm]{images/Angular_Logo}
 	\caption{Angular Logo}
 	\label{fig:Angular Logo}
 \end{figure}
-\newpage
+
 \subsubsection{ASP.NET}
 ASP.NET (Active Server Pages) ist ein Web Applications Framework, welches 2002 von der Firma Microsoft veröffentlicht wurde. Es ist der Nachfolger des ASP Frameworks und bietet eine perfekte Grundlage, um dynamische Websites, Webanwendungen und Webservices zu entwickeln. Projekte werden hier in der Regel in der Sprache C\# programmiert. Jedoch besteht auch die Möglichkeit, andere Sprachen wie beispielsweise Perl, Python oder Cobol zu verwenden. ASP.NET bietet nicht nur die Möglichkeit dynamische Websites zu erstellen, sondern auch Desktop Anwendungen.
 Durch die vordefinierte Datenstruktur, die ASP.NET bereitstellt, hilft es dem Programmierer Programmiersprachen nicht zu vermischen und einen übersichtlichen Programmierstil beizubehalten. Des Weiteren können viele Teile automatisch generiert werden und ersparen dem Programmierer damit einen immensen Aufwand.
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[height=6cm,width=8cm]{images/ASP.net_Logo}
+	\includegraphics[height=4cm,width=7cm]{images/ASP.net_Logo}
 	\caption{ASP.net Logo}
 	\label{fig:ASP.net Logo}
 \end{figure}
 
 
 Genaure Informatione zu ASP.Net können unter der Quelle xy (https://asp.mvc-tutorial.com/de/421/einfuhrung/was-ist-asp-net-mvc/) nachgelesen werden.
-\newpage
+
 \subsubsection{React}
 React ist eine JavaScript-Softwarebibliothek, die es erleichtert, Benutzeroberflächen in Form von Web Applikationen zu erstellen. Es ist komponentenbasiert, was bedeutet, dass jedes Element in Blöcken aufgebaut ist und durch Zusammenfügen dieser einzelnen Codebits kann dann eine sogenannte View erstellt werden. Dies bietet die Möglichkeit, bereits erstellte Codebits auch in anderen Views zu verwenden. React wird oft zusammen mit ASP.NET verwendet.
 
@@ -180,21 +189,21 @@ React ist eine JavaScript-Softwarebibliothek, die es erleichtert, Benutzeroberfl
 Genaueres zu React kann unter der Quelle xy (https://t3n.de/news/react-facebook-623999/) nachgelesen werden.
 \begin{figure}[h]
 	\centering
-	\includegraphics[height=5cm,width=7cm]{images/React_Logo}
+	\includegraphics[height=4cm,width=5cm]{images/React_Logo}
 	\caption{React Logo}
 	\label{fig:React Logo}
 \end{figure}
 \newpage
 
 \subsubsection{Entscheidung des Frameworks}\label{sec:Entscheidung des Frameworks}
-Positive und negative Aspekte jedes Framworks wurden vom Projektteam, mithilfe der Tabelle \ref{sec:Entscheidung des Frameworks}, abgewogen.
+Positive und negative Aspekte jedes Framworks wurden vom Projektteam, mithilfe der Tabelle 2.3 abgewogen. Daten für diese Tabelle wurden aus den Quellen xy entnommen.
 
 \begin{table}[h]
 	
 	\label{tab: Entscheidung des Frameworks}
 	\begin{tabular}{|l|l|l|}
 		\hline
-		Framework &
+		Framework oder Bibliothek  &
 		Vorteile &
 		Nachteile \\ \hline
 		React &
@@ -216,7 +225,7 @@ Positive und negative Aspekte jedes Framworks wurden vom Projektteam, mithilfe d
 	\end{tabular}
 	\caption{Entscheidung des Frameworks}
 \end{table}
-
+\newpage
 Nach Begutachtung der Tabelle \ref{sec:Entscheidung des Frameworks} und aufgrund der überwiegenden positiven Aspekte , entschied sich das Projektteam für das Framework Laravel.Entscheidend war beispielsweise die einfache Handhabung und die Möglichkeit Bootstrap in Kombination zu verwenden. Da dieses Framework auch im Schulfach Softwareentwicklung genauer bearbeitet wurde, besitzt das Projektteam bereits ein gutes Grundwissen. Es wurde darüber hinaus überlegt, ob auch das Front-End Framework Vue.js zusätzlich verwendet werden soll. Da Vue.js nur zusätzliche Komplexität ohne einen wirklichen Nutzen mit sich bringen würde, wurde diese Option vernachlässigt. Das Framework Laravel bietet alle nötigen Front- und Back-End Möglichkeiten, die es ermöglichen, Laravel im Front wie auch im Back-End zu verwenden. Entscheidender Faktor war auch, dass das Projektteam noch nie mit einem anderen Framework gearbeitet hat, und so eigentlich nur Laravel in Frage gekommen ist.
 
 
@@ -253,7 +262,7 @@ ist das Tailwind.css Logo ersichtlich.
 \end{figure}
 
 
-\subsubsection{Vue.js}
+\subsubsection{Vue.js}\label{sec: Vue.js}
 Das Template Vue.js, welches für die Front-End-Entwicklung eingesetzt werden kann, wird immer populärer. Die Einfachheit und Benutzerfreundlichkeit ist ein Grund für die immer größer werdende Beliebtheit. Vue.js basiert auf dem virtuellen DOM\footnote{Virtuelles Document Object Model, beim Aktualisieren schneller als das herkömmliche}, was bedeutet, dass das Abarbeiten von Befehlen schneller funktioniert als beim herkömmlichen bekannten DOM\footnote{Document Object Model, stellt XML oder HTML Dokumente als Baumstruktur dar}. Vue.js basiert auf den Programmiersprachen HTML, CSS und JavaScript, womit die wichtigsten verwendeten Sprachen abgedeckt sind. Vue.js stellt Funktionen wie UniTests, End-to-End-Tests sowie Routing-Systeme bereit. Die Lesbarkeit bei diesem Template ist sehr gut, da alle Komponenten sich in einer Datei befinden. Das Projektteam hat nur wenig Erfahrung mit diesem Template und es herrschen generelle Sprachbarrieren, da vieles nur in der Sprache Chinesisch vorhanden ist.
  In \autoref{fig:Vuejs Logo}
 ist das Vue.js Logo ersichtlich.
@@ -328,12 +337,12 @@ In der nachfolgenden Tabelle ist eine Gegenüberstellung der Vor- und Nachteile 
 \subsection{Verbindung der Datenbank mit Laravel}
 In Laravel ist die Verbindung  der Datenbank mithilfe der .env Datei möglich. Tabellen werden in sogenannten Migrations definiert. Auf die einzelnen Komponenten und deren Individualisierung wird in den Kapiteln \ref{sec:Laravel .env Datei} und \ref{sec:Migrations} noch genauer eingegangen.
 \subsubsection{Laravel .env Datei } \label{sec:Laravel .env Datei}
-In Laravel bietet die .env Datei, welche sich direkt im Projektordner befindet, die Möglichkeit, alle nötigen Umgebungsvariablen zu initialisieren. Ein Beispiel für Umgebungsvariablen sind Datenbank Anmeldeinformationen, Cache-Treiber, Mail-Server-Domain oder auch die App URL. Wichtig ist es, dass die .env Datei immer Gerät spezifisch konfiguriert wird. Das heißt, es ist wichtig beim Zusammenarbeiten, speziell mit Git, sehr gut aufzupassen. Folgedessen ist es empfehlenswert, die .env Datei  mit einem Gitignore\footnote{Gitignore gibt an, welche Datei bei einem Git Pull nicht heruntergeladen werden soll} zu versehen, um Komplikationen zu vermeiden. Es besteht auch die Möglichkeit,  Änderungen in der .env Datei direkt aus dem Programm vorzunehmen. 
+In Laravel bietet die .env Datei, welche sich direkt im Projektordner befindet, die Möglichkeit, alle nötigen Umgebungsvariablen zu initialisieren. Ein Beispiel für Umgebungsvariablen sind Datenbank Anmeldeinformationen, Cache-Treiber, Mail-Server-Domain oder auch die App URL. Wichtig ist es, dass die .env Datei immer Gerät spezifisch konfiguriert wird. Das heißt, es ist wichtig beim Zusammenarbeiten, speziell mit Git, sehr gut aufzupassen. Das Projekt Team hatte Problem, wie beispielsweise ungleiche PHP Versionen, die zu Fehlern und Nichtausführbarkeit des Produkts führten.Auf dem Produktivsystem gab es dann Probleme mit der Benennung der Ordner. Folge dessen ist es empfehlenswert, die .env Datei  mit einem Gitignore\footnote{Gitignore markiert Daten, die von Git ignoriert werden sollen} zu versehen, um Komplikationen zu vermeiden. Es besteht auch die Möglichkeit,  Änderungen in der .env Datei direkt aus dem Programm vorzunehmen. 
 
 \subsubsection{Migrations}\label{sec:Migrations}
 Migrations bilden in Laravel eine Möglichkeit, die Tabellenstruktur im Programm selbst fest zu legen. Sie sind sozusagen der Blueprint\footnote{ein Blueprint ist sozusagen der Bauplan oder eine Vorlage wie etwas auszusehen hat}, in welchem die gesamte Tabellenstruktur vordefiniert ist. Für jede Tabelle, die in der Datenbank, welche vorher in der  .env Datei  definiert wurde, erstellt werden soll, gibt es eine eigene Migration. Migrations sind unterteilt in eine up() und in eine down()  Methode\footnote{Methoden sind ein Art Container für den in ihnen auszuführenden Code}. In der up() Methode wird der Name der Tabelle der Name der einzelnen Tupel und deren Datentyp definiert. Der Datentyp id() ist standardmäßig immer der primary Key. 
-In der down() Methode wird die Tabelle von der Datenbank gelöscht. Die beiden Methoden werden durch artisan Befehle, welche im Kapitel 3.10 ersichtlich sind, angesteuert. 
-Erstellt werden Migrations mithilfe eines weiteren Laravel Befehls, welcher ebenfalls  im Kapitel 3.10.1 beschrieben wird. Wenn die Migration erfolgreich erstellt wurde, ist diese folgendermaßen benannt : JJJJ.MM.DD\_tempname.php und befindet sich im Ordner Projektname\textbackslash database \textbackslash migrations.
+In der down() Methode wird die Tabelle von der Datenbank gelöscht. Die beiden Methoden werden durch artisan Befehle, welche im Kapitel \ref{sec Migration Befehle} ersichtlich sind, angesteuert. 
+Erstellt werden Migrations mithilfe eines weiteren Laravel Befehls, welcher  im Kapitel \ref{sec Migration Befehle} beschrieben wird. Wenn die Migration erfolgreich erstellt wurde, ist diese folgendermaßen benannt : JJJJ.MM.DD\_tempname.php und befindet sich im Ordner Projektname\textbackslash database \textbackslash migrations.
 
 
 Alle Informationen liegen der Quelle (https://laravel.com/docs/9.x/migrations) zugrunde.
@@ -443,15 +452,15 @@ Alle Informationen und Arten der Datenübergabe wurden aus dem Video aus der Que
 Von Seiten des Auftraggebers wurde von Anfang an der Wunsch geäußert, Energiesysteme und Energietechnologien, mithilfe eines Kartendienstes visuell darzustellen. Um andere Möglichkeiten, wie eine Karte auszuschließen, wurde auch zu Geoinformationssystem und CSS-System recherchiert. Die Ergebnisse dieser Recherchen werden in den nachfolgenden Kapiteln behandelt. 
 
 \subsection{Kartendienste}
-Das Produkt stellt eine zentrale Verwaltungsmöglichkeit in Form einer Karte bereit. Um diese Karte auf dem Produkt zu verwenden, wird ein Kartenanbieter benötigt. Die Zwei Optionen Google Maps und OpenStreetMap wurden vom Projektteam analysiert. Auf diese zwei Anbieter wird in den Kapitel \ref{sec:OpenStreetMap} und \ref{sec:Gooogle Maps} genauer eingegangen. Von Seiten des Auftraggebers wurde, aufgrund einer gewissen Abneigung zu Diensten, die von Google bereitgestellt werden, eine Präferenz zu OpenStreetMap geäußert.
+Das Produkt stellt eine zentrale Verwaltungsmöglichkeit in Form einer Karte bereit. Um diese Karte auf dem Produkt zu verwenden, wird ein Kartenanbieter benötigt. Die Zwei Optionen Google Maps und OpenStreetMap wurden vom Projektteam analysiert. Auf diese zwei Anbieter wird in den Kapitel \ref{sec:Gooogle Map} und \ref{sec:OpenStreetMap} genauer eingegangen. Von Seiten des Auftraggebers wurde, aufgrund einer gewissen Abneigung zu Diensten, die von Google bereitgestellt werden, eine Präferenz zu OpenStreetMap geäußert.
 
 \subsubsection{Google Maps} \label{sec:Gooogle Map}
 
 
-Google Maps ist der klare Marktführer in der Sparte der Kartendienst Anbieter.  Der Großteil  aller Webanwendungen, welche Maps verwenden, werden mit Google Maps umgesetzt. Google Maps überzeugt nicht nur mit einer sehr hohen Individualisierungsmöglichkeiten, sondern auch mit einer sehr hohen Ausfallsicherheit. Der größte Vorteil ist jedoch, das große Angebot an vordefinierten Api Diensten. Diese können einfach über die Google Cloud Platform überwacht, bedient oder aktiviert werden. Genauere Infos zur Google Maps Plattform stehen im Kapitel 3.9. Ein weiterer Vorteil von Google Maps ist es, dass es wirklich weitflächig alles abdeckt, ganz im Gegensatz zu OpenStreetMap. Der einzige Nachteil ist, dass die Verwendung einer Google Maps Karte auf der Website kostenpflichtig ist. Es gibt jedoch auf der Google Cloud Seite eine genaue Kostenaufstellung. Bezahlt wird bei Verwendung der Api Dienste. Google verrechnet hier je nach Api Dienst einen gewissen Betrag pro Verwendung. Diese Kosten waren jedoch bei der Entwicklung kein Problem, da auf Google Cloud für die ersten 30 Tage ein Startkapital von 300 Dollar anbietet.  
+Google Maps ist der klare Marktführer in der Sparte der Kartendienst Anbieter.  Der Großteil  aller Webanwendungen, welche Maps verwenden, werden mit Google Maps umgesetzt. Google Maps überzeugt nicht nur mit einer sehr hohen Individualisierungsmöglichkeiten, sondern auch mit einer sehr hohen Ausfallsicherheit. Der größte Vorteil ist jedoch, das große Angebot an vordefinierten Api Diensten. Diese können einfach über die Google Cloud Platform überwacht, bedient oder aktiviert werden. Genauere Infos zur Google Maps Plattform stehen im  \autoref{sec: Google Cloud}. Ein weiterer Vorteil von Google Maps ist es, dass es wirklich weitflächig alles abdeckt, ganz im Gegensatz zu OpenStreetMap. Der einzige Nachteil ist, dass die Verwendung einer Google Maps Karte auf der Website kostenpflichtig ist. Es gibt jedoch auf der Google Cloud Seite eine genaue Kostenaufstellung. Bezahlt wird bei Verwendung der Api Dienste. Google verrechnet hier je nach Api Dienst einen gewissen Betrag pro Verwendung. Diese Kosten waren jedoch bei der Entwicklung kein Problem, da Google Cloud für die ersten 30 Tage ein Startkapital von 300 Dollar anbietet.  
 \begin{figure}[h]
 	\centering
-	\includegraphics[height=5cm,width=7cm]{images/GoogleMapsLogo}
+	\includegraphics[height=3cm,width=4cm]{images/GoogleMapsLogo}
 	\caption{Google Maps Logo}
 	\label{fig:GoogleMaps Logo}
 \end{figure}
@@ -459,11 +468,11 @@ Google Maps ist der klare Marktführer in der Sparte der Kartendienst Anbieter. 
 \subsubsection{OpenStreetMap}\label{sec:OpenStreetMap}
 
 
-OpenStreetMap ist ein 2004 gegründetes Projekt, welches das Ziel hat, eine frei verfügbare Weltkarte zu erstellen. Gegründet wurde dieses Projekt von Steve Coast und zählt mittlerweile um die 7.8 Millionen Nutzer. Das Hauptargument OpenStreetMap eher als Google Maps zu verwenden ist es, dass dieses kostenlos und lizenzfrei ist. Es gibt jedoch gravierende Nachteile gegenüber Google Maps. Openstreetmap bietet keine  Api Dienste an. Es gibt zwar die Möglichkeit, mithilfe von Leaflet, welches eine JavaScript-Bibliothek ist, eigenen Api Dienste zu programmieren, dies ist jedoch mit einem sehr hohen Aufwand und einer sehr hohen Komplexität verbunden. Ein weiterer Nachteil von Openstreetmap ist es, dass es auf Benutzerdaten aufbaut. Das bedeutet, Nutzer sind  dafür verantwortlich, die Karte immer auf dem aktuellsten Stand zu halten. Somit ist dieser Kartendienst wenig zuverlässig.
+OpenStreetMap ist ein 2004 gegründetes Projekt, welches das Ziel hat, eine frei verfügbare Weltkarte zu erstellen. Gegründet wurde dieses Projekt von Steve Coast und zählt mittlerweile um die 7.8 Millionen Nutzer. Das Hauptargument OpenStreetMap eher als Google Maps zu verwenden ist es, dass dieses kostenlos und lizenzfrei ist. Es gibt jedoch gravierende Nachteile gegenüber Google Maps. Openstreetmap bietet keine  Api Dienste an. Es gibt zwar die Möglichkeit, mithilfe von Leaflet, welches eine JavaScript-Bibliothek ist, eigenen Api Dienste zu programmieren, dies ist jedoch mit einem sehr hohen Aufwand und einer sehr hohen Komplexität verbunden. Ein weiterer Nachteil von OpenStreetMap ist es, dass es auf Benutzerdaten aufbaut. Das bedeutet, Nutzer sind  dafür verantwortlich, die Karte immer auf dem aktuellsten Stand zu halten. Somit ist dieser Kartendienst wenig zuverlässig.
 Ein weiterer Nachteil wäre, dass Daten für alle User zugänglich sind. 
 \begin{figure}[h]
 	\centering
-	\includegraphics[height=5cm,width=7cm]{images/OpenStreetMap_Logo}
+	\includegraphics[height=3cm,width=4cm]{images/OpenStreetMap_Logo}
 	\caption{Open Street Map Logo}
 	\label{fig:Open Street Map Logo}
 \end{figure}
@@ -475,7 +484,7 @@ Informationen über OpenStreetMap wurden aus der Quelle xy () entnommen.
 Die aufwendigste Option ist es, die Energiesysteme mittels GPS (Global Positioning System) zu orten und diese dann auf der Seite visuell darzustellen. In diesem Falle müsste das Galileo, welches das Europäische GPS System ist, genutzt werden. Galileo ist ein offenes, kostenloses Signal, welches es ermöglicht, den Sender auf bis zu zwei Meter genau zu orten. Ein solcher GPS Sender würde auf circa zehn bis zwanzig Euro pro System oder Technologie kommen. Die gesendeten Signale können mithilfe eines Empfängers ausgewertet werden.
 
 \subsection{CSS-System}
-Eine weitere Option ist es, die Energiesysteme und Technologien mittels CSS auf der Website darzustellen. Eine Möglichkeit wäre es, die Koordinaten der Systeme in die Datenbank zu schreiben, diese dann in Laravel auszulesen und auf einem selbst erstellten Hintergrund  einzuzeichnen. Dieses System könnte in Kombination mit einem Geoinformationssystem * verwendet werden. Dies könnte dann folgendermaßen aussehen: 
+Eine weitere Option ist es, die Energiesysteme und Technologien mittels CSS auf der Website darzustellen. Eine Möglichkeit wäre es, die Koordinaten der Systeme in die Datenbank zu schreiben, diese dann in Laravel auszulesen und auf einem selbst erstellten Hintergrund  einzuzeichnen. Dieses System könnte in Kombination mit einem Geoinformationssystem verwendet werden. Dies könnte dann folgendermaßen aussehen: 
 
 \begin{figure}[h]
 	\centering
@@ -494,7 +503,7 @@ Eine weitere Option ist es, die Energiesysteme und Technologien mittels CSS auf 
 		\item es soll nicht Kostspielig sein 
 	\end{itemize}
 
-Um die Anbieter auf die gewünschten Anforderungen zu Überprüfen wurde die Liste angefertigt.
+Um die Anbieter auf die gewünschten Anforderungen zu Überprüfen wurde die Liste angefertigt. Daten für diese Tabelle wurden den Quellen ... entnommen.
 
 \begin{table}[h]
 
@@ -526,10 +535,13 @@ Um die Anbieter auf die gewünschten Anforderungen zu Überprüfen wurde die Lis
 		ja &
 		\begin{tabular}[c]{@{}l@{}}keine Apis;\\ sehr viel Aufwand;\\ erfüllt den gleichen Zweck \\wie eine Karte\end{tabular} \\ \hline
 	\end{tabular}
+\caption{Vor- und Nachteile der Anbieter}
+\label{sec: Vor- und Nachteile der Anbieter}
 \end{table}
 
 
 \newpage
+Auf Basis der Tabelle 2.5, einigten sich der Auftraggeber und das Projektteam darauf, einen Kartendienst zu verwenden, da ein Geoinformationssystem zu anspruchsvoll gewesen wäre und ein CSS-System genau das Gleiche wie eine Karte wäre, nur mit mehr Aufwand verbunden ist. Daraufhin wurde vom Projektteam das Dokument “Google Maps vs Open Street Map” erstellt. Dieses Dokument ist auf der DVD der Diplomarbeit ersichtlich. Nach gemeinsamer Begutachtung dieses Dokuments und dem Abwägen der Vor und Nachteile jedes Anbieters, haben sich der Auftraggeber und das Projektteam auf die Verwendung von Google Maps geeinigt. Google Map überwiegt klar in den Vorteilen gegenüber Open Street Map. Es ist zwar nicht kostenfrei, jedoch wird in der Regel bei normaler Benutzung der Website nie das Pensum von 300 Euro überschritten. 
 \section{Berechtigungssystem Benutzer}
 Im folgenden Abschnitt wird näher auf das Benutzerverwaltungssystem eingegangen sowie auf die vorhandenen Benutzerrollen, die einem Benutzer zugeteilt werden können.
 
@@ -577,6 +589,7 @@ Nützliche Programme zum Erstellen der besagten Dokumente  sind folgende :
 	\item Figma
 	\item SimilarWeb
 \end{itemize}
+Informationen über Ui und Ux Design wurden der Quelle xy entnommen.
 
 \subsection{Wireframe}
 Ein Wireframe hilfe dem Design Team eine grobe Struktur der Website vorzudefinieren. Bei der Erstellung eines Wireframes wird der Visuelle Design Part komplett vernachlässigt. Bei einem Wireframe wird sich auf den Aufbau und die Position der Elemente konzentriert. Es ist meist in schwarz und weiß gehalten, da Farben bei diesem Aufbauprozess nur behindern würden. 
@@ -588,7 +601,7 @@ Eine Persona dient dazu, die Bedürfnisse und Ziele der Zielgruppe zu erfassen. 
 	\item Umfragen
 \end{itemize}
 
-\section{Template Layout}
+\section{Template Layout}\label{sec: Layout}
 Laravel bietet die Möglichkeit, mithilfe einer Layout Datei, Codeabschnitte auf mehreren Seiten zu verwenden. Hauptsächlich wird diese Funktion genutzt, um statische Elemente, die auf jeder Unterseite gleich sind, nur einmal zu programmieren. Ein gutes Beispiel wäre der Header oder auch der Footer, da sich diese Elemente auf den Unterseiten meist nicht variieren. 
 
 \subsection{Platzhalter Yield}
@@ -599,9 +612,9 @@ Sections ermöglichen es, die Layout Datei in Abschnitte zu unterteilen. Der Beg
 \subsection{Einbindung der definierten Sections}
 Um diese im Layout File definierten Sections im Code einbinden zu können, müssen einige Einstellungen vorgenommen werden. Am Anfang einer neuen Seite muss dieser Code eingefügt werden: \@extends('layoutfilenname'). Damit wird der Seite mitgeteilt, dass die angegebene Seite als Layout Vorlage verwenden werden soll. Wenn diese Zeile vorhanden ist, können mittels\@section('sectioname') die im Layout File definierten Sections eingebunden werden. Wichtig ist,  jedesmal nach dem \@section auch ein \@endsection einzugeben, sonst wird die Section nicht angezeigt. Zur Ergänzung der Section kann man den zu ergänzenden Code einfach zwischen dem \@section und dem \@endsection platzieren. Dieser wird dann zum bereits vordefinierten Code ergänzt.
 
-\section{Laravel Befehle}
+\section{Laravel Befehle}\label{sec Laravel Befehle}
 Laravel bietet die Möglichkeit, viele Dinge mithilfe der Konsole Models,Controller oder Views, automatisch generieren zu lassen. In den folgenden Unterkapiteln werden die Wichtigsten dieser Befehle aufgelistet und kurz erklärt.
-\subsection{Migration Befehle}
+\subsection{Migration Befehle}\label{sec Migration Befehle}
 Um eine neue Migration zu erstellen, muss folgendes Kommando in der Commandline ausgeführt werden:
 \definecolor{mygray}{RGB}{252,251,244}
 \renewcommand{\lstlistingname}{Quellcode}
@@ -624,7 +637,7 @@ Wenn die Migration erfolgreich erstellt und initialisiert wurde, kann man mit fo
 \renewcommand{\lstlistingname}{Quellcode}
 
 \begin{lstlisting}[
-	caption={Erstellen einer neuen Migration},
+	caption={Aufruf der up() Methode in der Migration},
 	label=Code,
 	language=octave,
 	numbers=left,
@@ -642,7 +655,7 @@ Um alle ausgeführten Migrations anzeigen zu lassen, muss dieses Kommando verwen
 \renewcommand{\lstlistingname}{Quellcode}
 
 \begin{lstlisting}[
-	caption={Erstellen einer neuen Migration},
+	caption={Befehl um den Status der Migrations zu bekommen},
 	label=Code,
 	language=octave,
 	numbers=left,
@@ -659,7 +672,7 @@ Wenn die zuletzt erstellten Tabellen rückgängig gemacht werden sollen, gibt es
 \renewcommand{\lstlistingname}{Quellcode}
 
 \begin{lstlisting}[
-	caption={Erstellen einer neuen Migration},
+	caption={Migrations rückgängig machen},
 	label=Code,
 	language=octave,
 	numbers=left,
@@ -676,7 +689,7 @@ Weitere nützliche Befehle sind unter  der Quelle xy () zu finden.
 \subsection{Seeder und Factory Befehle}
 Um einen Datenbank Seeder zu erstellen, ist folgendes Kommando notwendig: 
 \begin{lstlisting}[
-	caption={Erstellen einer neuen Migration},
+	caption={Datenbank Seeder erstellen},
 	label=Code,
 	language=octave,
 	numbers=left,
@@ -690,7 +703,7 @@ php artisan make:seeder seeder_name
 \end{lstlisting}
 Wenn eine Factory erstellt werden soll, gibt es folgende Möglichkeit:
 \begin{lstlisting}[
-	caption={Erstellen einer neuen Migration},
+	caption={Datenbank Factory erstellen},
 	label=Code,
 	language=octave,
 	numbers=left,
@@ -705,7 +718,7 @@ Wenn eine Factory erstellt werden soll, gibt es folgende Möglichkeit:
 
 Um den Seeder nach Initialisierung auszuführen, gibt es folgende Möglichkeit:
 \begin{lstlisting}[
-	caption={Erstellen einer neuen Migration},
+	caption={Datenbank Seeder ausführen},
 	label=Code,
 	language=octave,
 	numbers=left,
@@ -721,7 +734,7 @@ Weitere nützliche Befehle und Individualizations Möglichkeiten sind unter der 
 \subsection{Model und Controller Befehle}
 Um ein neues Model zu erstellen, verwendet man dieses Kommando:
 \begin{lstlisting}[
-	caption={Erstellen einer neuen Migration},
+	caption={Erstellen eines neuen Models},
 	label=Code,
 	language=octave,
 	numbers=left,
@@ -735,7 +748,7 @@ php artisan make:model model_name
 \end{lstlisting}
 Um einen normalen Controller anzulegen, gibt es folgendes Kommando:
 \begin{lstlisting}[
-	caption={Erstellen einer neuen Migration},
+	caption={Erstellen einers neuen Controllers},
 	label=Code,
 	language=octave,
 	numbers=left,
@@ -760,7 +773,7 @@ Ein Resource Controller hat den Vorteil, dass er vorgenerierte Methoden besitzt,
 \end{itemize}
 Erstellt wird ein Resource Controller folgendermaßen:
 \begin{lstlisting}[
-	caption={Erstellen einer neuen Migration},
+	caption={Erstellen einers neuen Resource Controllers},
 	label=Code,
 	language=octave,
 	numbers=left,
@@ -777,7 +790,7 @@ Genauere Informationen zu der Erstellung von Models und Controllern finden sie u
 \subsection{Starten des Laravel Entwicklungs Servers}
 Laravel bietet die Möglichkeit, wenn PHP auf dem Entwicklungssystem installiert ist, einen PHP Development Server zu hosten und das Projekt über den Localhost anzuzeigen. Um den Server zu starten, muss folgende Zeile eingeben werden:
 \begin{lstlisting}[
-	caption={Erstellen einer neuen Migration},
+	caption={Start des Laravel Entwicklungs Servers},
 	label=Code,
 	language=octave,
 	numbers=left,
@@ -796,7 +809,7 @@ Nach Ausführen dieses Kommandos kann man das Projekt unter http://localhost:800
 Bei Team Projekten in Laravel ist Git die beste Lösung. Jedoch kommt es oft zu Komplikationen beim Herunterladen des Projektes durch Git. Es gibt aber einige Befehle, die es ermöglichen, das Laravel Projekt komplikationsfrei zu starten.
 Dieser Kommand sorgt dafür, dass der APP\_KEY in der .env Datei richtig gesetzt wird:
 \begin{lstlisting}[
-	caption={Erstellen einer neuen Migration},
+	caption={APP\_Key generieren },
 	label=Code,
 	language=octave,
 	numbers=left,
@@ -811,7 +824,7 @@ php artisan key:generate
 \end{lstlisting}
 Um sicher zu stellen, dass alle nötigen Pakete installiert wurden, kann folgender Befehl verwendet werden:
 \begin{lstlisting}[
-	caption={Erstellen einer neuen Migration},
+	caption={Alle nötigen Pakete installieren },
 	label=Code,
 	language=octave,
 	numbers=left,
@@ -855,7 +868,7 @@ Mit diesem Typ von Routen lässt sich eine bestimmte Methode in einem ausgewähl
 Sobald in Laravel das Authentifizierungssystem aktiviert wird werden diese Routen automatisch erstellt. Diese Routen adressieren die ebenfalls durch Laravel erstellen auth Controller in der die Benutzeranmeldung sowie Registrierung bearbeitet wird.
 
 \newpage
-\section{MVC}
+\section{MVC}\label{sec: MVC}
 Das Produkt verwendet das von Laravel bereitgestellte Design Pattern MVC (Model, View, Controller) welches in der Abbildung 2.16 Dargestellt wird. 
 
 \begin{figure}[h]
@@ -902,34 +915,80 @@ Das Produkt kommuniziert mit dem Grafana Server über die von Grafana bereitgest
 
 
 \section{Datenbankanbindung in Laravel}
-Um die Datenbank an das Programm anzubinden, müssen einige Änderungen in der .env Datei vorgenommen werden. Genauere Information zur .env Datei befinden sich im Kapitel  2.3.9.1. Welche Konfigurationen genau getätigt werden, können in den nachfolgenden Kapiteln nachgelesen werden. 
+Um die Datenbank an das Programm anzubinden, müssen einige Änderungen in der .env Datei vorgenommen werden. Genauere Information zur .env Datei befinden sich im Kapitel  \ref{sec:Laravel .env Datei}. Welche Konfigurationen genau getätigt werden, können in den nachfolgenden Kapiteln nachgelesen werden. 
 
 \subsection{Datenbank Anmeldeinformationen}
-Eine Änderung war es, die Datenbank Anmeldeinformationen auf die richtigen Einstellungen zu setzen. Es können folgende Parameter gesetzt werden : 
-\begin{itemize}
-	\item DB\_CONNECTION
-	\item DB\_HOST
-	\item DB\_PORT
-	\item DB\_DATABASE
-	\item DB\_USERNAME
-	\item DB\_PASSWORD
-\end{itemize}
-
-DB\_CONNECTION symbolisiert die Zugriffsvariante auf die Datenbank. DB\_HOST bezeichnet die Domain des Datenbankservers, beispielsweise 127.0.0.1, wenn der Datenbankserver über den Localhost bereitgestellt wird. DB\_PORT ist dementsprechend der Port, auf welchem die Datenbank erreichbar ist. DB\_DATABASE ist der Name der Datenbank, auf die zugegriffen werden soll. DB\_USERNAME der Benutzername, mit welchem man auf die Datenbank zugreifen möchte. Diese Einstellungen sind vom Projekt Team vorgenommen worden, um eine Datenbank verwenden zu können und diese löschen beziehungsweise erstellen zu können.
-\subsection{Mail Server Konfigurationen}
-Um auf der Weboberfläche das Passwort Resetten mittels E-Mail zu ermöglichen, muss Laravel eine E-Mail versenden. Dazu braucht es die nötigen Konfigurationen in der .env Datei. Folgende Attribute müssen gesetzt werden: 
-\begin{itemize}
-	\item MAIL\_MAILER
-	\item MAIL\_HOST 
-	\item MAIL\_PORT 
-	\item MAIL\_USERNAME 
-	\item MAIL\_PASSWORD
-	\item MAIL\_ENCRYPTION 
-	\item MAIL\_FROM\_ADDRESS
-	\item MAIL\_FROM\_NAME 
-\end{itemize}
-Bei MAIL\_MAILER wird das Protokoll eingetragen. Bei MAIL\_HOST wird die Host Domain  eingegeben, also welcher SMTP Server verwendet werden soll. MAIL\_PORT gibt an, unter welchem Port der Server erreicht werden soll. MAIL\_USERNAME: hier muss die E-Mail Adresse, welche zum Absenden der Mail verwendet wird, eingetragen werden. Beim MAIL\_PASSWORD muss das dazugehörige Passwort eingetragen werden. MAIL\_ENCRYPTION gibt an, mit welchem Verfahren verschlüsselt werden soll. MAIL\_FROM\_ADDRESS ist die Adresse, welche beim Empfänger als Sender E-Mail angezeigt wird. MAIL\_FROM\_NAME ist der Name der beim Empfänger angezeigt wird. Das Produkt verwendet diese Einstellungen um eine Passwort Reset Email an den Benutzer zu senden. Alle geforderten Einstellungen wurden nach Übergabe an den Auftraggeber von diesem Konfiguriert. 
+Eine Änderung war es, die Datenbank Anmeldeinformationen auf die richtigen Einstellungen zu setzen. Welche Attribute gesetzt werden, und was genau bei diesen Eingetragen werden muss, ist in Tabelle 3.1 ersichtlich.
+\begin{table}[h]
+	\begin{tabular}{|l|l|}
+		\hline
+		Attribut         & Was soll eingetragen werden                        \\ \hline
+		DB\_CONNECTION     & Hier muss die Zugriffsvariante auf die Datenbank  eingetragen werden                \\ \hline
+		DB\_HOST          &  Hier muss die Domain des Datenbankservers, beispielsweise 127.0.0.1,\\& wenn der Datenbankserver über den Localhost bereitgestellt wird, eingeben werden    \\ \hline
+		DB\_PORT       & Hier der Port über welchen zugegriffen werden soll \\ \hline
+		DB\_DATABASE      & Hier der Name der Datenbank ,\\& auf welche zugegriffen werden soll\\
+		DB\_USERNAME   & Der Benutzer, mit welchem zugegriffen werden soll              \\ \hline
+		DB\_PASSWORD    & Das Passwort zum Benutzer\\ \hline
+	\end{tabular}
+\caption{Datenbank Anmeldeinformationen}
+\label{sec: Datenbank Anmeldeinformationen}
+\end{table}
+Die Konfiguration sieht bei diesem Produkt folgendermaßen aus:
+\begin{table}[h]
+	\begin{tabular}{|l|l|}
+		\hline
+		Attribut         & Was bei diesem Produkt eingetragen wurde                       \\ \hline
+		DB\_CONNECTION     & mysql                 \\ \hline
+		DB\_HOST          &  127.0.0.1\\ \hline
+		DB\_PORT       & 3306\\ \hline
+		DB\_DATABASE      & laravel\\
+		DB\_USERNAME   & root             \\ \hline
+		DB\_PASSWORD    & Hier wurde nicht eingetragen\\ \hline
+	\end{tabular}
+	\caption{Datenbank Anmeldeinformationen Beispiel}
+	\label{sec: Datenbank Anmeldeinformationen Beispiel}
+\end{table}
 \newpage
+\subsection{Mail Server Konfigurationen}
+Um auf der Weboberfläche das Passwortzurücksetzen mittels E-Mail zu ermöglichen, muss Laravel eine E-Mail versenden. Dazu braucht es die nötigen Konfigurationen in der .env Datei. In der Tabelle 3.3 ist ersichtliche, welche Attribute gesetzt werden müssen, und welche Bedeutung diese haben.
+\begin{table}[h]
+	
+	\begin{tabular}{|l|l|}
+		\hline
+		Attribut         & Was soll eingetragen werden                        \\ \hline
+		MAIL\_MAILER     & Hier muss das Protokoll eingetragen                     \\ \hline
+		Mail\_HOST          & Hier wird die Host Domain  eingegeben,\\&also welcher SMTP Server verwendet werden soll         \\ \hline
+		MAIL\_PORT       & Hier der Port über welchen zugegriffen werden soll \\ \hline
+		MAIL\_USERNAME      & Hier muss die E-Mail Adresse,\\& welche zum Absenden der Mail verwendet wird, eingetragen werden \\ \hline
+		MAIL\_PASSWORD   & Das dazugehörige Passwort zur Email                \\ \hline
+		MAIL\_ENCRYPTION    & Hier gibt man an, mit welchem Verfahren verschlüsselt werden soll                             \\ \hline
+		MAIL\_FROM\_ADDRESS & Hier die Adresse, welche beim Empfänger als Sender E-Mail angezeigt wird                      \\ \hline
+		MAIL\_FROM\_NAME & Hier der Name, der dem Empfänger angezeigt wird    \\ \hline
+	\end{tabular}
+\caption{Mail Server Konfigurationen}
+\label{sec: Mail Server Konfigurationen}
+\end{table}
+\newpage
+Bei diesem Produkt hat die Konfiguration folgendermaßen ausgesehen:
+\begin{table}[h]
+	
+	\begin{tabular}{|l|l|}
+		\hline
+		Attribut         & Was bei diesem Produkt eingetragen wurde                      \\ \hline
+		MAIL\_MAILER     & smtp                     \\ \hline
+		Mail\_HOST          & smtp.gmail.com         \\ \hline
+		MAIL\_PORT       & 465 \\ \hline
+		MAIL\_USERNAME      & marcelentner2@gmail.com  \\ \hline
+		MAIL\_PASSWORD   & Das dazugehörige Passwort zur Email                \\ \hline
+		MAIL\_ENCRYPTION    & ssl                             \\ \hline
+		MAIL\_FROM\_ADDRESS & marcelentner2@gmail.com                       \\ \hline
+		MAIL\_FROM\_NAME & Best GmbH  \\ \hline
+	\end{tabular}
+	\caption{Mail Server Konfigurationen Beispiel}
+	\label{sec: Mail Server Konfigurationen Beispiel}
+\end{table}
+
+
 \subsection{Migrations}
 Die Migrations wurden dazu verwendet, um Tabellen zu gestalten. In ihnen wurden alle nötigen Attributnamen und deren Datentypen konfiguriert. Das Produkt verwendet folgende von Laravel automatisch erzeugte Migrations für die Benutzerauthentifizierung: 
 \begin{itemize}
@@ -1033,12 +1092,12 @@ Am Vorschlag in \ref{fig:Finaler Design Vorschlag}, wurde sich während der Entw
 \subsection{Definierte Farben}
 Das Produktdesign basiert auf dem Front-End Framework Bootstrap. In Bootstrap werden alle Farben in der Datei “app.css” definiert. Hier ein textueller Ausschnitt, der vom Projektteam verwendeten Farben:
 \\
-\begin{figure}[h]
-	\centering
-	\includegraphics[height=15cm,width=4cm]{images/DefinierteFarben}
-	\caption{Farben in Bootstrap}
-	\label{fig: Farben in Bootstrap}
-\end{figure}
+\begin{itemize}
+	\item --bs-primary: \#1b8836;
+	\item --bs-blue: \#0d6efd;
+	\item --bs-white: \#fff;
+	\item --bs-danger: \#dc3545;
+\end{itemize}
 \newpage
 Auf Wunsch des Auftraggebers wurden jedoch einige Farben aus den CSS Dateien der bereits vorhanden Website extrahiert und bei diesem Produkt verwendet. Folgende Farben wurden extrahiert:
 \\
@@ -1062,8 +1121,11 @@ Auf Wunsch des Auftraggebers wurden jedoch einige Farben aus den CSS Dateien der
 	\#21a500 & 80\%, 0\%, 100\%, 35\% & 33, 166, 0 & 108, 100\%, 65\% & 108, 100\%, 33\% \\
 	\hline
 	
-	
+
 \end{tabular}
+	\\
+\\
+Alle verwendeten Farben sind auf der DVD der Diplomarbeit unter der Datei definierte Farben ersichtlich.
 
 \subsection{Überschriften}
 Überschriften werden bei diesem Produkt vorrangig verwendet, um anzuzeigen, über welches Thema der Fließtext, der sich meist direkt unter einer Überschrift befindet, handelt. Bei diesem Produkt wurden Überschriften der Gattung <h1>, <h2> und <h3> verwendet. Aus Design technischen Gründen, befindet sich jede Überschrift immer direkt in der Mitte der Website. Jede Überschrift, welche außerhalb eines Fließtextes steht, ist in der Farbe \#1b8836 eingefärbt und in der Schriftart Smooch Snans formatiert. Überschriften, welche sich in einem Fließtext befinden, werden in der Farbe \#212529 eingefärbt. Folgende Überschriften sind auf unserem Produkt vorhanden: 
@@ -1106,19 +1168,14 @@ Interaktionsfarben werden verwendet, um eine Aktion zu kennzeichnen. Bei diesem 
 \end{figure}
 
 \subsection{Schriftarten}
-Unser Produkt verwendet die Schriftarten Smooch Sans und Hubballi. Diese Schriftarten sind von Google Fonts frei zur Verfügung und zur Verwendung gestellt. Hubballi wurde für jede Art von Fließtext verwendet. Smooch Snans wurde verwendet, um die Überschriften zu formatieren. Nachfolgend ein textueller Ausschnitt, um eine bessere Vorstellung über die Schriften zu bekommen:
+Unser Produkt verwendet die Schriftarten Smooch Sans und Hubballi. Diese Schriftarten sind von Google Fonts frei zur Verfügung und zur Verwendung gestellt. Hubballi wurde für jede Art von Fließtext verwendet. Smooch Snans wurde verwendet, um die Überschriften zu formatieren. In der Abbildung \ref{fig: Beispiel auf der Website} sind beide Schriften veranschaulicht.
 \begin{figure}[h]
 	\centering
-	\includegraphics[height=2cm,width=5cm]{images/HubaliBeispielstext}
-	\caption{Beispielstext Hubballi}
-	\label{fig: Beispielstext Hubballi}
+	\includegraphics[height=5cm,width=15cm]{images/Beispiel_Schriftarten}
+	\caption{Beispiel auf der Website}
+	\label{fig: Beispiel auf der Website}
 \end{figure}
-\begin{figure}[h]
-	\centering
-	\includegraphics[height=2cm,width=5cm]{images/BeispielstextSmothSans}
-	\caption{Beispielstext Smooch Snans}
-	\label{fig: BeispielstextSmothSans}
-\end{figure}
+
 \subsection{Schriftgrade}
 Die Schriftgrade variieren bei diesem Produkt nur bei der Anzeige der aktuellen Seite.
 Die Überschriften Home, Energiesysteme und Galerie werden mithilfe des <b> Tags beim Besuchen der gleichnamigen Seite fett gemacht. Dadurch, dass die aktuelle Seite immer fett geschrieben wird, wird die Navigation durch das Produkt erleichtert.
@@ -1148,68 +1205,13 @@ Beim Logo hat sich das Projektteam an den Wunsch des Auftraggebers gehalten und 
 
 
 \subsection{Verwendete Icons und deren Bedeutungen} \label{sec:Verwendete Icons und deren Bedeutungen}
-Bei diesem Produkt werden Icons verwendet, um Energiesysteme oder Energietechnologien auf der Map visuell darzustellen. Ein weiteres Einsatzgebiet der Icons sind Formulare oder Übersichten, wo sie Auskunft über die geforderten oder angezeigten Daten geben. Eine Liste mit allen Icons und deren Bedeutung ist hier zusammengefasst:
+Bei diesem Produkt werden Icons verwendet, um Energiesysteme oder Energietechnologien auf der Map visuell darzustellen. Ein weiteres Einsatzgebiet der Icons sind Formulare oder Übersichten. Auf diese Einsatzgebiete wird in den Kapiteln  \ref{sec: Map Icons} und \ref{sec: Icons in Formularen} genauer eingegangen. Wichtig zu unterscheiden sind Icons in schwarz-weiß und Icons in Farbe. Icons in Farbe werden verwendet um Energietechnologien oder Energiesysteme auf der Map dazustellen. Icons in schwarz-weiß werden verwendet um Daten anzuzeigen oder Funktionalitäten bereit zustellen.
+Eine Liste mit allen Icons und deren Bedeutung ist im Coperate Design Manuel auf der DVD der Diplomarbeit ersichtlich.
 
 
-\begin{table}[]
-	\begin{tabular}{|l|l|}
-		\hline
-		\includegraphics[height=1cm,width=1cm]{images/Icons/AzSpeicherES} & Zeigt die gesamte Verbraucher Energie                    \\ \hline
-		\includegraphics[height=1cm,width=1cm]{images/Icons/AzETES} & Zeigt die Anzahl der Energietechnologien                 \\ \hline
-		\includegraphics[height=1cm,width=1cm]{images/Icons/BildET}& Zeigt die Anzahl der Speicher in einem Energiesystem     \\ \hline
-		\# & Zeigt die Anzahl der Verbraucher in einem Energiesystem  \\ \hline
-		\# & Zeigt die  Gesamte Erzeuger und deren Leistung           \\ \hline
-		\# & Zeigt die Katastralgemeinde in der sich ein Energiesystem befindet                     \\ \hline
-		\# & Zeigt den Längengrad eines Energiesystems oder einer Energietechnologie                \\ \hline
-		\# & Zeigt den Ort eines Energiesystems                       \\ \hline
-		\# & Zeigt die Postleitzahl eines Energiesystems              \\ \hline
-		\# & Zeigt den Typ der Energietechnologie                     \\ \hline
-		\# & Zeigt die Beschreibung der Energietechnologie            \\ \hline
-		\# & Zeigt die Bezeichnung des Energiesystems                 \\ \hline
-		\# & Zeigt ein Bild der Energietechnologie                    \\ \hline
-		\# & Zeigt den Breitengrad einer Energietechnologie oder eines Energiesystems               \\ \hline
-		\# & Zeigt die gesamte  gesamte Energie einer Energietechnologie                            \\ \hline
-		\# & Zeigt die gesamte Nennleistung eines Energiesystems      \\ \hline
-		\# & Zeigt die gesamte Erzeuger Leistung eines Energiesystems \\ \hline
-		\# & Zeigt die gesamte Erzeuger Energie in einem Energiesystem                              \\ \hline
-		\# & Zeigt den aktuellen Netzbezug eines Energiesystems       \\ \hline
-		\# & Symbolisiert ein Windkraftwerk                           \\ \hline
-		\# & Symbolisiert eine Batterie                               \\ \hline
-		\# & Symbolisiert einen Wärmespeicher                         \\ \hline
-		\# & Symbolisiert ein Wasserstoffspeicher                     \\ \hline
-		\# & Symbolisiert ein Wohnhaus                                \\ \hline
-		\# & Symbolisiert einen Stromnetzbezug                        \\ \hline
-		\# & Symbolisiert eine Solartherme                            \\ \hline
-		\# & Symbolisiert einen saisonalen Wärmespeicher              \\ \hline
-		\# & Symbolisiert eine Pv-Anlage                              \\ \hline
-		\# & Symbolisiert ein E-Tankstelle                            \\ \hline
-		\# & Symbolisiert eine Gemeinde                               \\ \hline
-		\# & Symbolisiert ein Haus                                    \\ \hline
-		\# & Symbolisiert eine Raffinerie                             \\ \hline
-		\# & Symbolisiert eine Wärmepumpe                             \\ \hline
-		\# & Symbolisiert eine Ab oder Absorptionskältemaschine       \\ \hline
-		\# & Symbolisiert eine Kompressionskältemaschine              \\ \hline
-		\# & Symbolisiert einen Kältespeicher                         \\ \hline
-		\# & Symbolisiert eine Industrie                              \\ \hline
-		\# & Symbolisiert einen Gebäude Kältebedarfszähler            \\ \hline
-		\# & Symbolisiert einen Elektrolyseur                         \\ \hline
-		\# & Symbolisiert ein Biomasseheizkraftwerk                   \\ \hline
-		\# & Symbolisiert einen Biomassekessel                        \\ \hline
-		\# & Symbolisiert ein Elektroauto                             \\ \hline
-		\# & Symbolisiert eine Brennstoffzelle                        \\ \hline
-		\# & Symbolisiert ein Energiesystem auf der Karte             \\ \hline
-		\# & Symbolisiert ein Energiesystem auf der Karte, sobald dieses ausgewählt wurde           \\ \hline
-		\# & Symbolisiert eine Energietechnologie auf der Karte       \\ \hline
-		\# & Statistiken eines Energiesystems bei klick auf Auge Icon \\ \hline
-		\# & Löschen eines Energiesystems oder einer Energietechnologie bei Klick auf den Mülleimer \\ \hline
-		\# & Grafana Statistiken bei Klick auf das Icon               \\ \hline
-		\# & Bearbeiten einer Energietechnologie oder eines Energiesystems                          \\ \hline
-	\end{tabular}
-	\caption{Verwendete Icons}
-\label{tab: Verwendete Icons }
-\end{table}
+
 \newpage
-\subsection{Map Icons}
+\subsection{Map Icons}\label{sec: Map Icons}
 Das Produkt verwendet die vom Auftraggeber bereitgestellte Icons, um Energietechnologien oder Energiesystem auf der Karte visuelle darzustellen. Die Icons auf der Map sehen folgendermaßen aus:
 \begin{figure}[h]
 	\centering
@@ -1234,7 +1236,7 @@ Um Energiesysteme oder Energietechnologien zu verzeichnen, werden folgende Icons
 
 
 
-\subsection{Icons in Formularen}
+\subsection{Icons in Formularen}\label{sec: Icons in Formularen}
 Alle weiteren verwendeten Icons wurden von flaticons.com implementiert. Diese Icons werden dazu genutzt, um in Formularen anzuzeigen, welche Art von Wert verlangt wird. Des Weiteren werden diese Icons in Übersichten verwendet, um dem Benutzer anzuzeigen, um welchen Wert es sich handelt. Um diese Icons jedoch verwenden zu dürfen, mussten alle Autoren in der Datenschutzseite verlinkt werden. Hier ein Beispiel, wie diese Anwendungsfälle auf der Website aussehen:
 \begin{figure}[h]
 	\centering
@@ -1250,15 +1252,15 @@ Alle weiteren verwendeten Icons wurden von flaticons.com implementiert. Diese Ic
 	\label{fig: Icons in Formularen}
 \end{figure}
 \newpage
-Aus Lizenztechnischen Gründen wurde jeder Autor eines Icons auf unserer Seite im Datenschutz verlinkt. Dies sieht folgendermaßen aus:
+Aus Lizenztechnischen Gründen wurde jeder Autor eines Icons auf unserer Seite im Datenschutz verlinkt. Eine Verlinkung sieht folgendermaßen aus:
 \begin{figure}[h]
 	\centering
-	\includegraphics[height=10cm,width=7cm]{images/IconAutorVerlinkungen}
+	\includegraphics[height=2cm,width=10cm]{images/IconAutorVerlinkungen}
 	\caption{Autoren Verlinkungen}
 	\label{fig: Autoren Verlinkungen}
 \end{figure}
 
-\newpage
+
 \subsection{Icons im DataTable}
 Folgende Icons werden  verwendet, um Energiesystem oder Energietechnologien zu bearbeiten, zu löschen oder auf deren Grafana Statistiken zuzugreifen.
 \begin{table}[h]
@@ -1281,11 +1283,17 @@ Auf der Website werden diese Icons im Datatable hinter einer Energietechnologie 
 	\caption{Icons im Datatable}
 	\label{fig: Icons im Datatable}
 \end{figure}
-
+\newpage
 
 \subsection{Buttons}
-Buttons werden bei diesem Produkt ausschließlich genutzt, um Formulare abzusenden. Buttons befinden sich immer mittig unter einem Formular und  haben die Hintergrundfarbe \#1b8836. Folgende Buttons wurden verwendet: 
-
+Buttons werden bei diesem Produkt ausschließlich genutzt, um Formulare abzusenden. Buttons befinden sich immer mittig unter einem Formular und  haben die Hintergrundfarbe \#1b8836. In Abbildung \ref{fig: Beispiel eines Buttons}ist ein Beispielbutton erschlich. 
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=2cm,width=5cm]{images/BeispielButton}
+	\caption{Beispiel eines Buttons}
+	\label{fig: Beispiel eines Buttons}
+\end{figure}
+\newpage
 \subsection{Tabelle mit generellen Informationen über einzelne HTML Elemente}
 Hier ist wichtig zu definieren für was welches HTML Element verwendet wurde. <h1>,  <h2> und <h3> wurden verwendet um Überschriften zu definieren. In einem <p> Element befindet sich immer ein Fließtext. Mit dem <a> Element werden Links definiert. Bei diesem Produkt wurden im Header die Navigationsmöglichkeiten mit diesem Element versehen. 
 \begin{table}[h]
@@ -1302,7 +1310,7 @@ Hier ist wichtig zu definieren für was welches HTML Element verwendet wurde. <h
 	\caption{HTML Elemente}
 \label{tab: HTML Elemente }
 \end{table}
-
+\newpage
 
 \subsection{Datenformate}
 Auf dem Produkt befindet sich eine Diashow, die Bilder des Projektes Micro Grid Lab der Best GmbH präsentiert. Alle diese Bilder haben das Dateiformat JPG. Eines der präsentierten Bilder ist im Dateiformat PNG. Alle verwendeten Icons sind als PNG auf dem Produkt eingebunden. Die Fotos der Sponsoren aus dem Footer sind gemischt im PNG und im JPG Format. Das Logo, wie bereits im Kapitel 2.6.5.6 erwähnt, ist im Format JPG. Hier rät das Projektteam jedoch dazu, eine Vektorgrafik mit dem Dateiformat SVG zu verwenden.
@@ -1530,7 +1538,7 @@ Sobald die Adresssuche durchgeführt wird, werden mit Hilfe von Google-Cloud API
 
 \newpage
 \subsection{Front-End} \label{sec: Front-End}
-Das Projektteam hat sich bei der Front-End Gestaltung an die Vorgabe des Auftraggebers gehalten und sich an der bereits vorhanden Website der Best Gmbh orientiert. Das Produkt wurde dann mithilfe der Laravel Layout Funktion in Header Footer und Content unterteilt. Nähere Informationen dazu sind im Kapitel 3.5.4 vermerkt. Generell ist das Produkt gegliedert in folgende Unterseiten: 
+Das Projektteam hat sich bei der Front-End Gestaltung an die Vorgabe des Auftraggebers gehalten und sich an der bereits vorhanden Website der Best Gmbh, welche in \ref{fig:Website Best GmbH} ersichtlich ist, orientiert. Das Produkt wurde dann mithilfe der Laravel Layout\footnote{genauer in \autoref{sec: Layout} erklärt }Funktion in Header Footer und Content unterteilt.Generell ist das Produkt gegliedert in folgende Unterseiten: 
 \begin{itemize}
 	\item Home 
 	\item Energiesysteme
@@ -1540,6 +1548,13 @@ Das Projektteam hat sich bei der Front-End Gestaltung an die Vorgabe des Auftrag
 	\item Registrierungsseite
 \end{itemize}
 Auf die oben aufgezählten Unterseiten wird in den nachfolgenden Kapiteln genauer eingegangen.
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=7cm,width=15cm]{images/BestGmbHSeite}
+	\caption{Website Best GmbH}
+	\label{fig:Website Best GmbH}
+\end{figure}
+
 
 \subsubsection{Home}
 Die Home Seite ist die erste Seite, die ein Benutzer zu Gesicht bekommt, wenn er das Produkt aufruft. Die Seite besteht aus einer Diashow, die Bilder des Micro Grid Lab Projekts der Best GmbH zeigt. Unter dieser befindet sich ein Textbereich, auf welchem sich das Projekt “Micro Grid Lab” kurz vorgestellt wird. Hier ein Bild der besagten Seite:
@@ -1675,7 +1690,7 @@ Sobald ein Energiesystem ausgewählt wurde, werden die dazugehörigen Energietec
 
 \newpage
 \subsection{Layoutvorlage der Website}
-Das Produkt verwendet die Layout Funktion vom Framework Laravel. Genauer Informationen wie dieses Layout funktioniert können im Kapitel 2.7 nachgelesen werden. Jede Unterseite des Produkts ist in folgende Sections gegliedert:
+Das Produkt verwendet die Layout Funktion vom Framework Laravel. Genauer Informationen wie dieses Layout funktioniert können im \autoref{sec: Layout} nachgelesen werden. Jede Unterseite des Produkts ist in folgende Sections gegliedert:
 \begin{itemize}
 	\item Header  
 	\item Content
@@ -1847,7 +1862,7 @@ Um nun in der Benutzeroberfläche des Produktes die mit den ApiI Aufrufen erstel
 \section{Einbindung von Google Maps}
 Um eine Karte zur Verwaltung und Visualisierung auf dem Produkt zu Verfügung zu stellen, hat sich das Projektteam für den Kartendienst Anbieter Google Maps entschieden. Um die Funktionen von Google Maps zu nutzen, muss ein Google Cloud Account erstellt und eingebunden werden. Was Google Cloud ist und wie es verwendet wird, ist in den nachfolgenden Kapiteln genauer erklärt.
 
-\subsection{Google Cloud}
+\subsection{Google Cloud} \label{sec: Google Cloud}
 Google Cloud ist die zentrale Verwaltung aller von Google bereitgestellten Cloud Dienste. Das Projektteam benötigt diese Plattform, um die Google Maps Karte in das Produkt einzubinden. In den nachfolgenden Kapiteln werden alle Schritte erklärt, die es benötigt, um das Projekt zusammen mit Google Cloud verwenden zu können.
 
 
