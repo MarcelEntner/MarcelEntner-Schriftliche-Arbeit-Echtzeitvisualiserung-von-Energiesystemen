@@ -3,7 +3,7 @@ In diesem Abschnitt werden die verwendeten Grundlagen und Methoden, die für die
 
 
 \section{Analyse des vorhandenen Systems}
-Das bestehende System des Auftraggebers umfasst die Komponenten Grafana Server, Webserver und eine Datenbank mitsamt den notwendigen Algorithmen, um diese mit Echtzeitdaten zu befüllen. Bei der vorgegebenen Datenbank handelt es sich um einen MariaDB SQL-Server in der Version 10.1.48. Bei MySQL handelt es sich um eine quelloffene Implementierung des SQL Standards in der Version 5.0.12. In der nachfolgende Abbildung ist das vorhandene System des Auftraggebers ersichtlich.
+Das bestehende System des Auftraggebers umfasst die Komponenten Grafana Server, Webserver und eine Datenbank mitsamt den notwendigen Algorithmen, um diese mit Echtzeitdaten zu befüllen. Bei der vorgegebenen Datenbank handelt es sich um einen MariaDB SQL-Server in der Version 10.1.48. Bei MySQL handelt es sich um eine quelloffene Implementierung des SQL Standards in der Version 5.0.12. In der nachfolgenden \autoref{fig:vorhandeneSystemAuftraggeber}  ist das vorhandene System des Auftraggebers ersichtlich.
 \newline
 
 \begin{figure}[h]
@@ -112,7 +112,8 @@ Bei PHP handelt es sich zum einen Serverseitige zu laufzeit interpretierte Skrip
 
 \subsection{Clientseitige Interaktion des Benutzers}
 Bei dem Punkt Clientseitig befindet man sich in der Architektur des Zielsystems bei dem Element JavaScript und mit den damit verbundenen Interaktionen des Benutzers. Map-Interaktionen sind Interaktionen mit einer Karte, dazu gehört das Erstellen, Bearbeiten und Löschen von Energiesystemen sowie Energietechnologien. Eine weitere Interaktion wäre die Verwendung des Adresssuchfeldes, welche mit einem Klick auf den Button „Suche“ oder durch Drücken der Enter-Taste durchgeführt wird. Tabellen-Interaktionen sind eine zusätzliche clientseitige Aktion, da die vom DataTable\footnote{Eine genaue Begriffserklärung befindet sich in \ref{sec:DataTable}} bereitgestellten Funktionen wie die Suchfunktion, Sortierfunktion oder Seitennummerierung allesamt clientseitig stattfinden und somit keinen Einfluss auf das Back-End haben.
-Folgende Abbildung zeigt den Aufbau der einzelnen Elemente, die zusammenarbeiten, um die Website zu erstellen.
+Folgende \autoref{fig:clientseitig}
+ zeigt den Aufbau der einzelnen Elemente, die zusammenarbeiten, um die Website zu erstellen.
 
 
 \begin{figure}[h]
@@ -223,35 +224,43 @@ Nach Begutachtung der Tabelle \ref{sec:Entscheidung des Frameworks} und aufgrund
 
 \newpage
 \subsection{Front-End Templates}
-Die Auswahl des Front-End Templates ist essenziell für die Umsetzung der Weboberfläche des Produktes. Jedes Front-End Template bringt seine Vor- und Nachteile mit sich, wobei das Projektteam die Anforderungen an das Front-End Template mit den Vor- und Nachteilen jeden einzelnen Front-End Templates verglichen hat, um sich schlussendlich für eines zu entscheiden. Dabei sind die Anforderungen des Projektteams an das Front-End Template, dass es unkompliziert in das Projekt einzubinden ist und das Projektteam bereits Erfahrung damit hat, um das Arbeiten damit zu erleichtern. Weitere Anforderungen sind, dass es Responsive-Layouts ermöglicht, sowie Vorlagen von Komponenten, die eingebunden werden können, zur Verfügung stellt. Die drei Front-End Templates, die das Projektteam zur Auswahl stellt, sind Bootstrap, Tailwind und Vue.js.
+Ein Front-End Template dient als Vorlage, um die Web Oberflächengestaltung zu erleichtern.
+Deswegen ist die Auswahl des Front-End Templates essenziell für die Umsetzung der Weboberfläche des Produktes. Jedes Front-End Template bringt seine Vor- und Nachteile mit sich, wobei das Projektteam die Anforderungen an das Front-End Template mit den Vor- und Nachteilen jeden einzelnen Front-End Templates verglichen hat, um sich schlussendlich für eines zu entscheiden. Dabei sind die Anforderungen des Projektteams an das Front-End Template, dass es unkompliziert in das Projekt einzubinden ist und das Projektteam bereits Erfahrung damit hat, um das Arbeiten damit zu erleichtern. Weitere Anforderungen sind, dass es Responsive-Layouts ermöglicht, sowie Vorlagen von Komponenten, die eingebunden werden können, zur Verfügung stellt. Die drei Front-End Templates, die das Projektteam zur Auswahl stellt, sind Bootstrap, Tailwind und Vue.js. Diese Auswahl ist dadurch entstanden, da das Projektteam bereits erste Erfahrungen damit sammeln konnten.
+
 
 \subsubsection{Bootstrap}
-Bootstrap ist ein Open Source Front-End-CSS-Framework. Es basiert auf den Programmiersprachen HTML, CSS sowie JavaScript und stellt Gestaltungsvorlagen wie Formulare, Tabellen, Buttons und weitere Oberflächengestaltungen bereit. Bootstrap ist weltweit eines der bekanntesten und beliebtesten Front-End-Frameworks. Ebenso bietet Bootstrap eine Open Source-SVG-Icon-Bibliothek an, womit die Kompatibilität zwischen Komponenten und Icons bestenfalls gegeben ist. Vorteil dieses Templates ist, dass es leichtgewichtig ist, weil nur Front-End-Daten geladen werden müssen und keine Backend-Funktionalitäten. Zusätzlich ist es problemlos in das Projekt einzubinden und stellt mehrere Vorlagen zur Verfügung, die ebenso eingebunden werden können. Bootstrap ist kostenfrei zu verwenden, und das Projektteam bringt bereits Erfahrung mit diesem Template mit. Die Nachteile sind, dass Bootstrap wenige Back-End-Funktionen bereitstellt, und es ist weniger gut geeignet für sehr große Applikationen.
+Bootstrap ist ein Open Source Front-End Template. Es basiert auf den Programmiersprachen HTML, CSS sowie JavaScript und stellt Gestaltungsvorlagen wie Formulare, Tabellen, Buttons und weitere Oberflächengestaltungen bereit. Bootstrap ist weltweit eines der bekanntesten und beliebtesten Front-End Template. Ebenso bietet Bootstrap eine Open Source-SVG-Icon-Bibliothek an, womit die Kompatibilität zwischen Komponenten und Icons bestenfalls gegeben ist. Vorteil dieses Templates ist, dass es leichtgewichtig [PM1] ist, weil nur Front-End-Daten geladen werden müssen und keine Backend-Funktionalitäten. Zusätzlich ist es problemlos in das Projekt einzubinden und stellt mehrere Vorlagen zur Verfügung, die ebenso eingebunden werden können. Bootstrap ist kostenfrei zu verwenden, und das Projektteam bringt bereits Erfahrung mit diesem Template mit. Die Nachteile sind, dass Bootstrap wenige Back-End-Funktionen bereitstellt, und es ist weniger gut geeignet für sehr große Applikationen.
+ In \autoref{fig:Bootstrap Logo}
+ ist das Bootstrap Logo ersichtlich.
 \newline
 \begin{figure}[h]
 	\centering
-	\includegraphics[height=8cm,width=10cm]{images/Bootstrap}
+	\includegraphics[height=3cm,width=4cm]{images/Bootstrap}
 	\caption{Bootstrap Logo}
 	\label{fig:Bootstrap Logo}
 \end{figure}
 
 \newpage
 \subsubsection{Tailwind.css}
-Tailwind ist ein Utility-First CSS-Framework, welches derzeit weltweit sehr beliebt ist. Diese Art von Framework soll mehr Flexibilität bieten als die traditionellen Vorgänger. Tailwind.css stellt Utility-Klassen zur Verfügung, mit denen man selbst Klassen zum Stylen der Komponenten definieren kann. Ein Inlinestylen ist bei diesem Framework ebenso möglich, womit externe CSS-Dateien überflüssig sind. Tailwind stellt Hilfsklassen zur Verfügung, welche das Arbeiten um einiges erleichtern. Zusätzlich bietet dieses Template eine hohe Flexibilität sowie mehrere Funktionen, um ein Responsive Design zu erreichen. Jedoch hat dieses Template keine vorgefertigten Komponenten, auf welche zurückgegriffen werden kann, und der Benutzer dieses Templates braucht sehr viel Zeit zum Erlernen der richtigen Verwendung. Die Größe der zu installierenden CSS-Datei ist sehr groß, da dieses Template eine breite Palette von Klassen bereitstellt, wobei die meisten oft in einem Projekt nicht verwendet werden. Das Projektteam hat mit diesem Template wenig Erfahrung, und die Dokumentation im Internet ist sehr mangelhaft.
+Tailwind ist ein Utility-First CSS-Template, welches derzeit weltweit sehr beliebt ist. Diese Art von Template soll mehr Flexibilität bieten als die traditionellen Vorgänger. Tailwind.css stellt Utility-Klassen zur Verfügung, mit denen man selbst Klassen zum Stylen der Komponenten definieren kann. Ein Inlinestylen ist bei diesem Template ebenso möglich, womit externe CSS-Dateien überflüssig sind. Tailwind stellt Hilfsklassen zur Verfügung, welche das Arbeiten um einiges erleichtern. Zusätzlich bietet dieses Template eine hohe Flexibilität sowie mehrere Funktionen, um ein Responsive Design zu erreichen. Jedoch hat dieses Template keine vorgefertigten Komponenten, auf welche zurückgegriffen werden kann, und der Benutzer dieses Templates braucht sehr viel Zeit zum Erlernen der richtigen Verwendung. Die Größe der zu installierenden CSS-Datei ist sehr groß, da dieses Template eine breite Palette von Klassen bereitstellt, wobei die meisten oft in einem Projekt nicht verwendet werden. Das Projektteam hat mit diesem Template wenig Erfahrung, und die Dokumentation im Internet ist sehr mangelhaft.
+ In \autoref{fig:Tailwind Logo}
+ist das Tailwind.css Logo ersichtlich.
 \begin{figure}[h]
 	\centering
-	\includegraphics[height=8cm,width=10cm]{images/Tailwind}
+	\includegraphics[height=3cm,width=4cm]{images/Tailwind}
 	\caption{Tailwind Logo}
 	\label{fig:Tailwind Logo}
 \end{figure}
 
 
-\newpage
 \subsubsection{Vue.js}
-Das JavaScript Framework Vue.js, welches für die Front-End-Entwicklung eingesetzt werden kann, wird immer populärer. Die Einfachheit und Benutzerfreundlichkeit ist ein Grund für die immer größer werdende Beliebtheit. Vue.js basiert auf dem virtuellen DOM \footnote{Virtuelles Document Object Model, beim Aktualisieren schneller als das herkömmliche}, was bedeutet, dass das Abarbeiten von Befehlen schneller funktioniert als beim herkömmlichen bekannten DOM\footnote{Document Object Model, stellt XML oder HTML Dokumente als Baumstruktur dar}. Vue.js basiert auf den Programmiersprachen HTML, CSS und JavaScript, womit die wichtigsten verwendeten Sprachen abgedeckt sind. Vue.js stellt Funktionen wie UniTests, End-to-End-Tests sowie Routing-Systeme bereit. Die Lesbarkeit bei diesem Template ist sehr gut, da alle Komponenten sich in einer Datei befinden. Das Projektteam hat nur wenig Erfahrung mit diesem Template und es herrschen generelle Sprachbarrieren, da vieles nur in der Sprache Chinesisch vorhanden ist.
+Das Template Vue.js, welches für die Front-End-Entwicklung eingesetzt werden kann, wird immer populärer. Die Einfachheit und Benutzerfreundlichkeit ist ein Grund für die immer größer werdende Beliebtheit. Vue.js basiert auf dem virtuellen DOM\footnote{Virtuelles Document Object Model, beim Aktualisieren schneller als das herkömmliche}, was bedeutet, dass das Abarbeiten von Befehlen schneller funktioniert als beim herkömmlichen bekannten DOM\footnote{Document Object Model, stellt XML oder HTML Dokumente als Baumstruktur dar}. Vue.js basiert auf den Programmiersprachen HTML, CSS und JavaScript, womit die wichtigsten verwendeten Sprachen abgedeckt sind. Vue.js stellt Funktionen wie UniTests, End-to-End-Tests sowie Routing-Systeme bereit. Die Lesbarkeit bei diesem Template ist sehr gut, da alle Komponenten sich in einer Datei befinden. Das Projektteam hat nur wenig Erfahrung mit diesem Template und es herrschen generelle Sprachbarrieren, da vieles nur in der Sprache Chinesisch vorhanden ist.
+ In \autoref{fig:Vuejs Logo}
+ist das Vue.js Logo ersichtlich.
+
 \begin{figure}[h]
 	\centering
-	\includegraphics[height=6cm,width=8cm]{images/vuejs}
+	\includegraphics[height=2cm,width=3cm]{images/vuejs}
 	\caption{Vuejs Logo}
 	\label{fig:Vuejs Logo}
 \end{figure}
@@ -526,7 +535,7 @@ Im folgenden Abschnitt wird näher auf das Benutzerverwaltungssystem eingegangen
 
 \subsection{Benutzerrollen}
 Die Weboberfläche bietet für deren Besucher ein rollenbasiertes Benutzersystem an, um die Funktionen für jeden Benutzer zu deklarieren.
-Das rollenbasierte Benutzersystem unterscheidet zwischen folgenden Benutzern:
+Das rollenbasierte Benutzersystem unterscheidet zwischen folgenden Rollen:
 
 \begin{itemize}
 	\item Administrator 
@@ -1299,20 +1308,21 @@ Hier ist wichtig zu definieren für was welches HTML Element verwendet wurde. <h
 Auf dem Produkt befindet sich eine Diashow, die Bilder des Projektes Micro Grid Lab der Best GmbH präsentiert. Alle diese Bilder haben das Dateiformat JPG. Eines der präsentierten Bilder ist im Dateiformat PNG. Alle verwendeten Icons sind als PNG auf dem Produkt eingebunden. Die Fotos der Sponsoren aus dem Footer sind gemischt im PNG und im JPG Format. Das Logo, wie bereits im Kapitel 2.6.5.6 erwähnt, ist im Format JPG. Hier rät das Projektteam jedoch dazu, eine Vektorgrafik mit dem Dateiformat SVG zu verwenden.
 
 \newpage
-\section{Weboberfläche}
+\section{Webanwendung}
 Im Abschnitt Weboberfläche wird speziell auf das Front-End sowie das Back-End des Produktes eingegangen. Bei dem Punkt Back-End vor allem auf die Funktionen, die für die Benutzer-Interaktionen zuständig sind, und bei dem Punkt Front-End auf das Layout sowie das Design der Weboberfläche.
 
 
-\subsection{Backend}
+\subsection{Back-End}
 In diesem Abschnitt wird genauer auf den Ablauf des Codes im Back-End, der für die Funktionen auf der Weboberfläche zuständig ist, eingegangen. 
-Für jedes Energiesystem oder jede Energietechnologie stehen die Funktionen Erstellen, Bearbeiten und Löschen zur Verfügung. In den folgenden Abschnitten wird genauer auf diese Funktionen eingegangen.
+Für jedes Energiesystem oder jede Energietechnologie stehen die Funktionen Erstellen, Bearbeiten,Löschen, Lesen und Suchen zur Verfügung. In den folgenden Abschnitten wird genauer auf diese Funktionen eingegangen.
 
 
 \subsubsection{Energiesystem Erstellen}
 Für das Erstellen eines Energiesystems ist ein Mausklick auf der Karte notwendig. Daraufhin öffnet sich ein Pop-up Fenster, um die Kerndaten des Energiesystems einzugeben.
-Das Pop-up zum Erstellen eines Energiesystems ist in der Abbildung x.y ersichtlich.
+Das Pop-up zum Erstellen eines Energiesystems ist in der \autoref{fig:ESerstellenPopup} ersichtlich.
 Beim Erstellen eines Energiesystems werden folgende Attribute in der Datenbank erfasst:
-Eingabe des Benutzers:
+\newline 
+\newline Eingabe des Benutzers:
 \begin{itemize}
 	\item Bezeichnung 
 	\item Katastralgemeinde
@@ -1331,17 +1341,19 @@ Automatisch ausgefüllte Attribute, welche nicht im Pop-up dargestellt werden:
 	\centering
 	\includegraphics[height=8cm,width=9cm]{images/ESerstellenPop}
 	\caption{Energiesystem Erstellen Pop-up}
-	\label{fig:CSS_System}
+	\label{fig:ESerstellenPopup}
 \end{figure}
 \newpage
 Die Attribute Längengrad und Breitengrad werden automatisch mithilfe des Mausklicks auf der Karte mit den entsprechenden Koordinaten beim Erstellen des Energiesystems befüllt. Das Attribut User\_ID wird automatisch mit der ID des gerade angemeldeten Benutzers ausgefüllt, um das Energiesystem einem Benutzer zuteilen zu können.
-Nachdem der Benutzer alle Daten eingegeben hat, werden diese Daten an den Controller übermittelt, wo anschließend das Energiesystem erstellt und in der Datenbank erfasst wird. Als nächstes werden die gespeicherten Informationen wieder zurück an die Weboberfläche übergeben, um die Energiesysteme-Marker auf der Karte zu platzieren sowie den Inhalt der Liste aller vorhandenen Energiesysteme zu aktualisieren. Die folgende Abbildung zeigt den Ablauf, um ein Energiesystem zu erstellen:
+\newline
+Nachdem der Benutzer alle Daten eingegeben hat, werden diese Daten an den Controller übermittelt, wo anschließend das Energiesystem erstellt und in der Datenbank erfasst wird. Das Ergebnis ist eine Datenbankabfrage aller vorhandenen Energiesysteme, welche zurück an die Weboberfläche übergeben werden, um die Energiesysteme-Marker auf der Karte zu platzieren sowie den Inhalt der Liste aller vorhandenen Energiesysteme zu aktualisieren.  
+Die folgende \autoref{fig:Eserstellendiagramm} zeigt den Ablauf, um ein Energiesystem zu erstellen.
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[height=7cm,width=14cm]{images/ESerstellen}
 	\caption{Energiesystem Erstellen}
-	\label{fig:CSS_System}
+	\label{fig:Eserstellendiagramm}
 \end{figure}
 
 
@@ -1350,14 +1362,7 @@ Nachdem der Benutzer alle Daten eingegeben hat, werden diese Daten an den Contro
 
 \subsubsection{Energiesystem Bearbeiten}
 Mit dem Stift-Icon beim Energiesystem in der Liste ist es möglich, die Kerndaten eines Energiesystems zu bearbeiten. Die zu bearbeitenden Daten, welche einen weißen Hintergrund  aufweisen, lauten auf „Bezeichnung“, „Katastralgemeinde“ und „Postleitzahl“. Die Koordinaten sowie die User\_ID des Energiesystems bleiben konstant und sind nicht änderbar und nicht im Pop-up ersichtlich.
-Folgende weitere Attribute werden bei jedem Energiesystem automatisch berechnet, angezeigt und sind nicht bearbeitbar, sondern dienen nur als weitere Information über das ausgewählte Energiesystem. Das Pop-up zum Bearbeiten eines Energiesystems ist in der Abbildung x.y ersichtlich.
-\begin{figure}[h]
-	\centering
-	\includegraphics[height=16cm,width=6cm]{images/ESbearbeitenPop}
-	\caption{Energiesystem Bearbeiten Pop-up}
-	\label{fig:CSS_System}
-\end{figure}
-\newpage
+Folgende weitere Attribute werden bei jedem Energiesystem automatisch berechnet, angezeigt und sind nicht bearbeitbar, sondern dienen nur als weitere Information über das ausgewählte Energiesystem. 
 \begin{itemize}
 	\item Anzahl-Erzeugungstechnologien  
 	\item Anzahl-Verbraucher
@@ -1371,34 +1376,28 @@ Folgende weitere Attribute werden bei jedem Energiesystem automatisch berechnet,
 	\item Ges-Speicher-Kapazität [kW/h]
 	\item Aktueller Netzbezug [kW]
 \end{itemize}
-
 Für genauere Informationen zu den einzelnen Attributen siehe Kapitel  \ref{sec:Verwendete Icons und deren Bedeutungen}
 Mit dem Button „Mehr Details zu diesem Energiesystem“ ist es möglich, die weiteren Daten des Energiesystems ein- und auszuklappen. 
-Nachdem der Benutzer die Attribute des Energiesystems bearbeitet hat, werden diese mithilfe des Controllers in der Datenbank aktualisiert. Anschließend werden die neuen Daten der Weboberfläche übergeben, um auf der Karte sowie in der Liste den aktuellen Stand der Energiesysteme darstellen zu können. In der Abbildung x.y ist der Ablauf „Energiesystem bearbeiten“ dargestellt:
-\newline
+\newpage
+Das Pop-up zum Bearbeiten eines Energiesystems ist in der \autoref{fig:ESbearbeitenPop} ersichtlich.
 \begin{figure}[h]
 	\centering
-	\includegraphics[height=7cm,width=14cm]{images/ESbearbeiten}
-	\caption{Energiesystem Bearbeiten}
-	\label{fig:CSS_System}
+	\includegraphics[height=9cm,width=9cm]{images/ESbearbeitenPop}
+	\caption{Energiesystem Bearbeiten Pop-up}
+	\label{fig:ESbearbeitenPop}
 \end{figure}
 
+Nachdem der Benutzer die Attribute des Energiesystems bearbeitet hat, werden diese mithilfe des Controllers in der Datenbank aktualisiert. Anschließend werden die neuen Daten der Weboberfläche übergeben, um auf der Karte sowie in der Liste den aktuellen Stand der Energiesysteme darstellen zu können. Der Ablauf der dieser Funktion ist gleichzusetzen mit dem Ablauf der Energiesystem Erstellen Funktion, mit dem Unterschied, dass sich das Bearbeiten Pop-up öffnet um die Daten des Energiesystems zu bearbeiten. Dieser Ablauf ist in der \autoref{fig:Eserstellendiagramm} ersichtlich.
 
-\subsubsection{Energiesystem Löschen}
-Um ein Energiesystem zu löschen, benötigt man das Mülleimer-Icon, welches sich neben jedem Energiesystem in der Liste befindet, sofern der angemeldete Benutzer die erforderliche Berechtigung dazu hat. 
-Nachdem dieses Icon betätigt wurde, wird die Information, dass ein Energiesystem gelöscht wurde, an den Controller übermittelt. Dieser löscht anschließend mithilfe der ID des ausgewählten Energiesystems dieses aus der Datenbank und übergibt alle anderen Energiesysteme zurück auf die Weboberfläche, um die vorhandenen Energiesysteme auf der Karte zu platzieren sowie in der Liste anzuzeigen. Der Ablauf, um ein Energiesystem zu löschen, wird in folgendem Diagramm präsentiert:
-\newline
-\begin{figure}[h]
-	\centering
-	\includegraphics[height=7cm,width=14cm]{images/ESlöschen}
-	\caption{Energiesystem Löschen}
-	\label{fig:CSS_System}
-\end{figure}
 
 \newpage
+\subsubsection{Energiesystem Löschen}
+Um ein Energiesystem zu löschen, benötigt man das Mülleimer-Icon, welches sich neben jedem Energiesystem in der Liste befindet, sofern der angemeldete Benutzer die erforderliche Berechtigung dazu hat. 
+Nachdem dieses Icon betätigt wurde, wird die Information, dass ein Energiesystem gelöscht wurde, an den Controller übermittelt. Dieser löscht anschließend mithilfe der ID des ausgewählten Energiesystems dieses aus der Datenbank und übergibt alle anderen Energiesysteme zurück auf die Weboberfläche, um die vorhandenen Energiesysteme auf der Karte zu platzieren sowie in der Liste anzuzeigen. 
+ 
+ 
 \subsubsection{Energietechnologie Erstellen}
-Für das Erstellen einer Energietechnologie ist das Auswählen eines Energiesystems mit einem Doppelklick notwendig. Anschließend verwandelt sich der Cursor in das Energietechnologie-Icon, welches darauf hindeutet, dass jetzt das Hinzufügen einer Energietechnologie mittels eines Klicks auf der gewünschten Position auf der Karte möglich ist. Nach dem Klick auf der Karte öffnet sich ein Pop-up-Fenster, um die Kerndaten der Energietechnologie einzugeben. Dieses Pop-up ist in der Abbildung x.y ersichtlich. 
-
+Für das Erstellen einer Energietechnologie ist das Auswählen eines Energiesystems mit einem Doppelklick notwendig. Anschließend verwandelt sich der Cursor in das Energietechnologie-Icon, welches darauf hindeutet, dass jetzt das Hinzufügen einer Energietechnologie mittels eines Klicks auf der gewünschten Position auf der Karte möglich ist. Nach dem Klick auf der Karte öffnet sich ein Pop-up-Fenster, um die Kerndaten der Energietechnologie einzugeben. Dieses Pop-up ist in der \autoref{fig:EterstellenPop} ersichtlich. 
 
 
 Eingabe des Benutzers:
@@ -1419,92 +1418,74 @@ Automatisch ausgefüllt und nicht im Pop-up dargestellt:
 \end{itemize}
 \begin{figure}[h]
 	\centering
-	\includegraphics[height=8cm,width=6cm]{images/ETerstellenPop}
+	\includegraphics[height=8cm,width=7cm]{images/ETerstellenPop}
 	\caption{Energietechnologie Erstellen Pop-up}
-	\label{fig:CSS_System}
+	\label{fig:EterstellenPop}
 \end{figure}
 \newpage
-Nachdem der Benutzer die Daten im Pop-up ausgefüllt hat, werden diese Informationen über den Controller in der Datenbank erfasst. Anschließend werden die Energietechnologie-Daten an die Weboberfläche übermittelt, um die Energietechnologien auf der Karte darzustellen sowie in der Liste anzuzeigen. Der Ablauf, um eine Energietechnologie zu erstellen, wird in der Abbildung x.y dargestellt:
+Nachdem der Benutzer die Daten im Pop-up ausgefüllt hat, werden diese Informationen über den Controller in der Datenbank erfasst. Anschließend werden die Energietechnologie-Daten an die Weboberfläche übermittelt, um die Energietechnologien auf der Karte darzustellen sowie in der Liste anzuzeigen. Der Ablauf, um eine Energietechnologie zu erstellen, wird in der \autoref{fig:Eterstellendiagram} dargestellt:
  \begin{figure}[h]
  	\centering
  	\includegraphics[height=7cm,width=14cm]{images/ETerstellen}
  	\caption{Energietechnologie Erstellen}
- 	\label{fig:CSS_System}
+ 	\label{fig:Eterstellendiagram}
  \end{figure}
 
 \newpage
 \subsubsection{Energietechnologie Bearbeiten}
-Um eine Energietechnologie zu bearbeiten, muss zuerst ein Energiesystem mit einem Doppelklick ausgewählt werden. Anschließend befinden sich rechts in der Liste alle dazugehörigen Energietechnologien, welche man mit dem Stift-Icon bearbeiten kann. Nach dem Betätigen des Stift-Icons öffnet sich ein Pop-up-Fenster, um die Attribute zu bearbeiten. Dieses Pop-up-Fenster ist in der Abbildung x.y ersichtlich.
+Um eine Energietechnologie zu bearbeiten, muss zuerst ein Energiesystem mit einem Doppelklick ausgewählt werden. Anschließend befinden sich rechts in der Liste alle dazugehörigen Energietechnologien, welche man mit dem Stift-Icon bearbeiten kann. Nach dem Betätigen des Stift-Icons öffnet sich ein Pop-up-Fenster, um die Attribute zu bearbeiten. Dieses Pop-up-Fenster ist in der \autoref{fig:ETbearbeitenpop} ersichtlich.
 \newline
 \begin{figure}[h]
 	\centering
 	\includegraphics[height=11cm,width=8cm]{images/ETbearbeitenPop}
 	\caption{Energietechnologie Bearbeiten}
-	\label{fig:CSS_System}
+	\label{fig:ETbearbeitenpop}
 \end{figure}
 
 
 Dabei sind die Attribute „Bezeichnung“, „Ort“, „Bild“ und „Beschreibung“ bearbeitbar. Um dem Benutzer dies deutlich zu machen, weisen diese Attribute einen weißen Hintergrund auf. 
 Die Attribute „Typ“, „Längengrad“, „Breitengrad“, „Ensys\_ID“ sowie „User\_ID“ sind nicht bearbeitbar.
-Nachdem der Benutzer die Daten bearbeitet hat, werden diese über den Controller in die Datenbank geschrieben. Anschließend werden die Energietechnologie-Daten an die Weboberfläche übergeben, um die Marker auf der Karte zu platzieren sowie den Inhalt der Liste zu aktualisieren. 
-\newpage
-Das nachfolgende Diagramm beschreibt den Ablauf für das Bearbeiten einer Energietechnologie:
-\newline
-\begin{figure}[h]
-	\centering
-	\includegraphics[height=7cm,width=14cm]{images/ETbearbeiten}
-	\caption{Energietechnologie Bearbeiten}
-	\label{fig:CSS_System}
-\end{figure}
+Nachdem der Benutzer die Daten bearbeitet hat, werden diese über den Controller in die Datenbank geschrieben. Anschließend werden die Energietechnologie-Daten an die Weboberfläche übergeben, um die Marker auf der Karte zu platzieren sowie den Inhalt der Liste zu aktualisieren. Der Ablauf der dieser Funktion ist gleichzusetzen mit dem Ablauf der Energietechnologien Erstellen Funktion, mit dem Unterschied, dass sich das Bearbeiten Pop-up öffnet um die Daten der Energietechnologie zu bearbeiten. Dieser Ablauf ist in der \autoref{fig:Eterstellendiagram} ersichtlich. 
+
 
 \newpage
 \subsubsection{Energietechnologie Löschen}
 Um eine Energietechnologie zu löschen, benötigt man das Mülleimer-Icon, welches sich in der Liste neben den Energietechnologien befindet, sofern ein Energiesystem von dem Benutzer ausgewählt wurde.
-Sobald der Benutzer dieses Icon betätigt, wird mithilfe der ID der ausgewählten Energietechnologie dem Controller mitgeteilt, dass diese Energietechnologie gelöscht werden soll. Daraufhin löscht der Controller diese Energietechnologie aus der Datenbank und übergibt anschließend alle anderen vorhandenen Energietechnologie-Daten an die Weboberfläche, um dort die Marker zu platzieren sowie den Inhalt der Liste zu aktualisieren. Das nachfolgende Diagramm beschreibt den Ablauf für das Löschen einer Energietechnologie:
-\begin{figure}[h]
-	\centering
-	\includegraphics[height=7cm,width=14cm]{images/ETlöschen}
-	\caption{Energietechnologie Löschen}
-	\label{fig:CSS_System}
-\end{figure}
+Sobald der Benutzer dieses Icon betätigt, wird mithilfe der ID der ausgewählten Energietechnologie dem Controller mitgeteilt, dass diese Energietechnologie gelöscht werden soll. Daraufhin löscht der Controller diese Energietechnologie aus der Datenbank und übergibt anschließend alle anderen vorhandenen Energietechnologie-Daten an die Weboberfläche, um dort die Marker zu platzieren sowie den Inhalt der Liste zu aktualisieren.
 
 
-\newpage
 \subsubsection{Benutzerverwaltung}
 Je nach Benutzerrolle des aktuell angemeldeten Benutzers stehen dem Benutzer unterschiedliche Funktionen auf der Weboberfläche zur Verfügung.  
-Folgende drei Benutzer stehen zur Verfügung:
+Folgende drei Rollen stehen zur Verfügung:
 \begin{itemize}
 	\item Administrator 
 	\item Mitarbeiter
 	\item Öffentlicher Benutzer
 \end{itemize}
-Wie eine generelle Überprüfung des Benutzers in Laravel umgesetzt werden kann, ist unter der Quelle x.y ersichtlich. Folgende Überprüfung wurde selbst vom Projektteam entwickelt und ist somit nicht unter der genannten Quelle auffindbar.\newline \newline
-Mit folgender Überprüfung wird kontrolliert, ob der gerade angemeldete Benutzer das Energiesystem oder die Energietechnologie selbst erstellt hat oder ob er die Rolle des Administrators aufweisen kann. Falls der Benutzer das Energiesystem oder die Energietechnologie selbst erstellt hat, ist der erste Teil der Überprüfung erfüllt und der Benutzer hat die Verwaltungsfunktionen zur Verfügung. Falls der Benutzer das Energiesystem oder die Energietechnologie nicht selbst erstellt hat, wird die zweite Überprüfung durchgeführt, welche überprüft, ob der Benutzer die Rolle des Administrators aufweisen kann. Falls er diese Rolle besitzt, hat er die Verwaltungsfunktionen zur Verfügung, andernfalls nicht.
+Wie eine generelle Überprüfung des Benutzers in Laravel umgesetzt werden kann, ist unter der Quelle x.y ersichtlich. 
+\newline Folgende Überprüfung wurde selbst vom Projektteam entwickelt und ist somit nicht unter der genannten Quelle auffindbar.\newline \newline
+Mit dieser Überprüfung wird kontrolliert, ob der gerade angemeldete Benutzer das Energiesystem oder die Energietechnologie selbst erstellt hat oder ob er die Rolle des Administrators aufweisen kann. Falls der Benutzer das Energiesystem oder die Energietechnologie selbst erstellt hat, ist der erste Teil der Überprüfung erfüllt und der Benutzer hat die Verwaltungsfunktionen zur Verfügung. Falls der Benutzer das Energiesystem oder die Energietechnologie nicht selbst erstellt hat, wird die zweite Überprüfung durchgeführt, welche überprüft, ob der Benutzer die Rolle des Administrators aufweisen kann. Falls er diese Rolle besitzt, hat er die Verwaltungsfunktionen zur Verfügung, andernfalls nicht.
 
 
 \begin{lstlisting}[
-	caption={Funktion Blade.php Zeile 1-2},
+	caption={Überprüfung der Benutzerrolle},
 	label=Code,
 	language=octave,
 	numbers=left,
-	firstnumber=100,
+	firstnumber=1,
 	numberfirstline=false,
 	backgroundcolor=\color{mygray},
 	basicstyle=\footnotesize=15,
 	keywordstyle=\color{blue}
 	]
-	
 @if ($userID->id == $d->users_idusers || $userID->role == 'Admin')
 
-	
 \end{lstlisting}
 
 
-
-
-
+\newpage
 \subsubsection{Adresssuche}
-Mithilfe des Adresssuchfeldes ist es möglich, einen Standort einzugeben, um anschließend auf der Karte zu diesem zu gelangen. Dadurch ist das Auffinden von bestimmten Orten auf der Karte problemlos möglich. Dabei wird die eingegebene Adresse in geografische Koordinaten umgewandelt, zu welchen man anschließend navigiert wird. In der folgenden Abbildung ist das Adresssuchfeld ersichtlich.
+Mithilfe des Adresssuchfeldes ist es möglich, einen Standort einzugeben, um anschließend auf der Karte zu diesem zu gelangen. Dadurch ist das Auffinden von bestimmten Orten auf der Karte problemlos möglich. Dabei wird die eingegebene Adresse in geografische Koordinaten umgewandelt, zu welchen man anschließend navigiert wird. In der folgenden \autoref{fig:Adresssuchfeld} ist das Adresssuchfeld ersichtlich.
 \begin{figure}[h]
 	\centering
 	\includegraphics[height=2cm,width=15cm]{images/Adresssuchfeld}
@@ -1512,7 +1493,6 @@ Mithilfe des Adresssuchfeldes ist es möglich, einen Standort einzugeben, um ans
 	\label{fig:Adresssuchfeld}
 \end{figure}
 
-\newpage
 Folgende Schreibweisen sind in der Suche möglich:
 \begin{itemize}
 	\item Stadt 
@@ -1523,27 +1503,30 @@ Folgende Schreibweisen sind in der Suche möglich:
 
 
 \textbf{Automatische Vervollständigung} \\
-Um die Suche nach der richtigen Adresse zu vereinfachen, wird die Eingabe des Benutzers mit einer Auto-Complete-Funktion unterstützt. Diese Funktion bietet mögliche Ziel-Adressen anhand der bisher eingegebenen Daten an, welche vom Benutzer ausgewählt werden können. Ein Beispiel dieser Funktion ist in der Abbildung x.y dargestellt. 
+Um die Suche nach der richtigen Adresse zu vereinfachen, wird die Eingabe des Benutzers mit einer Autocomplete-Funktion unterstützt. Diese Funktion bietet mögliche Ziel-Adressen anhand der bisher eingegebenen Daten an, welche vom Benutzer ausgewählt werden können. Dafür wurde eine von Google bereitgestellte API verwendet. 
+Quelle Xy 
+Ein Beispiel dieser Funktion ist in der \autoref{fig:Automatische Vervollständigung} dargestellt.
+
 \begin{figure}[h]
 	\centering
 	\includegraphics[height=7cm,width=15cm]{images/Vorschläge}
 	\caption{Automatische Vervollständigung}
 	\label{fig:Automatische Vervollständigung}
 \end{figure}
-\\
 
 \newpage
 \textbf{Adresssuche durchführen} \\
-Die Adresssuche kann auf zwei verschiedene Arten durchgeführt werden.
+Die Adresssuche kann auf zwei verschiedene Arten ausgelöst werden.
 Die erste Variante ist das Benutzen des dazugehörigen Buttons mit der Beschriftung „Suchen“. Die zweite Variante ist das Betätigen der Enter-Taste auf der Tastatur. Beide Varianten führen zu dem gleichen Ergebnis, und zwar, dass die Adresssuche durchgeführt wird.
-Sobald die Adresssuche durchgeführt wird, werden für die eingegebene Adresse die dazugehörigen Koordinaten berechnet. Sobald diese berechnet wurden, werden diese an die Karte übergeben, damit der Mittelpunkt der Karte auf diese Koordinaten gesetzt wird. Anschließend gelangt der Benutzer zu seiner eingegebenen Adresse auf der Karte und kann seine Interaktionen fortsetzen. Das folgende Diagramm beschreibt die Durchführung der Adresssuche:
+Sobald die Adresssuche durchgeführt wird, werden mit Hilfe von Google-Cloud API-Aufrufe für die eingegebene Adresse die dazugehörigen Koordinaten berechnet. Sobald diese berechnet wurden, werden diese an die Karte übergeben, damit der Mittelpunkt der Karte auf diese Koordinaten gesetzt wird. Anschließend gelangt der Benutzer zu seiner eingegebenen Adresse auf der Karte und kann seine Interaktionen fortsetzen. Die \autoref{fig:AdresseDiagramm} beschreibt die Durchführung der Adresssuche.
 \begin{figure}[h]
 	\centering
-	\includegraphics[height=7cm,width=14cm]{images/Adresssuche}
+	\includegraphics[height=7cm,width=17cm]{images/Adresssuche}
 	\caption{Adresssuche}
-	\label{fig:Adresssuche }
+	\label{fig:AdresseDiagramm}
 \end{figure}
-\\
+
+
 
 \newpage
 \subsection{Front-End} \label{sec: Front-End}
@@ -1655,26 +1638,19 @@ Neben den bekannten Kartendienst-Funktionen wie das Erstellen eines Energiesyste
 \subsubsection{Auswählen eines Energiesystems}
 Das Auswählen eines Energiesystems ist notwendig, um die dazugehörigen Energietechnologien auf der Karte sowie in der Liste zu sehen. Ebenso ist es notwendig, um neue Energietechnologien erstellen zu können.
 Mit einem einfachen Klick auf das Energiesystem-Icon wird an dieses Energiesystem lediglich herangezoomt, jedoch noch nicht ausgewählt.
-Um ein Energiesystem auszuwählen, ist ein Doppelklick darauf notwendig. Dieser Doppelklick bewirkt, dass in der Liste sowie auf der Karte die dazugehörigen Energietechnologien angezeigt werden. Anschließend ist es für den Benutzer möglich, die Energietechnologien zu verwalten. Der Ablauf für das Auswählen eines Energiesystems wird in der folgenden Abbildung dargestellt:
+Um ein Energiesystem auszuwählen, ist ein Doppelklick darauf notwendig. Dieser Doppelklick bewirkt, dass in der Liste sowie auf der Karte die dazugehörigen Energietechnologien angezeigt werden. Anschließend ist es für den Benutzer möglich, die Energietechnologien zu verwalten. Der Ablauf für das Auswählen eines Energiesystems wird in der \autoref{fig:Energiesystem auswählen} dargestellt:
 \newline
 \begin{figure}[h]
 	\centering
 	\includegraphics[height=7cm,width=14cm]{images/ESauswählen}
 	\caption{Energiesystem auswählen}
-	\label{fig:Energiesystem auswählen }
+	\label{fig:Energiesystem auswählen}
 \end{figure}
 
 
-\newpage
 \subsubsection{Abwählen eines Energiesystems}
-Nachdem ein Energiesystem ausgewählt wurde, ist mit einem einfachen Linksklick auf das Energiesystem-Icon möglich, das ausgewählte Energiesystem wieder abzuwählen. Nach Abwählen des Energiesystems werden die dazugehörigen Technologien wieder von der Karte sowie aus der Tabelle entfernt. Stattdessen werden in der Tabelle wieder alle vorhandenen Energiesysteme angezeigt. Der Ablauf für das Abwählen eines Energiesystems wird in der folgenden Abbildung dargestellt.
-\newline
-\begin{figure}[h]
-	\centering
-	\includegraphics[height=7cm,width=14cm]{images/ESabwählen}
-	\caption{Energiesystem abwählen}
-	\label{fig:Energiesystem abwählen }
-\end{figure}
+Nachdem ein Energiesystem ausgewählt wurde, ist mit einem einfachen Linksklick auf das Energiesystem-Icon möglich, das ausgewählte Energiesystem wieder abzuwählen. Nach Abwählen des Energiesystems werden die dazugehörigen Technologien wieder von der Karte sowie aus der Tabelle entfernt. Stattdessen werden in der Tabelle wieder alle vorhandenen Energiesysteme angezeigt.
+
 
 
 \newpage
@@ -1684,27 +1660,20 @@ In diesem Abschnitt werden die Funktionen zum Darstellen und Entfernen der Marke
 
 
 \subsubsection{Energiesysteme Marker auf der Karte platzieren}
-Immer wenn die Map neu geladen wird, werden alle vorhandenen Energiesysteme in Form von Icons auf der Karte platziert. Dafür werden die Daten aller Energiesysteme aus der Datenbank gelesen, um anschließend die Marker auf der Karte platzieren zu können. Die dafür notwendigen Datenbank-Attribute, die ausgelesen werden müssen, sind „Bezeichnung“, „Breitengrad“ sowie „Längengrad“. Anschließend werden mit diesen Informationen die Marker erstellt und auf der Karte dargestellt. Die Abbildung x.y stellt den Ablauf für das Platzieren der Energiesysteme-Marker auf der Karte dar.
-\newline
-\begin{figure}[h]
-	\centering
-	\includegraphics[height=7cm,width=14cm]{images/SetESMarker}
-	\caption{Energiesysteme Marker platzieren}
-	\label{fig:Energiesystem auswählen }
-\end{figure}
+Immer wenn die Map neu geladen wird, werden alle vorhandenen Energiesysteme in Form von Icons auf der Karte platziert. Dafür werden die Daten aller Energiesysteme aus der Datenbank gelesen, um anschließend die Marker auf der Karte platzieren zu können. Die dafür notwendigen Datenbank-Attribute, die ausgelesen werden müssen, sind „Bezeichnung“, „Breitengrad“ sowie „Längengrad“. Anschließend werden mit diesen Informationen die Marker erstellt und auf der Karte dargestellt. Die \autoref{fig:ETmarkerplatzieren} beinhaltet den Ablauf für das Platzieren der Energiesysteme-Marker auf der Karte.
 
-\newpage
+
 \subsubsection{Energietechnologien Marker auf der Karte platzieren}
-Sobald ein Energiesystem ausgewählt wurde, werden die dazugehörigen Energietechnologien angezeigt. Für das Anzeigen eines Energietechnologie-Markers werden die Attribute „Bezeichnung“, „Typ“, „Breitengrad“ sowie „Längengrad“ aus der Datenbank ausgelesen. Anschließend werden die Energietechnologie-Marker erstellt und auf der Karte präsentiert. Die Abbildung x.y stellt den Ablauf für das Platzieren der Energietechnologien-Marker auf der Karte dar.
+Sobald ein Energiesystem ausgewählt wurde, werden die dazugehörigen Energietechnologien angezeigt. Für das Anzeigen eines Energietechnologie-Markers werden die Attribute „Bezeichnung“, „Typ“, „Breitengrad“ sowie „Längengrad“ aus der Datenbank ausgelesen. Anschließend werden die Energietechnologie-Marker erstellt und auf der Karte präsentiert. Die \autoref{fig:ETmarkerplatzieren} stellt den Ablauf für das Platzieren der Energietechnologien-Marker auf der Karte dar.
 \newline
 \begin{figure}[h]
 	\centering
 	\includegraphics[height=7cm,width=14cm]{images/SetETMarker}
 	\caption{Energietechnologie Marker platzieren}
-	\label{fig:Energiesystem auswählen }
+	\label{fig:ETmarkerplatzieren}
 \end{figure}
 
-
+\newpage
 \subsection{Layoutvorlage der Website}
 Das Produkt verwendet die Layout Funktion vom Framework Laravel. Genauer Informationen wie dieses Layout funktioniert können im Kapitel 2.7 nachgelesen werden. Jede Unterseite des Produkts ist in folgende Sections gegliedert:
 \begin{itemize}
@@ -1720,16 +1689,19 @@ In der Section Header ist die Navigationsleiste vordefiniert. Die Section Conten
 \newpage
 \section{DataTable} \label{sec:DataTable}
 Um die angezeigten Daten in der Tabelle zu sortieren, zu filtern oder deren Anzahl pro Seite zu begrenzen, wurde das Plug-in DataTable verwendet. DataTable ist ein Plug-In der JavaScript-Bibliothek jQuery. Dieses Tool bietet viele Funktionen wie die Suchfunktion, die Sortierfunktion und die Seitennummerierung.
-Für einen Standard-DataTable sind folgende Schritte notwendig:
 
-Folgende JavaScripts und CSS-Files müssen für die Verwendung eines DataTable eingebunden werden.
+Das Projektteam hat sich für eine Einbindung mittels CDN \footnote{Content Delivery Network Quelle x}  entschieden.
+Für einen Standard-DataTable mittels CDN sind folgende Schritte notwendig:
 
+JavaScript und CSS-Files einbinden
+\newline Je nach Verwendungsart des DataTables müssen unterschiedliche JavaScripts und CSS-Files eingebunden werden. Unter der  Quelle x.y kann herausgefunden werden, welche Files eingebunden werden müssen. 
 
+Nachdem die Files eingebunden sind, muss folgende Funktion hinzugefügt werden.
 \definecolor{mygray}{RGB}{252,251,244}
 \renewcommand{\lstlistingname}{Quellcode}
 
 \begin{lstlisting}[
-	caption={Funktion Blade.php Zeile 1-2},
+	caption={DataTable Funktion},
 	label=Code,
 	language=octave,
 	numbers=left,
@@ -1739,38 +1711,36 @@ Folgende JavaScripts und CSS-Files müssen für die Verwendung eines DataTable e
 	basicstyle=\footnotesize=15,
 	keywordstyle=\color{blue}
 	]
-	
-<link rel="stylesheet" href="https://cdn.datatables.net/1.10.22/css/dataTables.bootstrap4.min.css>
-<script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
-<script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script>
+$(document).ready( function () {
+	$('#TableID).DataTable();
+} );
 
+	
 \end{lstlisting}
-Anschließend muss folgende Funktion mit der ID des Tables eingebunden werden:
 
 Anschließend sind alle DataTable-Funktionen an diesen Table gegeben.
 Links oben befindet sich ein Input-Feld, um die Anzahl der Datensätze pro Seite festzulegen. Die Suchfunktion, um nach einem bestimmtem Datensatz zu suchen, befindet sich rechts oben.
 Für jedes Attribut ist eine Sortierfunktion gegeben, welche an den kleinen Pfeilen neben dem Attributnamen erkennbar ist. Links unten sieht man, wieviele Datensätze gerade auf dieser Seite angezeigt werden und wieviele es insgesamt gibt. Rechts unten ist es möglich, mit den Buttons zwischen den Seiten hin und her zu wechseln, falls mehrere Seiten vorhanden sind.
 Die Sprache, die für den Standard-DataTable verwendet wird, ist Englisch.
-Mit den Standardeinstellungen würde die Liste folgendermaßen aussehen:
+In der \autoref{fig:StandardTable} ist ein DataTable mit den Standardeinstellungen ersichtlich.
 \newline
 \begin{figure}[h]
 	\centering
-	\includegraphics[height=7cm,width=14cm]{images/DataTableStandard}
+	\includegraphics[height=5cm,width=10cm]{images/DataTableStandard}
 	\caption{Standard DataTable}
-	\label{fig:Energiesystem auswählen }
+	\label{fig:StandardTable}
 \end{figure}
 
 
 \subsection{Individueller DataTable}
 Aufbauend auf den Standard-DataTable wurde der individuelle DataTable basierend auf den Anforderungen des Auftraggebers erstellt. Dabei ist die wichtigste Anforderung, dass pro Seite maximal 5 Datensätze dargestellt werden.
 Zuerst wurde die Sortierfunktion bei den Spalten drei, vier und fünf deaktiviert, da sich an diesen Stellen die Icons befinden und somit eine Sortierfunktion keinen Sinn macht. Die Auswahl für die Anzahl der Datensätze pro Seite wurde deaktiviert, da diese konstant auf den Wert fünf festgelegt wurde. Zum Schluss wurde die Sprache des Tables auf Deutsch geändert.
-Mit dieser DataTable Definition sieht die Liste anschließend folgendermaßen aus:
-\newline
+In der \autoref{fig:indiTable} ist der individuelle Datatable abgebildet.
 \begin{figure}[h]
 	\centering
-	\includegraphics[height=7cm,width=14cm]{images/DataTableIndividuell}
+	\includegraphics[height=5cm,width=10cm]{images/DataTableIndividuell}
 	\caption{Individueller DataTable}
-	\label{fig:Energiesystem auswählen }
+	\label{fig:indiTable}
 \end{figure}
 
 
@@ -1798,13 +1768,13 @@ Auf Funktionen der einzelnen Icons wird im Kapitel 2.6.6.9 genauer eingegangen.
 
 
 \subsection{MoveToMarker}
-Um das Finden eines Energiesystems trotz des bereits vorhandenen Adress-Suchfeldes noch leichter zu ermöglichen, gibt es die Funktion MoveToMarker. Diese Funktion wird dann ausgeführt, wenn in der Liste auf die Bezeichnung, die Katastralgemeinde oder die Postleitzahl eines Energiesystems gedrückt wird. Das Ergebnis dieser Funktion ist, dass der Benutzer nach dem Klick auf ein Energiesystem in der Liste gleich zu dessen Position auf der Karte gelangt, um eine längere Suche danach zu ersparen. Der Ablauf der MoveToMarker-Funktion wird in folgender Abbildung nähergebracht.
+Um das Finden eines Energiesystems trotz des bereits vorhandenen Adress-Suchfeldes noch leichter zu ermöglichen, gibt es die Funktion MoveToMarker. Diese Funktion wird dann ausgeführt, wenn in der Liste auf die Bezeichnung, die Katastralgemeinde oder die Postleitzahl eines Energiesystems gedrückt wird. Das Ergebnis dieser Funktion ist, dass der Benutzer nach dem Klick auf ein Energiesystem in der Liste gleich zu dessen Position auf der Karte gelangt, um eine längere Suche danach zu ersparen. Der Ablauf der MoveToMarker-Funktion wird in der \autoref{fig:Movetomarker} nähergebracht.
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[height=7cm,width=14cm]{images/MoveToMarker}
 	\caption{MoveToMarker}
-	\label{fig:Energiesystem auswählen }
+	\label{fig:Movetomarker}
 \end{figure}
 
 Nachdem der Benutzer zum Standort des ausgewählten Energiesystems navigiert wurde, hat dieser dort wieder alle Funktionalitäten der Karte, wie das Hinzufügen eines neuen Energiesystems sowie einer Energietechnologie, gegeben.
@@ -1816,12 +1786,12 @@ Auf der Seite „Galerie“ ist es möglich, die Energietechnologien von einem a
 
 
 \subsection{Auswahl eines Energiesystems}
-Die Auswahl eines Energiesystems ist mithilfe eines Drop-Down-Menüs möglich. Dieses Drop-Down-Menü beinhaltet alle vorhanden Energiesysteme. In Abbildung x.y ist das Drop-Down-Menü mit allen vorhandenen Energiesystemen ersichtlich.
+Die Auswahl eines Energiesystems ist mithilfe eines Drop-Down-Menüs möglich. Dieses Drop-Down-Menü beinhaltet alle vorhanden Energiesysteme. In \autoref{fig:DropDowngalerie} ist das Drop-Down-Menü mit allen vorhandenen Energiesystemen ersichtlich.
 \begin{figure}[h]
 	\centering
-	\includegraphics[height=3cm,width=14cm]{images/GalerieDropDown}
+	\includegraphics[height=4cm,width=14cm]{images/GalerieDropDown}
 	\caption{Auswahl eines Energiesystems}
-	\label{fig:Energiesystem auswählen }
+	\label{fig:DropDowngalerie}
 \end{figure}
 
 
@@ -1829,13 +1799,13 @@ Die Auswahl eines Energiesystems ist mithilfe eines Drop-Down-Menüs möglich. D
 \subsection{Energietechnologien des Energiesystems anzeigen}
 Wenn der Benutzer ein Energiesystem ausgewählt hat, werden die dazugehörigen Energietechnologien in Form von Cards dargestellt.
 Als Haupt-Überschrift über alle Energietechnologien dient die Bezeichnung des ausgewählten Energiesystems.
-Bei den einzelnen Energietechnologien, die dargestellt werden, wird zuerst das eingefügte Bild angezeigt, welches beim Erstellen einer Energietechnologie ausgewählt werden kann. Falls der Benutzer bei einer Energietechnologie kein Bild hinzugefügt hat, wird automatisch ein Standardbild eingefügt. Unter dem Bild dient die Bezeichnung sowie die Beschreibung der Energietechnologie als Bildunterschrift. In der Abbildung x.x sind Energietechnologien des Energiesystems MicroGridLab zu sehen. Dabei haben zwei Energietechnologien ein Bild beim Erstellen bekommen, und bei zwei weiteren namens PV-Dach2 und PV-Dach4 wurde das Standardbild eingefügt, da bei diesen Energietechnologien beim Erstellen kein Bild hinzugefügt wurde.
+Bei den einzelnen Energietechnologien, die dargestellt werden, wird zuerst das eingefügte Bild angezeigt, welches beim Erstellen einer Energietechnologie ausgewählt werden kann. Falls der Benutzer bei einer Energietechnologie kein Bild hinzugefügt hat, wird automatisch ein Standardbild eingefügt. Unter dem Bild dient die Bezeichnung sowie die Beschreibung der Energietechnologie als Bildunterschrift. In der \autoref{fig:ETgalerie} sind Energietechnologien des Energiesystems MicroGridLab zu sehen.
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[height=6cm,width=14cm]{images/GalerieET}
+	\includegraphics[height=8cm,width=14cm]{images/GalerieET2}
 	\caption{Galerie}
-	\label{fig:Energiesystem auswählen }
+	\label{fig:ETgalerie}
 \end{figure}
 
 
