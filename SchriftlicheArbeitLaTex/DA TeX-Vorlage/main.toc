@@ -1,4 +1,4 @@
-\babel@toc {ngerman}{}\relax 
+\babel@toc {ngerman}{}
 \contentsline {chapter}{Eidesstattliche Erklärung}{A}{chapter*.2}%
 \contentsline {chapter}{Kurzfassung der Diplomarbeit/Abstract}{B}{chapter*.4}%
 \contentsline {chapter}{Danksagung}{E}{chapter*.5}%
