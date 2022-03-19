@@ -1,4 +1,4 @@
-\babel@toc {ngerman}{}
+\babel@toc {ngerman}{}\relax 
 \contentsline {chapter}{Eidesstattliche Erklärung}{A}{chapter*.2}%
 \contentsline {chapter}{Kurzfassung der Diplomarbeit/Abstract}{B}{chapter*.4}%
 \contentsline {chapter}{Danksagung}{E}{chapter*.5}%
@@ -34,153 +34,153 @@
 \contentsline {subsubsection}{\numberline {2.3.4.3}ASP.NET}{14}{subsubsection.2.3.4.3}%
 \contentsline {subsubsection}{\numberline {2.3.4.4}React}{14}{subsubsection.2.3.4.4}%
 \contentsline {subsubsection}{\numberline {2.3.4.5}Entscheidung des Frameworks}{15}{subsubsection.2.3.4.5}%
-\contentsline {subsection}{\numberline {2.3.5}Front-End Templates}{17}{subsection.2.3.5}%
-\contentsline {subsubsection}{\numberline {2.3.5.1}Bootstrap}{17}{subsubsection.2.3.5.1}%
-\contentsline {subsubsection}{\numberline {2.3.5.2}Tailwind.css}{18}{subsubsection.2.3.5.2}%
-\contentsline {subsubsection}{\numberline {2.3.5.3}Vue.js}{18}{subsubsection.2.3.5.3}%
-\contentsline {subsubsection}{\numberline {2.3.5.4}Entscheidung des Front-End Templates}{19}{subsubsection.2.3.5.4}%
-\contentsline {subsection}{\numberline {2.3.6}Verbindung der Datenbank mit Laravel}{20}{subsection.2.3.6}%
-\contentsline {subsubsection}{\numberline {2.3.6.1}Laravel .env Datei }{20}{subsubsection.2.3.6.1}%
-\contentsline {subsubsection}{\numberline {2.3.6.2}Migrations}{20}{subsubsection.2.3.6.2}%
-\contentsline {subsubsection}{\numberline {2.3.6.3}Seeder und Factories}{21}{subsubsection.2.3.6.3}%
-\contentsline {subsubsection}{\numberline {2.3.6.4}Datenübergabe in Laravel}{21}{subsubsection.2.3.6.4}%
-\contentsline {section}{\numberline {2.4}Visuelle Darstellung der Energiesysteme und Energietechnologien }{22}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Kartendienste}{22}{subsection.2.4.1}%
-\contentsline {subsubsection}{\numberline {2.4.1.1}Google Maps}{22}{subsubsection.2.4.1.1}%
-\contentsline {subsubsection}{\numberline {2.4.1.2}OpenStreetMap}{23}{subsubsection.2.4.1.2}%
-\contentsline {subsection}{\numberline {2.4.2}Geoinformationssystem }{24}{subsection.2.4.2}%
-\contentsline {subsection}{\numberline {2.4.3}CSS-System}{24}{subsection.2.4.3}%
-\contentsline {subsection}{\numberline {2.4.4}Auswahl des Anbieters}{25}{subsection.2.4.4}%
-\contentsline {section}{\numberline {2.5}Berechtigungssystem Benutzer}{26}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}Benutzerrollen}{26}{subsection.2.5.1}%
-\contentsline {subsubsection}{\numberline {2.5.1.1}Administrator}{26}{subsubsection.2.5.1.1}%
-\contentsline {subsubsection}{\numberline {2.5.1.2}Mitarbeiter}{26}{subsubsection.2.5.1.2}%
-\contentsline {subsubsection}{\numberline {2.5.1.3}öffentlicher Benutzer}{27}{subsubsection.2.5.1.3}%
-\contentsline {subsection}{\numberline {2.5.2}Berechtigungen in Laravel}{27}{subsection.2.5.2}%
-\contentsline {section}{\numberline {2.6}Ui/Ux Design}{27}{section.2.6}%
-\contentsline {subsection}{\numberline {2.6.1}Wireframe}{28}{subsection.2.6.1}%
-\contentsline {subsection}{\numberline {2.6.2}Persona}{28}{subsection.2.6.2}%
-\contentsline {section}{\numberline {2.7}Template Layout}{28}{section.2.7}%
-\contentsline {subsection}{\numberline {2.7.1}Platzhalter Yield}{28}{subsection.2.7.1}%
+\contentsline {subsection}{\numberline {2.3.5}Front-End Templates}{16}{subsection.2.3.5}%
+\contentsline {subsubsection}{\numberline {2.3.5.1}Bootstrap}{16}{subsubsection.2.3.5.1}%
+\contentsline {subsubsection}{\numberline {2.3.5.2}Tailwind.css}{17}{subsubsection.2.3.5.2}%
+\contentsline {subsubsection}{\numberline {2.3.5.3}Vue.js}{17}{subsubsection.2.3.5.3}%
+\contentsline {subsubsection}{\numberline {2.3.5.4}Entscheidung des Front-End Templates}{18}{subsubsection.2.3.5.4}%
+\contentsline {subsection}{\numberline {2.3.6}Verbindung der Datenbank mit Laravel}{19}{subsection.2.3.6}%
+\contentsline {subsubsection}{\numberline {2.3.6.1}Laravel .env Datei }{19}{subsubsection.2.3.6.1}%
+\contentsline {subsubsection}{\numberline {2.3.6.2}Migrations}{19}{subsubsection.2.3.6.2}%
+\contentsline {subsubsection}{\numberline {2.3.6.3}Seeder und Factories}{20}{subsubsection.2.3.6.3}%
+\contentsline {subsubsection}{\numberline {2.3.6.4}Datenübergabe in Laravel}{20}{subsubsection.2.3.6.4}%
+\contentsline {section}{\numberline {2.4}Visuelle Darstellung der Energiesysteme und Energietechnologien }{21}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Kartendienste}{21}{subsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.1.1}Google Maps}{21}{subsubsection.2.4.1.1}%
+\contentsline {subsubsection}{\numberline {2.4.1.2}OpenStreetMap}{22}{subsubsection.2.4.1.2}%
+\contentsline {subsection}{\numberline {2.4.2}Geoinformationssystem }{23}{subsection.2.4.2}%
+\contentsline {subsection}{\numberline {2.4.3}CSS-System}{23}{subsection.2.4.3}%
+\contentsline {subsection}{\numberline {2.4.4}Auswahl des Anbieters}{24}{subsection.2.4.4}%
+\contentsline {section}{\numberline {2.5}Berechtigungssystem Benutzer}{25}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Benutzerrollen}{25}{subsection.2.5.1}%
+\contentsline {subsubsection}{\numberline {2.5.1.1}Administrator}{25}{subsubsection.2.5.1.1}%
+\contentsline {subsubsection}{\numberline {2.5.1.2}Mitarbeiter}{25}{subsubsection.2.5.1.2}%
+\contentsline {subsubsection}{\numberline {2.5.1.3}öffentlicher Benutzer}{26}{subsubsection.2.5.1.3}%
+\contentsline {subsection}{\numberline {2.5.2}Berechtigungen in Laravel}{26}{subsection.2.5.2}%
+\contentsline {section}{\numberline {2.6}Ui/Ux Design}{26}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}Wireframe}{27}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.2}Persona}{27}{subsection.2.6.2}%
+\contentsline {section}{\numberline {2.7}Template Layout}{27}{section.2.7}%
+\contentsline {subsection}{\numberline {2.7.1}Platzhalter Yield}{27}{subsection.2.7.1}%
 \contentsline {subsection}{\numberline {2.7.2}Sections}{28}{subsection.2.7.2}%
-\contentsline {subsection}{\numberline {2.7.3}Einbindung der definierten Sections}{29}{subsection.2.7.3}%
+\contentsline {subsection}{\numberline {2.7.3}Einbindung der definierten Sections}{28}{subsection.2.7.3}%
 \contentsline {section}{\numberline {2.8}Laravel Befehle}{29}{section.2.8}%
 \contentsline {subsection}{\numberline {2.8.1}Migration Befehle}{29}{subsection.2.8.1}%
-\contentsline {subsection}{\numberline {2.8.2}Seeder und Factory Befehle}{30}{subsection.2.8.2}%
+\contentsline {subsection}{\numberline {2.8.2}Seeder und Factory Befehle}{29}{subsection.2.8.2}%
 \contentsline {subsection}{\numberline {2.8.3}Model und Controller Befehle}{30}{subsection.2.8.3}%
-\contentsline {subsection}{\numberline {2.8.4}Starten des Laravel Entwicklungs Servers}{31}{subsection.2.8.4}%
+\contentsline {subsection}{\numberline {2.8.4}Starten des Laravel Entwicklungs Servers}{30}{subsection.2.8.4}%
 \contentsline {subsection}{\numberline {2.8.5}Befehle nach dem Git Pull}{31}{subsection.2.8.5}%
 \contentsline {section}{\numberline {2.9}Routen in Laravel}{31}{section.2.9}%
 \contentsline {subsection}{\numberline {2.9.1}Ressource Routen}{31}{subsection.2.9.1}%
 \contentsline {subsection}{\numberline {2.9.2}GET Routen}{32}{subsection.2.9.2}%
 \contentsline {subsection}{\numberline {2.9.3}Auth Routen}{32}{subsection.2.9.3}%
-\contentsline {section}{\numberline {2.10}MVC}{34}{section.2.10}%
-\contentsline {subsection}{\numberline {2.10.1}Model}{34}{subsection.2.10.1}%
-\contentsline {subsection}{\numberline {2.10.2}View}{34}{subsection.2.10.2}%
-\contentsline {subsection}{\numberline {2.10.3}Controller}{34}{subsection.2.10.3}%
-\contentsline {chapter}{\numberline {3}Ergebnisdokumentation }{35}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Laravel }{35}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Installation}{35}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Bootstrap Einbindung}{35}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}Grafana Einbindung}{36}{subsection.3.1.3}%
-\contentsline {section}{\numberline {3.2}Datenbankanbindung in Laravel}{36}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Datenbank Anmeldeinformationen}{36}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Mail Server Konfigurationen}{37}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Migrations}{38}{subsection.3.2.3}%
-\contentsline {section}{\numberline {3.3}Datenbankdesign}{39}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Erstellen eines neuen Schemas}{39}{subsection.3.3.1}%
-\contentsline {subsubsection}{\numberline {3.3.1.1}ER-Model}{39}{subsubsection.3.3.1.1}%
-\contentsline {subsubsection}{\numberline {3.3.1.2}Fremdschlüssel}{40}{subsubsection.3.3.1.2}%
-\contentsline {section}{\numberline {3.4}Corporate Design}{41}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Vorschläge}{41}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Änderungsvorschläge}{43}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Finales Design}{43}{subsection.3.4.3}%
-\contentsline {subsection}{\numberline {3.4.4}Definierte Farben}{44}{subsection.3.4.4}%
-\contentsline {subsection}{\numberline {3.4.5}Überschriften}{45}{subsection.3.4.5}%
-\contentsline {subsection}{\numberline {3.4.6}Interaktionsfarben}{47}{subsection.3.4.6}%
-\contentsline {subsection}{\numberline {3.4.7}Schriftarten}{48}{subsection.3.4.7}%
-\contentsline {subsection}{\numberline {3.4.8}Schriftgrade}{48}{subsection.3.4.8}%
-\contentsline {subsection}{\numberline {3.4.9}Logo}{49}{subsection.3.4.9}%
+\contentsline {section}{\numberline {2.10}MVC}{33}{section.2.10}%
+\contentsline {subsection}{\numberline {2.10.1}Model}{33}{subsection.2.10.1}%
+\contentsline {subsection}{\numberline {2.10.2}View}{33}{subsection.2.10.2}%
+\contentsline {subsection}{\numberline {2.10.3}Controller}{33}{subsection.2.10.3}%
+\contentsline {chapter}{\numberline {3}Ergebnisdokumentation }{34}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Laravel }{34}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Installation}{34}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Bootstrap Einbindung}{34}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Grafana Einbindung}{35}{subsection.3.1.3}%
+\contentsline {section}{\numberline {3.2}Datenbankanbindung in Laravel}{35}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Datenbank Anmeldeinformationen}{35}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Mail Server Konfigurationen}{36}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Migrations}{37}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}Datenbankdesign}{38}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Erstellen eines neuen Schemas}{38}{subsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.1.1}ER-Model}{38}{subsubsection.3.3.1.1}%
+\contentsline {subsubsection}{\numberline {3.3.1.2}Fremdschlüssel}{39}{subsubsection.3.3.1.2}%
+\contentsline {section}{\numberline {3.4}Corporate Design}{40}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Vorschläge}{40}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Änderungsvorschläge}{42}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Finales Design}{42}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}Definierte Farben}{43}{subsection.3.4.4}%
+\contentsline {subsection}{\numberline {3.4.5}Überschriften}{44}{subsection.3.4.5}%
+\contentsline {subsection}{\numberline {3.4.6}Interaktionsfarben}{46}{subsection.3.4.6}%
+\contentsline {subsection}{\numberline {3.4.7}Schriftarten}{46}{subsection.3.4.7}%
+\contentsline {subsection}{\numberline {3.4.8}Schriftgrade}{47}{subsection.3.4.8}%
+\contentsline {subsection}{\numberline {3.4.9}Logo}{48}{subsection.3.4.9}%
 \contentsline {subsection}{\numberline {3.4.10}Verwendete Icons und deren Bedeutungen}{49}{subsection.3.4.10}%
-\contentsline {subsection}{\numberline {3.4.11}Map Icons}{50}{subsection.3.4.11}%
+\contentsline {subsection}{\numberline {3.4.11}Map Icons}{49}{subsection.3.4.11}%
 \contentsline {subsection}{\numberline {3.4.12}Icons in Formularen}{50}{subsection.3.4.12}%
-\contentsline {subsection}{\numberline {3.4.13}Icons im DataTable}{52}{subsection.3.4.13}%
-\contentsline {subsection}{\numberline {3.4.14}Buttons}{53}{subsection.3.4.14}%
-\contentsline {subsection}{\numberline {3.4.15}Tabelle mit generellen Informationen über einzelne HTML Elemente}{54}{subsection.3.4.15}%
-\contentsline {subsection}{\numberline {3.4.16}Datenformate}{55}{subsection.3.4.16}%
-\contentsline {section}{\numberline {3.5}Webanwendung}{56}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Back-End}{56}{subsection.3.5.1}%
-\contentsline {subsubsection}{\numberline {3.5.1.1}Energiesystem Erstellen}{56}{subsubsection.3.5.1.1}%
-\contentsline {subsubsection}{\numberline {3.5.1.2}Energiesystem Bearbeiten}{58}{subsubsection.3.5.1.2}%
-\contentsline {subsubsection}{\numberline {3.5.1.3}Energiesystem Löschen}{60}{subsubsection.3.5.1.3}%
-\contentsline {subsubsection}{\numberline {3.5.1.4}Energietechnologie Erstellen}{60}{subsubsection.3.5.1.4}%
-\contentsline {subsubsection}{\numberline {3.5.1.5}Energietechnologie Bearbeiten}{62}{subsubsection.3.5.1.5}%
-\contentsline {subsubsection}{\numberline {3.5.1.6}Energietechnologie Löschen}{63}{subsubsection.3.5.1.6}%
-\contentsline {subsubsection}{\numberline {3.5.1.7}Benutzerverwaltung}{63}{subsubsection.3.5.1.7}%
-\contentsline {subsubsection}{\numberline {3.5.1.8}Adresssuche}{64}{subsubsection.3.5.1.8}%
-\contentsline {subsection}{\numberline {3.5.2}Front-End}{66}{subsection.3.5.2}%
-\contentsline {subsubsection}{\numberline {3.5.2.1}Home}{66}{subsubsection.3.5.2.1}%
-\contentsline {subsubsection}{\numberline {3.5.2.2}Energiesysteme}{67}{subsubsection.3.5.2.2}%
-\contentsline {subsubsection}{\numberline {3.5.2.3}Galerie}{68}{subsubsection.3.5.2.3}%
-\contentsline {subsubsection}{\numberline {3.5.2.4}Impressum}{68}{subsubsection.3.5.2.4}%
-\contentsline {subsubsection}{\numberline {3.5.2.5}Datenschutz}{69}{subsubsection.3.5.2.5}%
-\contentsline {subsubsection}{\numberline {3.5.2.6}Registrierungsseite}{69}{subsubsection.3.5.2.6}%
-\contentsline {subsection}{\numberline {3.5.3}Login}{70}{subsection.3.5.3}%
-\contentsline {subsection}{\numberline {3.5.4}Registrierung}{70}{subsection.3.5.4}%
-\contentsline {subsection}{\numberline {3.5.5}Kartendienst Funktionalitäten}{72}{subsection.3.5.5}%
-\contentsline {subsubsection}{\numberline {3.5.5.1}Auswählen eines Energiesystems}{72}{subsubsection.3.5.5.1}%
-\contentsline {subsubsection}{\numberline {3.5.5.2}Abwählen eines Energiesystems}{72}{subsubsection.3.5.5.2}%
-\contentsline {subsection}{\numberline {3.5.6}Anzeige von Energiesystemen und Energietechnologien auf der Karte}{73}{subsection.3.5.6}%
-\contentsline {subsubsection}{\numberline {3.5.6.1}Energiesysteme Marker auf der Karte platzieren}{73}{subsubsection.3.5.6.1}%
-\contentsline {subsubsection}{\numberline {3.5.6.2}Energietechnologien Marker auf der Karte platzieren}{73}{subsubsection.3.5.6.2}%
-\contentsline {subsection}{\numberline {3.5.7}Layoutvorlage der Website}{74}{subsection.3.5.7}%
-\contentsline {section}{\numberline {3.6}DataTable}{75}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1}Individueller DataTable}{76}{subsection.3.6.1}%
-\contentsline {subsection}{\numberline {3.6.2}Sortierfunktion}{76}{subsection.3.6.2}%
-\contentsline {subsection}{\numberline {3.6.3}Suchfunktion}{76}{subsection.3.6.3}%
-\contentsline {subsection}{\numberline {3.6.4}Seitenanzahl}{76}{subsection.3.6.4}%
-\contentsline {subsection}{\numberline {3.6.5}Icons}{77}{subsection.3.6.5}%
-\contentsline {subsection}{\numberline {3.6.6}MoveToMarker}{77}{subsection.3.6.6}%
-\contentsline {section}{\numberline {3.7}Galerie Funktionen}{78}{section.3.7}%
-\contentsline {subsection}{\numberline {3.7.1}Auswahl eines Energiesystems}{78}{subsection.3.7.1}%
-\contentsline {subsection}{\numberline {3.7.2}Energietechnologien des Energiesystems anzeigen}{79}{subsection.3.7.2}%
-\contentsline {section}{\numberline {3.8}Grafana}{80}{section.3.8}%
-\contentsline {subsection}{\numberline {3.8.1}Automatisches Erstellen der Dashboards}{80}{subsection.3.8.1}%
-\contentsline {subsection}{\numberline {3.8.2}Automatisches Erstellen der Panels}{80}{subsection.3.8.2}%
-\contentsline {subsection}{\numberline {3.8.3}Energietechnologien Statistiken anzeigen}{81}{subsection.3.8.3}%
-\contentsline {section}{\numberline {3.9}Einbindung von Google Maps}{82}{section.3.9}%
-\contentsline {subsection}{\numberline {3.9.1}Google Cloud}{82}{subsection.3.9.1}%
-\contentsline {subsection}{\numberline {3.9.2}Google Cloud Platform Account erstellen}{82}{subsection.3.9.2}%
-\contentsline {subsection}{\numberline {3.9.3}Apis aktivieren und einbinden}{82}{subsection.3.9.3}%
-\contentsline {subsection}{\numberline {3.9.4}Individuelle Map erstellen und einbinden}{83}{subsection.3.9.4}%
-\contentsline {chapter}{\numberline {4}Resümee und Ausblick}{84}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Quellen und Literatur}{85}{chapter.5}%
-\contentsline {chapter}{Abbildungsverzeichnis}{86}{chapter*.86}%
-\contentsline {chapter}{Tabellenverzeichnis}{89}{chapter*.87}%
-\contentsline {chapter}{\numberline {6}Codeverzeichnis}{90}{chapter.6}%
-\contentsline {chapter}{\numberline {7}Begleitprotokoll gem. § 9 Abs. 2 PrO-BHS}{91}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Begleitprotokoll David Pöchacker}{91}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Begleitprotokoll Marcel Entner}{91}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Begleitprotokoll Tobias Kronsteiner}{91}{section.7.3}%
-\contentsline {chapter}{\numberline {8}Anhang}{92}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Verfasser der Kapitel}{92}{section.8.1}%
-\contentsline {subsection}{\numberline {8.1.1}David Pöchacker}{92}{subsection.8.1.1}%
-\contentsline {subsection}{\numberline {8.1.2}Marcel Entner}{93}{subsection.8.1.2}%
-\contentsline {subsection}{\numberline {8.1.3}Tobias Kronsteiner}{93}{subsection.8.1.3}%
-\contentsline {section}{\numberline {8.2}Verwendete Software}{94}{section.8.2}%
-\contentsline {subsection}{\numberline {8.2.1}Visual Studio Code}{94}{subsection.8.2.1}%
-\contentsline {subsection}{\numberline {8.2.2}Apache WebServer}{94}{subsection.8.2.2}%
-\contentsline {subsection}{\numberline {8.2.3}Composer}{94}{subsection.8.2.3}%
-\contentsline {subsection}{\numberline {8.2.4}Windows Eingabeaufforderung (CMD)}{94}{subsection.8.2.4}%
-\contentsline {subsection}{\numberline {8.2.5}Github VCS und Github Desktop GUI}{94}{subsection.8.2.5}%
-\contentsline {subsection}{\numberline {8.2.6} phpMyAdmin}{95}{subsection.8.2.6}%
-\contentsline {subsection}{\numberline {8.2.7}Adobe XD}{95}{subsection.8.2.7}%
-\contentsline {subsection}{\numberline {8.2.8}Adobe Photoshop}{95}{subsection.8.2.8}%
-\contentsline {subsection}{\numberline {8.2.9}LaTex}{95}{subsection.8.2.9}%
-\contentsline {section}{\numberline {8.3}Projektplanung}{96}{section.8.3}%
-\contentsline {subsection}{\numberline {8.3.1}Projektkommunikation}{96}{subsection.8.3.1}%
-\contentsline {subsection}{\numberline {8.3.2}Projektstrukturplan}{96}{subsection.8.3.2}%
-\contentsline {subsection}{\numberline {8.3.3}Verantwortungsmatrix und Aufwandsschätzung}{97}{subsection.8.3.3}%
-\contentsline {subsection}{\numberline {8.3.4}Meilensteinplan}{98}{subsection.8.3.4}%
-\contentsline {subsection}{\numberline {8.3.5}Terminplan}{99}{subsection.8.3.5}%
-\contentsline {section}{\numberline {8.4}Inhalt von GitHub}{99}{section.8.4}%
+\contentsline {subsection}{\numberline {3.4.13}Icons im DataTable}{51}{subsection.3.4.13}%
+\contentsline {subsection}{\numberline {3.4.14}Buttons}{52}{subsection.3.4.14}%
+\contentsline {subsection}{\numberline {3.4.15}Tabelle mit generellen Informationen über einzelne HTML Elemente}{53}{subsection.3.4.15}%
+\contentsline {subsection}{\numberline {3.4.16}Datenformate}{53}{subsection.3.4.16}%
+\contentsline {section}{\numberline {3.5}Webanwendung}{53}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Back-End}{53}{subsection.3.5.1}%
+\contentsline {subsubsection}{\numberline {3.5.1.1}Energiesystem Erstellen}{54}{subsubsection.3.5.1.1}%
+\contentsline {subsubsection}{\numberline {3.5.1.2}Energiesystem Bearbeiten}{55}{subsubsection.3.5.1.2}%
+\contentsline {subsubsection}{\numberline {3.5.1.3}Energiesystem Löschen}{57}{subsubsection.3.5.1.3}%
+\contentsline {subsubsection}{\numberline {3.5.1.4}Energietechnologie Erstellen}{57}{subsubsection.3.5.1.4}%
+\contentsline {subsubsection}{\numberline {3.5.1.5}Energietechnologie Bearbeiten}{59}{subsubsection.3.5.1.5}%
+\contentsline {subsubsection}{\numberline {3.5.1.6}Energietechnologie Löschen}{60}{subsubsection.3.5.1.6}%
+\contentsline {subsubsection}{\numberline {3.5.1.7}Benutzerverwaltung}{60}{subsubsection.3.5.1.7}%
+\contentsline {subsubsection}{\numberline {3.5.1.8}Adresssuche}{61}{subsubsection.3.5.1.8}%
+\contentsline {subsection}{\numberline {3.5.2}Front-End}{63}{subsection.3.5.2}%
+\contentsline {subsubsection}{\numberline {3.5.2.1}Home}{64}{subsubsection.3.5.2.1}%
+\contentsline {subsubsection}{\numberline {3.5.2.2}Energiesysteme}{65}{subsubsection.3.5.2.2}%
+\contentsline {subsubsection}{\numberline {3.5.2.3}Galerie}{65}{subsubsection.3.5.2.3}%
+\contentsline {subsubsection}{\numberline {3.5.2.4}Impressum}{66}{subsubsection.3.5.2.4}%
+\contentsline {subsubsection}{\numberline {3.5.2.5}Datenschutz}{66}{subsubsection.3.5.2.5}%
+\contentsline {subsubsection}{\numberline {3.5.2.6}Registrierungsseite}{67}{subsubsection.3.5.2.6}%
+\contentsline {subsection}{\numberline {3.5.3}Login}{67}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}Registrierung}{68}{subsection.3.5.4}%
+\contentsline {subsection}{\numberline {3.5.5}Kartendienst Funktionalitäten}{68}{subsection.3.5.5}%
+\contentsline {subsubsection}{\numberline {3.5.5.1}Auswählen eines Energiesystems}{68}{subsubsection.3.5.5.1}%
+\contentsline {subsubsection}{\numberline {3.5.5.2}Abwählen eines Energiesystems}{69}{subsubsection.3.5.5.2}%
+\contentsline {subsection}{\numberline {3.5.6}Anzeige von Energiesystemen und Energietechnologien auf der Karte}{70}{subsection.3.5.6}%
+\contentsline {subsubsection}{\numberline {3.5.6.1}Energiesysteme Marker auf der Karte platzieren}{70}{subsubsection.3.5.6.1}%
+\contentsline {subsubsection}{\numberline {3.5.6.2}Energietechnologien Marker auf der Karte platzieren}{70}{subsubsection.3.5.6.2}%
+\contentsline {subsection}{\numberline {3.5.7}Layoutvorlage der Website}{71}{subsection.3.5.7}%
+\contentsline {section}{\numberline {3.6}DataTable}{71}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Individueller DataTable}{72}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Sortierfunktion}{72}{subsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.6.3}Suchfunktion}{73}{subsection.3.6.3}%
+\contentsline {subsection}{\numberline {3.6.4}Seitenanzahl}{73}{subsection.3.6.4}%
+\contentsline {subsection}{\numberline {3.6.5}Icons}{73}{subsection.3.6.5}%
+\contentsline {subsection}{\numberline {3.6.6}MoveToMarker}{73}{subsection.3.6.6}%
+\contentsline {section}{\numberline {3.7}Galerie Funktionen}{74}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Auswahl eines Energiesystems}{74}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}Energietechnologien des Energiesystems anzeigen}{75}{subsection.3.7.2}%
+\contentsline {section}{\numberline {3.8}Grafana}{76}{section.3.8}%
+\contentsline {subsection}{\numberline {3.8.1}Automatisches Erstellen der Dashboards}{76}{subsection.3.8.1}%
+\contentsline {subsection}{\numberline {3.8.2}Automatisches Erstellen der Panels}{76}{subsection.3.8.2}%
+\contentsline {subsection}{\numberline {3.8.3}Energietechnologien Statistiken anzeigen}{77}{subsection.3.8.3}%
+\contentsline {section}{\numberline {3.9}Einbindung von Google Maps}{78}{section.3.9}%
+\contentsline {subsection}{\numberline {3.9.1}Google Cloud}{78}{subsection.3.9.1}%
+\contentsline {subsection}{\numberline {3.9.2}Google Cloud Plattform Account erstellen}{78}{subsection.3.9.2}%
+\contentsline {subsection}{\numberline {3.9.3}API's aktivieren und einbinden}{78}{subsection.3.9.3}%
+\contentsline {subsection}{\numberline {3.9.4}Individuelle Map erstellen und einbinden}{79}{subsection.3.9.4}%
+\contentsline {chapter}{\numberline {4}Resümee und Ausblick}{80}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Quellen und Literatur}{81}{chapter.5}%
+\contentsline {chapter}{Abbildungsverzeichnis}{82}{chapter*.86}%
+\contentsline {chapter}{Tabellenverzeichnis}{85}{chapter*.87}%
+\contentsline {chapter}{\numberline {6}Codeverzeichnis}{86}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Begleitprotokoll gem. § 9 Abs. 2 PrO-BHS}{87}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Begleitprotokoll David Pöchacker}{87}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Begleitprotokoll Tobias Kronsteiner}{87}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Begleitprotokoll Marcel Entner}{88}{section.7.3}%
+\contentsline {chapter}{\numberline {8}Anhang}{91}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Verfasser der Kapitel}{91}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}David Pöchacker}{91}{subsection.8.1.1}%
+\contentsline {subsection}{\numberline {8.1.2}Marcel Entner}{92}{subsection.8.1.2}%
+\contentsline {subsection}{\numberline {8.1.3}Tobias Kronsteiner}{92}{subsection.8.1.3}%
+\contentsline {section}{\numberline {8.2}Verwendete Software}{93}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Visual Studio Code}{93}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.2}Apache WebServer}{93}{subsection.8.2.2}%
+\contentsline {subsection}{\numberline {8.2.3}Composer}{93}{subsection.8.2.3}%
+\contentsline {subsection}{\numberline {8.2.4}Windows Eingabeaufforderung (CMD)}{93}{subsection.8.2.4}%
+\contentsline {subsection}{\numberline {8.2.5}Github VCS und Github Desktop GUI}{93}{subsection.8.2.5}%
+\contentsline {subsection}{\numberline {8.2.6} phpMyAdmin}{94}{subsection.8.2.6}%
+\contentsline {subsection}{\numberline {8.2.7}Adobe XD}{94}{subsection.8.2.7}%
+\contentsline {subsection}{\numberline {8.2.8}Adobe Photoshop}{94}{subsection.8.2.8}%
+\contentsline {subsection}{\numberline {8.2.9}LaTex}{94}{subsection.8.2.9}%
+\contentsline {section}{\numberline {8.3}Projektplanung}{95}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1}Projektkommunikation}{95}{subsection.8.3.1}%
+\contentsline {subsection}{\numberline {8.3.2}Projektstrukturplan}{95}{subsection.8.3.2}%
+\contentsline {subsection}{\numberline {8.3.3}Verantwortungsmatrix und Aufwandsschätzung}{96}{subsection.8.3.3}%
+\contentsline {subsection}{\numberline {8.3.4}Meilensteinplan}{97}{subsection.8.3.4}%
+\contentsline {subsection}{\numberline {8.3.5}Terminplan}{98}{subsection.8.3.5}%
+\contentsline {section}{\numberline {8.4}Inhalt von GitHub}{98}{section.8.4}%
