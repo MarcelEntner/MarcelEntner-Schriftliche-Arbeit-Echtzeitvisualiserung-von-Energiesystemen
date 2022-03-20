@@ -82,7 +82,7 @@
 \contentsline {section}{\numberline {3.1}Laravel }{34}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Installation}{34}{subsection.3.1.1}%
 \contentsline {subsection}{\numberline {3.1.2}Bootstrap Einbindung}{34}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}Grafana Einbindung}{35}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.3}Grafana Einbindung}{34}{subsection.3.1.3}%
 \contentsline {section}{\numberline {3.2}Datenbankanbindung in Laravel}{35}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Datenbank Anmeldeinformationen}{35}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Mail Server Konfigurationen}{36}{subsection.3.2.2}%
@@ -148,9 +148,9 @@
 \contentsline {subsection}{\numberline {3.8.1}Automatisches Erstellen der Dashboards}{76}{subsection.3.8.1}%
 \contentsline {subsection}{\numberline {3.8.2}Automatisches Erstellen der Panels}{76}{subsection.3.8.2}%
 \contentsline {subsection}{\numberline {3.8.3}Energietechnologien Statistiken anzeigen}{77}{subsection.3.8.3}%
-\contentsline {section}{\numberline {3.9}Einbindung von Google Maps}{78}{section.3.9}%
-\contentsline {subsection}{\numberline {3.9.1}Google Cloud}{78}{subsection.3.9.1}%
-\contentsline {subsection}{\numberline {3.9.2}Google Cloud Plattform Account erstellen}{78}{subsection.3.9.2}%
+\contentsline {section}{\numberline {3.9}Einbindung von Google Maps}{77}{section.3.9}%
+\contentsline {subsection}{\numberline {3.9.1}Google Cloud}{77}{subsection.3.9.1}%
+\contentsline {subsection}{\numberline {3.9.2}Google Cloud Plattform Account erstellen}{77}{subsection.3.9.2}%
 \contentsline {subsection}{\numberline {3.9.3}API's aktivieren und einbinden}{78}{subsection.3.9.3}%
 \contentsline {subsection}{\numberline {3.9.4}Individuelle Map erstellen und einbinden}{79}{subsection.3.9.4}%
 \contentsline {chapter}{\numberline {4}Resümee und Ausblick}{80}{chapter.4}%

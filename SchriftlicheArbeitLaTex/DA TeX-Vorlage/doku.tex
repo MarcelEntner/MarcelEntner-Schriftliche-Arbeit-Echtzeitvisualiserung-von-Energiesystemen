@@ -943,7 +943,7 @@ Sobald in Laravel das Authentifizierungssystem aktiviert wird, werden diese Rout
 
 \newpage
 \section{MVC}\label{sec: MVC}
-Das Produkt verwendet das von Laravel bereitgestellte Design Pattern MVC (Model, View, Controller) welches in der Abbildung 2.16 Dargestellt wird. 
+Das Produkt verwendet das von Laravel bereitgestellte Design Pattern MVC (Model, View, Controller), welches in der Abbildung 2.16 dargestellt wird. 
 
 \begin{figure}[h]
 	\centering
@@ -953,11 +953,11 @@ Das Produkt verwendet das von Laravel bereitgestellte Design Pattern MVC (Model,
 \end{figure}
 
 \subsection{Model}
-Für jede durch eine Migration (Kapitel 3.2.2)  erstellte Tabelle, gibt es ein Model, in diesem wird wie der Name suggeriert das Datenmodell abgebildet. Durch diesen Ansatz kann von jedem Model eine Instanz erstellt werden und so die entsprechende Tabelle in einem beliebigen Programmabschnitt verwendet werden. Weiters werden in den Models die Relationen zwischen den einzelnen Tabellen beschrieben.
+Für jede durch eine Migration (Kapitel 3.2.2)  erstellte Tabelle gibt es ein Model, in diesem wird wie der Name suggeriert, das Datenmodell abgebildet. Durch diesen Ansatz kann von jedem Model eine Instanz erstellt werden und so die Entsprechende Tabelle in einem beliebigen Programmabschnitt verwendet werden. Weiters werden in den Models die Relationen zwischen den einzelnen Tabellen beschrieben.
 \subsection{View}
-Das Produkt baut auf acht Views auf in diesen Views werden die Daten welche von den Controllern übergeben werden mithilfe von Datatables (Kapitel 3.6) dem User angezeigt. Weiters gibt es in den Views verschiedene Möglichkeiten der User-Interaktion.
+Das Produkt baut auf acht Views auf. In diesen Views werden die Daten, welche von den Controllern übergeben werden mithilfe von Datatables (Kapitel 3.6) dem Benutzer angezeigt. Weiters gibt es in den Views verschiedene Möglichkeiten der Benutzerinteraktion.
 \subsection{Controller}
-In den Controllern wird der Datenweg zwischen den Views also den User Interaktionen und der Datenbank gesteuert. Für jede durch eine Migration in der Datenbank erstelle Tabelle gibt es einen Controller welcher das Speichern, die Ausgabe, das Editieren sowie das Löschen von einzelnen Tupeln aus der Datenbank steuert. Weiters werden in den store und destroy Methoden des EnTechControllers sowie des EnSysControllers die API Aufrufe an die Grafana HTTP API mit den vom User eingegebenen Daten ausgeführt.
+In den Controllern wird der Datenweg zwischen den Views, also den Benutzerinteraktionen und der Datenbank gesteuert. Für jede, durch eine Migration in der Datenbank erstelle Tabelle, gibt es einen Controller, welcher das Speichern, die Ausgabe, das Editieren sowie das Löschen von einzelnen Tupeln aus der Datenbank steuert. Weiters werden in den "store()" und "destroy()" Methoden des EnTechControllers sowie des EnSysControllers die API Aufrufe an die Grafana HTTP API mit den vom Benutzer eingegebenen Daten ausgeführt.
 
 \chapter{Ergebnisdokumentation }
 Dieser Abschnitt beinhaltet eine Dokumentation der verwendeten Werkzeuge zur Umsetzung der einzelnen Funktionen. Es werden alle behandelten Teilbereiche erläutert.
@@ -966,21 +966,21 @@ Dieser Abschnitt beinhaltet eine Dokumentation der verwendeten Werkzeuge zur Ums
 In diesem Kapitel werden die Ergebnisse und Erfahrungen dokumentiert, welche sich im Laufe der Produktentwicklung mit dem Laravel Framework heraus kristallisiert haben.
 
 \subsection{Installation}
-Die Installation von Laravel erfolgt mithilfe des PHP Installations Tools Composer. Das Tool installiert hierzu die Paketquellen Lokal auf dem System. Beim Erstellen eines neuen Laravel Projekts werden die von Composer installierten Quelldateien in das Verzeichnis des neu zu erstellenden Projekts kopiert und installiert. Im nachfolgenden Link ist mehr über die Installation von Laravel zu lesen:
+Die Installation von Laravel erfolgt mithilfe des PHP Installations Tools Composer. Dieser installiert hierzu die Paketquellen Lokal auf dem System. Beim Erstellen eines neuen Laravel Projekts werden die von Composer installierten Quelldateien in das Verzeichnis des neu zu erstellenden Projekts kopiert und installiert. Im nachfolgenden Link ist mehr über die Installation von Laravel zu lesen:
 \href{https://laravel.com/docs/9.x#installation-via-composer}{Dokumentation der Installation}
 
 
 \subsection{Bootstrap Einbindung}
-Für das Design des Frontends wird die CSS Bibliothek “Bootstrap” (Kapitel 2.3.6.1) verwendet. Hierzu werden die Quelldateien von Bootstrap durch Composer lokal abgespeichert und durch den Laravel Befehl "php artisan ui bootstrap“ dem Laravel Projekt hinzugefügt. Laravel bietet die Möglichkeit beim Hinzufügen von Bootstrap mit der Option “-- auth” direkt die Beispielseiten (Login, Registrieren) für den Authentifizierungsvorgang zu erstellen. Im nachfolgenden Link ist mehr über die Installation von Bootstrap zu lesen:
+Für das Design des Front-Ends wird die CSS Bibliothek “Bootstrap” (Kapitel 2.3.6.1) verwendet. Hierzu werden die Quelldateien von Bootstrap durch Composer lokal abgespeichert und durch den Laravel Befehl "php artisan ui bootstrap“ dem Laravel Projekt hinzugefügt. Laravel bietet die Möglichkeit beim Hinzufügen von Bootstrap mit der Option “-- auth” direkt die Beispielseiten (Login, Registrieren) für den Authentifizierungsvorgang zu erstellen. Im nachfolgenden Link ist mehr über die Installation von Bootstrap zu lesen:
 \href{https://www.positronx.io/how-to-properly-install-and-use-bootstrap-in-laravel/}{Dokumentation der Installation}
 
 
 \subsection{Grafana Einbindung}
-Das Produkt kommuniziert mit dem Grafana Server über die von Grafana bereitgestellte HTTP API . Laravel verfügt hierzu über das Paket “guzzle-http” welches es ermöglicht mithilfe von wenigen Zeilen PHP Code einen HTTP Aufruf an eine bestimmte Quelle abzusenden.
+Das Produkt kommuniziert mit dem Grafana Server über die von Grafana bereitgestellte HTTP API. Laravel verfügt hierzu über das Paket “guzzle-http”, welches es ermöglicht, mithilfe von wenigen Zeilen PHP Code einen HTTP Aufruf an eine bestimmte Quelle abzusenden.
 \begin{figure}[h]
 	\centering
 	\includegraphics[height=6cm,width=18cm]{images/GrafanaEinbindung}
-	\caption{GrafanaEinbindung}
+	\caption{Grafana Einbindung}
 	\label{fig:GrafanaEinbindung}
 \end{figure}
 
@@ -1079,10 +1079,10 @@ In diesem Kapitel der Diplomarbeit wird das Redesign der Datenbank und der Relat
 
 
 \subsection{Erstellen eines neuen Schemas}
-Für das Produkt wurde ein neues vom alten unabhängiges Datenbankschema entwickelt, Hauptgründe hierfür waren die im Kapitel 2.1.2 festgestellten Mängel und Designfehler. Im neuen Design wurde darauf geachtet alle Design Richtlinien welche für Relationale Datenbanken gelten einzuhalten. Das neue Datenbankschema besteht aus 21 Tabellen für Individuelle Energietechnologien sowie aus einer Tabelle für Benutzer, einer Tabelle für erstellte Energiesysteme und einer Tabelle für die Generalisierung einiger Attribute von Energietechnologien.
+Für das Produkt wurde ein neues vom alten unabhängiges Datenbankschema entwickelt. Hauptgründe hierfür waren die im Kapitel 2.1 festgestellten Mängel und Designfehler. Im neuen Design wurde darauf geachtet alle Design Richtlinien welche für Relationale Datenbanken gelten einzuhalten. Das neue Datenbankschema besteht aus 21 Tabellen für Individuelle Energietechnologien sowie aus einer Tabelle für Benutzer, einer Tabelle für erstellte Energiesysteme und einer Tabelle für die Generalisierung einiger Attribute von Energietechnologien.
 
 \subsubsection{ER-Model}
-Um das Datenbankdesign zu veranschaulichen und Unklarheiten mit dem Auftraggeber vorzubeugen wurden mithilfe des Programms “MySql Workbench” ein EER (Extended Entity Relationship) Diagramm erstellt. In diesem Diagramm ist jede Tabelle mit ihren Attributen sowie Primär und Fremdschlüsseln abgebildet. Weiters sind auch die Einzelnen Relationen zwischen einer oder Mehreren Tabellen veranschaulicht. Das vollständige EER Modell der Datenbank ist in der Abbildung 3.2 zu sehen.
+Um das Datenbankdesign zu veranschaulichen und Unklarheiten mit dem Auftraggeber vorzubeugen, wurden mithilfe des Programms “MySql Workbench” ein EER (Extended Entity Relationship) Diagramm erstellt. In diesem Diagramm ist jede Tabelle mit ihren Attributen sowie Primär und Fremdschlüsseln abgebildet. Weiters sind auch die einzelnen Relationen zwischen einer oder Mehreren Tabellen veranschaulicht. Das vollständige EER Modell der Datenbank ist in der Abbildung 3.2 zu sehen.
 
 \begin{figure}[h]
 	\centering
@@ -1092,7 +1092,7 @@ Um das Datenbankdesign zu veranschaulichen und Unklarheiten mit dem Auftraggeber
 \end{figure}
 \newpage
 \subsubsection{Fremdschlüssel}
-Wie im Kapitel 3.4.1.1 wurden zwischen den Tabellen verschiedene Relationen verwendet. Zwischen den Tabellen “users” und “EnSys” besteht eine 1:N Relation. Dies bedeutet das in jedem Eintrag in der “EnSys” Tabelle der Primärschlüssel des users welcher den Eintrag durchführt als Fremdschlüssel gespeichert wird. Zwischen den Tabellen “EnSys” und “EnTech” besteht ebenfalls eine 1:N Relation, in diesem Fall werden die Primärschlüssel der “users” sowie der “EnSys” Tabelle als Fremdschlüssel in der “EnTech” Tabelle gespeichert. Zwischen der “EnTech” sowie jeder der 21 Tabellen für individuelle Energietechnologien besteht eine 1:1 beziehung. Es gibt also zu jedem Eintrag in der “EnTech” Tabelle genau einen Eintrag in einer der 21 Tabellen für Energietechnologien. Hierbei wird der Primärschlüssel des Eintrages der “EnTech” Tabelle als Fremdschlüssel im Korrespondierenden Eintrag in einer der 21 Tabellen für Energietechnologien gespeichert.
+Wie im Kapitel 3.4.1.1 wurden zwischen den Tabellen verschiedene Relationen verwendet. Zwischen den Tabellen “users” und “EnSys” besteht eine 1:N Relation. Dies bedeutet, dass in jedem Eintrag in der “EnSys” Tabelle der Primärschlüssel des Benutzers welcher, den Eintrag durchführt, als Fremdschlüssel gespeichert wird. Zwischen den Tabellen “EnSys” und “EnTech” besteht ebenfalls eine 1:N Relation. In diesem Fall werden die Primärschlüssel der “users” sowie der “EnSys” Tabelle als Fremdschlüssel in der “EnTech” Tabelle gespeichert. Zwischen der “EnTech” sowie jeder der 21 Tabellen für individuelle Energietechnologien besteht eine 1:1 beziehung. Es gibt also zu jedem Eintrag in der “EnTech” Tabelle genau einen Eintrag in einer der 21 Tabellen für Energietechnologien. Hierbei wird der Primärschlüssel des Eintrages der “EnTech” Tabelle als Fremdschlüssel im korrespondierenden Eintrag in einer der 21 Tabellen für Energietechnologien gespeichert.
 
 
 
@@ -1903,7 +1903,7 @@ Sobald in der Benutzeroberfläche ein Energiesystem erstellt wird, werden die Da
 \begin{figure}[h]
 	\centering
 	\includegraphics[height=7cm,width=14cm]{images/DashboardErstellen}
-	\caption{DashboardErstellen}
+	\caption{Dashboard erstellen}
 	\label{fig:DashboardErstellen }
 \end{figure}
 
@@ -1913,7 +1913,7 @@ Wird in einem Energiesystem eine Energietechnologie erstellt, so werden die Date
 \begin{figure}[h]
 	\centering
 	\includegraphics[height=7cm,width=14cm]{images/PanelErstellen}
-	\caption{PanelErstellen}
+	\caption{Panel erstellen}
 	\label{fig:PanelErstellen }
 \end{figure} 
 
@@ -1922,8 +1922,8 @@ Wird in einem Energiesystem eine Energietechnologie erstellt, so werden die Date
 Um nun in der Benutzeroberfläche des Produktes, die mit den API Aufrufen erstellten Grafana Statistiken anzeigen zu können ist, auf der Benutzeroberfläche ein Statistik Icon Vorhanden. Wird dieses vom Benutzer ausgewählt, so wird eine JavaScript Funktion welche die ID der Energietechnologie als Parameter hat ausgeführt. In dieser JavaScript Funktion wird ein Pop-Up Fenster aufgerufen sowie der “src” Parameter eines HTML “iframe” Elementes gesetzt. Dieses “iframe” Element wird nun in dem Pop-Up Fenster angezeigt.
 \begin{figure}[h]
 	\centering
-	\includegraphics[height=7cm,width=14cm]{images/Statistikanzeigen}
-	\caption{Statistikanzeigen}
+	\includegraphics[height=10cm,width=14cm]{images/Statistikanzeigen}
+	\caption{Statistik anzeigen}
 	\label{fig:Statistikanzeigen }
 \end{figure} 
 

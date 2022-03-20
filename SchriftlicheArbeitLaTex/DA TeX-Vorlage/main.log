@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.1.13)  20 MAR 2022 12:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.1.13)  20 MAR 2022 13:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1691,16 +1691,13 @@ Overfull \hbox (12.8959pt too wide) in paragraph at lines 997--1007
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
 [35 <./images/GrafanaEinbindung.png>]
 Overfull \hbox (29.0908pt too wide) in paragraph at lines 1030--1042
 [][] 
  []
 
 [36] [37]
-<images/eer.png, id=1149, 943.525pt x 776.9025pt>
+<images/eer.png, id=1148, 943.525pt x 776.9025pt>
 File: images/eer.png Graphic file (type png)
 <use images/eer.png>
 Package pdftex.def Info: images/eer.png  used on input line 1089.
@@ -1714,7 +1711,7 @@ Overfull \hbox (42.6889pt too wide) in paragraph at lines 1089--1090
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [38] [39 <./images/eer.png>]
-<images/DesignVorschlag1.png, id=1165, 909.3975pt x 510.40688pt>
+<images/DesignVorschlag1.png, id=1164, 909.3975pt x 510.40688pt>
 File: images/DesignVorschlag1.png Graphic file (type png)
 <use images/DesignVorschlag1.png>
 Package pdftex.def Info: images/DesignVorschlag1.png  used on input line 1122.
@@ -1724,12 +1721,12 @@ Package pdftex.def Info: images/DesignVorschlag1.png  used on input line 1122.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [40]
-<images/DesignVorschlag2.png, id=1173, 544.28343pt x 621.07031pt>
+<images/DesignVorschlag2.png, id=1172, 544.28343pt x 621.07031pt>
 File: images/DesignVorschlag2.png Graphic file (type png)
 <use images/DesignVorschlag2.png>
 Package pdftex.def Info: images/DesignVorschlag2.png  used on input line 1129.
 (pdftex.def)             Requested size: 312.97716pt x 341.42862pt.
-<images/DesignVorschlag3.png, id=1174, 749.04843pt x 418.56375pt>
+<images/DesignVorschlag3.png, id=1173, 749.04843pt x 418.56375pt>
 File: images/DesignVorschlag3.png Graphic file (type png)
 <use images/DesignVorschlag3.png>
 Package pdftex.def Info: images/DesignVorschlag3.png  used on input line 1135.
@@ -1739,7 +1736,7 @@ Package pdftex.def Info: images/DesignVorschlag3.png  used on input line 1135.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [41 <./images/DesignVorschlag1.png> <./images/DesignVorschlag2.png>]
-<images/FinalerVorschlag.png, id=1184, 598.48593pt x 333.49594pt>
+<images/FinalerVorschlag.png, id=1183, 598.48593pt x 333.49594pt>
 File: images/FinalerVorschlag.png Graphic file (type png)
 <use images/FinalerVorschlag.png>
 Package pdftex.def Info: images/FinalerVorschlag.png  used on input line 1159.
@@ -1764,13 +1761,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 1176--1203
  []
 
 [44]
-<images/UberschrieftenImFließtext.png, id=1203, 1300.1072pt x 529.22719pt>
+<images/UberschrieftenImFließtext.png, id=1202, 1300.1072pt x 529.22719pt>
 File: images/UberschrieftenImFließtext.png Graphic file (type png)
 <use images/UberschrieftenImFließtext.png>
 Package pdftex.def Info: images/UberschrieftenImFließtext.png  used on input l
 ine 1217.
 (pdftex.def)             Requested size: 398.32745pt x 227.61978pt.
-<images/ImpressumUberschrift.png, id=1204, 785.93625pt x 529.98pt>
+<images/ImpressumUberschrift.png, id=1203, 785.93625pt x 529.98pt>
 File: images/ImpressumUberschrift.png Graphic file (type png)
 <use images/ImpressumUberschrift.png>
 Package pdftex.def Info: images/ImpressumUberschrift.png  used on input line 12
@@ -1778,13 +1775,13 @@ Package pdftex.def Info: images/ImpressumUberschrift.png  used on input line 12
 (pdftex.def)             Requested size: 398.35175pt x 227.62009pt.
  [45 <./images/UberschrieftenImFließtext.png> <./images/ImpressumUberschrift.p
 ng>]
-<images/InteraktionDataTable.png, id=1215, 1336.24219pt x 634.62094pt>
+<images/InteraktionDataTable.png, id=1214, 1336.24219pt x 634.62094pt>
 File: images/InteraktionDataTable.png Graphic file (type png)
 <use images/InteraktionDataTable.png>
 Package pdftex.def Info: images/InteraktionDataTable.png  used on input line 12
 33.
 (pdftex.def)             Requested size: 426.79066pt x 227.6209pt.
-<images/InteraktionDropDown.png, id=1216, 1332.47812pt x 651.93562pt>
+<images/InteraktionDropDown.png, id=1215, 1332.47812pt x 651.93562pt>
 File: images/InteraktionDropDown.png Graphic file (type png)
 <use images/InteraktionDropDown.png>
 Package pdftex.def Info: images/InteraktionDropDown.png  used on input line 123
@@ -1794,7 +1791,7 @@ Package pdftex.def Info: images/InteraktionDropDown.png  used on input line 123
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/Beispiel_Schriftarten.png, id=1218, 1299.35437pt x 222.07968pt>
+<images/Beispiel_Schriftarten.png, id=1217, 1299.35437pt x 222.07968pt>
 File: images/Beispiel_Schriftarten.png Graphic file (type png)
 <use images/Beispiel_Schriftarten.png>
 Package pdftex.def Info: images/Beispiel_Schriftarten.png  used on input line 1
@@ -1804,7 +1801,7 @@ Package pdftex.def Info: images/Beispiel_Schriftarten.png  used on input line 1
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [46 <./images/InteraktionDataTable.png>]
-<images/Header.png, id=1227, 877.77937pt x 82.05656pt>
+<images/Header.png, id=1226, 877.77937pt x 82.05656pt>
 File: images/Header.png Graphic file (type png)
 <use images/Header.png>
 Package pdftex.def Info: images/Header.png  used on input line 1258.
@@ -1814,36 +1811,36 @@ Package pdftex.def Info: images/Header.png  used on input line 1258.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [47 <./images/InteraktionDropDown.png> <./images/Beispiel_Schriftarten.png>]
-<images/Logo1.png, id=1235, 978.65625pt x 301.125pt>
+<images/Logo1.png, id=1234, 978.65625pt x 301.125pt>
 File: images/Logo1.png Graphic file (type png)
 <use images/Logo1.png>
 Package pdftex.def Info: images/Logo1.png  used on input line 1268.
 (pdftex.def)             Requested size: 398.3397pt x 85.35744pt.
-<images/Logo2.jpg, id=1236, 1806.75pt x 301.125pt>
+<images/Logo2.jpg, id=1235, 1806.75pt x 301.125pt>
 File: images/Logo2.jpg Graphic file (type jpg)
 <use images/Logo2.jpg>
 Package pdftex.def Info: images/Logo2.jpg  used on input line 1275.
 (pdftex.def)             Requested size: 398.34087pt x 85.35744pt.
 
 [48 <./images/Header.png> <./images/Logo1.png> <./images/Logo2.jpg>]
-<images/MapIcons.png, id=1248, 802.49812pt x 459.21562pt>
+<images/MapIcons.png, id=1247, 802.49812pt x 459.21562pt>
 File: images/MapIcons.png Graphic file (type png)
 <use images/MapIcons.png>
 Package pdftex.def Info: images/MapIcons.png  used on input line 1292.
 (pdftex.def)             Requested size: 341.4429pt x 142.26427pt.
-<images/Icons/esrot.png, id=1249, 22.58438pt x 32.37094pt>
+<images/Icons/esrot.png, id=1248, 22.58438pt x 32.37094pt>
 File: images/Icons/esrot.png Graphic file (type png)
 <use images/Icons/esrot.png>
 Package pdftex.def Info: images/Icons/esrot.png  used on input line 1300.
 (pdftex.def)             Requested size: 28.45299pt x 28.4539pt.
-<images/Icons/etrot.png, id=1250, 22.87025pt x 38.42203pt>
+<images/Icons/etrot.png, id=1249, 22.87025pt x 38.42203pt>
 File: images/Icons/etrot.png Graphic file (type png)
 <use images/Icons/etrot.png>
 Package pdftex.def Info: images/Icons/etrot.png  used on input line 1306.
 (pdftex.def)             Requested size: 28.4537pt x 28.45236pt.
  [49 <./images/MapIcons.png> <./images/Icons/esrot.png> <./images/Icons/etrot.p
 ng>]
-<images/IconsInÜbersichten.png, id=1261, 277.78781pt x 456.95718pt>
+<images/IconsInÜbersichten.png, id=1260, 277.78781pt x 456.95718pt>
 File: images/IconsInÜbersichten.png Graphic file (type png)
 <use images/IconsInÜbersichten.png>
 Package pdftex.def Info: images/IconsInÜbersichten.png  used on input line 131
@@ -1851,34 +1848,34 @@ Package pdftex.def Info: images/IconsInÜbersichten.png  used on input line 131
 (pdftex.def)             Requested size: 142.2633pt x 284.53769pt.
 
 [50 <./images/IconsInÜbersichten.png>]
-<images/IconsInFormularen.png, id=1269, 277.78781pt x 313.17pt>
+<images/IconsInFormularen.png, id=1268, 277.78781pt x 313.17pt>
 File: images/IconsInFormularen.png Graphic file (type png)
 <use images/IconsInFormularen.png>
 Package pdftex.def Info: images/IconsInFormularen.png  used on input line 1324.
 
 (pdftex.def)             Requested size: 142.2633pt x 170.71965pt.
-<images/IconAutorVerlinkungen.png, id=1270, 289.08pt x 32.37094pt>
+<images/IconAutorVerlinkungen.png, id=1269, 289.08pt x 32.37094pt>
 File: images/IconAutorVerlinkungen.png Graphic file (type png)
 <use images/IconAutorVerlinkungen.png>
 Package pdftex.def Info: images/IconAutorVerlinkungen.png  used on input line 1
 331.
 (pdftex.def)             Requested size: 227.62082pt x 28.4539pt.
-<images/Icons/statistik.png, id=1271, 17.31468pt x 17.31468pt>
+<images/Icons/statistik.png, id=1270, 17.31468pt x 17.31468pt>
 File: images/Icons/statistik.png Graphic file (type png)
 <use images/Icons/statistik.png>
 Package pdftex.def Info: images/Icons/statistik.png  used on input line 1343.
 (pdftex.def)             Requested size: 28.45276pt x 28.45276pt.
-<images/Icons/delete.png, id=1272, 17.31468pt x 17.31468pt>
+<images/Icons/delete.png, id=1271, 17.31468pt x 17.31468pt>
 File: images/Icons/delete.png Graphic file (type png)
 <use images/Icons/delete.png>
 Package pdftex.def Info: images/Icons/delete.png  used on input line 1344.
 (pdftex.def)             Requested size: 28.45276pt x 28.45276pt.
-<images/Icons/auge.png, id=1273, 22.58438pt x 15.05624pt>
+<images/Icons/auge.png, id=1272, 22.58438pt x 15.05624pt>
 File: images/Icons/auge.png Graphic file (type png)
 <use images/Icons/auge.png>
 Package pdftex.def Info: images/Icons/auge.png  used on input line 1345.
 (pdftex.def)             Requested size: 28.45299pt x 28.4555pt.
-<images/Icons/stift.png, id=1274, 14.70982pt x 14.70982pt>
+<images/Icons/stift.png, id=1273, 14.70982pt x 14.70982pt>
 File: images/Icons/stift.png Graphic file (type png)
 <use images/Icons/stift.png>
 Package pdftex.def Info: images/Icons/stift.png  used on input line 1346.
@@ -1888,7 +1885,7 @@ Overfull \hbox (2.6003pt too wide) in paragraph at lines 1340--1348
 [][] 
  []
 
-<images/IconsImDatatable.png, id=1275, 551.81157pt x 345.54094pt>
+<images/IconsImDatatable.png, id=1274, 551.81157pt x 345.54094pt>
 File: images/IconsImDatatable.png Graphic file (type png)
 <use images/IconsImDatatable.png>
 Package pdftex.def Info: images/IconsImDatatable.png  used on input line 1355.
@@ -1899,7 +1896,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [51 <./images/IconsInFormularen.png> <./images/IconAutorVerlinkungen.png> <./im
 ages/Icons/statistik.png> <./images/Icons/delete.png> <./images/Icons/auge.png>
  <./images/Icons/stift.png>]
-<images/BeispielButton.png, id=1291, 202.50656pt x 44.41594pt>
+<images/BeispielButton.png, id=1290, 202.50656pt x 44.41594pt>
 File: images/BeispielButton.png Graphic file (type png)
 <use images/BeispielButton.png>
 Package pdftex.def Info: images/BeispielButton.png  used on input line 1365.
@@ -1910,26 +1907,26 @@ Underfull \hbox (badness 10000) in paragraph at lines 1401--1406
  []
 
 [53]
-<images/ESerstellenPop.png, id=1306, 332.442pt x 274.626pt>
+<images/ESerstellenPop.png, id=1305, 332.442pt x 274.626pt>
 File: images/ESerstellenPop.png Graphic file (type png)
 <use images/ESerstellenPop.png>
 Package pdftex.def Info: images/ESerstellenPop.png  used on input line 1422.
 (pdftex.def)             Requested size: 256.0775pt x 227.62103pt.
  [54 <./images/ESerstellenPop.png>]
-<images/ESerstellen.png, id=1315, 537.207pt x 259.56975pt>
+<images/ESerstellen.png, id=1314, 537.207pt x 259.56975pt>
 File: images/ESerstellen.png Graphic file (type png)
 <use images/ESerstellen.png>
 Package pdftex.def Info: images/ESerstellen.png  used on input line 1434.
 (pdftex.def)             Requested size: 398.34666pt x 199.17223pt.
  [55 <./images/ESerstellen.png>]
-<images/ESbearbeitenPop.png, id=1325, 217.41225pt x 222.8325pt>
+<images/ESbearbeitenPop.png, id=1324, 217.41225pt x 222.8325pt>
 File: images/ESbearbeitenPop.png Graphic file (type png)
 <use images/ESbearbeitenPop.png>
 Package pdftex.def Info: images/ESbearbeitenPop.png  used on input line 1464.
 (pdftex.def)             Requested size: 256.07976pt x 256.09558pt.
 
 [56 <./images/ESbearbeitenPop.png>]
-<images/ETerstellenPop.png, id=1335, 364.9635pt x 407.121pt>
+<images/ETerstellenPop.png, id=1334, 364.9635pt x 407.121pt>
 File: images/ETerstellenPop.png Graphic file (type png)
 <use images/ETerstellenPop.png>
 Package pdftex.def Info: images/ETerstellenPop.png  used on input line 1500.
@@ -1939,13 +1936,13 @@ Package pdftex.def Info: images/ETerstellenPop.png  used on input line 1500.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [57]
-<images/ETerstellen.png, id=1344, 545.03625pt x 319.79475pt>
+<images/ETerstellen.png, id=1343, 545.03625pt x 319.79475pt>
 File: images/ETerstellen.png Graphic file (type png)
 <use images/ETerstellen.png>
 Package pdftex.def Info: images/ETerstellen.png  used on input line 1508.
 (pdftex.def)             Requested size: 398.33888pt x 199.17343pt.
  [58 <./images/ETerstellenPop.png> <./images/ETerstellen.png>]
-<images/ETbearbeitenPop.png, id=1353, 368.577pt x 423.984pt>
+<images/ETbearbeitenPop.png, id=1352, 368.577pt x 423.984pt>
 File: images/ETbearbeitenPop.png Graphic file (type png)
 <use images/ETbearbeitenPop.png>
 Package pdftex.def Info: images/ETbearbeitenPop.png  used on input line 1519.
@@ -1956,7 +1953,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1544--1547
  []
 
 [60]
-<images/Adresssuchfeld.png, id=1371, 322.806pt x 40.35075pt>
+<images/Adresssuchfeld.png, id=1370, 322.806pt x 40.35075pt>
 File: images/Adresssuchfeld.png Graphic file (type png)
 <use images/Adresssuchfeld.png>
 Package pdftex.def Info: images/Adresssuchfeld.png  used on input line 1570.
@@ -1967,13 +1964,13 @@ Overfull \hbox (17.05736pt too wide) in paragraph at lines 1584--1588
 wird die Ein-ga-be des Be-nut-zers mit ei-ner Autocomplete-
  []
 
-<images/Vorschläge.png, id=1373, 325.81725pt x 177.66376pt>
+<images/Vorschläge.png, id=1372, 325.81725pt x 177.66376pt>
 File: images/Vorschläge.png Graphic file (type png)
 <use images/Vorschläge.png>
 Package pdftex.def Info: images/Vorschläge.png  used on input line 1591.
 (pdftex.def)             Requested size: 426.79387pt x 199.17451pt.
 [61 <./images/Adresssuchfeld.png> <./images/Vorschläge.png>]
-<images/Adresssuche.png, id=1384, 720.44156pt x 280.04625pt>
+<images/Adresssuche.png, id=1383, 720.44156pt x 280.04625pt>
 File: images/Adresssuche.png Graphic file (type png)
 <use images/Adresssuche.png>
 Package pdftex.def Info: images/Adresssuche.png  used on input line 1603.
@@ -1984,63 +1981,63 @@ Overfull \hbox (14.22324pt too wide) in paragraph at lines 1603--1604
  []
 
 [62 <./images/Adresssuche.png>]
-<images/BestGmbHSeite.png, id=1395, 1434.10782pt x 719.68875pt>
+<images/BestGmbHSeite.png, id=1394, 1434.10782pt x 719.68875pt>
 File: images/BestGmbHSeite.png Graphic file (type png)
 <use images/BestGmbHSeite.png>
 Package pdftex.def Info: images/BestGmbHSeite.png  used on input line 1624.
 (pdftex.def)             Requested size: 426.7782pt x 199.17241pt.
  [63 <./images/BestGmbHSeite.png>]
-<images/HomeSeite1.png, id=1403, 1445.4pt x 465.99094pt>
+<images/HomeSeite1.png, id=1402, 1445.4pt x 465.99094pt>
 File: images/HomeSeite1.png Graphic file (type png)
 <use images/HomeSeite1.png>
 Package pdftex.def Info: images/HomeSeite1.png  used on input line 1634.
 (pdftex.def)             Requested size: 398.33534pt x 199.17053pt.
-<images/HomeSeite2.png, id=1404, 1439.3775pt x 707.64375pt>
+<images/HomeSeite2.png, id=1403, 1439.3775pt x 707.64375pt>
 File: images/HomeSeite2.png Graphic file (type png)
 <use images/HomeSeite2.png>
 Package pdftex.def Info: images/HomeSeite2.png  used on input line 1640.
 (pdftex.def)             Requested size: 398.34482pt x 199.16469pt.
  [64 <./images/HomeSeite1.png> <./images/HomeSeite2.png>]
-<images/EnergiesystemSeite.png, id=1414, 1444.64719pt x 683.55376pt>
+<images/EnergiesystemSeite.png, id=1413, 1444.64719pt x 683.55376pt>
 File: images/EnergiesystemSeite.png Graphic file (type png)
 <use images/EnergiesystemSeite.png>
 Package pdftex.def Info: images/EnergiesystemSeite.png  used on input line 1649
 .
 (pdftex.def)             Requested size: 398.32628pt x 170.71071pt.
-<images/GalerieSeite.png, id=1415, 1445.4pt x 663.22781pt>
+<images/GalerieSeite.png, id=1414, 1445.4pt x 663.22781pt>
 File: images/GalerieSeite.png Graphic file (type png)
 <use images/GalerieSeite.png>
 Package pdftex.def Info: images/GalerieSeite.png  used on input line 1658.
 (pdftex.def)             Requested size: 398.33534pt x 170.71475pt.
  [65 <./images/EnergiesystemSeite.png> <./images/GalerieSeite.png>]
-<images/ImpressumSeite.png, id=1426, 1445.4pt x 721.94719pt>
+<images/ImpressumSeite.png, id=1425, 1445.4pt x 721.94719pt>
 File: images/ImpressumSeite.png Graphic file (type png)
 <use images/ImpressumSeite.png>
 Package pdftex.def Info: images/ImpressumSeite.png  used on input line 1669.
 (pdftex.def)             Requested size: 398.33534pt x 170.71515pt.
-<images/DSGVOSeite.png, id=1427, 1445.4pt x 715.92468pt>
+<images/DSGVOSeite.png, id=1426, 1445.4pt x 715.92468pt>
 File: images/DSGVOSeite.png Graphic file (type png)
 <use images/DSGVOSeite.png>
 Package pdftex.def Info: images/DSGVOSeite.png  used on input line 1678.
 (pdftex.def)             Requested size: 398.33534pt x 170.71117pt.
-<images/RegisterSeite.png, id=1428, 1445.4pt x 689.57625pt>
+<images/RegisterSeite.png, id=1427, 1445.4pt x 689.57625pt>
 File: images/RegisterSeite.png Graphic file (type png)
 <use images/RegisterSeite.png>
 Package pdftex.def Info: images/RegisterSeite.png  used on input line 1686.
 (pdftex.def)             Requested size: 398.33534pt x 199.1723pt.
  [66 <./images/ImpressumSeite.png> <./images/DSGVOSeite.png>]
-<images/LoginFeld.png, id=1441, 334.24875pt x 228.10219pt>
+<images/LoginFeld.png, id=1440, 334.24875pt x 228.10219pt>
 File: images/LoginFeld.png Graphic file (type png)
 <use images/LoginFeld.png>
 Package pdftex.def Info: images/LoginFeld.png  used on input line 1698.
 (pdftex.def)             Requested size: 199.17372pt x 142.26765pt.
  [67 <./images/RegisterSeite.png> <./images/LoginFeld.png>]
-<images/RegisterFormular.png, id=1451, 338.01282pt x 249.18094pt>
+<images/RegisterFormular.png, id=1450, 338.01282pt x 249.18094pt>
 File: images/RegisterFormular.png Graphic file (type png)
 <use images/RegisterFormular.png>
 Package pdftex.def Info: images/RegisterFormular.png  used on input line 1713.
 (pdftex.def)             Requested size: 142.2687pt x 85.35535pt.
-<images/ESauswählen.png, id=1453, 567.92175pt x 327.624pt>
+<images/ESauswählen.png, id=1452, 567.92175pt x 327.624pt>
 File: images/ESauswählen.png Graphic file (type png)
 <use images/ESauswählen.png>
 Package pdftex.def Info: images/ESauswählen.png  used on input line 1730.
@@ -2050,7 +2047,7 @@ Package pdftex.def Info: images/ESauswählen.png  used on input line 1730.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [68 <./images/RegisterFormular.png>] [69 <./images/ESauswählen.png>]
-<images/SetETMarker.png, id=1471, 513.117pt x 313.77225pt>
+<images/SetETMarker.png, id=1470, 513.117pt x 313.77225pt>
 File: images/SetETMarker.png Graphic file (type png)
 <use images/SetETMarker.png>
 Package pdftex.def Info: images/SetETMarker.png  used on input line 1756.
@@ -2062,7 +2059,7 @@ Overfull \hbox (27.50879pt too wide) in paragraph at lines 1752--1760
  []
 
 [70 <./images/SetETMarker.png>]
-<images/DataTableStandard.png, id=1483, 359.9046pt x 168.63pt>
+<images/DataTableStandard.png, id=1482, 359.9046pt x 168.63pt>
 File: images/DataTableStandard.png Graphic file (type png)
 <use images/DataTableStandard.png>
 Package pdftex.def Info: images/DataTableStandard.png  used on input line 1814.
@@ -2072,14 +2069,14 @@ Package pdftex.def Info: images/DataTableStandard.png  used on input line 1814.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/DataTableIndividuell.png, id=1485, 357.0138pt x 172.0026pt>
+<images/DataTableIndividuell.png, id=1484, 357.0138pt x 172.0026pt>
 File: images/DataTableIndividuell.png Graphic file (type png)
 <use images/DataTableIndividuell.png>
 Package pdftex.def Info: images/DataTableIndividuell.png  used on input line 18
 26.
 (pdftex.def)             Requested size: 284.53279pt x 142.26344pt.
 [71] [72 <./images/DataTableStandard.png> <./images/DataTableIndividuell.png>]
-<images/MoveToMarker.png, id=1504, 500.46976pt x 188.50426pt>
+<images/MoveToMarker.png, id=1503, 500.46976pt x 188.50426pt>
 File: images/MoveToMarker.png Graphic file (type png)
 <use images/MoveToMarker.png>
 Package pdftex.def Info: images/MoveToMarker.png  used on input line 1860.
@@ -2089,25 +2086,25 @@ Package pdftex.def Info: images/MoveToMarker.png  used on input line 1860.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [73]
-<images/GalerieDropDown.png, id=1511, 614.295pt x 199.49532pt>
+<images/GalerieDropDown.png, id=1510, 614.295pt x 199.49532pt>
 File: images/GalerieDropDown.png Graphic file (type png)
 <use images/GalerieDropDown.png>
 Package pdftex.def Info: images/GalerieDropDown.png  used on input line 1877.
 (pdftex.def)             Requested size: 398.3403pt x 113.81091pt.
  [74 <./images/MoveToMarker.png> <./images/GalerieDropDown.png>]
-<images/GalerieET2.png, id=1521, 1158.57843pt x 698.61pt>
+<images/GalerieET2.png, id=1520, 1158.57843pt x 698.61pt>
 File: images/GalerieET2.png Graphic file (type png)
 <use images/GalerieET2.png>
 Package pdftex.def Info: images/GalerieET2.png  used on input line 1891.
 (pdftex.def)             Requested size: 398.33107pt x 227.62119pt.
  [75 <./images/GalerieET2.png>]
-<images/DashboardErstellen.png, id=1528, 455.45157pt x 255.20343pt>
+<images/DashboardErstellen.png, id=1527, 455.45157pt x 255.20343pt>
 File: images/DashboardErstellen.png Graphic file (type png)
 <use images/DashboardErstellen.png>
 Package pdftex.def Info: images/DashboardErstellen.png  used on input line 1905
 .
 (pdftex.def)             Requested size: 398.3454pt x 199.17859pt.
-<images/PanelErstellen.png, id=1529, 455.45157pt x 259.7203pt>
+<images/PanelErstellen.png, id=1528, 455.45157pt x 259.7203pt>
 File: images/PanelErstellen.png Graphic file (type png)
 <use images/PanelErstellen.png>
 Package pdftex.def Info: images/PanelErstellen.png  used on input line 1915.
@@ -2116,14 +2113,18 @@ Package pdftex.def Info: images/PanelErstellen.png  used on input line 1915.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/Statistikanzeigen.png, id=1530, 261.97874pt x 261.22594pt>
+<images/Statistikanzeigen.png, id=1529, 261.97874pt x 261.22594pt>
 File: images/Statistikanzeigen.png Graphic file (type png)
 <use images/Statistikanzeigen.png>
 Package pdftex.def Info: images/Statistikanzeigen.png  used on input line 1925.
 
-(pdftex.def)             Requested size: 398.35175pt x 199.17151pt.
-[76 <./images/DashboardErstellen.png>] [77 <./images/PanelErstellen.png> <./ima
-ges/Statistikanzeigen.png>] [78] [79]
+(pdftex.def)             Requested size: 398.35175pt x 284.53131pt.
+[76 <./images/DashboardErstellen.png>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[77 <./images/PanelErstellen.png>] [78 <./images/Statistikanzeigen.png>]
+[79]
 Kapitel 4.
 [80
 
@@ -2242,10 +2243,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 2D52C0CEE9A0BC360CD5914A5E1FC951;23455.
  ) 
 Here is how much of TeX's memory you used:
- 28471 strings out of 478994
- 495050 string characters out of 5858184
- 971015 words of memory out of 5000000
- 44798 multiletter control sequences out of 15000+600000
+ 28473 strings out of 478994
+ 495080 string characters out of 5858184
+ 971088 words of memory out of 5000000
+ 44800 multiletter control sequences out of 15000+600000
  482657 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  113i,24n,116p,1197b,2040s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2265,7 +2266,7 @@ ist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2021/texmf-dist/fonts/ty
 pe1/public/lm/lmr8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/l
 m/lmr9.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmro10.pfb
 ></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmtt8.pfb>
-Output written on main.pdf (113 pages, 8632286 bytes).
+Output written on main.pdf (113 pages, 8632696 bytes).
 PDF statistics:
  1902 PDF objects out of 2073 (max. 8388607)
  1608 compressed objects within 17 object streams
