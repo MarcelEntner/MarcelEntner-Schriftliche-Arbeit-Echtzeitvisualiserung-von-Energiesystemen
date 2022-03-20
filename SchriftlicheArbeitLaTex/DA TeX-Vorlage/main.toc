@@ -1,4 +1,4 @@
-\babel@toc {ngerman}{}\relax 
+\babel@toc {ngerman}{}
 \contentsline {chapter}{Eidesstattliche Erklärung}{A}{chapter*.2}%
 \contentsline {chapter}{Kurzfassung der Diplomarbeit/Abstract}{B}{chapter*.4}%
 \contentsline {chapter}{Danksagung}{E}{chapter*.5}%
@@ -160,27 +160,27 @@
 \contentsline {chapter}{\numberline {6}Codeverzeichnis}{86}{chapter.6}%
 \contentsline {chapter}{\numberline {7}Begleitprotokoll gem. § 9 Abs. 2 PrO-BHS}{87}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Begleitprotokoll David Pöchacker}{87}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Begleitprotokoll Tobias Kronsteiner}{87}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Begleitprotokoll Marcel Entner}{88}{section.7.3}%
-\contentsline {chapter}{\numberline {8}Anhang}{91}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Verfasser der Kapitel}{91}{section.8.1}%
-\contentsline {subsection}{\numberline {8.1.1}David Pöchacker}{91}{subsection.8.1.1}%
-\contentsline {subsection}{\numberline {8.1.2}Marcel Entner}{92}{subsection.8.1.2}%
-\contentsline {subsection}{\numberline {8.1.3}Tobias Kronsteiner}{92}{subsection.8.1.3}%
-\contentsline {section}{\numberline {8.2}Verwendete Software}{93}{section.8.2}%
-\contentsline {subsection}{\numberline {8.2.1}Visual Studio Code}{93}{subsection.8.2.1}%
-\contentsline {subsection}{\numberline {8.2.2}Apache WebServer}{93}{subsection.8.2.2}%
-\contentsline {subsection}{\numberline {8.2.3}Composer}{93}{subsection.8.2.3}%
-\contentsline {subsection}{\numberline {8.2.4}Windows Eingabeaufforderung (CMD)}{93}{subsection.8.2.4}%
-\contentsline {subsection}{\numberline {8.2.5}Github VCS und Github Desktop GUI}{93}{subsection.8.2.5}%
-\contentsline {subsection}{\numberline {8.2.6} phpMyAdmin}{94}{subsection.8.2.6}%
-\contentsline {subsection}{\numberline {8.2.7}Adobe XD}{94}{subsection.8.2.7}%
-\contentsline {subsection}{\numberline {8.2.8}Adobe Photoshop}{94}{subsection.8.2.8}%
-\contentsline {subsection}{\numberline {8.2.9}LaTex}{94}{subsection.8.2.9}%
-\contentsline {section}{\numberline {8.3}Projektplanung}{95}{section.8.3}%
-\contentsline {subsection}{\numberline {8.3.1}Projektkommunikation}{95}{subsection.8.3.1}%
-\contentsline {subsection}{\numberline {8.3.2}Projektstrukturplan}{95}{subsection.8.3.2}%
-\contentsline {subsection}{\numberline {8.3.3}Verantwortungsmatrix und Aufwandsschätzung}{96}{subsection.8.3.3}%
-\contentsline {subsection}{\numberline {8.3.4}Meilensteinplan}{97}{subsection.8.3.4}%
-\contentsline {subsection}{\numberline {8.3.5}Terminplan}{98}{subsection.8.3.5}%
-\contentsline {section}{\numberline {8.4}Inhalt von GitHub}{98}{section.8.4}%
+\contentsline {section}{\numberline {7.2}Begleitprotokoll Tobias Kronsteiner}{88}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Begleitprotokoll Marcel Entner}{91}{section.7.3}%
+\contentsline {chapter}{\numberline {8}Anhang}{94}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Verfasser der Kapitel}{94}{section.8.1}%
+\contentsline {subsection}{\numberline {8.1.1}David Pöchacker}{94}{subsection.8.1.1}%
+\contentsline {subsection}{\numberline {8.1.2}Marcel Entner}{95}{subsection.8.1.2}%
+\contentsline {subsection}{\numberline {8.1.3}Tobias Kronsteiner}{95}{subsection.8.1.3}%
+\contentsline {section}{\numberline {8.2}Verwendete Software}{96}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Visual Studio Code}{96}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.2}Apache WebServer}{96}{subsection.8.2.2}%
+\contentsline {subsection}{\numberline {8.2.3}Composer}{96}{subsection.8.2.3}%
+\contentsline {subsection}{\numberline {8.2.4}Windows Eingabeaufforderung (CMD)}{96}{subsection.8.2.4}%
+\contentsline {subsection}{\numberline {8.2.5}Github VCS und Github Desktop GUI}{96}{subsection.8.2.5}%
+\contentsline {subsection}{\numberline {8.2.6} phpMyAdmin}{97}{subsection.8.2.6}%
+\contentsline {subsection}{\numberline {8.2.7}Adobe XD}{97}{subsection.8.2.7}%
+\contentsline {subsection}{\numberline {8.2.8}Adobe Photoshop}{97}{subsection.8.2.8}%
+\contentsline {subsection}{\numberline {8.2.9}LaTex}{97}{subsection.8.2.9}%
+\contentsline {section}{\numberline {8.3}Projektplanung}{98}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1}Projektkommunikation}{98}{subsection.8.3.1}%
+\contentsline {subsection}{\numberline {8.3.2}Projektstrukturplan}{98}{subsection.8.3.2}%
+\contentsline {subsection}{\numberline {8.3.3}Verantwortungsmatrix und Aufwandsschätzung}{99}{subsection.8.3.3}%
+\contentsline {subsection}{\numberline {8.3.4}Meilensteinplan}{100}{subsection.8.3.4}%
+\contentsline {subsection}{\numberline {8.3.5}Terminplan}{101}{subsection.8.3.5}%
+\contentsline {section}{\numberline {8.4}Inhalt von GitHub}{101}{section.8.4}%
