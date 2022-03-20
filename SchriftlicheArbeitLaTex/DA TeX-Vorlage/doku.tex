@@ -8,8 +8,8 @@ Das bestehende System des Auftraggebers umfasst die Komponenten Grafana Server, 
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[height=3cm,width=10cm]{images/vorhandeneSystemAuftraggeber}
-	\caption{vorhandeneSystemAuftraggeber}
+	\includegraphics[height=2.5cm,width=8cm]{images/vorhandeneSystemAuftraggeber}
+	\caption{ Vorhandene System des Auftraggebers}
 	\label{fig:vorhandeneSystemAuftraggeber}
 \end{figure}
 Der Grafana Server wird übernommen, um Dashboards für die Energiesysteme und Panels für die Energietechnologien zu erstellen. Dabei können mehrere Statistiken, auch Panels genannt, zu einem Dashboard zusammengefasst werden, um somit eine Ordnerstruktur am Grafana Server zu erlangen. Der Webserver wird als Produktivserver benützt, um die fertige Website zu präsentieren. Die vorhandene Datenbank wird aufgrund deren Schemas nicht übernommen, stattdessen wird ein neues besseres Datenbankschema entwickelt. Die dafür notwendigen Algorithmen, um die neue Datenbank mit Echtzeitdaten zu befüllen, werden vom Auftraggeber entwickelt.
@@ -83,7 +83,7 @@ Sämtliche Daten wie Adressen, Standorte (in Form von Koordinaten) oder die Name
 
 
 \subsection{Statistische Auswertung}
-Zur statistischen Auswertung wird das Daten visualisierungs Framework Grafana verwendet. In Grafana werden einzelne Energiesysteme als “Dashboards” abgebildet, in diesen Dashboards werden die Energietechnologien als “Panels” erstellt. In der Konfiguration der Panels werden die SQL Abfragen definiert aus welchen sich die Statistiken zusammensetzen. Die Statistiken bilden sowohl Echtzeit Daten als auch Daten der letzten 24 Stunden ab. Die Statistiken werden hier als Zeitreihen \footnote{ *In diesen Diagrammen werden Zahlenwerte in Abhängigkeit von Zeitwerten angezeigt.	
+Zur statistischen Auswertung wird das Daten visualisierungs Framework Grafana verwendet. In Grafana werden einzelne Energiesysteme als “Dashboards” abgebildet, in diesen Dashboards werden die Energietechnologien als “Panels” erstellt. In der Konfiguration der Panels werden die SQL Abfragen definiert aus welchen sich die Statistiken zusammensetzen. Die Statistiken bilden sowohl Echtzeit Daten als auch Daten der letzten 24 Stunden ab. Die Statistiken werden hier als Zeitreihen \footnote{ In diesen Diagrammen werden Zahlenwerte in Abhängigkeit von Zeitwerten angezeigt.	
  }. Diagramme abgebildet.
 
 
@@ -94,7 +94,7 @@ Die \autoref{fig:Architektur} repräsentiert die Architektur des Zielsystems. De
 \begin{figure}[h]
 	\centering
 	\includegraphics[height=7cm,width=15cm]{images/Architektur}
-	\caption{Architektur}
+	\caption{Architektur des Zielsystems}
 	\label{fig:Architektur}
 \end{figure}
 
@@ -116,8 +116,8 @@ Das Produkt wurde als Browser Anwendung entwickelt, um überall lauffähig zu se
 \end{table}
 
 
-\subsection{Serverseitig}
-Bei PHP handelt es sich zum einen Serverseitige zu laufzeit interpretierte Skriptsprache mit welcher sich Daten dynamisch auf Website anzeigen lassen. Da es sich bei Laravel um ein Php Framework handelt, wird der Code am Webserver beim Laden der Website interpretiert. Laravel kommuniziert Serverseitig mithilfe eines sogenannten ORM (Object Relational Mapper) mit der Datenbank. Hiermit kann der Programmierer auf vorgefertigte Funktionen des ORM zurückgreifen und muss Datenbankoperationen wie Abfragen oder das erstellen von Tabelleneinträgen nicht als SQL Abfragen Formatieren.
+\subsection{Serverseitig }
+Bei PHP handelt es sich zum einen serverseitige zur Laufzeit interpretierte Skriptsprache, mit welcher sich Daten dynamisch auf Website anzeigen lassen. Da es sich bei Laravel um ein PHP Framework handelt, wird der Code am Webserver beim Laden der Website interpretiert. Laravel kommuniziert serverseitig mithilfe eines sogenannten ORM (Object Relational Mapper) mit der Datenbank. Hiermit kann der Programmierer auf vorgefertigte Funktionen des ORM zurückgreifen und muss Datenbankoperationen wie Abfragen oder das Erstellen von Tabelleneinträgen nicht als SQL Abfragen Formatieren.
 
 \subsection{Clientseitige Interaktion des Benutzers}
 Bei dem Punkt Clientseitig befindet man sich in der Architektur des Zielsystems bei dem Element JavaScript und mit den damit verbundenen Interaktionen des Benutzers. Map-Interaktionen sind Interaktionen mit einer Karte, dazu gehört das Erstellen, Bearbeiten und Löschen von Energiesystemen sowie Energietechnologien. Eine weitere Interaktion wäre die Verwendung des Adresssuchfeldes, welche mit einem Klick auf den Button „Suche“ oder durch Drücken der Enter-Taste durchgeführt wird. Tabellen-Interaktionen sind eine zusätzliche clientseitige Aktion, da die vom DataTable\footnote{Eine genaue Begriffserklärung befindet sich in \ref{sec:DataTable}} bereitgestellten Funktionen wie die Suchfunktion, Sortierfunktion oder Seitennummerierung allesamt clientseitig stattfinden und somit keinen Einfluss auf das Back-End haben.
@@ -128,7 +128,7 @@ Folgende \autoref{fig:clientseitig}
 \begin{figure}[h]
 	\centering
 	\includegraphics[height=4cm,width=12cm]{images/clientseitig}
-	\caption{clientseitig}
+	\caption{Clientseitiger Aufbau der einzelnen Elemente}
 	\label{fig:clientseitig}
 \end{figure}
 \newpage
@@ -160,7 +160,7 @@ Migrations sind die Abbildung der Tabellenstruktur und ermöglichen es, bei rich
 
 \subsubsection{Angular}
 Angular ist ein clientseitiges JavaScript-Web-Framework und wird meistens zum Erstellen von sogenannten Single Page Applications\footnote{Anwendung die nur auf einer Seite zu bedienen ist}, wie beispielsweise ein einfaches Bedienelement zur Steuerung einer Maschine, verwendet. Angular ist speziell für Web-, Desktop- und Mobile-Anwendungen entworfen. Ein weiterer Aspekt des Frameworks ist es, dass es von Google entwickelt wurde und so ein langfristiger Support gewährleistet ist. Angular macht es mit der Kombination aus HTML und TypeScript möglich, so ziemlich jede mögliche Aufgabenstellung zu bewältigen. Es bietet auch besondere Features wie eine bidirektionale Datenbindung an und ist somit gut für Echtzeitanwendungen geeignet. 
-Alle Daten zu Angular wurden der Quelle (https://angular.de/artikel/was-ist-angular/) entnommen.
+Alle Daten zu Angular wurden der Quelle \cite{Angular} entnommen.
 \begin{figure}[h]
 	\centering
 	\includegraphics[height=4cm,width=5cm]{images/Angular_Logo}
@@ -175,7 +175,7 @@ Durch die vordefinierte Datenstruktur, die ASP.NET bereitstellt, hilft es dem Pr
 \begin{figure}[h]
 	\centering
 	\includegraphics[height=4cm,width=7cm]{images/ASP.net_Logo}
-	\caption{ASP.net Logo}
+	\caption{ASP.NET Logo}
 	\label{fig:ASP.net Logo}
 \end{figure}
 
@@ -189,7 +189,7 @@ React ist eine JavaScript-Softwarebibliothek, die es erleichtert, Benutzeroberfl
 Genaueres zu React kann unter der Quelle xy (https://t3n.de/news/react-facebook-623999/) nachgelesen werden.
 \begin{figure}[h]
 	\centering
-	\includegraphics[height=4cm,width=5cm]{images/React_Logo}
+	\includegraphics[height=3cm,width=4cm]{images/React_Logo}
 	\caption{React Logo}
 	\label{fig:React Logo}
 \end{figure}
@@ -200,15 +200,15 @@ Positive und negative Aspekte jedes Framworks wurden vom Projektteam, mithilfe d
 
 \begin{table}[h]
 	
-	\label{tab: Entscheidung des Frameworks}
+	
 	\begin{tabular}{|l|l|l|}
 		\hline
-		Framework oder Bibliothek  &
-		Vorteile &
-		Nachteile \\ \hline
+		\textbf{Framework oder Bibliothek } &
+		\textbf{Vorteile} &
+		\textbf{Nachteile }\\ \hline
 		React &
-		\begin{tabular}[t]{@{}l@{}}Software Skalierbarkeit;\\ hohe Flexibilität;\\ Codebits ermöglichen es, die  Redundanz zu erhöhen; \\schnelles Rendering;\\ leichter Einstieg\end{tabular} &
-		\begin{tabular}[t]{@{}l@{}}Es gibt nicht genug Möglichkeiten,\\ eine Webapp zu erstellen \\ und benötigt Zusatzbibliotheken; \\ schweres debuggen\footnote{debuggen ist die Fehlerkontrolle des Programms vor dem Start};\\ komplexe Benutzeroberfläche\end{tabular} \\ \hline
+		\begin{tabular}[t]{@{}l@{}}Software Skalierbarkeit;\\ hohe Flexibilität;\\ Codebits ermöglichen es, \\die  Redundanz zu erhöhen; \\schnelles Rendering;\\ leichter Einstieg\end{tabular} &
+		\begin{tabular}[t]{@{}l@{}}Es gibt nicht genug Möglichkeiten,\\ eine Webapp zu erstellen \\ und benötigt Zusatzbibliotheken; \\ schweres debuggen;\\ komplexe Benutzeroberfläche\end{tabular} \\ \hline
 		ASP.NET &
 		\begin{tabular}[t]{@{}l@{}}hohe Flexibilität;\\ MVC Architektur; \\ gute Skalierbarkeit;\\ einfache Benutzung\end{tabular} &
 		\begin{tabular}[t]{@{}l@{}}ressourcenaufwendig;\\ teuer, aufgrund des Lizenskaufes;\\ keine aktuelle Dokumentation;\\alte Versionen sind nicht mehr kompatibel\end{tabular} \\ \hline
@@ -224,16 +224,16 @@ Positive und negative Aspekte jedes Framworks wurden vom Projektteam, mithilfe d
 		
 	\end{tabular}
 	\caption{Entscheidung des Frameworks}
+	\label{tab: Entscheidung des Frameworks}
 \end{table}
-\newpage
-Nach Begutachtung der Tabelle \ref{sec:Entscheidung des Frameworks} und aufgrund der überwiegenden positiven Aspekte, entschied sich das Projektteam für das Framework Laravel. Entscheidend war beispielsweise die einfache Handhabung und die Möglichkeit, Bootstrap in Kombination zu verwenden. Da dieses Framework auch im Schulfach Softwareentwicklung genauer bearbeitet wurde, besitzt das Projektteam bereits ein gutes Grundwissen. Es wurde darüber hinaus überlegt, ob auch das Front-End Framework Vue.js zusätzlich verwendet werden soll. Da Vue.js nur zusätzliche Komplexität ohne einen wirklichen Nutzen mit sich bringen würde, wurde diese Option vernachlässigt. Das Framework Laravel bietet alle nötigen Front- und Back-End Möglichkeiten, die es ermöglichen, Laravel im Front wie auch im Back-End zu verwenden. Entscheidender Faktor war auch, dass das Projektteam noch nie mit einem anderen Framework gearbeitet hat, und so eigentlich nur Laravel in Frage gekommen ist.
+Nach Begutachtung der Tabelle 2.3 und aufgrund der überwiegenden positiven Aspekte, entschied sich das Projektteam für das Framework Laravel. Entscheidend war beispielsweise die einfache Handhabung und die Möglichkeit, Bootstrap in Kombination zu verwenden. Da dieses Framework auch im Schulfach Softwareentwicklung genauer bearbeitet wurde, besitzt das Projektteam bereits ein gutes Grundwissen. Es wurde darüber hinaus überlegt, ob auch das Front-End Framework Vue.js zusätzlich verwendet werden soll. Da Vue.js nur zusätzliche Komplexität ohne einen wirklichen Nutzen mit sich bringen würde, wurde diese Option vernachlässigt. Das Framework Laravel bietet alle nötigen Front- und Back-End Möglichkeiten, die es ermöglichen, Laravel im Front wie auch im Back-End zu verwenden. Entscheidender Faktor war auch, dass das Projektteam noch nie mit einem anderen Framework gearbeitet hat, und so eigentlich nur Laravel in Frage gekommen ist.
 
 
 
 
 \subsection{Front-End Templates}
 Ein Front-End Template dient als Vorlage, um die Web Oberflächengestaltung zu erleichtern.
-Deswegen ist die Auswahl des Front-End Templates essenziell für die Umsetzung der Weboberfläche des Produktes. Jedes Front-End Template bringt seine Vor- und Nachteile mit sich, wobei das Projektteam die Anforderungen an das Front-End Template mit den Vor- und Nachteilen jeden einzelnen Front-End Templates verglichen hat, um sich schlussendlich für eines zu entscheiden. Dabei sind die Anforderungen des Projektteams an das Front-End Template, dass es unkompliziert in das Projekt einzubinden ist und das Projektteam bereits Erfahrung damit hat, um das Arbeiten damit zu erleichtern. Weitere Anforderungen sind, dass es Responsive-Layouts ermöglicht, sowie Vorlagen von Komponenten, die eingebunden werden können, zur Verfügung stellt. Die drei Front-End Templates, die das Projektteam zur Auswahl stellt, sind Bootstrap, Tailwind und Vue.js. Diese Auswahl ist dadurch entstanden, da das Projektteam bereits erste Erfahrungen damit sammeln konnten.
+Deswegen ist die Auswahl des Front-End Templates essenziell für die Umsetzung der Weboberfläche des Produkts. Jedes Front-End Template bringt seine Vor- und Nachteile mit sich, wobei das Projektteam die Anforderungen an das Front-End Template mit den Vor- und Nachteilen jeden einzelnen Front-End Templates verglichen hat, um sich schlussendlich für eines zu entscheiden. Dabei sind die Anforderungen des Projektteams an das Front-End Template, dass es unkompliziert in das Projekt einzubinden ist und das Projektteam bereits Erfahrung damit hat, um das Arbeiten damit zu erleichtern. Weitere Anforderungen sind, dass es Responsive-Layouts ermöglicht, sowie Vorlagen von Komponenten, die eingebunden werden können, zur Verfügung stellt. Die drei Front-End Templates, die das Projektteam zur Auswahl stellt, sind Bootstrap, Tailwind und Vue.js. Diese Auswahl ist dadurch entstanden, da das Projektteam bereits erste Erfahrungen damit sammeln konnten.
 
 
 \subsubsection{Bootstrap}
@@ -269,7 +269,7 @@ ist das Vue.js Logo ersichtlich.
 \begin{figure}[h]
 	\centering
 	\includegraphics[height=2cm,width=3cm]{images/vuejs}
-	\caption{Vuejs Logo}
+	\caption{Vue.js Logo}
 	\label{fig:Vuejs Logo}
 \end{figure}
 
@@ -371,7 +371,7 @@ Es gibt die Möglichkeit, Daten mithilfe von compact in das Return Statement\foo
 \renewcommand{\lstlistingname}{Quellcode}
 
 \begin{lstlisting}[
-	caption={Return Statemnet mit Compact},
+	caption={Return Statement mit Compact},
 	label=Code,
 	language=octave,
 	numbers=left,
@@ -452,31 +452,31 @@ Von Seiten des Auftraggebers wurde von Anfang an der Wunsch geäußert, Energies
 
 \subsection{Kartendienste}
 Das Produkt stellt eine zentrale Verwaltungsmöglichkeit in Form einer Karte bereit. Um diese Karte auf dem Produkt zu verwenden, wird ein Kartenanbieter benötigt. Die zwei Optionen Google Maps und OpenStreetMap wurden vom Projektteam analysiert. Auf diese zwei Anbieter wird in den Kapitel \ref{sec:Gooogle Map} und \ref{sec:OpenStreetMap} genauer eingegangen. Von Seiten des Auftraggebers wurde, aufgrund einer gewissen Abneigung zu Diensten, die von Google bereitgestellt werden, eine Präferenz zu OpenStreetMap geäußert.
-
+\newpage
 \subsubsection{Google Maps} \label{sec:Gooogle Map}
 
 
-Google Maps ist der klare Marktführer in der Sparte der Kartendienst Anbieter.  Der Großteil  aller Webanwendungen, welche Maps verwenden, werden mit Google Maps umgesetzt. Google Maps überzeugt nicht nur mit einer sehr hohen Individualisierungsmöglichkeit, sondern auch mit einer sehr hohen Ausfallsicherheit. Der größte Vorteil ist jedoch, das große Angebot an vordefinierten API Diensten. Diese können einfach über die Google Cloud Platform überwacht, bedient oder aktiviert werden. Genauere Infos zur Google Maps Plattform stehen im  \autoref{sec: Google Cloud}. Ein weiterer Vorteil von Google Maps ist es, dass es wirklich weitflächig alles abdeckt, ganz im Gegensatz zu OpenStreetMap. Der einzige Nachteil ist, dass die Verwendung einer Google Maps Karte auf der Website kostenpflichtig ist. Es gibt jedoch auf der Google Cloud Seite eine genaue Kostenaufstellung. Bezahlt wird bei Verwendung der API Dienste. Google verrechnet hier je nach API Dienst einen gewissen Betrag pro Verwendung. Diese Kosten waren jedoch bei der Entwicklung kein Problem, da Google Cloud für die ersten 30 Tage ein Startkapital von 300 Dollar anbietet.  
+Google Maps ist der klare Marktführer in der Sparte der Kartendienst Anbieter.  Der Großteil  aller Webanwendungen, welche Maps verwenden, werden mit Google Maps umgesetzt. Google Maps überzeugt nicht nur mit einer sehr hohen Individualisierungsmöglichkeit, sondern auch mit einer sehr hohen Ausfallsicherheit. Der größte Vorteil ist jedoch, das große Angebot an vordefinierten API Diensten. Diese können einfach über die Google Cloud Platform überwacht, bedient oder aktiviert werden. Genauere Infos zur Google Maps Plattform stehen im Kapitel \ref{sec: Google Cloud}. Ein weiterer Vorteil von Google Maps ist es, dass es wirklich weitflächig alles abdeckt, ganz im Gegensatz zu OpenStreetMap. Der einzige Nachteil ist, dass die Verwendung einer Google Maps Karte auf der Website kostenpflichtig ist. Es gibt jedoch auf der Google Cloud Seite eine genaue Kostenaufstellung. Bezahlt wird bei Verwendung der API Dienste. Google verrechnet hier je nach API Dienst einen gewissen Betrag pro Verwendung. Diese Kosten waren jedoch bei der Entwicklung kein Problem, da Google Cloud für die ersten 30 Tage ein Startkapital von 300 Dollar anbietet.  
 \begin{figure}[h]
 	\centering
-	\includegraphics[height=3cm,width=4cm]{images/GoogleMapsLogo}
+	\includegraphics[height=2.5cm,width=4cm]{images/GoogleMapsLogo}
 	\caption{Google Maps Logo}
 	\label{fig:GoogleMaps Logo}
 \end{figure}
-\newpage
+
 \subsubsection{OpenStreetMap}\label{sec:OpenStreetMap}
 
 
 OpenStreetMap ist ein 2004 gegründetes Projekt, welches das Ziel hat, eine frei verfügbare Weltkarte zu erstellen. Gegründet wurde dieses Projekt von Steve Coast und zählt mittlerweile um die 7.8 Millionen Nutzer. Das Hauptargument OpenStreetMap eher als Google Maps zu verwenden ist es, dass dieses kostenlos und lizenzfrei ist. Es gibt jedoch gravierende Nachteile gegenüber Google Maps. Openstreetmap bietet keine API Dienste an. Es gibt zwar die Möglichkeit, mithilfe von Leaflet, welches eine JavaScript-Bibliothek ist, eigenen API Dienste zu programmieren, dies ist jedoch mit einem sehr hohen Aufwand und einer sehr hohen Komplexität verbunden. Ein weiterer Nachteil von OpenStreetMap ist es, dass es auf Benutzerdaten aufbaut. Das bedeutet, Nutzer sind  dafür verantwortlich, die Karte immer auf dem aktuellsten Stand zu halten. Somit ist dieser Kartendienst wenig zuverlässig.
-Ein weiterer Nachteil wäre, dass Daten für alle Benutzer zugänglich sind. 
+Ein weiterer Nachteil wäre, dass Daten für alle Benutzer zugänglich sind. Informationen über OpenStreetMap wurden aus der Quelle xy () entnommen.
 \begin{figure}[h]
 	\centering
-	\includegraphics[height=3cm,width=4cm]{images/OpenStreetMap_Logo}
+	\includegraphics[height=2.5cm,width=4cm]{images/OpenStreetMap_Logo}
 	\caption{Open Street Map Logo}
 	\label{fig:Open Street Map Logo}
 \end{figure}
 
-Informationen über OpenStreetMap wurden aus der Quelle xy () entnommen.
+
 \newpage
 
 \subsection{Geoinformationssystem }
@@ -604,7 +604,7 @@ Eine Persona dient dazu, die Bedürfnisse und Ziele der Zielgruppe zu erfassen. 
 Laravel bietet die Möglichkeit, mithilfe einer Layout Datei, Codeabschnitte auf mehreren Seiten zu verwenden. Hauptsächlich wird diese Funktion genutzt, um statische Elemente, die auf jeder Unterseite gleich sind, nur einmal zu programmieren. Ein gutes Beispiel wäre der Header oder auch der Footer, da diese Elemente auf den Unterseiten nicht variieren. 
 
 \subsection{Platzhalter Yield}
-In der Layout Datei kann \@yield verwendet werden, um Platz zu halten. Dies ermöglicht es, beispielsweise den Titel der Website individuell für jede Unterseite zu setzen. Der Platzhalter wird in der Layout Datei folgendermaßen konfiguriert: 
+In der Layout Datei kann @yield verwendet werden, um Platz zu halten. Dies ermöglicht es, beispielsweise den Titel der Website individuell für jede Unterseite zu setzen. Der Platzhalter wird in der Layout Datei folgendermaßen konfiguriert: 
 \definecolor{mygray}{RGB}{252,251,244}
 \renewcommand{\lstlistingname}{Quellcode}
 
@@ -664,13 +664,13 @@ Um die Section wieder zu schließen, muss folgendes Statement benutzt werden:
 	basicstyle=\footnotesize=15,
 	keywordstyle=\color{blue}
 	]
-	@endsection.
+	@endsection
 \end{lstlisting} 
  Die Einteilung des Codes in Section erlaubt es, dieses Codestück auf einer anderen Seite mit nur einem Stichwort einzubinden. 
 \subsection{Einbindung der definierten Sections}
 Um diese im Layout File definierten Sections im Code einbinden zu können, müssen einige Einstellungen vorgenommen werden. Am Anfang einer neuen Seite muss dieser Code eingefügt werden:
 \begin{lstlisting}[
-	caption={Einbindugn der Layout Datei},
+	caption={Einbindung der Layout Datei},
 	label=Code,
 	language=octave,
 	numbers=left,
@@ -789,7 +789,7 @@ Wenn eine Factory erstellt werden soll, gibt es folgende Möglichkeit:
 	]
 	php artisan make:factory factory_name
 \end{lstlisting}
-
+\newpage
 Um den Seeder nach Initialisierung auszuführen, gibt es folgende Möglichkeit:
 \begin{lstlisting}[
 	caption={Datenbank Seeder ausführen},
@@ -879,7 +879,7 @@ Laravel bietet die Möglichkeit, wenn PHP auf dem Entwicklungssystem installiert
 Nach Ausführen dieses Kommandos kann man das Projekt unter http://localhost:8000 aufgerufen.
 
 
-\subsection{Befehle nach dem Git Pull} 
+\subsection{Befehle nach dem Git Pull} \label{sec: Git}
 Bei Team Projekten in Laravel ist Git die beste Lösung. Jedoch kommt es oft zu Komplikationen beim Herunterladen des Projekts durch Git. Es gibt aber einige Befehle, die es ermöglichen, das Laravel Projekt komplikationsfrei zu starten.
 Dieser Kommand sorgt dafür, dass der APP\_KEY in der .env Datei richtig gesetzt wird:
 \begin{lstlisting}[
@@ -914,11 +914,11 @@ Um sicher zu stellen, dass alle nötigen Pakete installiert wurden, kann folgend
 Nach Durchführung dieser Schritte sollte sich das Programm problemlos starten und verändern lassen.
 
 
-
+\newpage
 \section{Routen in Laravel}
 Laravel verfügt über ein ausgedehntes Routing System über welches Views aber auch ganze Gruppen von Elementen angesprochen und angezeigt werden können. Diese Routen werden in der Datei “web.php” angelegt und verwaltet.
 \subsection{Ressource Routen} 
-Mit der Ressource Route wird ein ganzer Controller angesprochen, so können über diese Route alle Methoden in diesem Controller angesprochen und verwendet werden. Im Produkt wird jeder Controller, welcher wiederum für jede Tabelle vorhanden ist, durch eine Ressource Route adressiert. Dieser Vorgang wird in Abbildung 2.14 veranschaulicht.
+Mit der Ressource Route wird ein ganzer Controller angesprochen, so können über diese Route alle Methoden in diesem Controller angesprochen und verwendet werden. Im Produkt wird jeder Controller, welcher wiederum für jede Tabelle vorhanden ist, durch eine Ressource Route adressiert. Dieser Vorgang wird in Abbildung \ref{fig:ResourceRoute} veranschaulicht.
 
 \begin{figure}[h]
 	\centering
@@ -928,7 +928,7 @@ Mit der Ressource Route wird ein ganzer Controller angesprochen, so können übe
 \end{figure}
 
 \subsection{GET Routen}
-Mit diesem Typ von Routen lässt sich eine bestimmte Methode in einem ausgewählten Controller adressieren. Außerdem ist es möglich in einer GET Route einen Parameter mitzugeben welcher dann in der ausgewählten Methode im Controller verarbeitet wird. Im Produkt wird dieser Typ von Methoden verwendet, um beispielsweise die Startseite anzuzeigen. Weiters werden sie verwendet, um bestimmte Methoden in Controllern, zB. löschen von Energiesystemen, mit der Id des ausgewählten Objektes auszuführen. Am meisten kommt dieser Typ von Routen beim Erstellen, Editieren oder Löschen von Datenbankeinträgen zum Einsatz, da hier ein gewisser Eintrag mit dem mitgelieferten Parameter einer Route adressiert werden kann. Der Aufbau dieser Route wird in Abbildung 2.15 verdeutlicht.
+Mit diesem Typ von Routen lässt sich eine bestimmte Methode in einem ausgewählten Controller adressieren. Außerdem ist es möglich in einer GET Route einen Parameter mitzugeben welcher dann in der ausgewählten Methode im Controller verarbeitet wird. Im Produkt wird dieser Typ von Methoden verwendet, um beispielsweise die Startseite anzuzeigen. Weiters werden sie verwendet, um bestimmte Methoden in Controllern, zB. löschen von Energiesystemen, mit der Id des ausgewählten Objektes auszuführen. Am meisten kommt dieser Typ von Routen beim Erstellen, Editieren oder Löschen von Datenbankeinträgen zum Einsatz, da hier ein gewisser Eintrag mit dem mitgelieferten Parameter einer Route adressiert werden kann. Der Aufbau dieser Route wird in Abbildung \ref{fig:GETRoute} verdeutlicht.
 
 
 \begin{figure}[h]
@@ -937,13 +937,14 @@ Mit diesem Typ von Routen lässt sich eine bestimmte Methode in einem ausgewähl
 	\caption{Aufbau einer GET Route}
 	\label{fig:GETRoute}
 \end{figure}
+\newpage
 
 \subsection{Auth Routen}
 Sobald in Laravel das Authentifizierungssystem aktiviert wird, werden diese Routen automatisch erstellt. Diese Routen adressieren, die ebenfalls durch Laravel erstellen, auth Controller in der die Benutzeranmeldung sowie Registrierung bearbeitet wird.
 
-\newpage
+
 \section{MVC}\label{sec: MVC}
-Das Produkt verwendet das von Laravel bereitgestellte Design Pattern MVC (Model, View, Controller), welches in der Abbildung 2.16 dargestellt wird. 
+Das Produkt verwendet das von Laravel bereitgestellte Design Pattern MVC (Model, View, Controller), welches in der Abbildung \ref{fig:MVC} dargestellt wird. 
 
 \begin{figure}[h]
 	\centering
@@ -953,9 +954,9 @@ Das Produkt verwendet das von Laravel bereitgestellte Design Pattern MVC (Model,
 \end{figure}
 
 \subsection{Model}
-Für jede durch eine Migration (Kapitel 3.2.2)  erstellte Tabelle gibt es ein Model, in diesem wird wie der Name suggeriert, das Datenmodell abgebildet. Durch diesen Ansatz kann von jedem Model eine Instanz erstellt werden und so die Entsprechende Tabelle in einem beliebigen Programmabschnitt verwendet werden. Weiters werden in den Models die Relationen zwischen den einzelnen Tabellen beschrieben.
+Für jede durch eine Migration (Kapitel 3.2.2) erstellte Tabelle gibt es ein Model, in diesem wird wie der Name suggeriert, das Datenmodell abgebildet. Durch diesen Ansatz kann von jedem Model eine Instanz erstellt werden und so die Entsprechende Tabelle in einem beliebigen Programmabschnitt verwendet werden. Weiters werden in den Models die Relationen zwischen den einzelnen Tabellen beschrieben.
 \subsection{View}
-Das Produkt baut auf acht Views auf. In diesen Views werden die Daten, welche von den Controllern übergeben werden mithilfe von Datatables (Kapitel 3.6) dem Benutzer angezeigt. Weiters gibt es in den Views verschiedene Möglichkeiten der Benutzerinteraktion.
+Das Produkt baut auf acht Views auf. In diesen Views werden die Daten, welche von den Controllern übergeben werden mithilfe von DataTables (Kapitel 3.6) dem Benutzer angezeigt. Weiters gibt es in den Views verschiedene Möglichkeiten der Benutzerinteraktion.
 \subsection{Controller}
 In den Controllern wird der Datenweg zwischen den Views, also den Benutzerinteraktionen und der Datenbank gesteuert. Für jede, durch eine Migration in der Datenbank erstelle Tabelle, gibt es einen Controller, welcher das Speichern, die Ausgabe, das Editieren sowie das Löschen von einzelnen Tupeln aus der Datenbank steuert. Weiters werden in den "store()" und "destroy()" Methoden des EnTechControllers sowie des EnSysControllers die API Aufrufe an die Grafana HTTP API mit den vom Benutzer eingegebenen Daten ausgeführt.
 
@@ -967,7 +968,9 @@ In diesem Kapitel werden die Ergebnisse und Erfahrungen dokumentiert, welche sic
 
 \subsection{Installation}
 Die Installation von Laravel erfolgt mithilfe des PHP Installations Tools Composer. Dieser installiert hierzu die Paketquellen Lokal auf dem System. Beim Erstellen eines neuen Laravel Projekts werden die von Composer installierten Quelldateien in das Verzeichnis des neu zu erstellenden Projekts kopiert und installiert. Im nachfolgenden Link ist mehr über die Installation von Laravel zu lesen:
-\href{https://laravel.com/docs/9.x#installation-via-composer}{Dokumentation der Installation}
+
+Unter der Quelle xy () ist mehr über Laravel zu lesen.
+
 
 
 \subsection{Bootstrap Einbindung}
@@ -987,12 +990,12 @@ Das Produkt kommuniziert mit dem Grafana Server über die von Grafana bereitgest
 
 
 
-
+\newpage
 \section{Datenbankanbindung in Laravel}
 Um die Datenbank an das Programm anzubinden, müssen einige Änderungen in der .env Datei vorgenommen werden. Genauere Information zur .env Datei befinden sich im Kapitel  \ref{sec:Laravel .env Datei}. Welche Konfigurationen genau getätigt werden, können in den nachfolgenden Kapiteln nachgelesen werden. 
 
 \subsection{Datenbank Anmeldeinformationen}
-Eine Änderung war es, die Datenbank Anmeldeinformationen auf die richtigen Einstellungen zu setzen. Welche Attribute gesetzt werden, und was genau bei diesen Eingetragen werden muss, ist in Tabelle 3.1 ersichtlich.
+Eine Änderung war es, die Datenbank Anmeldeinformationen auf die richtigen Einstellungen zu setzen. Welche Attribute gesetzt werden, und was genau bei diesen Eingetragen werden muss, ist in Tabelle 3.1 ersichtlich. Eine mögliche Konfiguration ist in Tabelle 3.2 ersichtlich.
 \begin{table}[h]
 	\begin{tabular}{|l|l|}
 		\hline
@@ -1007,7 +1010,6 @@ Eine Änderung war es, die Datenbank Anmeldeinformationen auf die richtigen Eins
 \caption{Datenbank Anmeldeinformationen}
 \label{sec: Datenbank Anmeldeinformationen}
 \end{table}
-Die Konfiguration sieht bei diesem Produkt folgendermaßen aus:
 \begin{table}[h]
 	\begin{tabular}{|l|l|}
 		\hline
@@ -1042,7 +1044,7 @@ Um auf der Weboberfläche das Passwortzurücksetzen mittels E-Mail zu ermöglich
 \caption{Mail Server Konfigurationen}
 \label{sec: Mail Server Konfigurationen}
 \end{table}
-\newpage
+
 Bei diesem Produkt hat die Konfiguration folgendermaßen ausgesehen:
 \begin{table}[h]
 	
@@ -1061,7 +1063,7 @@ Bei diesem Produkt hat die Konfiguration folgendermaßen ausgesehen:
 	\caption{Mail Server Konfigurationen Beispiel}
 	\label{sec: Mail Server Konfigurationen Beispiel}
 \end{table}
-
+\newpage
 
 \subsection{Migrations}
 Die Migrations wurden dazu verwendet, um Tabellen zu gestalten. In ihnen wurden alle nötigen Attributnamen und deren Datentypen konfiguriert. Das Produkt verwendet folgende von Laravel automatisch erzeugten Migrations für die Benutzerauthentifizierung: 
@@ -1072,7 +1074,6 @@ Die Migrations wurden dazu verwendet, um Tabellen zu gestalten. In ihnen wurden 
 \item 2019\_12\_14\_000001\_create\_personal\_access\_tokens\_table.php
 \end{itemize}
 Zusätzlich zu diesen bereits erstellten Migrations wurde für jede Energietechnologieart eine eigene Migration angelegt. Darüber hinaus wurden Templates\footnote{ein Template ist ein Grundbauplan} für ein Energiesystem und eine Energietechnologie erstellt. Im Energietechnologien Template sind alle Attribute, die bei jeder Energietechnologie gleich sind. Alle individuellen Attribute werden dann mithilfe der eigenen Migrations abgebildet.
-\newpage
 
 \section{Datenbankdesign}
 In diesem Kapitel der Diplomarbeit wird das Redesign der Datenbank und der Relationen zwischen den einzelnen Tabellen behandelt.
@@ -1086,7 +1087,7 @@ Um das Datenbankdesign zu veranschaulichen und Unklarheiten mit dem Auftraggeber
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[height=16cm,width=18cm]{images/eer}
+	\includegraphics[height=15cm,width=18cm]{images/eer}
 	\caption{ER Model}
 	\label{fig:ERModel}
 \end{figure}
@@ -1116,7 +1117,7 @@ Vom Projektteam wurde ein Corporate Design Manual erstellt. Dieses befindet sich
 \end{itemize}
 Auf die wichtigsten Elemente wird in den nachfolgenden Kapiteln eingegangen.
 \subsection{Vorschläge}
-Nach Absprache der Grundanforderung des Produktes wurden, mithilfe der Adobe xd Software,  drei Designvorschläge verfasst. Diese sind ebenso auf der DVD der Diplomarbeit einsehbar. Um diese aussagekräftig zu vergleichen, wird von jedem Vorschlag, die Energiesystemseite visuell dargestellt. Dies ist in den drei nachfolgenden Abbildungen \ref{fig:Design Vorschlag 1},\space\ref{fig:Design Vorschlag 2},\space\ref{fig:Design Vorschlag 3} ersichtlich.
+Nach Absprache der Grundanforderung des Produkts wurden, mithilfe der Adobe xd Software,  drei Designvorschläge verfasst. Diese sind ebenso auf der DVD der Diplomarbeit einsehbar. Um diese aussagekräftig zu vergleichen, wird von jedem Vorschlag, die Energiesystemseite visuell dargestellt. Dies ist in den drei nachfolgenden Abbildungen \ref{fig:Design Vorschlag 1},\space\ref{fig:Design Vorschlag 2},\space\ref{fig:Design Vorschlag 3} ersichtlich.
 \begin{figure}[h]
 	\centering
 	\includegraphics[height=6cm,width=12cm]{images/DesignVorschlag1}
@@ -1227,11 +1228,11 @@ Alle verwendeten Farben sind auf der DVD der Diplomarbeit unter der Datei defini
 \newpage
 
 \subsection{Interaktionsfarben}
-Interaktionsfarben werden verwendet, um eine Aktion zu kennzeichnen. Bei diesem  Produkt gibt es zwei verschiedene Interaktionsfarben. Die erste Farbe ist „\#21a500“ und die zweite „\#f1f1f1“. Die erste Farbe ist ersichtlich, wenn mit dem Mauszeiger über den Datatable\footnote{genauer in \autoref{sec:DataTable} erklärt} gefahren wird. Und die zweite Farbe wird ersichtlich, wenn mit dem Mauszeiger auf das Drop-Down in der Galerie gefahren wird, um ein Energiesystem auszuwählen. Wenn dies geschieht, verfärben sich die einzelnen Auswahlelemente in die Farbe „\#f1f1f1“. 
+Interaktionsfarben werden verwendet, um eine Aktion zu kennzeichnen. Bei diesem  Produkt gibt es zwei verschiedene Interaktionsfarben. Die erste Farbe ist „\#21a500“ und die zweite „\#f1f1f1“. Die erste Farbe ist ersichtlich, wenn mit dem Mauszeiger über den DataTable\footnote{genauer in \autoref{sec:DataTable} erklärt} gefahren wird. Und die zweite Farbe wird ersichtlich, wenn mit dem Mauszeiger auf das Drop-Down in der Galerie gefahren wird, um ein Energiesystem auszuwählen. Wenn dies geschieht, verfärben sich die einzelnen Auswahlelemente in die Farbe „\#f1f1f1“. 
 \begin{figure}[h]
 	\centering
-	\includegraphics[height=8cm,width=15cm]{images/InteraktionDataTable}
-	\caption{Interaktion mit dem Datatable}
+	\includegraphics[height=8cm,width=15cm]{images/InteraktionDatatable}
+	\caption{Interaktion mit dem DataTable}
 	\label{fig: Interaktion mit dem Datatabel}
 \end{figure}
 \begin{figure}[h]
@@ -1240,6 +1241,7 @@ Interaktionsfarben werden verwendet, um eine Aktion zu kennzeichnen. Bei diesem 
 	\caption{Interaktion mit dem Drop-Down in der Galerie}
 	\label{fig: Interaktion mit dem Datatabel}
 \end{figure}
+\newpage
 
 \subsection{Schriftarten}
 Unser Produkt verwendet die Schriftarten Smooch Sans und Hubballi. Diese Schriftarten sind von Google Fonts frei zur Verfügung und zur Verwendung gestellt. Hubballi wurde für jede Art von Fließtext verwendet. Smooch Snans wurde verwendet, um die Überschriften zu formatieren. In der Abbildung \ref{fig: Beispiel auf der Website} sind beide Schriften veranschaulicht.
@@ -1255,13 +1257,13 @@ Die Schriftgrade variieren bei diesem Produkt nur bei der Anzeige der aktuellen 
 Die Überschriften Home, Energiesysteme und Galerie werden mithilfe des <b> Tags beim Besuchen der gleichnamigen Seite fett gemacht. Dadurch, dass die aktuelle Seite immer fett geschrieben wird, wird die Navigation durch das Produkt erleichtert.
 \begin{figure}[h]
 	\centering
-	\includegraphics[height=3cm,width=16cm]{images/Header}
+	\includegraphics[height=3cm,width=20cm]{images/Header}
 	\caption{Header auf der Website}
 	\label{fig: Header}
 \end{figure}
-\newpage
-\subsection{Logo}
-Beim Logo hat sich das Projektteam an den Wunsch des Auftraggebers gehalten und ein Logo, welches von Seitens des Auftraggebers zur Verfügung gestellt wurde, verwendet. Zwei Logos wurden zur Verfügung gestellt und gemeinsam wurde sich auf das Logo in Abbildung xy Logo 1 geeinigt. Das Projektteam rät jedoch dazu, bei Logos SVG Grafiken zu verwenden und nicht wie in diesem Fall eine JPG Grafik. Da dies jedoch für den Auftraggeber keine Relevanz hatte, wurde wie besprochen das Logo in Abbildung xy Logo 1 verwendet.
+
+\subsection{Logo}\label{sec: Logo}
+Beim Logo hat sich das Projektteam an den Wunsch des Auftraggebers gehalten und ein Logo, welches von Seitens des Auftraggebers zur Verfügung gestellt wurde, verwendet. Zwei Logos wurden zur Verfügung gestellt und gemeinsam wurde sich auf das Logo in Abbildung \ref{fig: Logo1} geeinigt. Das Projektteam rät jedoch dazu, bei Logos SVG Grafiken zu verwenden und nicht wie in diesem Fall eine JPG Grafik. Da dies jedoch für den Auftraggeber keine Relevanz hatte, wurde wie besprochen das Logo aus Abbildung \ref{fig: Logo1}  verwendet.
 \\
 \begin{figure}[h]
 	\centering
@@ -1289,7 +1291,7 @@ Eine Liste mit allen Icons und deren Bedeutungen ist im Coperate Design Manuel a
 Das Produkt verwendet die vom Auftraggeber bereitgestellte Icons, um Energietechnologien oder Energiesystem auf der Karte visuelle darzustellen. Die Icons auf der Map sehen folgendermaßen aus:
 \begin{figure}[h]
 	\centering
-	\includegraphics[height=5cm,width=12cm]{images/MapIcons}
+	\includegraphics[height=6cm,width=10cm]{images/MapIcons}
 	\caption{Icons auf der Map}
 	\label{fig: Icons auf der Map}
 \end{figure}
@@ -1342,27 +1344,28 @@ Folgende Icons werden  verwendet, um Energiesystem oder Energietechnologien zu b
 		Icon & Funktion                                                                                     \\ \hline
 			\includegraphics[height=1cm,width=1cm]{images/Icons/statistik}& Mit einem Klick auf dieses Icon öffnet sich ein Pop-up,\\& auf welchem die dazugehörigen  Grafana Statistiken präsentiert werden       \\ \hline
 			\includegraphics[height=1cm,width=1cm]{images/Icons/delete}  & Mit einem Klick auf dieses Icon wird das ausgewählte Energiesystem gelöscht                  \\ \hline
-			\includegraphics[height=1cm,width=1cm]{images/Icons/auge} & Mit einem Klick auf dieses Icon werden erweiterte Infos zu dem ausgewählten System angezeigt \\ \hline
+			\includegraphics[height=1cm,width=1.5cm]{images/Icons/auge} & Mit einem Klick auf dieses Icon werden erweiterte Infos zu dem ausgewählten System angezeigt \\ \hline
 			\includegraphics[height=1cm,width=1cm]{images/Icons/stift} & Mit einem Klick auf dieses Icon öffnet sich eine Bearbeitungsmöglichkeit,\\& auf welcher man die Eigenschaften des Systems ändern kann \\ \hline
 	\end{tabular}
 	\caption{Icons im DataTabale}
 \label{tab: Icons im DataTabales}
 \end{table}
+\newpage
 
-Auf der Website werden diese Icons im Datatable hinter einer Energietechnologie oder einem Energiesystem eingeblendet. Dies sieht folgendermaßen aus:
+Auf der Website werden diese Icons im DataTable hinter einer Energietechnologie oder einem Energiesystem eingeblendet. Dies sieht folgendermaßen aus:
 \begin{figure}[h]
 	\centering
 	\includegraphics[height=10cm,width=15cm]{images/IconsImDatatable}
-	\caption{Icons im Datatable}
+	\caption{Icons im DataTable}
 	\label{fig: Icons im Datatable}
 \end{figure}
-\newpage
+
 
 \subsection{Buttons}
 Buttons werden bei diesem Produkt ausschließlich genutzt, um Formulare abzusenden. Buttons befinden sich immer mittig unter einem Formular und  haben die Hintergrundfarbe \#1b8836. In Abbildung \ref{fig: Beispiel eines Buttons} \space ist ein Beispielbutton erschlich. 
 \begin{figure}[h]
 	\centering
-	\includegraphics[height=2cm,width=5cm]{images/BeispielButton}
+	\includegraphics[height=2cm,width=6cm]{images/BeispielButton}
 	\caption{Beispiel eines Buttons}
 	\label{fig: Beispiel eines Buttons}
 \end{figure}
@@ -1386,10 +1389,10 @@ Hier ist wichtig zu definieren, für was welches HTML Element verwendet wurde. <
 
 
 \subsection{Datenformate}
-Auf dem Produkt befindet sich eine Diashow, die Bilder des Projekts Micro Grid Lab der Best GmbH präsentiert. Alle diese Bilder haben das Dateiformat JPG. Eines der präsentierten Bilder ist im Dateiformat PNG. Alle verwendeten Icons sind als PNG auf dem Produkt eingebunden. Die Fotos der Sponsoren aus dem Footer sind gemischt im PNG und im JPG Format. Das Logo, wie bereits im Kapitel 2.6.5.6 erwähnt, ist im Format JPG. Hier rät das Projektteam jedoch dazu, eine Vektorgrafik mit dem Dateiformat SVG zu verwenden.
-
+Auf dem Produkt befindet sich eine Diashow, die Bilder des Projekts Micro Grid Lab der Best GmbH präsentiert. Alle diese Bilder haben das Dateiformat JPG. Eines der präsentierten Bilder ist im Dateiformat PNG. Alle verwendeten Icons sind als PNG auf dem Produkt eingebunden. Die Fotos der Sponsoren aus dem Footer sind gemischt im PNG und im JPG Format. Das Logo, wie bereits im Kapitel \ref{sec: Logo} erwähnt, ist im Format JPG. Hier rät das Projektteam jedoch dazu, eine Vektorgrafik mit dem Dateiformat SVG zu verwenden.
+\newpage
 \section{Webanwendung}
-Im Abschnitt Weboberfläche wird speziell auf das Front-End sowie das Back-End des Produktes eingegangen. Bei dem Punkt Back-End vor allem auf die Funktionen, die für die Benutzer-Interaktionen zuständig sind, und bei dem Punkt Front-End auf das Layout sowie das Design der Weboberfläche.
+Im Abschnitt Weboberfläche wird speziell auf das Front-End sowie das Back-End des Produkts eingegangen. Bei dem Punkt Back-End vor allem auf die Funktionen, die für die Benutzer-Interaktionen zuständig sind, und bei dem Punkt Front-End auf das Layout sowie das Design der Weboberfläche.
 
 
 \subsection{Back-End}
@@ -1397,7 +1400,7 @@ In diesem Abschnitt wird genauer auf den Ablauf des Codes im Back-End, der für 
 Für jedes Energiesystem oder jede Energietechnologie stehen die Funktionen Erstellen, Bearbeiten,Löschen, Lesen und Suchen zur Verfügung. In den folgenden Abschnitten wird genauer auf diese Funktionen eingegangen.
 
 
-\subsubsection{Energiesystem Erstellen}
+\subsubsection{Energiesystem erstellen}
 Für das Erstellen eines Energiesystems ist ein Mausklick auf der Karte notwendig. Daraufhin öffnet sich ein Pop-up Fenster, um die Kerndaten des Energiesystems einzugeben.
 Das Pop-up zum Erstellen eines Energiesystems ist in der \autoref{fig:ESerstellenPopup} ersichtlich.
 Beim Erstellen eines Energiesystems werden folgende Attribute in der Datenbank erfasst:
@@ -1420,7 +1423,7 @@ Automatisch ausgefüllte Attribute, welche nicht im Pop-up dargestellt werden:
 \begin{figure}[h]
 	\centering
 	\includegraphics[height=8cm,width=9cm]{images/ESerstellenPop}
-	\caption{Energiesystem Erstellen Pop-up}
+	\caption{Energiesystem erstellen Pop-up}
 	\label{fig:ESerstellenPopup}
 \end{figure}
 \newpage
@@ -1432,7 +1435,7 @@ Die folgende \autoref{fig:Eserstellendiagramm} zeigt den Ablauf, um ein Energies
 \begin{figure}[h]
 	\centering
 	\includegraphics[height=7cm,width=14cm]{images/ESerstellen}
-	\caption{Energiesystem Erstellen}
+	\caption{Energiesystem erstellen}
 	\label{fig:Eserstellendiagramm}
 \end{figure}
 
@@ -1440,7 +1443,7 @@ Die folgende \autoref{fig:Eserstellendiagramm} zeigt den Ablauf, um ein Energies
 
 
 
-\subsubsection{Energiesystem Bearbeiten}
+\subsubsection{Energiesystem bearbeiten}
 Mit dem Stift-Icon beim Energiesystem in der Liste ist es möglich, die Kerndaten eines Energiesystems zu bearbeiten. Die zu bearbeitenden Daten, welche einen weißen Hintergrund  aufweisen, lauten auf „Bezeichnung“, „Katastralgemeinde“ und „Postleitzahl“. Die Koordinaten sowie die User\_ID des Energiesystems bleiben konstant und sind nicht änderbar und nicht im Pop-up ersichtlich.
 Folgende weitere Attribute werden bei jedem Energiesystem automatisch berechnet, angezeigt und sind nicht bearbeitbar, sondern dienen nur als weitere Information über das ausgewählte Energiesystem. 
 \begin{itemize}
@@ -1456,13 +1459,13 @@ Folgende weitere Attribute werden bei jedem Energiesystem automatisch berechnet,
 	\item Ges-Speicher-Kapazität [kW/h]
 	\item Aktueller Netzbezug [kW]
 \end{itemize}
-Für genauere Informationen zu den einzelnen Attributen siehe Kapitel  \ref{sec:Verwendete Icons und deren Bedeutungen}
+Für genauere Informationen zu den einzelnen Attributen siehe Kapitel  \ref{sec:Verwendete Icons und deren Bedeutungen}.
 Mit dem Button „Mehr Details zu diesem Energiesystem“ ist es möglich, die weiteren Daten des Energiesystems ein- und auszuklappen. 
 Das Pop-up zum Bearbeiten eines Energiesystems ist in der \autoref{fig:ESbearbeitenPop} ersichtlich.
 \begin{figure}[h]
 	\centering
 	\includegraphics[height=9cm,width=9cm]{images/ESbearbeitenPop}
-	\caption{Energiesystem Bearbeiten Pop-up}
+	\caption{Energiesystem bearbeiten Pop-up}
 	\label{fig:ESbearbeitenPop}
 \end{figure}
 
@@ -1470,12 +1473,12 @@ Nachdem der Benutzer die Attribute des Energiesystems bearbeitet hat, werden die
 
 
 \newpage
-\subsubsection{Energiesystem Löschen}
+\subsubsection{Energiesystem löschen}
 Um ein Energiesystem zu löschen, benötigt man das Mülleimer-Icon, welches sich neben jedem Energiesystem in der Liste befindet, sofern der angemeldete Benutzer die erforderliche Berechtigung dazu hat. 
 Nachdem dieses Icon betätigt wurde, wird die Information, dass ein Energiesystem gelöscht wurde, an den Controller übermittelt. Dieser löscht anschließend mithilfe der ID des ausgewählten Energiesystems dieses aus der Datenbank und übergibt alle anderen Energiesysteme zurück auf die Weboberfläche, um die vorhandenen Energiesysteme auf der Karte zu platzieren sowie in der Liste anzuzeigen. 
  
  
-\subsubsection{Energietechnologie Erstellen}
+\subsubsection{Energietechnologie erstellen}
 Für das Erstellen einer Energietechnologie ist das Auswählen eines Energiesystems mit einem Doppelklick notwendig. Anschließend verwandelt sich der Cursor in das Energietechnologie-Icon, welches darauf hindeutet, dass jetzt das Hinzufügen einer Energietechnologie mittels eines Klicks auf der gewünschten Position auf der Karte möglich ist. Nach dem Klick auf der Karte öffnet sich ein Pop-up-Fenster, um die Kerndaten der Energietechnologie einzugeben. Dieses Pop-up ist in der \autoref{fig:EterstellenPop} ersichtlich. 
 
 
@@ -1498,7 +1501,7 @@ Automatisch ausgefüllt und nicht im Pop-up dargestellt:
 \begin{figure}[h]
 	\centering
 	\includegraphics[height=8cm,width=7cm]{images/ETerstellenPop}
-	\caption{Energietechnologie Erstellen Pop-up}
+	\caption{Energietechnologie erstellen Pop-up}
 	\label{fig:EterstellenPop}
 \end{figure}
 \newpage
@@ -1506,18 +1509,18 @@ Nachdem der Benutzer die Daten im Pop-up ausgefüllt hat, werden diese Informati
  \begin{figure}[h]
  	\centering
  	\includegraphics[height=7cm,width=14cm]{images/ETerstellen}
- 	\caption{Energietechnologie Erstellen}
+ 	\caption{Energietechnologie erstellen}
  	\label{fig:Eterstellendiagram}
  \end{figure}
 
 \newpage
-\subsubsection{Energietechnologie Bearbeiten}
+\subsubsection{Energietechnologie bearbeiten}
 Um eine Energietechnologie zu bearbeiten, muss zuerst ein Energiesystem mit einem Doppelklick ausgewählt werden. Anschließend befinden sich rechts in der Liste alle dazugehörigen Energietechnologien, welche man mit dem Stift-Icon bearbeiten kann. Nach dem Betätigen des Stift-Icons öffnet sich ein Pop-up-Fenster, um die Attribute zu bearbeiten. Dieses Pop-up-Fenster ist in der \autoref{fig:ETbearbeitenpop} ersichtlich.
 \newline
 \begin{figure}[h]
 	\centering
 	\includegraphics[height=11cm,width=8cm]{images/ETbearbeitenPop}
-	\caption{Energietechnologie Bearbeiten}
+	\caption{Energietechnologie bearbeiten}
 	\label{fig:ETbearbeitenpop}
 \end{figure}
 
@@ -1528,7 +1531,7 @@ Nachdem der Benutzer die Daten bearbeitet hat, werden diese über den Controller
 
 
 \newpage
-\subsubsection{Energietechnologie Löschen}
+\subsubsection{Energietechnologie löschen}
 Um eine Energietechnologie zu löschen, benötigt man das Mülleimer-Icon, welches sich in der Liste neben den Energietechnologien befindet, sofern ein Energiesystem von dem Benutzer ausgewählt wurde.
 Sobald der Benutzer dieses Icon betätigt, wird mithilfe der ID der ausgewählten Energietechnologie dem Controller mitgeteilt, dass diese Energietechnologie gelöscht werden soll. Daraufhin löscht der Controller diese Energietechnologie aus der Datenbank und übergibt anschließend alle anderen vorhandenen Energietechnologie-Daten an die Weboberfläche, um dort die Marker zu platzieren sowie den Inhalt der Liste zu aktualisieren.
 
@@ -1643,7 +1646,7 @@ Die Homeseite ist die erste Seite, die ein Benutzer zu Gesicht bekommt, wenn er 
 \end{figure}
 \newpage
 \subsubsection{Energiesysteme}
-Die Energiesystemeseite ist die Seite, wo die Hauptfunktion des Produkts verwendet werden kann. Auf dieser wird die Verwaltung der Energiesysteme und Energietechnologien mithilfe einer Map visuell dargestellt. Diese Seite besteht aus einer Google Maps Karte, welche sich auf der linken Seite der Website befindet. Ebenso einem Datatable auf der rechten Hälfte der Website. Hier ein Bild der eben beschriebenen Seite:
+Die Energiesystemeseite ist die Seite, wo die Hauptfunktion des Produkts verwendet werden kann. Auf dieser wird die Verwaltung der Energiesysteme und Energietechnologien mithilfe einer Map visuell dargestellt. Diese Seite besteht aus einer Google Maps Karte, welche sich auf der linken Seite der Website befindet. Ebenso einem DataTable auf der rechten Hälfte der Website. Hier ein Bild der eben beschriebenen Seite:
 \begin{figure}[h]
 	\centering
 	\includegraphics[height=6cm,width=14cm]{images/EnergiesystemSeite}
@@ -1701,7 +1704,7 @@ Möchte sich ein Benutzer beim Produkt anmelden, kann er dies beim Loginfeld, we
 \end{figure}
 
 \subsection{Registrierung}
-Um neue Benutzer registrieren zu können, gibt es eine eigene Registrierungsseite. Diese Seite, ersichtlich in Abbildung xy Registrierungsseite, besteht aus einem Formular und einem Datatable und kann nur von Benutzern mit der Rolle Admin aufgerufen werden. Auf dem Datatable werden alle vorhandenen Benutzer angezeigt. Des Weiteren bietet er die Möglichkeit, vorhandene Benutzer zu löschen. Das Formular ermöglicht es, Benutzer mit folgenden Werten anzulegen:
+Um neue Benutzer registrieren zu können, gibt es eine eigene Registrierungsseite. Diese Seite, ersichtlich in Abbildung xy Registrierungsseite, besteht aus einem Formular und einem DataTable und kann nur von Benutzern mit der Rolle Admin aufgerufen werden. Auf dem DataTable werden alle vorhandenen Benutzer angezeigt. Des Weiteren bietet er die Möglichkeit, vorhandene Benutzer zu löschen. Das Formular ermöglicht es, Benutzer mit folgenden Werten anzulegen:
 \begin{itemize}
 	\item Name  
 	\item E-Mail-Adresse
@@ -1820,7 +1823,7 @@ In der \autoref{fig:StandardTable} ist ein DataTable mit den Standardeinstellung
 \subsection{Individueller DataTable}
 Aufbauend auf den Standard-DataTable wurde der individuelle DataTable basierend auf den Anforderungen des Auftraggebers erstellt. Dabei ist die wichtigste Anforderung, dass pro Seite maximal 5 Datensätze dargestellt werden.
 Zuerst wurde die Sortierfunktion bei den Spalten drei, vier und fünf deaktiviert, da sich an diesen Stellen die Icons befinden und somit eine Sortierfunktion keinen Sinn macht. Die Auswahl für die Anzahl der Datensätze pro Seite wurde deaktiviert, da diese konstant auf den Wert fünf festgelegt wurde. Zum Schluss wurde die Sprache des Tables auf Deutsch geändert.
-In der \autoref{fig:indiTable} ist der individuelle Datatable abgebildet.
+In der \autoref{fig:indiTable} ist der individuelle DataTable abgebildet.
 \begin{figure}[h]
 	\centering
 	\includegraphics[height=5cm,width=10cm]{images/DataTableIndividuell}
@@ -1898,7 +1901,7 @@ Bei den einzelnen Energietechnologien, die dargestellt werden, wird zuerst das e
 \section{Grafana}
 In diesem Kapitel wird das automatische Erstellen von Dashboards via der Grafana HTTP API beschrieben. 
 
-\subsection{Automatisches Erstellen der Dashboards}
+\subsection{Automatisches Erstellen der Dashboards} \label{sec: Dashboard}
 Sobald in der Benutzeroberfläche ein Energiesystem erstellt wird, werden die Daten an die “store” Methode im “EnSysController” weitergereicht in welcher der API Aufruf zum Erstellen eines Dashboards getätigt wird. Hierzu werden die Daten welche vom Benutzer eingegeben wurden in das “json” Grundgerüst eingesetzt, welches dann an die API gesendet wird. Grafana setzt auf eine Bereichsverwaltung mit sogenannten “Organisations”, das Produkt erstellt die Dashboards und in diesen enthaltenen Panels in der sogenannten “annonymus organisation”. Diese Organisation ist von jedem einsehbar und erfordert keine Benutzerauthentifizierung. 
 \begin{figure}[h]
 	\centering
@@ -1908,7 +1911,7 @@ Sobald in der Benutzeroberfläche ein Energiesystem erstellt wird, werden die Da
 \end{figure}
 
 
-\subsection{Automatisches Erstellen der Panels}
+\subsection{Automatisches Erstellen der Panels}\label{sec: Panels}
 Wird in einem Energiesystem eine Energietechnologie erstellt, so werden die Daten wiederum an die Methode “store” im “EnTechController” übergeben. In dieser Methode werden alle in einem Dashboard bereits vorhandenen Panels per API Aufruf ausgelesen und in einem Array gespeichert, wird nun ein neues Panel erstellt, so wird dieses dem Array hinzugefügt und mit einem API Aufruf an Grafana gesendet. Weiters wird beim Erstellen des Panels mit hilfe einer “switch” Anweisung unterschieden um welchen Typ von Energietechnologie es sich handelt, um dann die richtige SQL Abfrage zu formulieren welche die Daten aus der Datenbank in das Panel liefert. 
 \begin{figure}[h]
 	\centering
@@ -1919,13 +1922,14 @@ Wird in einem Energiesystem eine Energietechnologie erstellt, so werden die Date
 
 
 \subsection{Energietechnologien Statistiken anzeigen}
-Um nun in der Benutzeroberfläche des Produktes, die mit den API Aufrufen erstellten Grafana Statistiken anzeigen zu können ist, auf der Benutzeroberfläche ein Statistik Icon Vorhanden. Wird dieses vom Benutzer ausgewählt, so wird eine JavaScript Funktion welche die ID der Energietechnologie als Parameter hat ausgeführt. In dieser JavaScript Funktion wird ein Pop-Up Fenster aufgerufen sowie der “src” Parameter eines HTML “iframe” Elementes gesetzt. Dieses “iframe” Element wird nun in dem Pop-Up Fenster angezeigt.
+Um nun in der Benutzeroberfläche des Produkts, die mit den API Aufrufen erstellten Grafana Statistiken anzeigen zu können ist, auf der Benutzeroberfläche ein Statistik Icon Vorhanden. Wird dieses vom Benutzer ausgewählt, so wird eine JavaScript Funktion welche die ID der Energietechnologie als Parameter hat ausgeführt. In dieser JavaScript Funktion wird ein Pop-Up Fenster aufgerufen sowie der “src” Parameter eines HTML “iframe” Elementes gesetzt. Dieses “iframe” Element wird nun in dem Pop-Up Fenster angezeigt.
 \begin{figure}[h]
 	\centering
-	\includegraphics[height=10cm,width=14cm]{images/Statistikanzeigen}
+	\includegraphics[height=8cm,width=14cm]{images/Statistikanzeigen}
 	\caption{Statistik anzeigen}
 	\label{fig:Statistikanzeigen }
 \end{figure} 
+\newpage
 
 
 
@@ -1956,23 +1960,32 @@ Um eine eigene Map einzurichten, muss zuerst ein Map Design erstellt werden, wel
 
 
 \chapter{Resümee und Ausblick}
-Die Diplomarbeit ist sehr gut verlaufen, jedoch würde das Projektteam andere Ansätze wählen bei einem Projekt gleicher Art. Die Kommunikation mit dem Auftraggeber hat sehr gut funktioniert, jedoch sind bei den laufenden Meetings immer wieder neue Änderungsvorschläge vonseiten des Auftraggebers gekommen. Dadurch entstanden für das Projektteam immer wieder neue Herausforderungen welche zusätzlich zum definierten Projektziel umgesetzt werden sollten. Am Start der Entwicklung hatte das Projektteam mehrere Komplikationen bei der Verwendung  von Git, da dabei immer wieder unerklärliche Fehler aufgetreten sind. Diese Fehler konnten jedoch mit der Zeit vom Projektteam gelöst werden womit eine reibungslose Zusammenarbeit möglich wurde.Das Projektteam wird sich nach Abschluss der Diplomarbeit darum kümmern, die letzten Änderungsvorschläge des Auftraggebers umzusetzen. Anschließend ist das Projektteam nicht länger für das Produkt und dessen Verwaltung zuständig.
+Die Diplomarbeit ist reibungslos verlaufen, jedoch würde das Projektteam andere Ansätze wählen bei einem Projekt gleicher Art. Die Kommunikation mit dem Auftraggeber hat sehr gut funktioniert, jedoch sind bei den laufenden Meetings immer wieder neue Änderungsvorschläge vonseiten des Auftraggebers gekommen. Dadurch entstanden für das Projektteam immer wieder neue Herausforderungen, welche zusätzlich zum definierten Projektziel umgesetzt werden sollten. Am Start der Entwicklung hatte das Projektteam mehrere Komplikationen bei der Verwendung von Git, da dabei immer wieder unerklärliche Fehler aufgetreten sind. Diese Fehler konnten jedoch mit der Zeit vom Projektteam gelöst werden, womit eine reibungslose Zusammenarbeit möglich wurde. Das Projektteam wird sich nach Abschluss der Diplomarbeit darum kümmern, die letzten Änderungsvorschläge des Auftraggebers umzusetzen. Anschließend ist das Projektteam nicht länger für das Produkt und dessen Verwaltung zuständig.
 
 
 \chapter{Quellen und Literatur}
-Text
 
+\chapter{Verzeichnisse}
 \listoffigures
 
 \listoftables
 
-\chapter{Codeverzeichnis}
-Text
+\listof{lstlisting}{Codeverzeichnis}
 
 
 \chapter{Begleitprotokoll gem. § 9 Abs. 2 PrO-BHS}
-Das Begleitprotokoll repräsentiert, welches Teammitglied woran und wie lange gearbeitet hat.
+Das Begleitprotokoll repräsentiert, welches Teammitglied woran und wie lange gearbeitet hat. Für das Verfassen der Begleitprotokolle wurden folgende Abkürzungen verwendet: 
+\begin{itemize}
+	\item Besprechung(D, A, Bu)  
+	\subitem D = Diplomant
+	\subitem A = Auftraggeber
+	\subitem Bu = Dipl.-Ing. Johann Burgstaller
+	\item SP = Sitzungsprotokoll 
+	
+	
+\end{itemize}
 
+\newpage
 \section{Begleitprotokoll David Pöchacker}
 \begin{table}[h]
 	\begin{tabular}{|l|l|l|}
@@ -2278,166 +2291,142 @@ Das Begleitprotokoll repräsentiert, welches Teammitglied woran und wie lange ge
 \newpage
 \section{Begleitprotokoll Marcel Entner}
 \begin{table}[h]
-	\begin{tabular}{|l|lll|}
+	\begin{tabular}{|l|l|l|}
 		\hline
-		KW/Jahr &
-		\multicolumn{1}{l|}{Tätigkeit} &
-		\multicolumn{2}{l|}{Aufwand (h)} \\ \hline
-		13/21 &
-		\multicolumn{2}{l|}{Besprechung mit dem Auftraggeber, Besprechung mit Professor Burgstaller, } &
-		3 \\  & Erstellen des Besprechungsprotokolls \\ \hline
-		17/21 &
-		\multicolumn{2}{l|}{Skizze und Übersicht der Aufgabenstellung verfasst} &
-		1 \\ \hline
-		18/21 &
-		\multicolumn{2}{l|}{Auftragsgeberbesprechung} &
-		1 \\ \hline
-		20/21 &
-		\multicolumn{2}{l|}{Besprechung mit Professor Burgstaller, Pflichtenheft erstellen,} &
-		4,2 \\ & Auftragsgeberbesprechung, Besprechung IT-Center Ybbs\\ \hline
-		22/21 &
-		\multicolumn{2}{l|}{Besprechung mit Auftraggeber und Johann Burgstaller, } &
-		2 \\&Verfassen des Besprechungsprotokolls\\ \hline
-		25/21 &
-		\multicolumn{2}{l|}{Google Maps vs Open Street Map Dokument verfasst, } &
-		9,1 \\ &Google Api getestet und Developer Account eingerichtet\\ \hline
-		27/21 &
-		\multicolumn{2}{l|}{Datenbankstruktur anschauen und Meilensteinplan verfassen} &
-		3 \\ \hline
-		28/21 &
-		\multicolumn{2}{l|}{Besprechung mit Johann Burgstaller bezüglich Projektmanagement u} &
-		1 \\ &nd weitere Vorgehensweise in der Diplomarbeit\\ \hline
-		29/21 &
-		\multicolumn{2}{l|}{Verfassen des Projekthandbuchs und Überarbeitung des Meilensteinplans, } &
-		5 \\ & Erstellen der MS Project Datei und Definition von Arbeitspaketen, \\ &MS-Project Datei erweitert\\\hline
-		30/21 &
-		\multicolumn{2}{l|}{Besprechung mit Herrn Professor Burgstaller} &
-		2 \\ \hline
-		31/21 &
-		\multicolumn{2}{l|}{Besprechung mit Best über das Projekt Management} &
-		0,5 \\ \hline
-		32/21 &
-		\multicolumn{2}{l|}{Laravel Installation, Video Get Started Laravel anschauen} &
-		5 \\ \hline
-		33/21 &
-		\multicolumn{2}{l|}{Video Get Started Laravel anschauen} &
-		3,1 \\ \hline
-		34/21 &
-		\multicolumn{2}{l|}{Erste Laravel Website erstellt routen getestet und Datenbank in Laravel angelegt} &
-		1 \\ \hline
-		35/21 &
-		\multicolumn{2}{l|}{Edit und Delete Funktion hinzufügen,} &
-		11 \\ &Maps Einbindung und User Authentifikation testen,   \\ & Laravel Projekt Fehler beheben\\&Besprechung mit Johann Burgstaller,\\\hline
-		36/21 &
-		\multicolumn{2}{l|}{Diplomarbeitsdatenbanksantrag stellen, Diplomarbeitskapitel  } &
-		3 \\&Grundlagen und Methoden anfangen zu schreiben,\\ 
-		&Startpräsentation erstellen und proben,\\ & Linux VM aufsetzen, um zu testen, ob das Projekt mit Linux konvertibel ist.\\\hline
-		37/21 &
-		\multicolumn{2}{l|}{Google Maps vs Open Street Map verfassen, Google Api Testung,} &
-		6,5 \\ & Einrichtung Google Cloud Account\\ \hline
-		38/21 &
-		\multicolumn{2}{l|}{Besprechung Best GmbH über die Design Vorschläge, } &
-		4,3 \\ &Finalen Design-Vorschlag verfassen,\\& Finaler Vorschlag überarbeitet und User Manuell angefertigt\\\hline
-		39/21 &
-		\multicolumn{2}{l|}{Besprechung mit Auftraggeber} &
-		1,6 \\ \hline
-		40/21 &
-		\multicolumn{2}{l|}{Besprechung mit Stefan Aigenbauer} &
-		0,5 \\ \hline
+		\textbf{KW/JAHR} &     \textbf{TÄTIGKEIT}  & 	\textbf{AUFWAND (h)}    \\ \hline
 		
-	
+		13/21   & Erste Besprechung (D, A, Bu) & 3 	\\ \hline
+		17/21   & Skizze und Übersicht der Aufgabenstellung verfasst  & 1 	\\ \hline
+		18/21   & Besprechung (D, A)  & 1 	\\ \hline
+		20/21   & Besprechung (D, A, Bu), Pflichtenheft erstellt & 5,5 	\\ \hline
+		22/21   & Besprechung (D, A, Bu), SP verfasst & 2,5 	\\ \hline
+		25/21   & Google Maps vs Open Street Map Dokument verfasst,  & 9.1  \\
+				& Google Api getestet und Developer Account eingerichtet. & \\
+				& Besprechung (D, A, Bu), SP erstellt & \\ \hline	
+		27/21   & Datenbankstruktur anschauen und Meilensteinplan verfassen  & 3 \\
+		& Besprechung (D, A, Bu), SP verfasst & 	\\ \hline		
+		28/21   & Besprechung (D, Bu) über den Meilensteinplan, Diplomarbeitsantrag erstellt  & 3 \\ \hline		
+		29/21   & Projekthandbuch, MS Project Datei, Controlling Sheet erstellt & 7,25 	\\ \hline
+		30/21   & Besprechung (D, Bu) & 2 	\\ \hline
+		31/21   & Besprechung (D, A)& 1	\\ \hline
+		32/21   & Laravel Installation und Recherche,  & 5	\\ 
+				& Video Get Started Laravel ansehen &\\ \hline
+		33/21   &  Video Get Started Laravel ansehen & 3	\\ \hline
+		34/21   & Erste Laravel Website erstellt routen getestet & 4	\\ 
+				& und Datenbank in Laravel angelegt &\\\hline
+		35/21   & Edit und Delete Funktion hinzufügen  & 12 \\ 
+				& Besprechung (D, Bu),&	\\ 
+				& Maps Einbindung und User Authentifikation testen&\\ \hline
+		36/21   & Diplomarbeitsdatenbanksantrag stellen & 4\\
+				& Diplomarbeitskapitel Grundlagen und Methoden anfangen zu schreiben&\\
+				& Startpräsentation erstellen und proben &\\
+				& Linux VM aufsetzen, um zu testen,&\\
+				& ob das Projekt mit Linux konvertibel ist.&\\ \hline
+		37/21   & Dokument Google Maps vs Open Street Map verfassen, & 7 \\
+				& Google Api Testung, & \\
+				& Einrichtung eines Google Cloud Account &\\ \hline
+		38/21   & Besprechung (D, A, Bu) bezüglich Design-Vorschläge & 4,3 \\
+				& Finaler Vorschlag überarbeitet und User Manuell angefertigt& \\ \hline
+		39/21	&	Besprechung (D, A, Bu) & 2 \\ \hline
+		40/21	&	Besprechung (D, A) & 1,5 \\ \hline
+		
+				
+			
 	\end{tabular}
 \end{table}
-\newpage
-\begin{table}[h]
-	\begin{tabular}{|l|lll|}
-		\hline
-		KW/Jahr &
-		\multicolumn{1}{l|}{Tätigkeit} &
-		\multicolumn{2}{l|}{Aufwand (h)} \\ \hline
-		41/21 &
-		\multicolumn{2}{l|}{Aufsetzen des Diplomarbeit Programms in Laravel,} &
-		3,3 \\ &Einrichtung von Git und Testung,\\&Git am Laptop aufsetzen Projekt pushen und Git ignore Datei anpassen,\\&Laravel Layout erstellt und Bootstrap einbinden\\\hline
-		43/21 &
-		\multicolumn{2}{l|}{erstellen der ersten Seite(Homepage) mithilfe von Bootstrap} &
-		9,8 \\ &Überarbeitung der Homepage und Einrichtung der Navigierung zwischen den Seite, \\e&Seiten Layouts erstellen und auf allen Seiten anwenden ,\\&Routen und Dateinamen ändern für das bessere Verständnis,\\& Header  und Footer  einbinden und bearbeiten,\\&Diashow Icons anpassen, erstellen des Impressums\\\hline
-		44/21 &
-		\multicolumn{2}{l|}{Teambesprechung über aktuellen Stand, } &
-		1,5 \\&Video zu Google Maps Api + Laravel anschauen\\ \hline
-		45/21 &
-		\multicolumn{2}{l|}{Video zu Google Maps Api + Einbindung, } &
-		5,1 \\ &der dazugehörigen Pakete und Einbindung der Funktionen,\\&  Dokument Google Maps API erstellt und an Johann Burgstaller weiterleiten\\&Open Street Map Api Nachforschung (Leafelet)\\&Google Cloud Registrierung und Einbindung der Karte\\\hline
-		46/21 &
-		\multicolumn{2}{l|}{Liste aktualisieren und    } &
-		6 \\ &Icons auf die richtige Größe anpassen,\\&Pop-up neu gestaltet,\\&switch eingebunden und formatiert,\\&Google Maps Geo Locations auslesen und in die Edit übergeben\\\hline
-		47/21 &
-		\multicolumn{2}{l|}{JavaScript Funktionen der Google Map einbinden, } &
-		4 \\&Besprechung mit dem Auftraggeber über den aktuellen Stand\\ \hline
-		48/21 &
-		\multicolumn{2}{l|}{Grafana lokal installiert und } &
-		3 \\&Einbindung auf der Website getestet\\ \hline
-		49/21 &
-		\multicolumn{2}{l|}{Map Funktionen erweitert,  } &
-		3,2 \\ & Wenn ein Energiesystem abgewählt wird,\\&keine Energie Technologien mehr anzeigen,\\&Suchfeld einfügen\\\hline
-		50/21 &
-		\multicolumn{2}{l|}{Galerie Funktionen schreiben, bzw. Et erstellen Modal anpassen} &
-		6,5 \\ \hline
-		51/21 &
-		\multicolumn{2}{l|}{Grafana HTTP Api nachforschen,   } &
-		3,5 \\ &Besprechung über Grafana\\&Grafana HTML Api Testung\\\hline
-		52/21 &
-		\multicolumn{2}{l|}{Inhaltsverzeichnis erstellen, Wettbewerbsanträge ausfüllen, } &
-		3,4 \\&Inhaltsverzeichnis überarbeiten und Bewerbungstext für Wettbewerb verfassen\\ \hline
-		
-	\end{tabular}
-\end{table}
-\newpage
-\begin{table}[h]
-	\caption{}
-	\label{tab:my-table}
-	\begin{tabular}{|l|lll|}
-		\hline
-		KW/Jahr &
-		\multicolumn{1}{l|}{Tätigkeit} &
-		\multicolumn{2}{l|}{Aufwand (h)} \\ \hline
 
-		1/22 &
-		\multicolumn{2}{l|}{Finales Design in Adobe xd erstellen,   } &
-		8 \\&Verfassen des Dokuments Design Handbuch,\\&Inhaltsverzeichnis mit Johann Burgstaller überarbeitet,\\ &Telefonat mit EAS, route /home nur für Admin freigeben,\\& Routen /register und /login nur für Admin erlauben,\\\hline
-		2/22 &
-		\multicolumn{2}{l|}{Routen register wieder überarbeitet, Besprechung mit dem Auftraggeber} &
-		1,7 \\ \hline
-		3/22 &
-		\multicolumn{2}{l|}{Video Laravel Register System  } &
-		6 \\& Registerseite testen ,\\ & Komplette Register Seite mit allen Funktionen\\&anschauen, und anlegen des Datatables der Liste mit\\&allen aktiven Benutzern + lösch Funktion zu jedem Benutzer\\\hline
-		4/22 &
-		\multicolumn{2}{l|}{Registerseite überarbeitet und } &
-		4 \\ & von Admin und Mitarbeiter beim Anlegen hinzugefügt und getestet,\\&Unterscheidung Erstellen des User Controllers\\\hline
-		5/22 &
-		\multicolumn{2}{l|}{Layout des Datatables überarbeitet, } &
-		3 \\ &Besprechung mit dem Auftraggeber + Besprechung mit Team\\\hline
-		6/22 &
-		\multicolumn{2}{l|}{Verfassen des Dokuments Google Maps Apis, Passwort vergessen Funktion, } &
-		4 \\ &welche eine E-Mail verschickt konfiguriert und getestet\\\hline
-		7/22 &
-		\multicolumn{2}{l|}{Alle css Farben anpassen auf die gleiche Farbe   } &
-		9 \\ &und alle Texte auf die gleiche Schriftart,\\&Verfassen des Design Handbuchs,\\&Überprüfung, ob Benutzer bei Registerseite in der Datenbank vorhanden ist\\\hline
-		8/22 &
-		\multicolumn{2}{l|}{Verfassen der Diplomarbeit} &
-		34 \\ \hline
-		 SUMME &
-		\multicolumn{2}{l|}{} &
-		184 \\ \hline
+\newpage
+\begin{table}[h]
+		\begin{tabular}{|l|l|l|}
+		\hline
+		\textbf{KW/JAHR} &     \textbf{TÄTIGKEIT}  & 	\textbf{AUFWAND (h)}    \\ \hline
+		
+	41/21 	& Aufsetzen des Diplomarbeit Programms in Laravel & 5 \\
+			& Einrichtung von Git und Testung & \\
+			& Git am Laptop aufsetzen Projekt pushen und Git ignore Datei anpassen & \\
+			&  Laravel Layout erstellt und Bootstrap einbinden & \\ \hline
+	43/21  	& erstellen der ersten Seite(Homepage) mithilfe von Bootstrap & 10\\
+			& Überarbeitung der Homepage und Einrichtung der Navigierung  &\\
+			& Seiten Layouts erstellen und auf allen Seiten anwenden &\\
+			& Routen und Dateinamen ändern für das bessere Verständnis &\\
+			& Diashow Icons anpassen &\\
+			& Header  und Footer  einbinden und bearbeite &\\
+			&erstellen des Impressums &\\ \hline
+	44/21  	& Video zu Google Maps Api + Laravel anschauen & 1,5 \\
+			& Besprechung (D, A, Bu) & \\ \hline
+	45/21   &Video zu Google Maps Api + Installation der dazugehörigen Pakete & 6\\
+			&Dokument Google Maps API erstellt& \\
+			&Open Street Map Api Nachforschung&\\
+			&Google Cloud Registrierung und Einbindung der Karte&\\ \hline
+	46/21   &Liste aktualisieren und Icons auf die richtige Größe anpassen & 6\\
+			&Pop-up neu gestaltet, switch eingebunden und formatiert &\\
+			&Google Maps Geo Locations auslesen und in die Edit übergeben&\\ \hline
+	47/21   & Besprechung (D, A, Bu)& 4\\
+			&JavaScript Funktionen der Google Map einbinden&\\ \hline
+	48/21	&Grafana lokal installiert und Einbindung auf der Website getestet& 3\\ \hline
+	49/21 	&Map Funktionen erweitert & 3,5 \\
+			&wenn ein Energiesystem abgewählt wird,  &\\
+			&keine Energie Technologien mehr anzeigen&\\
+			&Suchfeld einfügen&\\ \hline
+	50/21 	&Besprechung (D, A, Bu)& 7 \\
+			&Galerie Funktionen schreiben, bzw. Et erstellen Modal anpassen &\\ \hline
+	51/21 	&Besprechung (D, A, Bu) & 4 \\
+			&Grafana HTTP Api nachforschen& \\
+			&Grafana HTML Api Testung & \\ \hline
+	52/21	&Inhaltsverzeichnis erstellen, Wettbewerbsanträge ausfüllen & 4 \\
+			&Inhaltsverzeichnis überarbeiten und Bewerbungstext für Wettbewerb verfassen&\\ \hline
+	1/22	&Finales Design in Adobe xd erstellen& 9 \\
+			&Verfassen des Dokuments Design Handbuch &\\
+			&  Inhaltsverzeichnis mit Johann Burgstaller überarbeitet& \\
+			&Telefonat mit EAS, route /home nur für Admin freigeben &\\
+			& Besprechnung(D, A, Bu) &\\
+			&Routen /register und /login nur für Admin erlauben&\\ \hline
+			
+	\end{tabular}
+\end{table}
+\newpage
+\begin{table}[h]
+	\begin{tabular}{|l|l|l|}
+		\hline
+		\textbf{KW/JAHR} &     \textbf{TÄTIGKEIT}  & 	\textbf{AUFWAND (h)}    \\ \hline
+		
+		2/22 & Routen register wieder überarbeitet & 2 \\
+			 & Besprechung (D, A, Bu)&\\ \hline
+		3/22 & Video Laravel Register System anschauen & 6\\
+			 & Registerseite testen (Fehler beim Erstellen des Benutzers) &\\
+			 &Komplette Register Seite mit allen Funktionen und anlegen des DataTables &\\
+			 &allen aktiven Benutzern + lösch Funktion zu jedem Benutze&\\ \hline
+		4/22 &Registerseite überarbeitet & 4\\
+			 &Unterscheidung von Admin und Mitarbeiter beim Anlegen &\\
+			 &Erstellen des User Controllers&\\ \hline
+		5/22 &Besprechnung (D, A, Bu)& 3\\
+			 &Layout des DataTables überarbeitet& \\ \hline
+		6/22 & Verfassen des Dokuments Google Maps Apis& 4\\
+			 &Passwort vergessen Funktion &\\
+			 &welche eine E-Mail verschickt konfiguriert und getestet&\\ \hline
+		7/22 &Alle css Farben anpassen auf die gleiche Farbe & 9\\
+			 & und alle Texte auf die gleiche Schriftart &\\
+		8/22 & Verfassen der Diplomarbeit & 9\\
+			 &Besprechung (D, A, Bu)& 9\\ \hline
+		9/22 &Besprechung (D, A, Bu) & 9\\ 
+			 &Verfassen der Diplomarbeit&\\ \hline
+		10/22&Verfassen der Diplomarbeit& 9\\ \hline
+		11/22&Verfassen der Diplomarbeit& 9\\ \hline
+		
+		
+		
+			 
+		
 	\end{tabular}
 \end{table}
 
 
 
 \chapter{Anhang}
-Text
+Im Anhang befindet sich eine Auflistung der Verfasser der einzelnen Kapiteln sowie die vom Projektteam verwendete Software. Ein weiteres Element des Anhangs ist die Projektplanung.
 
 \section{Verfasser der Kapitel}
-Text
+In den nachfolgenden Kapiteln wird auf die Verfasser der einzelnen Kapitel eingegangen.
 \subsection{David Pöchacker}
 Kurzfassung der Diplomarbeit / Abstract \\
 Danksagung \\
@@ -2496,27 +2485,27 @@ Im folgenden Abschnitt wird die bei dieser Diplomarbeit verwendete Software prä
 
 
 \subsection{Visual Studio Code}
-Visual Studio Code ist ein von Microsoft entwickelter Quelltext Editor. Dieser Editor bietet verschiedene Programmierhilfen wie Einfärbungen oder Autovervollständigungen. Dieser Editor unterstützt standardmäßig sehr viele Programmiersprachen, jedoch können jederzeit weiter Sprachen mittels Add-ons dazu installiert werden, um das Programmieren für den Anwender zu erleichtern. Die von diesem Projektteam verwendeten Sprachen wie HTML, CSS, PHP und JavaScript werden alle von diesem Editor standardmäßig unterstützt. 
+Visual Studio Code ist ein von Microsoft entwickelter Quelltext Editor. Dieser Editor bietet verschiedene Programmierhilfen wie Einfärbungen oder Autovervollständigungen. Dieser Editor unterstützt standardmäßig sehr viele Programmiersprachen, jedoch können jederzeit weitere Sprachen mittels Add-ons dazu installiert werden, um das Programmieren für den Anwender zu erleichtern. Die von diesem Projektteam verwendeten Sprachen wie HTML, CSS, PHP und JavaScript werden alle von diesem Editor standardmäßig unterstützt. 
 
 
 \subsection{Apache WebServer}
-Bei dem Apache Webserver handelt es sich um eine quelloffenes Projekt welches im Jahr 1995 erschienen ist. Aktuell wird der Apache Webserver in der version 2.4 Angeboten.
+Bei dem Apache Webserver handelt es sich um eine quelloffenes Projekt, welches im Jahr 1995 erschienen ist. Aktuell wird der Apache Webserver in der Version 2.4 angeboten.
 \subsection{Composer}
-Composer ist ein Paketmanager für PHP. Composer wird über die Kommandozeile ausgeführt und installiert zugehörige Abhängigkeiten eines PHP-Programmes. Informationen über Pakete, die mit Composer installiert werden können, sind auf der Website Packagist auffindbar. Das Projektteam hat dieses Programm dafür verwendet, um nach dem Git Pull, wie im Kapitel 3.10.5 beschrieben, alle neuen Pakete zu installieren und um Laravel generell zu downloaden.
+Composer ist ein Paketmanager für PHP. Composer wird über die Kommandozeile ausgeführt und installiert zugehörige Abhängigkeiten eines PHP-Programmes. Informationen über Pakete, die mit Composer installiert werden können, sind auf der Website Packagist auffindbar. Das Projektteam hat dieses Programm dafür verwendet, um nach dem Git Pull, wie in \ref{sec: Git} beschrieben, alle neuen Pakete zu installieren und um Laravel generell zu downloaden.
 \subsection{Windows Eingabeaufforderung (CMD)}
 Das CMD (“Craniomandibuläre Dysfunktion“) auch Windows-Eingabeaufforderung genannt, wurde vom Projektteam hauptsächlich verwendet, um die Befehle aus Kapitel \ref{sec Laravel Befehle} auszuführen. CMD ist der Kommandozeileninterpreter von Microsoft Windows und wird gebraucht, um Text Befehle in dem System auszuführen. 
 \subsection{Github VCS und Github Desktop GUI}
-Bei Github handelt es sich um einen sogenannten “Version Control Service” welcher seit 2008 auf dem Mark ist und seit 2016 zu Microsoft gehört. Github Desktop ist die Implementation einer GUI für github und ist für Windows Mac und Linux erhältlich
+Bei Github handelt es sich um einen sogenannten “Version Control Service” welcher, seit 2008 auf dem Mark ist und seit 2016 zu Microsoft gehört. Github Desktop ist die Implementation einer GUI für github und ist für Windows Mac und Linux erhältlich.
 
 \newpage
 \subsection{ phpMyAdmin}
-Bei phpMyAdmin handelt es sich um eine quelloffene Implementierung eines Grafischen Editors für MySql und deren Fork MariaDB. Mit phpmyadmin ist es möglich komplette Datenbank Systeme zu administriere, es ist dabei nicht erforderlich manuel SQL Abfragen zu schreiben, dies kann alles über eine Grafische Oberfläche erfolgen.  
+Bei phpMyAdmin handelt es sich um eine quelloffene Implementierung eines Grafischen Editors für MySql und deren Fork MariaDB. Mit phpmyadmin ist es möglich, komplette Datenbank Systeme zu administrieren. Es ist dabei nicht erforderlich, manuel SQL Abfragen zu schreiben, dies kann alles über eine grafische Oberfläche erfolgen.  
 \subsection{Adobe XD}
 Adobe XD ist eine von Adobe Systems entwickelte Grafik-Software zum Erstellen von grafischen Benutzeroberflächen für Web-Anwendungen. Verwendbar ist dieses Tool auf mehreren Betriebssystemen wie Windows, MacOS oder Linux. Diese Software wurde dem Projektteam von der Schule bereitgestellt, da Adobe-Programme nicht kostenfrei sind. Die erstellten Design-Vorschläge für die Weboberfläche wurden mit dieser Software erstellt. 
 
 
 \subsection{Adobe Photoshop}
-Adobe Photoshop ist ein von Adobe Inc. entwickeltes Bildbearbeitungsprogramm, welches bereits weltweit sehr verbreitet und beliebt ist. Dieses Programm ist im Jahre 1990 erschienen und ist nicht lizenzfrei, aufgrund dessen wurde uns dieses Programm ebenso von der Schule zur Verfügung gestellt. Mit dieser Software wurden alle Bilder auf der Weboberfläche auf die passende Größe skaliert und bearbeitet. 
+Adobe Photoshop ist ein von Adobe Inc. entwickeltes Bildbearbeitungsprogramm, welches bereits weltweit sehr verbreitet und beliebt ist. Dieses Programm ist im Jahre 1990 erschienen und ist nicht lizenzfrei. Aufgrund dessen wurde dieses Programm dem Projektteam ebenso von der Schule zur Verfügung gestellt. Mit dieser Software wurden alle Bilder auf der Weboberfläche auf die passende Größe skaliert und bearbeitet. 
 
 \subsection{LaTex}
 LaTex wird vom Projektteam zum Verfassen der Diplomarbeit benutzt. Es vereinfacht mit Makros das Schreiben im Textsystem Tex. Es hat den Vorteil, dass viele Layout Strukturen bereits vorkonfiguriert sind und so jedes in LaTex verfasste Dokument ähnlich aussieht. Latex wird vorrangig auf Universitäten und Fachhochschulen verwendet.
@@ -2528,21 +2517,21 @@ In diesem Kapitel wird näher auf das Projektmanagement eingegangen.
 
 
 \subsection{Projektkommunikation}
-Im Laufe der Diplomarbeit wurden zahlreiche Besprechungen mit unserem Diplomarbeitsbetreuer Herrn Johann Burgstaller gehalten, um Maßnahmen sowie weitere Vorgehensweisen abzuklären. Ebenso waren unsere Kooperationspartner Stefan Aigenbauer, Jürgen Mitterlehner, Michael Zellinger und Armin Cosic bei diesen Besprechungen dabei, um deren Anforderungen sowie Wünsche besser umsetzen zu können. Diese Besprechungen fanden Online über Skype statt, weitere Kommunikation wurde über E-Mail fortgeführt. 
+Im Laufe der Diplomarbeit wurden zahlreiche Besprechungen mit dem Diplomarbeitsbetreuer Herrn Johann Burgstaller gehalten, um Maßnahmen sowie weitere Vorgehensweisen abzuklären. Ebenso waren die Kooperationspartner Stefan Aigenbauer, Jürgen Mitterlehner, Michael Zellinger und Armin Cosic bei diesen Besprechungen dabei, um deren Anforderungen sowie Wünsche besser umsetzen zu können. Diese Besprechungen fanden online über Skype statt, weitere Kommunikation wurde über E-Mail fortgeführt. 
 
 
 \subsection{Projektstrukturplan}
-Für eine bessere Darstellung der einzelnen Projektphasen wurde ein Projektstrukturplan erstellt. In der Abb. x.y ist der Projektstrukturplan ersichtlich.
+Für eine bessere Darstellung der einzelnen Projektphasen wurde ein Projektstrukturplan erstellt. In der Abbildung \ref{fig:Projektstrukturplan }  ist der Projektstrukturplan ersichtlich.
 \begin{figure}[h]
 	\centering
-	\includegraphics[height=12cm,width=12cm]{images/Projektstrukturplan}
+	\includegraphics[height=12cm,width=14cm]{images/Projektstrukturplan}
 	\caption{Projektstrukturplan}
 	\label{fig:Projektstrukturplan }
 \end{figure} 
 
 
 
-\subsection{Verantwortungsmatrix und Aufwandsschätzung}
+\subsection{Verantwortungsmatrix}
 Folgende Abbildung repräsentiert die Zuständigkeiten der Mitarbeiter zu den Arbeitspaketen.
 Dabei wurden folgende Abkürzungen verwendet:
 \begin{itemize}
@@ -2553,7 +2542,7 @@ Dabei wurden folgende Abkürzungen verwendet:
 
 \begin{figure}[h]
 	\centering
-	\includegraphics[height=12cm,width=12cm]{images/Verantwortungsmatrix}
+	\includegraphics[height=12cm,width=10cm]{images/Verantwortungsmatrix}
 	\caption{Verantwortungsmatrix}
 	\label{fig:Verantwortungsmatrix }
 \end{figure}
@@ -2565,14 +2554,52 @@ Dabei wurden folgende Abkürzungen verwendet:
 
 \newpage
 \subsection{Meilensteinplan}
-Das Projektteam hat zum Plan der Diplomarbeit, einen Meilenstein Plan verwendet. Auf diesem Plan sind Meilensteine mit einem dazugehörigen Datum vermerkt. Das Datum gibt an, zu welchem Zeitpunkt dieser Meilenstein erfüllt werden soll. Der vom Projektteam angefertigte Meilensteinplan ist in Abbildung xy ersichtlich.
+Das Projektteam hat zum Plan der Diplomarbeit, einen Meilenstein Plan verwendet. Auf diesem Plan sind Meilensteine mit einem dazugehörigen Datum vermerkt. Das Datum gibt an, zu welchem Zeitpunkt dieser Meilenstein erfüllt werden soll. Folgender Meilensteinplan wurde vom Projektteam erstellt: 
+\begin{itemize}
+\item 31.07.2021 Projektmanagement fertig
+	\subitem Projektcontrolling, Meilensteinplan, Projektantrag
+	\subitem Fortlaufendes Projektmanagement, Projekthandbuch, 
+	\subitem Grundlagen und Methoden 
+	\item 31.08.2021 Recherche abgeschlossen
+	\subitem Vertraut machen mit dem Framework Laravel
+	\subitem Installieren der nötigen Software lokal bzw. am Server
+	\item 29.11.2021 Produktentwicklung beendet
+	\subitem Produkt entspricht den Voraussetzungen
+	\item 30.11.2021 Übergabe des Alpha Prototypes
+	\subitem Alpha Prototypen bereitstellen
+	\item 10.12.2021 Feedback des Auftraggebers erhalten
+	\subitem Verbesserungsvorschläge bezüglich des Alpha Prototypen
+	\item 31.12.2021 Alpha Prototyp überarbeitet
+	\subitem Verbesserungsvorschläge umsetzen
+	\item 01.01.2022 Produkt fertig
+	\subitem Fertiges Produkt
+	\item 31.03.2022 Schriftliche Arbeit verfasst
+	\subitem Verfassen der schriftlichen Arbeit
+\end{itemize}
 
-\begin{figure}[h]
-	\centering
-	\includegraphics[height=12cm,width=12cm]{images/Meilensteinplan}
-	\caption{Meilensteinplan}
-	\label{fig:Meilensteinplan }
-\end{figure}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 \newpage
 \subsection{Terminplan}
