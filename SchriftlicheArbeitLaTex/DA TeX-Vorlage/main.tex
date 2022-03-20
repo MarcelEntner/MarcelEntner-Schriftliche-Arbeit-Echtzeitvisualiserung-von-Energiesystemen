@@ -6,7 +6,7 @@
 % Für TeX-Neulinge: Compiliert werden muss hier nur das File main.tex
 
 % Definieren der Dokumentklasse
-\documentclass [a4paper] {report}
+\documentclass [a4paper,hidelinks] {report}
 
 
 % Zeichensatz definieren
@@ -44,6 +44,7 @@
 \usepackage{tocbibind}
 \usepackage{graphicx}
 \usepackage{caption}
+\usepackage{titlesec}
 \captionsetup[table]{position=bottom}
 
 
@@ -64,7 +65,7 @@
 %Zeilenumbruch in URLs
 \usepackage[hyphens]{url}
 \usepackage{hyperref}
-\usepackage{breakurl}
+\usepackage[hyphenbreaks]{breakurl}
 
 %zum Einbinden von PDF-Dateien
 \usepackage{pdfpages}
@@ -145,12 +146,15 @@
 \setlength{\matwidth}{112mm}
 
 
-
-
+\usepackage[backend=biber]{biblatex}
+\addbibresource{Verzeichniss.bib}
 
 % Einbinden einer Schriftart mit angepasster Kerningtabelle und guten Ligaturen
 \usepackage{lmodern}
 
+\titleformat{\chapter}[block]
+{\normalfont\huge\bfseries}{\thechapter.}{1em}{\Huge}
+\titlespacing*{\chapter}{0pt}{-45pt}{0pt}
 \begin{document}
 
 
@@ -176,6 +180,7 @@
 \setlength{\parskip}{5pt plus 2pt minus 1pt}
 \include{einleitung}
 \include{doku}
+
 
 \end{document}
 

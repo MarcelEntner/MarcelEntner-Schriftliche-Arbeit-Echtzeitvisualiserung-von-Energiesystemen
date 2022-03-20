@@ -1,186 +1,372 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {ngerman}{}\relax 
+\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Eidesstattliche Erklärung}{A}{chapter*.2}%
+\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Kurzfassung der Diplomarbeit/Abstract}{B}{chapter*.4}%
-\contentsline {chapter}{Danksagung}{E}{chapter*.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Danksagung}{D}{chapter*.5}%
+\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Inhaltsverzeichnis}{i}{chapter*.6}%
+\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {1}Einleitung}{1}{chapter.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.1}Zielsetzung und Aufgabenstellung}{1}{section.1.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.1.1}Beschreibung der Diplomarbeit}{1}{subsection.1.1.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.1.2}Motivation zur Diplomarbeit}{2}{subsection.1.1.2}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.1.3}Ziel der Arbeit}{2}{subsection.1.1.3}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.1.4}Ergebnis}{2}{subsection.1.1.4}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {1.2}Rollen und individuelle Zielsetzung der Teammitglieder}{3}{section.1.2}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.2.1}David Pöchacker}{3}{subsection.1.2.1}%
-\contentsline {subsection}{\numberline {1.2.2}Marcel Entner}{3}{subsection.1.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {1.2.2}Marcel Entner}{4}{subsection.1.2.2}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {1.2.3}Tobias Kronsteiner}{4}{subsection.1.2.3}%
+\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {2}Grundlagen und Methoden}{5}{chapter.2}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.1}Analyse des vorhandenen Systems}{5}{section.2.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1.1}Begriffe}{6}{subsection.2.1.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.1.1.1}Echtzeitdaten}{6}{subsubsection.2.1.1.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.1.1.2}Energietechnologie}{6}{subsubsection.2.1.1.2}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.1.1.3}Energiesystem}{7}{subsubsection.2.1.1.3}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.1.1.4}Front-End}{7}{subsubsection.2.1.1.4}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.1.1.5}Back-End}{7}{subsubsection.2.1.1.5}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.2}Anforderungen an das Produkt}{8}{section.2.2}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.1}Schutz von vertraulichen Informationen}{8}{subsection.2.2.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.2.2}Statistische Auswertung}{8}{subsection.2.2.2}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.3}Architektur des Zielsystems}{9}{section.2.3}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.1}Endgeräte}{9}{subsection.2.3.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.2}Serverseitig }{10}{subsection.2.3.2}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.3}Clientseitige Interaktionen des Benutzers}{10}{subsection.2.3.3}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.4}Framework}{11}{subsection.2.3.4}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.3.4.1}Laravel}{11}{subsubsection.2.3.4.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.3.4.2}Angular}{12}{subsubsection.2.3.4.2}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.3.4.3}ASP.NET}{13}{subsubsection.2.3.4.3}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.3.4.4}React}{13}{subsubsection.2.3.4.4}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.3.4.5}Entscheidung des Frameworks}{14}{subsubsection.2.3.4.5}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.5}Front-End Templates}{15}{subsection.2.3.5}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.3.5.1}Bootstrap}{15}{subsubsection.2.3.5.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.3.5.2}Tailwind.css}{16}{subsubsection.2.3.5.2}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.3.5.3}Vue.js}{16}{subsubsection.2.3.5.3}%
-\contentsline {subsubsection}{\numberline {2.3.5.4}Entscheidung des Front-End Templates}{17}{subsubsection.2.3.5.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {2.3.5.4}Entscheidung des Front-End Templates}{16}{subsubsection.2.3.5.4}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.6}Verbindung der Datenbank mit Laravel}{18}{subsection.2.3.6}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.3.6.1}Laravel .env Datei }{18}{subsubsection.2.3.6.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.3.6.2}Migrations}{18}{subsubsection.2.3.6.2}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.3.6.3}Seeder und Factories}{19}{subsubsection.2.3.6.3}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.3.6.4}Datenübergabe in Laravel}{19}{subsubsection.2.3.6.4}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.4}Visuelle Darstellung der Energiesysteme und Energietechnologien }{20}{section.2.4}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.4.1}Kartendienste}{20}{subsection.2.4.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.4.1.1}Google Maps}{21}{subsubsection.2.4.1.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.4.1.2}OpenStreetMap}{21}{subsubsection.2.4.1.2}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.4.2}Geoinformationssystem }{22}{subsection.2.4.2}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.4.3}CSS-System}{22}{subsection.2.4.3}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.4.4}Auswahl des Anbieters}{23}{subsection.2.4.4}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.5}Berechtigungssystem Benutzer}{24}{section.2.5}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.5.1}Benutzerrollen}{24}{subsection.2.5.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.5.1.1}Administrator}{24}{subsubsection.2.5.1.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.5.1.2}Mitarbeiter}{24}{subsubsection.2.5.1.2}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsubsection}{\numberline {2.5.1.3}öffentlicher Benutzer}{25}{subsubsection.2.5.1.3}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.5.2}Berechtigungen in Laravel}{25}{subsection.2.5.2}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.6}Ui/Ux Design}{25}{section.2.6}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.6.1}Wireframe}{26}{subsection.2.6.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.6.2}Persona}{26}{subsection.2.6.2}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.7}Template Layout}{26}{section.2.7}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.7.1}Platzhalter Yield}{26}{subsection.2.7.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.7.2}Sections}{27}{subsection.2.7.2}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.7.3}Einbindung der definierten Sections}{27}{subsection.2.7.3}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.8}Laravel Befehle}{28}{section.2.8}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.8.1}Migration Befehle}{28}{subsection.2.8.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.8.2}Seeder und Factory Befehle}{28}{subsection.2.8.2}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.8.3}Model und Controller Befehle}{29}{subsection.2.8.3}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.8.4}Starten des Laravel Entwicklungs Servers}{30}{subsection.2.8.4}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.8.5}Befehle nach dem Git Pull}{30}{subsection.2.8.5}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.9}Routen in Laravel}{31}{section.2.9}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.9.1}Ressource Routen}{31}{subsection.2.9.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.9.2}GET Routen}{31}{subsection.2.9.2}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.9.3}Auth Routen}{32}{subsection.2.9.3}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.10}MVC}{32}{section.2.10}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.10.1}Model}{33}{subsection.2.10.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.10.2}View}{33}{subsection.2.10.2}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.10.3}Controller}{33}{subsection.2.10.3}%
+\defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Ergebnisdokumentation }{34}{chapter.3}%
+\defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.1}Laravel }{34}{section.3.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1.1}Installation}{34}{subsection.3.1.1}%
+\defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {3.1.2}Bootstrap Einbindung}{34}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}Grafana Einbindung}{35}{subsection.3.1.3}%
-\contentsline {section}{\numberline {3.2}Datenbankanbindung in Laravel}{36}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Datenbank Anmeldeinformationen}{36}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Mail Server Konfigurationen}{37}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Migrations}{38}{subsection.3.2.3}%
-\contentsline {section}{\numberline {3.3}Datenbankdesign}{38}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Erstellen eines neuen Schemas}{38}{subsection.3.3.1}%
-\contentsline {subsubsection}{\numberline {3.3.1.1}ER-Model}{38}{subsubsection.3.3.1.1}%
-\contentsline {subsubsection}{\numberline {3.3.1.2}Fremdschlüssel}{39}{subsubsection.3.3.1.2}%
-\contentsline {section}{\numberline {3.4}Corporate Design}{40}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Vorschläge}{40}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}Änderungsvorschläge}{42}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Finales Design}{42}{subsection.3.4.3}%
-\contentsline {subsection}{\numberline {3.4.4}Definierte Farben}{43}{subsection.3.4.4}%
-\contentsline {subsection}{\numberline {3.4.5}Überschriften}{44}{subsection.3.4.5}%
-\contentsline {subsection}{\numberline {3.4.6}Interaktionsfarben}{46}{subsection.3.4.6}%
-\contentsline {subsection}{\numberline {3.4.7}Schriftarten}{47}{subsection.3.4.7}%
-\contentsline {subsection}{\numberline {3.4.8}Schriftgrade}{48}{subsection.3.4.8}%
-\contentsline {subsection}{\numberline {3.4.9}Logo}{48}{subsection.3.4.9}%
-\contentsline {subsection}{\numberline {3.4.10}Verwendete Icons und deren Bedeutungen}{49}{subsection.3.4.10}%
-\contentsline {subsection}{\numberline {3.4.11}Map Icons}{49}{subsection.3.4.11}%
-\contentsline {subsection}{\numberline {3.4.12}Icons in Formularen}{50}{subsection.3.4.12}%
-\contentsline {subsection}{\numberline {3.4.13}Icons im DataTable}{51}{subsection.3.4.13}%
-\contentsline {subsection}{\numberline {3.4.14}Buttons}{52}{subsection.3.4.14}%
-\contentsline {subsection}{\numberline {3.4.15}Tabelle mit generellen Informationen über einzelne HTML Elemente}{53}{subsection.3.4.15}%
-\contentsline {subsection}{\numberline {3.4.16}Datenformate}{53}{subsection.3.4.16}%
-\contentsline {section}{\numberline {3.5}Webanwendung}{54}{section.3.5}%
-\contentsline {subsection}{\numberline {3.5.1}Back-End}{54}{subsection.3.5.1}%
-\contentsline {subsubsection}{\numberline {3.5.1.1}Energiesystem erstellen}{54}{subsubsection.3.5.1.1}%
-\contentsline {subsubsection}{\numberline {3.5.1.2}Energiesystem bearbeiten}{56}{subsubsection.3.5.1.2}%
-\contentsline {subsubsection}{\numberline {3.5.1.3}Energiesystem löschen}{57}{subsubsection.3.5.1.3}%
-\contentsline {subsubsection}{\numberline {3.5.1.4}Energietechnologie erstellen}{57}{subsubsection.3.5.1.4}%
-\contentsline {subsubsection}{\numberline {3.5.1.5}Energietechnologie bearbeiten}{60}{subsubsection.3.5.1.5}%
-\contentsline {subsubsection}{\numberline {3.5.1.6}Energietechnologie löschen}{61}{subsubsection.3.5.1.6}%
-\contentsline {subsubsection}{\numberline {3.5.1.7}Benutzerverwaltung}{61}{subsubsection.3.5.1.7}%
-\contentsline {subsubsection}{\numberline {3.5.1.8}Adresssuche}{62}{subsubsection.3.5.1.8}%
-\contentsline {subsection}{\numberline {3.5.2}Front-End}{64}{subsection.3.5.2}%
-\contentsline {subsubsection}{\numberline {3.5.2.1}Home}{65}{subsubsection.3.5.2.1}%
-\contentsline {subsubsection}{\numberline {3.5.2.2}Energiesysteme}{66}{subsubsection.3.5.2.2}%
-\contentsline {subsubsection}{\numberline {3.5.2.3}Galerie}{66}{subsubsection.3.5.2.3}%
-\contentsline {subsubsection}{\numberline {3.5.2.4}Impressum}{67}{subsubsection.3.5.2.4}%
-\contentsline {subsubsection}{\numberline {3.5.2.5}Datenschutz}{67}{subsubsection.3.5.2.5}%
-\contentsline {subsubsection}{\numberline {3.5.2.6}Registrierungsseite}{68}{subsubsection.3.5.2.6}%
-\contentsline {subsection}{\numberline {3.5.3}Login}{68}{subsection.3.5.3}%
-\contentsline {subsection}{\numberline {3.5.4}Registrierung}{69}{subsection.3.5.4}%
-\contentsline {subsection}{\numberline {3.5.5}Kartendienst Funktionalitäten}{69}{subsection.3.5.5}%
-\contentsline {subsubsection}{\numberline {3.5.5.1}Auswählen eines Energiesystems}{69}{subsubsection.3.5.5.1}%
-\contentsline {subsubsection}{\numberline {3.5.5.2}Abwählen eines Energiesystems}{70}{subsubsection.3.5.5.2}%
-\contentsline {subsection}{\numberline {3.5.6}Anzeige von Energiesystemen und Energietechnologien auf der Karte}{71}{subsection.3.5.6}%
-\contentsline {subsubsection}{\numberline {3.5.6.1}Energiesysteme Marker auf der Karte platzieren}{71}{subsubsection.3.5.6.1}%
-\contentsline {subsubsection}{\numberline {3.5.6.2}Energietechnologien Marker auf der Karte platzieren}{71}{subsubsection.3.5.6.2}%
-\contentsline {subsection}{\numberline {3.5.7}Layoutvorlage der Website}{72}{subsection.3.5.7}%
-\contentsline {section}{\numberline {3.6}DataTable}{72}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1}Individueller DataTable}{73}{subsection.3.6.1}%
-\contentsline {subsection}{\numberline {3.6.2}Sortierfunktion}{73}{subsection.3.6.2}%
-\contentsline {subsection}{\numberline {3.6.3}Suchfunktion}{74}{subsection.3.6.3}%
-\contentsline {subsection}{\numberline {3.6.4}Seitenanzahl}{74}{subsection.3.6.4}%
-\contentsline {subsection}{\numberline {3.6.5}Icons}{74}{subsection.3.6.5}%
-\contentsline {subsection}{\numberline {3.6.6}MoveToMarker}{74}{subsection.3.6.6}%
-\contentsline {section}{\numberline {3.7}Galerie Funktionen}{75}{section.3.7}%
-\contentsline {subsection}{\numberline {3.7.1}Auswahl eines Energiesystems}{75}{subsection.3.7.1}%
-\contentsline {subsection}{\numberline {3.7.2}Energietechnologien des Energiesystems anzeigen}{76}{subsection.3.7.2}%
-\contentsline {section}{\numberline {3.8}Grafana}{77}{section.3.8}%
-\contentsline {subsection}{\numberline {3.8.1}Automatisches Erstellen der Dashboards}{77}{subsection.3.8.1}%
-\contentsline {subsection}{\numberline {3.8.2}Automatisches Erstellen der Panels}{77}{subsection.3.8.2}%
-\contentsline {subsection}{\numberline {3.8.3}Energietechnologien Statistiken anzeigen}{78}{subsection.3.8.3}%
-\contentsline {section}{\numberline {3.9}Einbindung von Google Maps}{79}{section.3.9}%
-\contentsline {subsection}{\numberline {3.9.1}Google Cloud}{79}{subsection.3.9.1}%
-\contentsline {subsection}{\numberline {3.9.2}Google Cloud Plattform Account erstellen}{79}{subsection.3.9.2}%
-\contentsline {subsection}{\numberline {3.9.3}API's aktivieren und einbinden}{79}{subsection.3.9.3}%
-\contentsline {subsection}{\numberline {3.9.4}Individuelle Map erstellen und einbinden}{80}{subsection.3.9.4}%
-\contentsline {chapter}{\numberline {4}Resümee und Ausblick}{81}{chapter.4}%
-\contentsline {chapter}{\numberline {5}Quellen und Literatur}{82}{chapter.5}%
-\contentsline {chapter}{\numberline {6}Verzeichnisse}{83}{chapter.6}%
-\contentsline {chapter}{Abbildungsverzeichnis}{84}{chapter*.86}%
-\contentsline {chapter}{Tabellenverzeichnis}{87}{chapter*.87}%
-\contentsline {chapter}{\numberline {7}Begleitprotokoll gem. § 9 Abs. 2 PrO-BHS}{89}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Begleitprotokoll David Pöchacker}{90}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Begleitprotokoll Tobias Kronsteiner}{93}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Begleitprotokoll Marcel Entner}{95}{section.7.3}%
-\contentsline {chapter}{\numberline {8}Anhang}{98}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Verfasser der Kapitel}{98}{section.8.1}%
-\contentsline {subsection}{\numberline {8.1.1}David Pöchacker}{98}{subsection.8.1.1}%
-\contentsline {subsection}{\numberline {8.1.2}Marcel Entner}{99}{subsection.8.1.2}%
-\contentsline {subsection}{\numberline {8.1.3}Tobias Kronsteiner}{99}{subsection.8.1.3}%
-\contentsline {section}{\numberline {8.2}Verwendete Software}{100}{section.8.2}%
-\contentsline {subsection}{\numberline {8.2.1}Visual Studio Code}{100}{subsection.8.2.1}%
-\contentsline {subsection}{\numberline {8.2.2}Apache WebServer}{100}{subsection.8.2.2}%
-\contentsline {subsection}{\numberline {8.2.3}Composer}{100}{subsection.8.2.3}%
-\contentsline {subsection}{\numberline {8.2.4}Windows Eingabeaufforderung (CMD)}{100}{subsection.8.2.4}%
-\contentsline {subsection}{\numberline {8.2.5}Github VCS und Github Desktop GUI}{100}{subsection.8.2.5}%
-\contentsline {subsection}{\numberline {8.2.6} phpMyAdmin}{101}{subsection.8.2.6}%
-\contentsline {subsection}{\numberline {8.2.7}Adobe XD}{101}{subsection.8.2.7}%
-\contentsline {subsection}{\numberline {8.2.8}Adobe Photoshop}{101}{subsection.8.2.8}%
-\contentsline {subsection}{\numberline {8.2.9}LaTex}{101}{subsection.8.2.9}%
-\contentsline {section}{\numberline {8.3}Projektplanung}{102}{section.8.3}%
-\contentsline {subsection}{\numberline {8.3.1}Projektkommunikation}{102}{subsection.8.3.1}%
-\contentsline {subsection}{\numberline {8.3.2}Projektstrukturplan}{102}{subsection.8.3.2}%
-\contentsline {subsection}{\numberline {8.3.3}Verantwortungsmatrix}{103}{subsection.8.3.3}%
-\contentsline {subsection}{\numberline {8.3.4}Meilensteinplan}{104}{subsection.8.3.4}%
-\contentsline {subsection}{\numberline {8.3.5}Terminplan}{105}{subsection.8.3.5}%
-\contentsline {section}{\numberline {8.4}Inhalt von GitHub}{105}{section.8.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.1.3}Grafana Einbindung}{34}{subsection.3.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Datenbankanbindung in Laravel}{35}{section.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.1}Datenbank Anmeldeinformationen}{35}{subsection.3.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.2}Mail Server Konfigurationen}{36}{subsection.3.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.2.3}Migrations}{37}{subsection.3.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Datenbankdesign}{37}{section.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.3.1}Erstellen eines neuen Schemas}{37}{subsection.3.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.3.1.1}ER-Model}{37}{subsubsection.3.3.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.3.1.2}Fremdschlüssel}{38}{subsubsection.3.3.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.4}Corporate Design}{39}{section.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.1}Vorschläge}{39}{subsection.3.4.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.2}Änderungsvorschläge}{41}{subsection.3.4.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.3}Finales Design}{41}{subsection.3.4.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.4}Definierte Farben}{42}{subsection.3.4.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.5}Überschriften}{43}{subsection.3.4.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.6}Interaktionsfarben}{45}{subsection.3.4.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.7}Schriftarten}{46}{subsection.3.4.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.8}Schriftgrade}{47}{subsection.3.4.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.9}Logo}{47}{subsection.3.4.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.10}Verwendete Icons und deren Bedeutungen}{48}{subsection.3.4.10}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.11}Map Icons}{48}{subsection.3.4.11}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.12}Icons in Formularen}{49}{subsection.3.4.12}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.13}Icons im DataTable}{50}{subsection.3.4.13}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.14}Buttons}{51}{subsection.3.4.14}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.15}Tabelle mit generellen Informationen über einzelne HTML Elemente}{52}{subsection.3.4.15}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.4.16}Datenformate}{52}{subsection.3.4.16}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.5}Webanwendung}{53}{section.3.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.5.1}Back-End}{53}{subsection.3.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.5.1.1}Energiesystem erstellen}{53}{subsubsection.3.5.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.5.1.2}Energiesystem bearbeiten}{55}{subsubsection.3.5.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.5.1.3}Energiesystem löschen}{56}{subsubsection.3.5.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.5.1.4}Energietechnologie erstellen}{56}{subsubsection.3.5.1.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.5.1.5}Energietechnologie bearbeiten}{59}{subsubsection.3.5.1.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.5.1.6}Energietechnologie löschen}{60}{subsubsection.3.5.1.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.5.1.7}Benutzerverwaltung}{60}{subsubsection.3.5.1.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.5.1.8}Adresssuche}{61}{subsubsection.3.5.1.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.5.2}Front-End}{63}{subsection.3.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.5.2.1}Home}{64}{subsubsection.3.5.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.5.2.2}Energiesysteme}{65}{subsubsection.3.5.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.5.2.3}Galerie}{65}{subsubsection.3.5.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.5.2.4}Impressum}{66}{subsubsection.3.5.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.5.2.5}Datenschutz}{66}{subsubsection.3.5.2.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.5.2.6}Registrierungsseite}{67}{subsubsection.3.5.2.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.5.3}Login}{67}{subsection.3.5.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.5.4}Registrierung}{68}{subsection.3.5.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.5.5}Kartendienst Funktionalitäten}{68}{subsection.3.5.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.5.5.1}Auswählen eines Energiesystems}{68}{subsubsection.3.5.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.5.5.2}Abwählen eines Energiesystems}{69}{subsubsection.3.5.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.5.6}Anzeige von Energiesystemen und Energietechnologien auf der Karte}{70}{subsection.3.5.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.5.6.1}Energiesysteme Marker auf der Karte platzieren}{70}{subsubsection.3.5.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsubsection}{\numberline {3.5.6.2}Energietechnologien Marker auf der Karte platzieren}{70}{subsubsection.3.5.6.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.5.7}Layoutvorlage der Website}{71}{subsection.3.5.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.6}DataTable}{71}{section.3.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.6.1}Individueller DataTable}{72}{subsection.3.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.6.2}Sortierfunktion}{72}{subsection.3.6.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.6.3}Suchfunktion}{73}{subsection.3.6.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.6.4}Seitenanzahl}{73}{subsection.3.6.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.6.5}Icons}{73}{subsection.3.6.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.6.6}MoveToMarker}{73}{subsection.3.6.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.7}Galerie Funktionen}{74}{section.3.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.7.1}Auswahl eines Energiesystems}{74}{subsection.3.7.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.7.2}Energietechnologien des Energiesystems anzeigen}{75}{subsection.3.7.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.8}Grafana}{76}{section.3.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.8.1}Automatisches Erstellen der Dashboards}{76}{subsection.3.8.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.8.2}Automatisches Erstellen der Panels}{76}{subsection.3.8.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.8.3}Energietechnologien Statistiken anzeigen}{77}{subsection.3.8.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.9}Einbindung von Google Maps}{78}{section.3.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.9.1}Google Cloud}{78}{subsection.3.9.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.9.2}Google Cloud Plattform Account erstellen}{78}{subsection.3.9.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.9.3}API's aktivieren und einbinden}{78}{subsection.3.9.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {3.9.4}Individuelle Map erstellen und einbinden}{79}{subsection.3.9.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Resümee und Ausblick}{80}{chapter.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Quellen und Literatur}{81}{chapter*.86}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Abbildungsverzeichnis}{83}{chapter*.87}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Tabellenverzeichnis}{86}{chapter*.88}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Codeverzeichnis}{87}{chapter*.89}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Begleitprotokoll gem. § 9 Abs. 2 PrO-BHS}{88}{chapter.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}Begleitprotokoll David Pöchacker}{89}{section.5.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.2}Begleitprotokoll Tobias Kronsteiner}{92}{section.5.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.3}Begleitprotokoll Marcel Entner}{94}{section.5.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Anhang}{97}{chapter.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.1}Verfasser der Kapitel}{97}{section.6.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1.1}David Pöchacker}{97}{subsection.6.1.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1.2}Marcel Entner}{97}{subsection.6.1.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.1.3}Tobias Kronsteiner}{98}{subsection.6.1.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.2}Verwendete Software}{99}{section.6.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2.1}Visual Studio Code}{99}{subsection.6.2.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2.2}Apache WebServer}{99}{subsection.6.2.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2.3}Composer}{99}{subsection.6.2.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2.4}Windows Eingabeaufforderung (CMD)}{99}{subsection.6.2.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2.5}Github VCS und Github Desktop GUI}{99}{subsection.6.2.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2.6} phpMyAdmin}{100}{subsection.6.2.6}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2.7}Adobe XD}{100}{subsection.6.2.7}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2.8}Adobe Photoshop}{100}{subsection.6.2.8}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.2.9}LaTex}{100}{subsection.6.2.9}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.3}Projektplanung}{101}{section.6.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3.1}Projektkommunikation}{101}{subsection.6.3.1}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3.2}Projektstrukturplan}{101}{subsection.6.3.2}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3.3}Verantwortungsmatrix}{102}{subsection.6.3.3}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3.4}Meilensteinplan}{103}{subsection.6.3.4}%
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {6.3.5}Terminplan}{104}{subsection.6.3.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.4}Inhalt von GitHub}{104}{section.6.4}%

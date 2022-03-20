@@ -2344,7 +2344,44 @@
     <bcf:datasource type="file" datatype="bibtex" glob="false">Verzeichniss.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">Angular</bcf:citekey>
+    <bcf:citekey order="1">Echtzeitdaten</bcf:citekey>
+    <bcf:citekey order="2">Wasist</bcf:citekey>
+    <bcf:citekey order="3">Angular</bcf:citekey>
+    <bcf:citekey order="4">ASPNET</bcf:citekey>
+    <bcf:citekey order="5">React</bcf:citekey>
+    <bcf:citekey order="6">VorundNachteile1</bcf:citekey>
+    <bcf:citekey order="6">VorundNachteile2</bcf:citekey>
+    <bcf:citekey order="6">VorundNachteile3</bcf:citekey>
+    <bcf:citekey order="6">VorundNachteile4</bcf:citekey>
+    <bcf:citekey order="7">Bootstrap1</bcf:citekey>
+    <bcf:citekey order="7">Bootstrap2</bcf:citekey>
+    <bcf:citekey order="7">Bootstrap3</bcf:citekey>
+    <bcf:citekey order="7">Bootstrap4</bcf:citekey>
+    <bcf:citekey order="8">Tailwind1</bcf:citekey>
+    <bcf:citekey order="8">Tailwind2</bcf:citekey>
+    <bcf:citekey order="8">Tailwind3</bcf:citekey>
+    <bcf:citekey order="9">Vuejs1</bcf:citekey>
+    <bcf:citekey order="9">Vuejs2</bcf:citekey>
+    <bcf:citekey order="10">Env</bcf:citekey>
+    <bcf:citekey order="11">Migrations</bcf:citekey>
+    <bcf:citekey order="12">seeder</bcf:citekey>
+    <bcf:citekey order="13">Video</bcf:citekey>
+    <bcf:citekey order="14">GoogleMaps</bcf:citekey>
+    <bcf:citekey order="15">OpenStreetMap</bcf:citekey>
+    <bcf:citekey order="16">GvsS</bcf:citekey>
+    <bcf:citekey order="17">LaravelAuth</bcf:citekey>
+    <bcf:citekey order="18">UI</bcf:citekey>
+    <bcf:citekey order="19">yield</bcf:citekey>
+    <bcf:citekey order="20">yield</bcf:citekey>
+    <bcf:citekey order="21">Migrations</bcf:citekey>
+    <bcf:citekey order="22">Database</bcf:citekey>
+    <bcf:citekey order="23">Controller</bcf:citekey>
+    <bcf:citekey order="23">Model</bcf:citekey>
+    <bcf:citekey order="24">LaravelAuth</bcf:citekey>
+    <bcf:citekey order="25">Adresssuchfeld</bcf:citekey>
+    <bcf:citekey order="26">Autocomplete</bcf:citekey>
+    <bcf:citekey order="27">DataTableCDN</bcf:citekey>
+    <bcf:citekey order="28">DataTable2</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

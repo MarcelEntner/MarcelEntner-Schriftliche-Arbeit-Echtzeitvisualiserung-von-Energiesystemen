@@ -15,12 +15,12 @@ Das bestehende System des Auftraggebers umfasst die Komponenten Grafana Server, 
 Der Grafana Server wird übernommen, um Dashboards für die Energiesysteme und Panels für die Energietechnologien zu erstellen. Dabei können mehrere Statistiken, auch Panels genannt, zu einem Dashboard zusammengefasst werden, um somit eine Ordnerstruktur am Grafana Server zu erlangen. Der Webserver wird als Produktivserver benützt, um die fertige Website zu präsentieren. Die vorhandene Datenbank wird aufgrund deren Schemas nicht übernommen, stattdessen wird ein neues besseres Datenbankschema entwickelt. Die dafür notwendigen Algorithmen, um die neue Datenbank mit Echtzeitdaten zu befüllen, werden vom Auftraggeber entwickelt.
 
 
-
+\newpage
 \subsection{Begriffe}
 In diesem Abschnitt werden notwendige Begriffe, die in dieser Diplomarbeit eine wichtige Rolle spielen und zu Missverständnissen führen könnten, erklärt.
 
 \subsubsection{Echtzeitdaten} \label{sec:Echtzeitdaten}
-Der Begriff Echtzeitdaten ist definiert durch die regelmäßige und in gleichen Zeitabständen erfolgende Erfassung sowie Verarbeitung von Daten einer Energietechnologie. Der Zeitabstand der Datenerfassung bei den Energietechnologien beträgt 30 Sekunden. Aufgrund des vorgegebenen Zeitabstandes werden die Echtzeitdaten als weiche Echtzeitanforderung definiert, da das Produkt alle einkommenden Daten schnellstmöglich mit einem konstanten Zeitabstand von 30 Sekunden bearbeitet. Ein Überschreiten dieser Zeitgrenze wird nicht als Versagen definiert, solange sich die Zeit noch in einem akzeptablen Toleranzbereich von wenigen Sekunden befindet. Eine Unterschreitung der Zeitangabe ist sehr selten möglich.  
+Der Begriff Echtzeitdaten ist definiert durch die regelmäßige und in gleichen Zeitabständen erfolgende Erfassung sowie Verarbeitung von Daten einer Energietechnologie. Der Zeitabstand der Datenerfassung bei den Energietechnologien beträgt 30 Sekunden. Aufgrund des vorgegebenen Zeitabstandes werden die Echtzeitdaten als weiche Echtzeitanforderung definiert, da das Produkt alle einkommenden Daten schnellstmöglich mit einem konstanten Zeitabstand von 30 Sekunden bearbeitet. Ein Überschreiten dieser Zeitgrenze wird nicht als Versagen definiert, solange sich die Zeit noch in einem akzeptablen Toleranzbereich von wenigen Sekunden befindet. Eine Unterschreitung der Zeitangabe ist sehr selten möglich. Diese Informationen wurden aus der Quelle \cite{Echtzeitdaten} entnommen.
 
 
 \subsubsection{Energietechnologie} \label{sec:Energietechnologie}
@@ -36,7 +36,7 @@ Dabei werden folgende Echtzeitdaten für die Statistiken verwendet:
 
 Die folgende Tabelle bietet eine Übersicht aller vorhandenen Energietechnologien.
 In der ersten Spalte der Tabelle befinden sich reine Erzeuger-Energietechnologien[PM1] . Verbraucher-Energietechnologien sind in der zweiten Spalte ersichtlich. Speicher-Energietechnologien in der dritten Spalte und in der vierten und zugleich auch letzten Spalte befinden sich Energietechnologien, die sowohl als Verbraucher-Energietechnologie und als Erzeuger-Energietechnologie definiert sind.
-\begin{table}[]
+\begin{table}[h]
 	\begin{tabular}{|l|l|l|l|}
 		\hline
 		\textbf{Erzeuger} &\textbf{Verbraucher}  & 	\textbf{Speicher}            &  \textbf{Verbraucher \& Erzeuger}           \\ \hline
@@ -146,7 +146,7 @@ Das PHP-Framework Laravel, welches 2011 entwickelt wurde, basiert auf dem MVC Mu
 	\item Routen 
 \end{itemize}
 
-Migrations sind die Abbildung der Tabellenstruktur und ermöglichen es, bei richtiger .env Datei Konfiguration, mit artisan\footnote{artisan ist die in Laravel enthaltene Befehlszeilenschnittstelle} Befehlen, ganz einfach eine Datenbank und die dazugehörigen Tabellen zu erstellen und diese auch genauso einfach wieder zu löschen oder zu leeren. Views fungieren als visueller Gliederungspart zwischen den Controllern und den Benutzern. In ihnen wird alles, was auf der Oberfläche ersichtlich ist, ausprogrammiert und gestaltet. Controller bilden die Verbindung zwischen den Views und den Models und ermöglichen es dem Benutzer, Daten mithilfe eines Zugriffs auf das Model zu verändern. Models bilden die Datenstruktur ab und ermöglichen den Zugriff auf die Daten und die Änderung dieser. Routen vermitteln die Benutzerabfrage von der View mit dem dazugehörigen Controller und werden in der Datei “web.php” definiert. Der ganze Prozess ist in \autoref{fig:Laravel MVC} visuell dargestellt. 
+Migrations sind die Abbildung der Tabellenstruktur und ermöglichen es, bei richtiger .env Datei Konfiguration, mit artisan\footnote{artisan ist die in Laravel enthaltene Befehlszeilenschnittstelle} Befehlen, ganz einfach eine Datenbank und die dazugehörigen Tabellen zu erstellen und diese auch genauso einfach wieder zu löschen oder zu leeren. Views fungieren als visueller Gliederungspart zwischen den Controllern und den Benutzern. In ihnen wird alles, was auf der Oberfläche ersichtlich ist, ausprogrammiert und gestaltet. Controller bilden die Verbindung zwischen den Views und den Models und ermöglichen es dem Benutzer, Daten mithilfe eines Zugriffs auf das Model zu verändern. Models bilden die Datenstruktur ab und ermöglichen den Zugriff auf die Daten und die Änderung dieser. Routen vermitteln die Benutzerabfrage von der View mit dem dazugehörigen Controller und werden in der Datei “web.php” definiert. Der ganze Prozess ist in \autoref{fig:Laravel MVC} visuell dargestellt.  Informationen zu Laravel wurden der Quelle \cite{Wasist} entnommen.
 \begin{figure}[h]
 	\centering
 	\includegraphics[height=8cm,width=15cm]{images/LaravelMVC}
@@ -180,13 +180,13 @@ Durch die vordefinierte Datenstruktur, die ASP.NET bereitstellt, hilft es dem Pr
 \end{figure}
 
 
-Alle Informationen und Daten über ASP.NET können unter der Quelle xy (https://asp.mvc-tutorial.com/de/421/einfuhrung/was-ist-asp-net-mvc/) nachgelesen werden.
+Alle Informationen und Daten über ASP.NET können unter der Quelle \cite{ASPNET} nachgelesen werden.
 
 \subsubsection{React}
 React ist eine JavaScript-Softwarebibliothek, die es erleichtert, Benutzeroberflächen in Form von Web Applikationen zu erstellen. Es ist komponentenbasiert, was bedeutet, dass jedes Element in Blöcken aufgebaut ist und durch Zusammenfügen dieser einzelnen Codebits kann dann eine sogenannte View erstellt werden. Dies bietet die Möglichkeit, bereits erstellte Codebits auch in anderen Views zu verwenden.\\ React wird oft zusammen mit ASP.NET verwendet.
 
 
-Genaueres zu React kann unter der Quelle xy (https://t3n.de/news/react-facebook-623999/) nachgelesen werden.
+Genaueres zu React kann wurden der Quelle \cite{React} entnommen.
 \begin{figure}[h]
 	\centering
 	\includegraphics[height=3cm,width=4cm]{images/React_Logo}
@@ -196,7 +196,7 @@ Genaueres zu React kann unter der Quelle xy (https://t3n.de/news/react-facebook-
 \newpage
 
 \subsubsection{Entscheidung des Frameworks}\label{sec:Entscheidung des Frameworks}
-Positive und negative Aspekte jedes Framworks wurden vom Projektteam, mithilfe der Tabelle 2.3 abgewogen. Daten für diese Tabelle wurden aus den Quellen xy entnommen.
+Positive und negative Aspekte jedes Framworks wurden vom Projektteam, mithilfe der Tabelle 2.3 abgewogen. Daten für diese Tabelle wurden aus den Quellen \cite{VorundNachteile1, VorundNachteile2, VorundNachteile3, VorundNachteile4}  entnommen.
 
 \begin{table}[h]
 	
@@ -237,7 +237,7 @@ Deswegen ist die Auswahl des Front-End Templates essenziell für die Umsetzung d
 
 
 \subsubsection{Bootstrap}
-Bootstrap ist ein Open Source Front-End Template. Es basiert auf den Programmiersprachen HTML, CSS sowie JavaScript und stellt Gestaltungsvorlagen wie Formulare, Tabellen, Buttons und weitere Oberflächengestaltungen bereit. Bootstrap ist weltweit eines der bekanntesten und beliebtesten Front-End Template. Ebenso bietet Bootstrap eine Open Source-SVG-Icon-Bibliothek an, womit die Kompatibilität zwischen Komponenten und Icons bestenfalls gegeben ist. Vorteil dieses Templates ist, dass es leichtgewichtig [PM1] ist, weil nur Front-End-Daten geladen werden müssen und keine Backend-Funktionalitäten. Zusätzlich ist es problemlos in das Projekt einzubinden und stellt mehrere Vorlagen zur Verfügung, die ebenso eingebunden werden können. Bootstrap ist kostenfrei zu verwenden, und das Projektteam bringt bereits Erfahrung mit diesem Template mit. Die Nachteile sind, dass Bootstrap wenige Back-End-Funktionen bereitstellt, und es ist weniger gut geeignet für sehr große Applikationen.
+Bootstrap ist ein Open Source Front-End Template. Es basiert auf den Programmiersprachen HTML, CSS sowie JavaScript und stellt Gestaltungsvorlagen wie Formulare, Tabellen, Buttons und weitere Oberflächengestaltungen bereit. Bootstrap ist weltweit eines der bekanntesten und beliebtesten Front-End Template. Ebenso bietet Bootstrap eine Open Source-SVG-Icon-Bibliothek an, womit die Kompatibilität zwischen Komponenten und Icons bestenfalls gegeben ist. Vorteil dieses Templates ist, dass es leichtgewichtig [PM1] ist, weil nur Front-End-Daten geladen werden müssen und keine Backend-Funktionalitäten. Zusätzlich ist es problemlos in das Projekt einzubinden und stellt mehrere Vorlagen zur Verfügung, die ebenso eingebunden werden können. Bootstrap ist kostenfrei zu verwenden, und das Projektteam bringt bereits Erfahrung mit diesem Template mit. Die Nachteile sind, dass Bootstrap wenige Back-End-Funktionen bereitstellt, und es ist weniger gut geeignet für sehr große Applikationen. Informationen über Bootstrap wurden den Quellen \cite{Bootstrap1, Bootstrap2, Bootstrap3,Bootstrap4}  entnommen.
  In \autoref{fig:Bootstrap Logo}
  ist das Bootstrap Logo ersichtlich.
 \newline
@@ -250,7 +250,7 @@ Bootstrap ist ein Open Source Front-End Template. Es basiert auf den Programmier
 
 \newpage
 \subsubsection{Tailwind.css}
-Tailwind ist ein Utility-First CSS-Template, welches derzeit weltweit sehr beliebt ist. Diese Art von Template soll mehr Flexibilität bieten als die traditionellen Vorgänger. Tailwind.css stellt Utility-Klassen zur Verfügung, mit denen man selbst Klassen zum Stylen der Komponenten definieren kann. Ein Inlinestylen ist bei diesem Template ebenso möglich, womit externe CSS-Dateien überflüssig sind. Tailwind stellt Hilfsklassen zur Verfügung, welche das Arbeiten um einiges erleichtern. Zusätzlich bietet dieses Template eine hohe Flexibilität sowie mehrere Funktionen, um ein Responsive Design zu erreichen. Jedoch hat dieses Template keine vorgefertigten Komponenten, auf welche zurückgegriffen werden kann, und der Benutzer dieses Templates braucht sehr viel Zeit zum Erlernen der richtigen Verwendung. Die Größe der zu installierenden CSS-Datei ist sehr groß, da dieses Template eine breite Palette von Klassen bereitstellt, wobei die meisten oft in einem Projekt nicht verwendet werden. Das Projektteam hat mit diesem Template wenig Erfahrung, und die Dokumentation im Internet ist sehr mangelhaft.
+Tailwind ist ein Utility-First CSS-Template, welches derzeit weltweit sehr beliebt ist. Diese Art von Template soll mehr Flexibilität bieten als die traditionellen Vorgänger. Tailwind.css stellt Utility-Klassen zur Verfügung, mit denen man selbst Klassen zum Stylen der Komponenten definieren kann. Ein Inlinestylen ist bei diesem Template ebenso möglich, womit externe CSS-Dateien überflüssig sind. Tailwind stellt Hilfsklassen zur Verfügung, welche das Arbeiten um einiges erleichtern. Zusätzlich bietet dieses Template eine hohe Flexibilität sowie mehrere Funktionen, um ein Responsive Design zu erreichen. Jedoch hat dieses Template keine vorgefertigten Komponenten, auf welche zurückgegriffen werden kann, und der Benutzer dieses Templates braucht sehr viel Zeit zum Erlernen der richtigen Verwendung. Die Größe der zu installierenden CSS-Datei ist sehr groß, da dieses Template eine breite Palette von Klassen bereitstellt, wobei die meisten oft in einem Projekt nicht verwendet werden. Das Projektteam hat mit diesem Template wenig Erfahrung, und die Dokumentation im Internet ist sehr mangelhaft. Die Quellen \cite{Tailwind1, Tailwind2, Tailwind3} dienten als Informationsgrundlage.
  In \autoref{fig:Tailwind Logo}
 ist das Tailwind.css Logo ersichtlich.
 \begin{figure}[h]
@@ -262,7 +262,7 @@ ist das Tailwind.css Logo ersichtlich.
 
 
 \subsubsection{Vue.js}\label{sec: Vue.js}
-Das Template Vue.js, welches für die Front-End-Entwicklung eingesetzt werden kann, wird immer populärer. Die Einfachheit und Benutzerfreundlichkeit ist ein Grund für die immer größer werdende Beliebtheit. Vue.js basiert auf dem virtuellen DOM\footnote{Virtuelles Document Object Model, beim Aktualisieren schneller als das herkömmliche}, was bedeutet, dass das Abarbeiten von Befehlen schneller funktioniert als beim herkömmlichen bekannten DOM\footnote{Document Object Model, stellt XML oder HTML Dokumente als Baumstruktur dar}. Vue.js basiert auf den Programmiersprachen HTML, CSS und JavaScript, womit die wichtigsten verwendeten Sprachen abgedeckt sind. Vue.js stellt Funktionen wie UniTests, End-to-End-Tests sowie Routing-Systeme bereit. Die Lesbarkeit bei diesem Template ist sehr gut, da alle Komponenten sich in einer Datei befinden. Das Projektteam hat nur wenig Erfahrung mit diesem Template und es herrschen generelle Sprachbarrieren, da vieles nur in der Sprache Chinesisch vorhanden ist.
+Das Template Vue.js, welches für die Front-End-Entwicklung eingesetzt werden kann, wird immer populärer. Die Einfachheit und Benutzerfreundlichkeit ist ein Grund für die immer größer werdende Beliebtheit. Vue.js basiert auf dem virtuellen DOM\footnote{Virtuelles Document Object Model, beim Aktualisieren schneller als das herkömmliche}, was bedeutet, dass das Abarbeiten von Befehlen schneller funktioniert als beim herkömmlichen bekannten DOM\footnote{Document Object Model, stellt XML oder HTML Dokumente als Baumstruktur dar}. Vue.js basiert auf den Programmiersprachen HTML, CSS und JavaScript, womit die wichtigsten verwendeten Sprachen abgedeckt sind. Vue.js stellt Funktionen wie UniTests, End-to-End-Tests sowie Routing-Systeme bereit. Die Lesbarkeit bei diesem Template ist sehr gut, da alle Komponenten sich in einer Datei befinden. Das Projektteam hat nur wenig Erfahrung mit diesem Template und es herrschen generelle Sprachbarrieren, da vieles nur in der Sprache Chinesisch vorhanden ist. Informationen über Vue.js wurden aus den Quellen \cite{Vuejs1, Vuejs2} bezogen.
  In \autoref{fig:Vuejs Logo}
 ist das Vue.js Logo ersichtlich.
 
@@ -336,7 +336,7 @@ In der nachfolgenden Tabelle ist eine Gegenüberstellung der Vor- und Nachteile 
 \subsection{Verbindung der Datenbank mit Laravel}
 In Laravel ist die Verbindung  der Datenbank mithilfe der .env Datei möglich. Tabellen werden in sogenannten Migrations definiert. Auf die einzelnen Komponenten und deren Individualisierung wird in den Kapiteln \ref{sec:Laravel .env Datei} und \ref{sec:Migrations} noch genauer eingegangen.
 \subsubsection{Laravel .env Datei } \label{sec:Laravel .env Datei}
-In Laravel bietet die .env Datei, welche sich direkt im Projektordner befindet, die Möglichkeit, alle nötigen Umgebungsvariablen zu initialisieren. Ein Beispiel für Umgebungsvariablen sind Datenbank Anmeldeinformationen, Cache-Treiber, Mail-Server-Domain oder auch die App URL. Wichtig ist es, dass die .env Datei immer gerätespezifisch konfiguriert wird. Das heißt, es ist wichtig beim Zusammenarbeiten, speziell mit Git, sehr gut aufzupassen. Das Projekt Team hatte Problem, wie beispielsweise ungleiche PHP Versionen, die zu Fehlern und Nichtausführbarkeit des Produkts führten.Auf dem Produktivsystem gab es dann Probleme mit der Benennung der Ordner. Folge dessen ist es empfehlenswert, die .env Datei  mit einem Gitignore\footnote{Gitignore markiert Daten, die von Git ignoriert werden sollen} zu versehen, um Komplikationen zu vermeiden. Es besteht auch die Möglichkeit,  Änderungen in der .env Datei direkt aus dem Programm vorzunehmen. 
+In Laravel bietet die .env Datei, welche sich direkt im Projektordner befindet, die Möglichkeit, alle nötigen Umgebungsvariablen zu initialisieren. Ein Beispiel für Umgebungsvariablen sind Datenbank Anmeldeinformationen, Cache-Treiber, Mail-Server-Domain oder auch die App URL. Wichtig ist es, dass die .env Datei immer gerätespezifisch konfiguriert wird. Das heißt, es ist wichtig beim Zusammenarbeiten, speziell mit Git, sehr gut aufzupassen. Das Projekt Team hatte Problem, wie beispielsweise ungleiche PHP Versionen, die zu Fehlern und Nichtausführbarkeit des Produkts führten.Auf dem Produktivsystem gab es dann Probleme mit der Benennung der Ordner. Folge dessen ist es empfehlenswert, die .env Datei  mit einem Gitignore\footnote{Gitignore markiert Daten, die von Git ignoriert werden sollen} zu versehen, um Komplikationen zu vermeiden. Es besteht auch die Möglichkeit,  Änderungen in der .env Datei direkt aus dem Programm vorzunehmen. Infos über die .env Datei auf der Quelle \cite{Env} nachgelesen.
 
 \subsubsection{Migrations}\label{sec:Migrations}
 Migrations bilden in Laravel eine Möglichkeit, die Tabellenstruktur im Programm selbst fest zu legen. Sie sind sozusagen der Blueprint\footnote{ein Blueprint ist sozusagen der Bauplan oder eine Vorlage wie etwas auszusehen hat}, in welchem die gesamte Tabellenstruktur vordefiniert ist. Für jede Tabelle, die in der Datenbank, welche vorher in der  .env Datei  definiert wurde, erstellt werden soll, gibt es eine eigene Migration. Migrations sind unterteilt in eine up() und in eine down()  Methode\footnote{Methoden sind eine Art Container, für den in ihnen auszuführenden Code}. In der up() Methode wird der Name der Tabelle, der Name der einzelnen Tupel und deren Datentyp definiert. Der Datentyp id() ist standardmäßig immer der primary Key. 
@@ -344,7 +344,7 @@ In der down() Methode wird die Tabelle von der Datenbank gelöscht. Die beiden M
 Erstellt werden Migrations mithilfe eines weiteren Laravel Befehls, welcher im Kapitel \ref{sec Migration Befehle} beschrieben wird. Wenn die Migration erfolgreich erstellt wurde, ist diese folgendermaßen benannt: JJJJ.MM.DD\_tempname.php und befindet sich im Ordner Projektname\textbackslash database \textbackslash migrations.
 
 
-Alle Informationen liegen der Quelle (https://laravel.com/docs/9.x/migrations) zugrunde.
+Alle Informationen liegen der Quelle \cite{Migrations} zugrunde.
 \newpage
 \subsubsection{Seeder und Factories}
 Factories ermöglichen es, Fake Models\footnote{Fake Models sind Models, die nur temporär angelegt werden um auf die Daten zugreifen zu können} zu erstellen und mithilfe dieser auf die Datensätze in der Datenbank zuzugreifen und diese zu verändern. Daten werden mithilfe der Open Source-Bibliothek Faker generiert. Die Faker Bibliothek kann folgende Daten generieren: 
@@ -362,7 +362,7 @@ Factories ermöglichen es, Fake Models\footnote{Fake Models sind Models, die nur
 \end{itemize}
 
 Datenbank-Factories  erlauben es , Tabellen programmgesteuert mit Daten anzufüllen. \\Sie ermöglichen es, innerhalb von einigen Minuten tausende Daten in die Datenbank zu schreiben.\\
-Die Hauptaufgabe eines Seeders ist es jedoch nur die Factories aufzurufen.
+Die Hauptaufgabe eines Seeders ist es jedoch nur die Factories aufzurufen. Über Seeder und Factories hat sich das Projektteam unter \cite{seeder} informiert.
 
 \subsubsection{Datenübergabe in Laravel}
 Ein Controller hat die Aufgabe mithilfe eines Models die Daten zu verändern und danach eine View zurückzugeben. Möchte man jedoch Daten wie Attribute, welche im Formular mitgeschickt werden, auf der zurückgegebenen View verwenden, müssen diese mitgegeben werden.
@@ -444,7 +444,7 @@ Diese Variante bietet den Vorteil, dass im Code gleich direkt auf das Attribut z
 \end{lstlisting}
 
 
-Alle Informationen und Arten der Datenübergabe wurden aus dem Video aus der Quelle xy () entnommen.
+Alle Informationen und Arten der Datenübergabe wurden aus dem Video aus der Quelle \cite{Video} entnommen.
 
 
 \section {Visuelle Darstellung der Energiesysteme und Energietechnologien }
@@ -456,7 +456,7 @@ Das Produkt stellt eine zentrale Verwaltungsmöglichkeit in Form einer Karte ber
 \subsubsection{Google Maps} \label{sec:Gooogle Map}
 
 
-Google Maps ist der klare Marktführer in der Sparte der Kartendienst Anbieter.  Der Großteil  aller Webanwendungen, welche Maps verwenden, werden mit Google Maps umgesetzt. Google Maps überzeugt nicht nur mit einer sehr hohen Individualisierungsmöglichkeit, sondern auch mit einer sehr hohen Ausfallsicherheit. Der größte Vorteil ist jedoch, das große Angebot an vordefinierten API Diensten. Diese können einfach über die Google Cloud Platform überwacht, bedient oder aktiviert werden. Genauere Infos zur Google Maps Plattform stehen im Kapitel \ref{sec: Google Cloud}. Ein weiterer Vorteil von Google Maps ist es, dass es wirklich weitflächig alles abdeckt, ganz im Gegensatz zu OpenStreetMap. Der einzige Nachteil ist, dass die Verwendung einer Google Maps Karte auf der Website kostenpflichtig ist. Es gibt jedoch auf der Google Cloud Seite eine genaue Kostenaufstellung. Bezahlt wird bei Verwendung der API Dienste. Google verrechnet hier je nach API Dienst einen gewissen Betrag pro Verwendung. Diese Kosten waren jedoch bei der Entwicklung kein Problem, da Google Cloud für die ersten 30 Tage ein Startkapital von 300 Dollar anbietet.  
+Google Maps ist der klare Marktführer in der Sparte der Kartendienst Anbieter.  Der Großteil  aller Webanwendungen, welche Maps verwenden, werden mit Google Maps umgesetzt. Google Maps überzeugt nicht nur mit einer sehr hohen Individualisierungsmöglichkeit, sondern auch mit einer sehr hohen Ausfallsicherheit. Der größte Vorteil ist jedoch, das große Angebot an vordefinierten API Diensten. Diese können einfach über die Google Cloud Platform überwacht, bedient oder aktiviert werden. Genauere Infos zur Google Maps Plattform stehen im Kapitel \ref{sec: Google Cloud}. Ein weiterer Vorteil von Google Maps ist es, dass es wirklich weitflächig alles abdeckt, ganz im Gegensatz zu OpenStreetMap. Der einzige Nachteil ist, dass die Verwendung einer Google Maps Karte auf der Website kostenpflichtig ist. Es gibt jedoch auf der Google Cloud Seite eine genaue Kostenaufstellung. Bezahlt wird bei Verwendung der API Dienste. Google verrechnet hier je nach API Dienst einen gewissen Betrag pro Verwendung. Diese Kosten waren jedoch bei der Entwicklung kein Problem, da Google Cloud für die ersten 30 Tage ein Startkapital von 300 Dollar anbietet. Informationen zu Google Maps wurden der Quelle \cite{GoogleMaps} entnommen.
 \begin{figure}[h]
 	\centering
 	\includegraphics[height=2.5cm,width=4cm]{images/GoogleMapsLogo}
@@ -468,7 +468,7 @@ Google Maps ist der klare Marktführer in der Sparte der Kartendienst Anbieter. 
 
 
 OpenStreetMap ist ein 2004 gegründetes Projekt, welches das Ziel hat, eine frei verfügbare Weltkarte zu erstellen. Gegründet wurde dieses Projekt von Steve Coast und zählt mittlerweile um die 7.8 Millionen Nutzer. Das Hauptargument OpenStreetMap eher als Google Maps zu verwenden ist es, dass dieses kostenlos und lizenzfrei ist. Es gibt jedoch gravierende Nachteile gegenüber Google Maps. Openstreetmap bietet keine API Dienste an. Es gibt zwar die Möglichkeit, mithilfe von Leaflet, welches eine JavaScript-Bibliothek ist, eigenen API Dienste zu programmieren, dies ist jedoch mit einem sehr hohen Aufwand und einer sehr hohen Komplexität verbunden. Ein weiterer Nachteil von OpenStreetMap ist es, dass es auf Benutzerdaten aufbaut. Das bedeutet, Nutzer sind  dafür verantwortlich, die Karte immer auf dem aktuellsten Stand zu halten. Somit ist dieser Kartendienst wenig zuverlässig.
-Ein weiterer Nachteil wäre, dass Daten für alle Benutzer zugänglich sind. Informationen über OpenStreetMap wurden aus der Quelle xy () entnommen.
+Ein weiterer Nachteil wäre, dass Daten für alle Benutzer zugänglich sind. Informationen über OpenStreetMap wurden aus der Quelle  \cite{OpenStreetMap} entnommen.
 \begin{figure}[h]
 	\centering
 	\includegraphics[height=2.5cm,width=4cm]{images/OpenStreetMap_Logo}
@@ -502,7 +502,7 @@ Eine weitere Option ist es, die Energiesysteme und Technologien mittels CSS auf 
 		\item es soll nicht kostspielig sein 
 	\end{itemize}
 
-Um die Anbieter auf die gewünschten Anforderungen zu überprüfen, wurde die Tabelle \ref{tab: Vor- und Nachteile der Anbieter} angefertigt. Daten für diese Tabelle wurden den Quellen ... entnommen.
+Um die Anbieter auf die gewünschten Anforderungen zu überprüfen, wurde die Tabelle \ref{tab: Vor- und Nachteile der Anbieter} angefertigt. Daten für diese Tabelle wurden der Quelle \cite{GvsS} \space entnommen.
 
 \begin{table}[h]
 
@@ -568,7 +568,7 @@ Dieser Benutzer hat die geringste Berechtigung und tritt in Kraft, wenn man nich
 \subsection{Berechtigungen in Laravel}
 Im folgenden Abschnitt wird erklärt, wie in Laravel die zuvor genannten Benutzerrollen unterschieden werden.
 Dafür bietet Laravel Authentifizierungsrichtlinien. Dabei kann mit den Befehlen @auth und @guest überprüft werden, ob der aktuelle Benutzer authentifiziert oder ein Gast ist. Je nach Authentifizierung und Rolle hat der Benutzer unterschiedliche Rechte sowie Funktionen zur Verfügung.
-Für genauere Informationen, wie eine Berechtigungsüberprüfung in Laravel umgesetzt werden kann, siehe Quelle x.y.
+Für genauere Informationen, wie eine Berechtigungsüberprüfung in Laravel umgesetzt werden kann, siehe Quelle \cite{LaravelAuth}.
 
 
 
@@ -588,7 +588,7 @@ Nützliche Programme zum Erstellen der besagten Dokumente  sind folgende:
 	\item Figma
 	\item SimilarWeb
 \end{itemize}
-Informationen über Ui und Ux Design wurden der Quelle xy entnommen.
+Informationen über Ui und Ux Design wurden der Quelle \cite{UI} entnommen.
 
 \subsection{Wireframe}
 Ein Wireframe hilft dem Design Team eine grobe Struktur der Website vorzudefinieren. Bei der Erstellung eines Wireframes wird der visuelle Design Part komplett vernachlässigt. Bei einem Wireframe wird sich auf den Aufbau und die Position der Elemente konzentriert. Es ist meist in schwarz und weiß gehalten, da Farben bei diesem Aufbauprozess nur behindern würden. 
@@ -635,7 +635,7 @@ Möchte man diesen Platzhalter dann auf einer der Unterseiten, welche die Layout
 	]
 	@section('title', 'titlename')
 \end{lstlisting} 
-Das Projektteam verwendet dieses Statement auf jeder Unterseite, um den Titel zu setzen.
+Das Projektteam verwendet dieses Statement auf jeder Unterseite, um den Titel zu setzen. Information über dieses Thema wurden der Quelle \cite{yield} entnommen.
 
 \subsection{Sections}
 Sections ermöglichen es, die Layout Datei in Abschnitte zu unterteilen. Der Beginn einer Section wird mit folgendem Befehl gekennzeichnet:
@@ -666,7 +666,7 @@ Um die Section wieder zu schließen, muss folgendes Statement benutzt werden:
 	]
 	@endsection
 \end{lstlisting} 
- Die Einteilung des Codes in Section erlaubt es, dieses Codestück auf einer anderen Seite mit nur einem Stichwort einzubinden. 
+ Die Einteilung des Codes in Section erlaubt es, dieses Codestück auf einer anderen Seite mit nur einem Stichwort einzubinden. Daten über Section wurden in der Quelle \cite{yield} nachgelesen.
 \subsection{Einbindung der definierten Sections}
 Um diese im Layout File definierten Sections im Code einbinden zu können, müssen einige Einstellungen vorgenommen werden. Am Anfang einer neuen Seite muss dieser Code eingefügt werden:
 \begin{lstlisting}[
@@ -758,7 +758,7 @@ Wenn die zuletzt erstellten Tabellen rückgängig gemacht werden sollen, gibt es
 	]
 	php artisan migrate:rollback 
 \end{lstlisting}
-Weitere nützliche Befehle sind unter  der Quelle xy () zu finden.
+Weitere nützliche Befehle sind unter  der Quelle \cite{Migrations} zu finden.
 
 \subsection{Seeder und Factory Befehle}
 Um einen Datenbank Seeder zu erstellen, ist folgendes Kommando notwendig: 
@@ -804,7 +804,7 @@ Um den Seeder nach Initialisierung auszuführen, gibt es folgende Möglichkeit:
 	]
 	php artisan db:seed
 \end{lstlisting}
-Weitere nützliche Befehle und Individualizations Möglichkeiten sind unter der Quelle xy() verzeichnet.
+Weitere nützliche Befehle und Individualizations Möglichkeiten sind unter der Quelle \cite{Database} verzeichnet.
 \subsection{Model und Controller Befehle}
 Um ein neues Model zu erstellen, verwendet man dieses Kommando:
 \begin{lstlisting}[
@@ -859,7 +859,7 @@ Erstellt wird ein Resource Controller folgendermaßen:
 	]
 	php artisan make:controller controller_name --resource
 \end{lstlisting}
-Genauere Informationen zu der Erstellung von Models und Controllern finden Sie unter der Quelle xy ().
+Genauere Informationen zu der Erstellung von Models und Controllern finden Sie unter der Quellen  \cite{Controller,Model}.
 
 \subsection{Starten des Laravel Entwicklungs Servers}
 Laravel bietet die Möglichkeit, wenn PHP auf dem Entwicklungssystem installiert ist, einen PHP Development Server zu hosten und das Projekt über den Localhost anzuzeigen. Um den Server zu starten, muss folgende Zeile eingeben werden:
@@ -1247,7 +1247,7 @@ Interaktionsfarben werden verwendet, um eine Aktion zu kennzeichnen. Bei diesem 
 Unser Produkt verwendet die Schriftarten Smooch Sans und Hubballi. Diese Schriftarten sind von Google Fonts frei zur Verfügung und zur Verwendung gestellt. Hubballi wurde für jede Art von Fließtext verwendet. Smooch Snans wurde verwendet, um die Überschriften zu formatieren. In der Abbildung \ref{fig: Beispiel auf der Website} sind beide Schriften veranschaulicht.
 \begin{figure}[h]
 	\centering
-	\includegraphics[height=5cm,width=15cm]{images/Beispiel_Schriftarten}
+	\includegraphics[height=6cm,width=15cm]{images/Beispiel_Schriftarten}
 	\caption{Beispiel auf der Website}
 	\label{fig: Beispiel auf der Website}
 \end{figure}
@@ -1544,7 +1544,7 @@ Folgende drei Rollen stehen zur Verfügung:
 	\item Mitarbeiter
 	\item Öffentlicher Benutzer
 \end{itemize}
-Wie eine generelle Überprüfung des Benutzers in Laravel umgesetzt werden kann, ist unter der Quelle x.y ersichtlich. 
+Wie eine generelle Überprüfung des Benutzers in Laravel umgesetzt werden kann, ist unter der Quelle \cite{LaravelAuth} ersichtlich. 
 \newline Folgende Überprüfung wurde selbst vom Projektteam entwickelt und ist somit nicht unter der genannten Quelle auffindbar.\newline \newline
 Mit dieser Überprüfung wird kontrolliert, ob der gerade angemeldete Benutzer das Energiesystem oder die Energietechnologie selbst erstellt hat oder ob er die Rolle des Administrators aufweisen kann. Falls der Benutzer das Energiesystem oder die Energietechnologie selbst erstellt hat, ist der erste Teil der Überprüfung erfüllt und der Benutzer hat die Verwaltungsfunktionen zur Verfügung. Falls der Benutzer das Energiesystem oder die Energietechnologie nicht selbst erstellt hat, wird die zweite Überprüfung durchgeführt, welche überprüft, ob der Benutzer die Rolle des Administrators aufweisen kann. Falls er diese Rolle besitzt, hat er die Verwaltungsfunktionen zur Verfügung, andernfalls nicht.
 
@@ -1567,7 +1567,7 @@ Mit dieser Überprüfung wird kontrolliert, ob der gerade angemeldete Benutzer d
 
 \newpage
 \subsubsection{Adresssuche}
-Mithilfe des Adresssuchfeldes ist es möglich, einen Standort einzugeben, um anschließend auf der Karte zu diesem zu gelangen. Dadurch ist das Auffinden von bestimmten Orten auf der Karte problemlos möglich. Dabei wird die eingegebene Adresse in geografische Koordinaten umgewandelt, zu welchen man anschließend navigiert wird. In der folgenden \autoref{fig:Adresssuchfeld} ist das Adresssuchfeld ersichtlich.
+Mithilfe des Adresssuchfeldes ist es möglich, einen Standort einzugeben, um anschließend auf der Karte zu diesem zu gelangen. Dadurch ist das Auffinden von bestimmten Orten auf der Karte problemlos möglich. Dabei wird die eingegebene Adresse in geografische Koordinaten umgewandelt, zu welchen man anschließend navigiert wird. In der folgenden \autoref{fig:Adresssuchfeld} ist das Adresssuchfeld ersichtlich. Folgende Anleitung wurde für die Adresssuche benutzt: \cite{Adresssuchfeld}
 \begin{figure}[h]
 	\centering
 	\includegraphics[height=2cm,width=15cm]{images/Adresssuchfeld}
@@ -1585,8 +1585,7 @@ Folgende Schreibweisen sind in der Suche möglich:
 
 
 \textbf{Automatische Vervollständigung} \\
-Um die Suche nach der richtigen Adresse zu vereinfachen, wird die Eingabe des Benutzers mit einer Autocomplete-Funktion unterstützt. Diese Funktion bietet mögliche Ziel-Adressen anhand der bisher eingegebenen Daten an, welche vom Benutzer ausgewählt werden können. Dafür wurde eine von Google bereitgestellte API verwendet. 
-Quelle Xy 
+Um die Suche nach der richtigen Adresse zu vereinfachen, wird die Eingabe des Benutzers mit einer Autocomplete-Funktion unterstützt. Diese Funktion bietet mögliche Ziel-Adressen anhand der bisher eingegebenen Daten an, welche vom Benutzer ausgewählt werden können. Dafür wurde eine von Google bereitgestellte API verwendet. Folgende Quelle diente als Anleitung: \cite{Autocomplete}
 Ein Beispiel dieser Funktion ist in der \autoref{fig:Automatische Vervollständigung} dargestellt.
 
 \begin{figure}[h]
@@ -1776,13 +1775,13 @@ In der Section Header ist die Navigationsleiste vordefiniert. Die Section Conten
 
 
 \section{DataTable} \label{sec:DataTable}
-Um die angezeigten Daten in der Tabelle zu sortieren, zu filtern oder deren Anzahl pro Seite zu begrenzen, wurde das Plug-in DataTable verwendet. DataTable ist ein Plug-In der JavaScript-Bibliothek jQuery. Dieses Tool bietet viele Funktionen wie die Suchfunktion, die Sortierfunktion und die Seitennummerierung.
+Um die angezeigten Daten in der Tabelle zu sortieren, zu filtern oder deren Anzahl pro Seite zu begrenzen, wurde das Plug-in DataTable verwendet. DataTable ist ein Plug-In der JavaScript-Bibliothek jQuery. Dieses Tool bietet viele Funktionen wie die Suchfunktion, die Sortierfunktion und die Seitennummerierung. 
 
-Das Projektteam hat sich für eine Einbindung mittels CDN \footnote{Content Delivery Network Quelle x}  entschieden.
+Das Projektteam hat sich für eine Einbindung mittels CDN \footnote{Content Delivery Network Quelle \cite{DataTableCDN}}  entschieden.
 Für einen Standard-DataTable mittels CDN sind folgende Schritte notwendig:
 
 JavaScript und CSS-Files einbinden
-\newline Je nach Verwendungsart des DataTables müssen unterschiedliche JavaScripts und CSS-Files eingebunden werden. Unter der  Quelle x.y kann herausgefunden werden, welche Files eingebunden werden müssen. 
+\newline Je nach Verwendungsart des DataTables müssen unterschiedliche JavaScripts und CSS-Files eingebunden werden. Unter der  Quelle \cite{DataTable2} kann herausgefunden werden, welche Files eingebunden werden müssen. 
 
 Nachdem die Files eingebunden sind, muss folgende Funktion hinzugefügt werden.
 \definecolor{mygray}{RGB}{252,251,244}
@@ -1963,14 +1962,15 @@ Um eine eigene Map einzurichten, muss zuerst ein Map Design erstellt werden, wel
 Die Diplomarbeit ist reibungslos verlaufen, jedoch würde das Projektteam andere Ansätze wählen bei einem Projekt gleicher Art. Die Kommunikation mit dem Auftraggeber hat sehr gut funktioniert, jedoch sind bei den laufenden Meetings immer wieder neue Änderungsvorschläge vonseiten des Auftraggebers gekommen. Dadurch entstanden für das Projektteam immer wieder neue Herausforderungen, welche zusätzlich zum definierten Projektziel umgesetzt werden sollten. Am Start der Entwicklung hatte das Projektteam mehrere Komplikationen bei der Verwendung von Git, da dabei immer wieder unerklärliche Fehler aufgetreten sind. Diese Fehler konnten jedoch mit der Zeit vom Projektteam gelöst werden, womit eine reibungslose Zusammenarbeit möglich wurde. Das Projektteam wird sich nach Abschluss der Diplomarbeit darum kümmern, die letzten Änderungsvorschläge des Auftraggebers umzusetzen. Anschließend ist das Projektteam nicht länger für das Produkt und dessen Verwaltung zuständig.
 
 
-\chapter{Quellen und Literatur}
 
-\chapter{Verzeichnisse}
+\printbibliography[heading=bibintoc,title={Quellen und Literatur}]
+
 \listoffigures
 
 \listoftables
 
 \listof{lstlisting}{Codeverzeichnis}
+\addcontentsline{toc}{chapter}{Codeverzeichnis}
 
 
 \chapter{Begleitprotokoll gem. § 9 Abs. 2 PrO-BHS}
@@ -2407,13 +2407,15 @@ Das Begleitprotokoll repräsentiert, welches Teammitglied woran und wie lange ge
 			 &Passwort vergessen Funktion &\\
 			 &welche eine E-Mail verschickt konfiguriert und getestet&\\ \hline
 		7/22 &Alle css Farben anpassen auf die gleiche Farbe & 9\\
-			 & und alle Texte auf die gleiche Schriftart &\\
+			 & und alle Texte auf die gleiche Schriftart &\\ \hline
 		8/22 & Verfassen der Diplomarbeit & 9\\
-			 &Besprechung (D, A, Bu)& 9\\ \hline
+			 &Besprechung (D, A, Bu)& \\ \hline
 		9/22 &Besprechung (D, A, Bu) & 9\\ 
 			 &Verfassen der Diplomarbeit&\\ \hline
 		10/22&Verfassen der Diplomarbeit& 9\\ \hline
-		11/22&Verfassen der Diplomarbeit& 9\\ \hline
+		11/22&Verfassen der Diplomarbeit& 15\\ \hline
+			 & Summe:  					& 218,2\\ \hline
+			 
 		
 		
 		
