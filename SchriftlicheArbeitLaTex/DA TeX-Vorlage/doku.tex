@@ -119,7 +119,7 @@ Das Produkt wurde als Browser Anwendung entwickelt, um überall lauffähig zu se
 \subsection{Serverseitig }
 Bei PHP handelt es sich zum einen serverseitige zur Laufzeit interpretierte Skriptsprache, mit welcher sich Daten dynamisch auf Website anzeigen lassen. Da es sich bei Laravel um ein PHP Framework handelt, wird der Code am Webserver beim Laden der Website interpretiert. Laravel kommuniziert serverseitig mithilfe eines sogenannten ORM (Object Relational Mapper) mit der Datenbank. Hiermit kann der Programmierer auf vorgefertigte Funktionen des ORM zurückgreifen und muss Datenbankoperationen wie Abfragen oder das Erstellen von Tabelleneinträgen nicht als SQL Abfragen Formatieren.
 
-\subsection{Clientseitige Interaktion des Benutzers}
+\subsection{Clientseitige Interaktionen des Benutzers}
 Bei dem Punkt Clientseitig befindet man sich in der Architektur des Zielsystems bei dem Element JavaScript und mit den damit verbundenen Interaktionen des Benutzers. Map-Interaktionen sind Interaktionen mit einer Karte, dazu gehört das Erstellen, Bearbeiten und Löschen von Energiesystemen sowie Energietechnologien. Eine weitere Interaktion wäre die Verwendung des Adresssuchfeldes, welche mit einem Klick auf den Button „Suche“ oder durch Drücken der Enter-Taste durchgeführt wird. Tabellen-Interaktionen sind eine zusätzliche clientseitige Aktion, da die vom DataTable\footnote{Eine genaue Begriffserklärung befindet sich in \ref{sec:DataTable}} bereitgestellten Funktionen wie die Suchfunktion, Sortierfunktion oder Seitennummerierung allesamt clientseitig stattfinden und somit keinen Einfluss auf das Back-End haben.
 Folgende \autoref{fig:clientseitig}
  zeigt den Aufbau der einzelnen Elemente, die zusammenarbeiten, um die Website zu erstellen.
@@ -1392,7 +1392,7 @@ Hier ist wichtig zu definieren, für was welches HTML Element verwendet wurde. <
 Auf dem Produkt befindet sich eine Diashow, die Bilder des Projekts Micro Grid Lab der Best GmbH präsentiert. Alle diese Bilder haben das Dateiformat JPG. Eines der präsentierten Bilder ist im Dateiformat PNG. Alle verwendeten Icons sind als PNG auf dem Produkt eingebunden. Die Fotos der Sponsoren aus dem Footer sind gemischt im PNG und im JPG Format. Das Logo, wie bereits im Kapitel \ref{sec: Logo} erwähnt, ist im Format JPG. Hier rät das Projektteam jedoch dazu, eine Vektorgrafik mit dem Dateiformat SVG zu verwenden.
 \newpage
 \section{Webanwendung}
-Im Abschnitt Weboberfläche wird speziell auf das Front-End sowie das Back-End des Produkts eingegangen. Bei dem Punkt Back-End vor allem auf die Funktionen, die für die Benutzer-Interaktionen zuständig sind, und bei dem Punkt Front-End auf das Layout sowie das Design der Weboberfläche.
+Im Abschnitt Webanwendung wird speziell auf das Front-End sowie das Back-End des Produkts eingegangen. Bei dem Punkt Back-End vor allem auf die Funktionen, die für die Benutzer-Interaktionen zuständig sind, und bei dem Punkt Front-End auf das Layout sowie das Design der Weboberfläche.
 
 
 \subsection{Back-End}
@@ -1976,11 +1976,12 @@ Die Diplomarbeit ist reibungslos verlaufen, jedoch würde das Projektteam andere
 \chapter{Begleitprotokoll gem. § 9 Abs. 2 PrO-BHS}
 Das Begleitprotokoll repräsentiert, welches Teammitglied woran und wie lange gearbeitet hat. Für das Verfassen der Begleitprotokolle wurden folgende Abkürzungen verwendet: 
 \begin{itemize}
-	\item Besprechung(D, A, Bu)  
-	\subitem D = Diplomant
-	\subitem A = Auftraggeber
-	\subitem Bu = Dipl.-Ing. Johann Burgstaller
-	\item SP = Sitzungsprotokoll 
+	\item Besprechung(D, A, Bu) = Besprechung mit Auftraggeber und Herrn Professor Burgstaller
+		\subitem Die Buchstaben symbolisieren die Teilnehmer der Besprechung 
+		\subitem D = Diplomanden
+		\subitem A = Auftraggeber
+		\subitem Bu = Dipl.-Ing. Johann Burgstaller
+	\item SP = Sitzungsprotokoll, welches für jede Besprechung erstellt wurde
 	
 	
 \end{itemize}
@@ -2010,15 +2011,6 @@ Das Begleitprotokoll repräsentiert, welches Teammitglied woran und wie lange ge
 34/21   & Back-End Entwicklung (Views erstellt, Datenbankverbindung, Routen) & 7,75	\\ \hline
 35/21   & Back-End Entwicklung (Datensätze Erstellen, Löschen), GitHub eingerichtet  & 12 \\ 
         & Besprechung (D, Bu), SP verfasst, Kartendienst Implementierung  &	\\ \hline
-	\end{tabular}
-\end{table}
-
-\newpage
-\begin{table}[h]
-	\begin{tabular}{|l|l|l|}
-		\hline
-		\textbf{KW/JAHR} &     \textbf{TÄTIGKEIT}  & 	\textbf{AUFWAND (h)}    \\ \hline
-		
 36/21   & Diplomarbeitsantrag in der Datenbank befüllt, Start-Präsentation durchgeführt & 6 \\
 		& Erste Design-Vorschläge verfasst & \\ \hline    
 37/21   & Besprechung (D, Bu) Diplomarbeitsantrag eingereicht & 5 \\ 
@@ -2028,20 +2020,29 @@ Das Begleitprotokoll repräsentiert, welches Teammitglied woran und wie lange ge
 39/21   & Besprechung (D, A, Bu) bezüglich finalen Design-Vorschlag, SP verfasst  & 2,5 \\
 		& genaue Anforderung der Datenbankattribute und Grafana Statistiken  &  \\ \hline	
 40/21   & Besprechung (D, A) & 1 \\
-		& Anforderung der Datenbankattribute und Grafana Statistiken überarbeitet  &  \\ \hline	
+		& Anforderung der Datenbankattribute und Grafana Statistiken überarbeitet  &  \\ \hline	        
 41/21   & Entwicklungsumgebung mit GitHub eingerichtet   & 1,5	\\ \hline
 43/21   & Front-End Entwicklung (Header, Footer, Liste, Drop-Down bei Galerie Seite) & 10 \\
 		& Bootstrap Recherche, CSS-Anpassungen, Icons in Photoshop angepasst   &  \\ 
 		& Finale Design in Adobe XD erstellt & \\ \hline	
 44/21   & Back-End Entwicklung (Energiesystem hinzufügen mit Pop-up) & 6 \\
-		& Besprechung (D, A, Bu) über aktuellen Stand der Entwicklung   &  \\ \hline	
+		& Besprechung (D, A, Bu) über aktuellen Stand der Entwicklung   &  \\ \hline	     
 45/21   & Google Maps Einbindung Recherche & 9,5 \\
 		& Google Maps API-Dokumentation verfasst   &  \\ 
 		& Google Cloud Account erstellt + Google Maps eingebunden & \\ \hline	
+       
+	\end{tabular}
+\end{table}
+
+\newpage
+\begin{table}[h]
+	\begin{tabular}{|l|l|l|}
+		\hline
+		\textbf{KW/JAHR} &     \textbf{TÄTIGKEIT}  & 	\textbf{AUFWAND (h)}    \\ \hline
 46/21   & Back-End Entwicklung (Map-Funktionen, Funktionalitäten der Liste Icons, & 10,5 \\
 		& Geo-Koordinaten werden beim Erstellen automatisch eingefügt)  &  \\ 
 		& Marker Recherche, Eigene Google Map erstellt & \\ 
-		& Energiesysteme-Marker aus Datenbank auslesen und auf der Karte platzieren & \\ \hline	
+		& Energiesysteme-Marker aus Datenbank auslesen und auf der Karte platzieren & \\ \hline			
 47/21   & Back-End Entwicklung (Authentifizierung,  & 14 \\
 		& Energietechnologien eines Energiesystems anzeigen)  &  \\ 
 		& Besprechung (D,A, Bu) aktuellen Stand der Entwicklung + SP verfasst & \\ 
@@ -2053,7 +2054,29 @@ Das Begleitprotokoll repräsentiert, welches Teammitglied woran und wie lange ge
 		& Bei Energiesystem Auswahl werden die richtigen Energietechnologien angezeigt & \\ 
 		& Adresssuche GeoCoding API für Autocomplete implementiert & \\ 	
 		& DataTable implementiert  & \\ 
-		& Karte bearbeitet (Zoom und Vollbild Button entfernt) & \\ \hline			
+		& Karte bearbeitet (Zoom und Vollbild Button entfernt) & \\ \hline
+50/21   & Besprechung (D,A, Bu) aktuellen Stand der Entwicklung + SP verfasst & 8,5 \\
+& Energiesystem Pop-Up um weitere Attribute  &  \\ 
+& wie Az-Energietechnologien erweitert & \\ 
+& Bildergalerie wird richtiges Bild einer Energietechnologie angezeigt& \\ \hline	
+51/21   & Besprechung (D,A, Bu) aktuellen Stand der Entwicklung + SP verfasst & 0,5 \\ \hline			
+52/21   & Schriftliche Arbeit Inhaltsverzeichnis erstellt, Mostviertler-Bewerb Anmeldung& 5 \\ \hline			
+01/22   & Besprechung (D, Bu) Mostviertler-Bewerb und Inhaltsverzeichnis & 13,5 \\ \hline		
+02/22   & Besprechung (D,A, Bu) aktuellen Stand der Entwicklung + SP verfasst & 0,5 \\ \hline	
+03/22   & Back-End Entwicklung (Bildergalerie Standardbild ,MoveToMarker  & 15 \\ 
+& Funktion implementiert, Clean Code, Register-Seite implementiert) & \\ \hline	
+04/22   & Schriftliche Arbeit & 6,5 \\ \hline		
+05/22   & Besprechung (D,A, Bu) aktuellen Stand der Entwicklung + SP verfasst  & 6 \\ 
+& Schriftliche Arbeit & \\ \hline		
+06/22   & Schriftliche Arbeit & 18 \\
+& Dokumente für die Übergabe des Projektes erstellt &  \\ 
+& Datenbank alle Attribute auf Englisch geändert  & \\ 
+& DSGVO und Impressum erstellt  & \\ \hline	
+07/22   & LaTex Recherche und Inhaltsverzeichnis erstellt  & 6 \\ 
+& Schriftliche Arbeit & \\ \hline	
+08/22   & Schriftliche Arbeit  & 19 \\ 
+& Besprechung (D,A, Bu) aktuellen Stand der Entwicklung + SP verfasst  & \\ \hline
+		
 	\end{tabular}
 \end{table}
 
@@ -2063,31 +2086,10 @@ Das Begleitprotokoll repräsentiert, welches Teammitglied woran und wie lange ge
 		\hline
 		\textbf{KW/JAHR} &     \textbf{TÄTIGKEIT}  & 	\textbf{AUFWAND (h)}    \\ \hline
 		
-50/21   & Besprechung (D,A, Bu) aktuellen Stand der Entwicklung + SP verfasst & 8,5 \\
-		& Energiesystem Pop-Up um weitere Attribute  &  \\ 
-		& wie Az-Energietechnologien erweitert & \\ 
-		& Bildergalerie wird richtiges Bild einer Energietechnologie angezeigt& \\ \hline	
-51/21   & Besprechung (D,A, Bu) aktuellen Stand der Entwicklung + SP verfasst & 0,5 \\ \hline			
-52/21   & Schriftliche Arbeit Inhaltsverzeichnis erstellt, Mostviertler-Bewerb Anmeldung& 5 \\ \hline			
-01/22   & Besprechung (D, Bu) Mostviertler-Bewerb und Inhaltsverzeichnis & 13,5 \\ \hline		
-02/22   & Besprechung (D,A, Bu) aktuellen Stand der Entwicklung + SP verfasst & 0,5 \\ \hline	
-03/22   & Back-End Entwicklung (Bildergalerie Standardbild ,MoveToMarker  & 15 \\ 
- 		& Funktion implementiert, Clean Code, Register-Seite implementiert) & \\ \hline	
-04/22   & Schriftliche Arbeit & 6,5 \\ \hline		
-05/22   & Besprechung (D,A, Bu) aktuellen Stand der Entwicklung + SP verfasst  & 6 \\ 
-		& Schriftliche Arbeit & \\ \hline		
-06/22   & Schriftliche Arbeit & 18 \\
-		& Dokumente für die Übergabe des Projektes erstellt &  \\ 
-		& Datenbank alle Attribute auf Englisch geändert  & \\ 
-		& DSGVO und Impressum erstellt  & \\ \hline	
-07/22   & LaTex Recherche und Inhaltsverzeichnis erstellt  & 6 \\ 
-		& Schriftliche Arbeit & \\ \hline	
-08/22   & Schriftliche Arbeit  & 19 \\ 
-		& Besprechung (D,A, Bu) aktuellen Stand der Entwicklung + SP verfasst  & \\ \hline
-09/22   & Schriftliche Arbeit, Besprechung (D,A, Bu) Go für Testphase   & 6 \\ 
-		& Schriftart der Weboberfläche geändert & \\ \hline		
+09/22   & Besprechung (D,A, Bu) Auftraggeber Go gegeben, um das Produkt zu testen   & 6 \\ 
+		& Schriftart der Weboberfläche geändert, Schriftliche Arbeit, & \\ \hline		
 10/22   & Schriftliche Arbeit & 6 \\ \hline
-11/22   & Schriftliche Arbeit & 11 \\ \hline
+11/22   & Schriftliche Arbeit & 11 \\ \hline	
 		
  %\sum SUMME & & 284 \\ \hline
 
@@ -2434,24 +2436,26 @@ Danksagung \\
 1.2.1 David Pöchacker \\
 2.1 Analyse des vorhandenen Systems 	 \\
 2.1.1 Begriffe \\
+2.2 Anforderungen an das Produkt	 \\
 2.2.1 Schutz von vertraulichen Informationen  \\
-2.2.2 Verteilung der Verwaltung von Energiesystemen und Energietechnologien 	 \\
-2.2.3 Visuelle Darstellung der Energiesysteme / Energietechnologien auf einer Karte \\
 2.3 Architektur des Zielsystems  \\
-2.3.4 Clientseitig  \\
-2.3.6  Front-End Templates  \\
-2.4 Berechtigungssystem Benutzer  \\
+2.3.3 Clientseitige Interaktion des Benutzers  \\
+2.3.5  Front-End Templates  \\
+2.5 Berechtigungssystem Benutzer  \\
 3.5.1 Back-End  \\
 3.5.5  Kartendienst Funktionalitäten  \\
-3.5.6  Anzeige von Energiesystemen/Energietechnologien auf der Karte  \\
+3.5.6  Anzeige von Energiesystemen und Energietechnologien auf der Karte  \\
 3.6 DataTable  \\
 3.7 Galerie Funktionen  \\
+Reümee und Ausblick
 7.1 Begleitprotokoll David Pöchacker	 \\
 8.1.1 David Pöchacker \\
 8.2.1 Visual Studio Code  \\
 8.2.7 Adobe XD  \\
 8.2.8 Adobe Photoshop  \\
-
+8.3.1 Projektkommunikation
+8.3.2 Projektstrukturplan
+8.3.3 Verantwortungsmatrix
 
 \subsection{Marcel Entner}
 1.2.2 Marcel Entner \\
@@ -2473,11 +2477,14 @@ Danksagung \\
 8.2.3 Composer \\
 8.2.4 Windows Eingabeaufforderung (CMD) \\
 8.2.9 LaTex  \\
-8.3.5 Terminplan \\
 8.3.4 Meilensteinplan \\
+8.3.5 Terminplan \\
+
 
 \subsection{Tobias Kronsteiner}
 Text
+
+8.4 Inhalt von GitHub
 
 \newpage
 \section{Verwendete Software}

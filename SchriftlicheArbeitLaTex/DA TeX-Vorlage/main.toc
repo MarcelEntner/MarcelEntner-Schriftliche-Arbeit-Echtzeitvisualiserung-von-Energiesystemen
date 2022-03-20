@@ -27,7 +27,7 @@
 \contentsline {section}{\numberline {2.3}Architektur des Zielsystems}{9}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Endgeräte}{9}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}Serverseitig }{10}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Clientseitige Interaktion des Benutzers}{10}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.3}Clientseitige Interaktionen des Benutzers}{10}{subsection.2.3.3}%
 \contentsline {subsection}{\numberline {2.3.4}Framework}{11}{subsection.2.3.4}%
 \contentsline {subsubsection}{\numberline {2.3.4.1}Laravel}{11}{subsubsection.2.3.4.1}%
 \contentsline {subsubsection}{\numberline {2.3.4.2}Angular}{12}{subsubsection.2.3.4.2}%
