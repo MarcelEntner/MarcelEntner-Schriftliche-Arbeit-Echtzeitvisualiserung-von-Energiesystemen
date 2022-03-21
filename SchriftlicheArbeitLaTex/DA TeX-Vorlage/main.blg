@@ -1,13 +1,17 @@
 [0] Config.pm:311> INFO - This is Biber 2.16
 [0] Config.pm:314> INFO - Logfile is 'main.blg'
-[147] biber-MSWIN64:340> INFO - === 
-[193] Biber.pm:415> INFO - Reading 'main.bcf'
-[355] Biber.pm:952> INFO - Found 39 citekeys in bib section 0
-[376] Biber.pm:4340> INFO - Processing section 0
-[394] Biber.pm:4531> INFO - Looking for bibtex format file 'Verzeichniss.bib' for section 0
-[458] bibtex.pm:1689> INFO - LaTeX decoding ...
-[519] bibtex.pm:1494> INFO - Found BibTeX data source 'Verzeichniss.bib'
+[171] biber-MSWIN64:340> INFO - === 
+[217] Biber.pm:415> INFO - Reading 'main.bcf'
+[373] Biber.pm:952> INFO - Found 39 citekeys in bib section 0
+[394] Biber.pm:4340> INFO - Processing section 0
+[410] Biber.pm:4531> INFO - Looking for bibtex format file 'Verzeichniss.bib' for section 0
+[471] bibtex.pm:1689> INFO - LaTeX decoding ...
+[518] bibtex.pm:1494> INFO - Found BibTeX data source 'Verzeichniss.bib'
 [521] Utils.pm:395> WARN - Duplicate entry key: 'Migrations' in file 'Verzeichniss.bib', skipping ...
-[614] Utils.pm:411> ERROR - BibTeX subsystem: C:\Users\Marcel\AppData\Local\Temp\biber_tmp_vWA7\4575458c705c71f52cc019eaea0a4ee7_17252.utf8, line 277, syntax error: found "Maps", expected ","
-[614] Biber.pm:128> INFO - WARNINGS: 1
-[614] Biber.pm:132> INFO - ERRORS: 1
+[644] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[644] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[644] Biber.pm:4168> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
+[644] Biber.pm:4174> INFO - No sort tailoring available for locale 'de-DE'
+[685] bbl.pm:654> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[698] bbl.pm:757> INFO - Output to main.bbl
+[699] Biber.pm:128> INFO - WARNINGS: 1

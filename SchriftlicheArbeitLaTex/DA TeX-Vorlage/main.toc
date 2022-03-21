@@ -1,5 +1,5 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
-\babel@toc {ngerman}{}
+\babel@toc {ngerman}{}\relax 
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Eidesstattliche Erklärung}{A}{chapter*.2}%
 \defcounter {refsection}{0}\relax 
@@ -311,60 +311,62 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Resümee und Ausblick}{81}{chapter.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Abbildungsverzeichnis}{82}{chapter*.88}%
+\contentsline {chapter}{Quellen und Literatur}{82}{chapter*.88}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Tabellenverzeichnis}{85}{chapter*.89}%
+\contentsline {chapter}{Abbildungsverzeichnis}{84}{chapter*.89}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{Codeverzeichnis}{86}{chapter*.90}%
+\contentsline {chapter}{Tabellenverzeichnis}{87}{chapter*.90}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Begleitprotokoll gem. § 9 Abs. 2 PrO-BHS}{87}{chapter.5}%
+\contentsline {chapter}{Codeverzeichnis}{88}{chapter*.91}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Begleitprotokoll David Pöchacker}{88}{section.5.1}%
+\contentsline {chapter}{\numberline {5}Begleitprotokoll gem. § 9 Abs. 2 PrO-BHS}{89}{chapter.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.2}Begleitprotokoll Tobias Kronsteiner}{91}{section.5.2}%
+\contentsline {section}{\numberline {5.1}Begleitprotokoll David Pöchacker}{90}{section.5.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.3}Begleitprotokoll Marcel Entner}{93}{section.5.3}%
+\contentsline {section}{\numberline {5.2}Begleitprotokoll Tobias Kronsteiner}{93}{section.5.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Anhang}{96}{chapter.6}%
+\contentsline {section}{\numberline {5.3}Begleitprotokoll Marcel Entner}{95}{section.5.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.1}Verfasser der Kapitel}{96}{section.6.1}%
+\contentsline {chapter}{\numberline {6}Anhang}{98}{chapter.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.1}David Pöchacker}{96}{subsection.6.1.1}%
+\contentsline {section}{\numberline {6.1}Verfasser der Kapitel}{98}{section.6.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.2}Marcel Entner}{96}{subsection.6.1.2}%
+\contentsline {subsection}{\numberline {6.1.1}David Pöchacker}{98}{subsection.6.1.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.1.3}Tobias Kronsteiner}{97}{subsection.6.1.3}%
+\contentsline {subsection}{\numberline {6.1.2}Marcel Entner}{98}{subsection.6.1.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.2}Verwendete Software}{98}{section.6.2}%
+\contentsline {subsection}{\numberline {6.1.3}Tobias Kronsteiner}{99}{subsection.6.1.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.1}Visual Studio Code}{98}{subsection.6.2.1}%
+\contentsline {section}{\numberline {6.2}Verwendete Software}{100}{section.6.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.2}Apache WebServer}{98}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.1}Visual Studio Code}{100}{subsection.6.2.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.3}Composer}{98}{subsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.2.2}Apache WebServer}{100}{subsection.6.2.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.4}Windows Eingabeaufforderung (CMD)}{98}{subsection.6.2.4}%
+\contentsline {subsection}{\numberline {6.2.3}Composer}{100}{subsection.6.2.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.5}Github VCS und Github Desktop GUI}{98}{subsection.6.2.5}%
+\contentsline {subsection}{\numberline {6.2.4}Windows Eingabeaufforderung (CMD)}{100}{subsection.6.2.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.6} phpMyAdmin}{99}{subsection.6.2.6}%
+\contentsline {subsection}{\numberline {6.2.5}Github VCS und Github Desktop GUI}{100}{subsection.6.2.5}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.7}Adobe XD}{99}{subsection.6.2.7}%
+\contentsline {subsection}{\numberline {6.2.6} phpMyAdmin}{101}{subsection.6.2.6}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.8}Adobe Photoshop}{99}{subsection.6.2.8}%
+\contentsline {subsection}{\numberline {6.2.7}Adobe XD}{101}{subsection.6.2.7}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.2.9}LaTex}{99}{subsection.6.2.9}%
+\contentsline {subsection}{\numberline {6.2.8}Adobe Photoshop}{101}{subsection.6.2.8}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.3}Projektplanung}{100}{section.6.3}%
+\contentsline {subsection}{\numberline {6.2.9}LaTex}{101}{subsection.6.2.9}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3.1}Projektkommunikation}{100}{subsection.6.3.1}%
+\contentsline {section}{\numberline {6.3}Projektplanung}{102}{section.6.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3.2}Projektstrukturplan}{100}{subsection.6.3.2}%
+\contentsline {subsection}{\numberline {6.3.1}Projektkommunikation}{102}{subsection.6.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3.3}Verantwortungsmatrix}{101}{subsection.6.3.3}%
+\contentsline {subsection}{\numberline {6.3.2}Projektstrukturplan}{102}{subsection.6.3.2}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3.4}Meilensteinplan}{102}{subsection.6.3.4}%
+\contentsline {subsection}{\numberline {6.3.3}Verantwortungsmatrix}{103}{subsection.6.3.3}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {6.3.5}Terminplan}{103}{subsection.6.3.5}%
+\contentsline {subsection}{\numberline {6.3.4}Meilensteinplan}{104}{subsection.6.3.4}%
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {6.4}Inhalt von GitHub}{103}{section.6.4}%
+\contentsline {subsection}{\numberline {6.3.5}Terminplan}{105}{subsection.6.3.5}%
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {6.4}Inhalt von GitHub}{105}{section.6.4}%
