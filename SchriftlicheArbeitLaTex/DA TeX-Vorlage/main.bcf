@@ -2377,11 +2377,15 @@
     <bcf:citekey order="22">Database</bcf:citekey>
     <bcf:citekey order="23">Controller</bcf:citekey>
     <bcf:citekey order="23">Model</bcf:citekey>
-    <bcf:citekey order="24">LaravelAuth</bcf:citekey>
-    <bcf:citekey order="25">Adresssuchfeld</bcf:citekey>
-    <bcf:citekey order="26">Autocomplete</bcf:citekey>
-    <bcf:citekey order="27">DataTableCDN</bcf:citekey>
-    <bcf:citekey order="28">DataTable2</bcf:citekey>
+    <bcf:citekey order="24">Kron1</bcf:citekey>
+    <bcf:citekey order="25">Kron2</bcf:citekey>
+    <bcf:citekey order="26">Kron3</bcf:citekey>
+    <bcf:citekey order="26">Kron4</bcf:citekey>
+    <bcf:citekey order="27">LaravelAuth</bcf:citekey>
+    <bcf:citekey order="28">Adresssuchfeld</bcf:citekey>
+    <bcf:citekey order="29">Autocomplete</bcf:citekey>
+    <bcf:citekey order="30">DataTableCDN</bcf:citekey>
+    <bcf:citekey order="31">DataTable2</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

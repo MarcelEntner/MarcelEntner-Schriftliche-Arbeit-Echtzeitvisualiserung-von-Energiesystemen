@@ -1,5 +1,5 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
-\babel@toc {ngerman}{}
+\babel@toc {ngerman}{}\relax 
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{Eidesstattliche Erklärung}{A}{chapter*.2}%
 \defcounter {refsection}{0}\relax 
@@ -55,7 +55,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.1}Endgeräte}{9}{subsection.2.3.1}%
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}Serverseitig }{10}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.2}Serverseitige Scriptsprache }{10}{subsection.2.3.2}%
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.3}Clientseitige Interaktionen des Benutzers}{10}{subsection.2.3.3}%
 \defcounter {refsection}{0}\relax 

@@ -179,6 +179,32 @@
       \verb https://de.wikipedia.org/wiki/Echtzeitsystem
       \endverb
     \endentry
+    \entry{Kron2}{online}{}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labeltitlesource}{title}
+      \field{title}{Einbindung von Bootstrap}
+      \verb{urlraw}
+      \verb https://www.positronx.io/how-to-properly-install-and-use-bootstrap-in-laravel/
+      \endverb
+      \verb{url}
+      \verb https://www.positronx.io/how-to-properly-install-and-use-bootstrap-in-laravel/
+      \endverb
+      \warn{\item Entry 'Kron2' (Verzeichniss.bib): Invalid format '2021-9-22' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{Kron3}{online}{}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{labeltitlesource}{title}
+      \field{title}{Einbindung von Grafana}
+      \verb{urlraw}
+      \verb https://grafana.com/docs/grafana/latest/http_api/
+      \endverb
+      \verb{url}
+      \verb https://grafana.com/docs/grafana/latest/http_api/
+      \endverb
+      \warn{\item Entry 'Kron3' (Verzeichniss.bib): Invalid format '2021-9-22' of date field 'urldate' - ignoring}
+    \endentry
     \entry{Model}{online}{}
       \field{sortinit}{E}
       \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
@@ -277,6 +303,19 @@
       \verb https://de.wikipedia.org/wiki/Google_Maps
       \endverb
     \endentry
+    \entry{Kron1}{online}{}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{labeltitlesource}{title}
+      \field{title}{Installation von Laravel}
+      \verb{urlraw}
+      \verb https://laravel.com/docs/8.x#installation-via-composer
+      \endverb
+      \verb{url}
+      \verb https://laravel.com/docs/8.x#installation-via-composer
+      \endverb
+      \warn{\item Entry 'Kron1' (Verzeichniss.bib): Invalid format '2021-9-22' of date field 'urldate' - ignoring}
+    \endentry
     \entry{Vuejs1}{online}{}
       \field{sortinit}{I}
       \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
@@ -324,6 +363,19 @@
       \verb{url}
       \verb https://www.youtube.com/watch?v=7rbp31Bz8QQ&t=88s&ab_channel=KOBERIT
       \endverb
+    \endentry
+    \entry{Kron4}{online}{}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labeltitlesource}{title}
+      \field{title}{Laravel HTTP API "Guzzle-http"}
+      \verb{urlraw}
+      \verb https://laravel.com/docs/9.x/http-client
+      \endverb
+      \verb{url}
+      \verb https://laravel.com/docs/9.x/http-client
+      \endverb
+      \warn{\item Entry 'Kron4' (Verzeichniss.bib): Invalid format '2021-9-22' of date field 'urldate' - ignoring}
     \endentry
     \entry{OpenStreetMap}{online}{}
       \field{sortinit}{O}
