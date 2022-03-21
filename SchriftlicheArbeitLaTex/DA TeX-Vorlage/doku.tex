@@ -967,19 +967,21 @@ Dieser Abschnitt beinhaltet eine Dokumentation der verwendeten Werkzeuge zur Ums
 In diesem Kapitel werden die Ergebnisse und Erfahrungen dokumentiert, welche sich im Laufe der Produktentwicklung mit dem Laravel Framework heraus kristallisiert haben.
 
 \subsection{Installation}
-Die Installation von Laravel erfolgt mithilfe des PHP Installations Tools Composer. Dieser installiert hierzu die Paketquellen Lokal auf dem System. Beim Erstellen eines neuen Laravel Projekts werden die von Composer installierten Quelldateien in das Verzeichnis des neu zu erstellenden Projekts kopiert und installiert. Im nachfolgenden Link ist mehr über die Installation von Laravel zu lesen:
+Die Installation von Laravel erfolgt mithilfe des PHP Installations Tools Composer. Dieser installiert hierzu die Paketquellen Lokal auf dem System. Beim Erstellen eines neuen Laravel Projekts werden die von Composer installierten Quelldateien in das Verzeichnis des neu zu erstellenden Projekts kopiert und installiert. Im nachfolgenden Link ist mehr über die Installation von Laravel zu lesen:\\
 
-Unter der Quelle xy () ist mehr über Laravel zu lesen.
+Quelle: Instalation von Laravel
 
 
 
 \subsection{Bootstrap Einbindung}
 Für das Design des Front-Ends wird die CSS Bibliothek “Bootstrap” (Kapitel 2.3.6.1) verwendet. Hierzu werden die Quelldateien von Bootstrap durch Composer lokal abgespeichert und durch den Laravel Befehl "php artisan ui bootstrap“ dem Laravel Projekt hinzugefügt. Laravel bietet die Möglichkeit beim Hinzufügen von Bootstrap mit der Option “-- auth” direkt die Beispielseiten (Login, Registrieren) für den Authentifizierungsvorgang zu erstellen. Im nachfolgenden Link ist mehr über die Installation von Bootstrap zu lesen:
-\href{https://www.positronx.io/how-to-properly-install-and-use-bootstrap-in-laravel/}{Dokumentation der Installation}
-
+Quelle: Dokumentation der Installation von Bootstrap
 
 \subsection{Grafana Einbindung}
 Das Produkt kommuniziert mit dem Grafana Server über die von Grafana bereitgestellte HTTP API. Laravel verfügt hierzu über das Paket “guzzle-http”, welches es ermöglicht, mithilfe von wenigen Zeilen PHP Code einen HTTP Aufruf an eine bestimmte Quelle abzusenden.
+
+Quelle Grafana HTTP API \\
+Quelle "guzzle-http" Laravel Paket 
 \begin{figure}[h]
 	\centering
 	\includegraphics[height=6cm,width=18cm]{images/GrafanaEinbindung}
@@ -1931,6 +1933,22 @@ Um nun in der Benutzeroberfläche des Produkts, die mit den API Aufrufen erstell
 \newpage
 
 
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=8cm,width=14cm]{images/bspstatistik}
+	\caption{Statistik einer PV Anlage}
+	\label{fig:Statistikbeispielpv }
+\end{figure} 
+
+ 
+\begin{figure}[h]
+	\centering
+	\includegraphics[height=8cm,width=14cm]{images/bspstatistik1}
+	\caption{Statistik eines Stromzählers}
+	\label{fig:Statistikbeispielstromzaehler }
+\end{figure} 
+
+
 
 \section{Einbindung von Google Maps}
 Um eine Karte zur Verwaltung und Visualisierung auf dem Produkt zu Verfügung zu stellen, hat sich das Projektteam für den Kartendienst Anbieter Google Maps entschieden. Um die Funktionen von Google Maps zu nutzen, muss ein Google Cloud Account erstellt und eingebunden werden. Was Google Cloud ist und wie es verwendet wird, ist in den nachfolgenden Kapiteln genauer erklärt.
@@ -2146,7 +2164,7 @@ Das Begleitprotokoll repräsentiert, welches Teammitglied woran und wie lange ge
 				
 				42/21   &Einbindung von Bootstrap& 10 \\ 
 				& Bootstrap Recherche &	\\
-				& Frontend Entwicklung &	\\	 
+				& Front-End Entwicklung &	\\	 
 					& Finaler Designvorschlag erstellt&	\\\hline
 					
 					
@@ -2178,8 +2196,8 @@ Das Begleitprotokoll repräsentiert, welches Teammitglied woran und wie lange ge
 		
 		
 		
-		46/21   & Frontend Entwicklung weitergeführt  & 10 	\\
-		& Backend Entwicklung weitergeführt& \\ \hline
+		46/21   & Front-End Entwicklung weitergeführt  & 10 	\\
+		& Back-End Entwicklung weitergeführt& \\ \hline
 		
 		
 		
@@ -2195,7 +2213,7 @@ Das Begleitprotokoll repräsentiert, welches Teammitglied woran und wie lange ge
 		48/21   & Datenschema überarbeitet& 1	\\ \hline
 		
 		
-		49/21   & Frontend Entwicklung, Backend Entwicklung & 10 \\ 
+		49/21   & Front-End Entwicklung, Backend Entwicklung & 10 \\ 
 		
 	& Benutzer Authentifizierung & \\ 	\hline
 		
@@ -2280,7 +2298,7 @@ Das Begleitprotokoll repräsentiert, welches Teammitglied woran und wie lange ge
 		
 	
 		
-	
+	%\sum SUMME & & 284 \\ \hline
 		
 		
 		
@@ -2455,9 +2473,9 @@ Reümee und Ausblick
 8.2.1 Visual Studio Code  \\
 8.2.7 Adobe XD  \\
 8.2.8 Adobe Photoshop  \\
-8.3.1 Projektkommunikation
-8.3.2 Projektstrukturplan
-8.3.3 Verantwortungsmatrix
+8.3.1 Projektkommunikation \\
+8.3.2 Projektstrukturplan\\
+8.3.3 Verantwortungsmatrix\\
 
 \subsection{Marcel Entner}
 1.2.2 Marcel Entner \\
@@ -2484,9 +2502,18 @@ Reümee und Ausblick
 
 
 \subsection{Tobias Kronsteiner}
-Text
-
-8.4 Inhalt von GitHub
+1.2.3 Tobias Kronsteiner\\
+2.1 Analyse des vorhandenen Systems\\
+2.3.1 Endgeräte\\
+2.9 Routen in Laravel\\
+3.1 Laravel\\
+3.4 Datenbankdesign\\
+3.8 Grafana\\
+6.2.2 Apache Webserver\\
+6.2.5 Github VCS und Github Desktop\\
+6.2.6 phpMyAdmin\\
+7.3 Begleitprotokoll Tobias Kronsteiner\\
+8.4 Inhalt von GitHub\\
 
 \newpage
 \section{Verwendete Software}
@@ -2504,7 +2531,7 @@ Composer ist ein Paketmanager für PHP. Composer wird über die Kommandozeile au
 \subsection{Windows Eingabeaufforderung (CMD)}
 Das CMD (“Craniomandibuläre Dysfunktion“) auch Windows-Eingabeaufforderung genannt, wurde vom Projektteam hauptsächlich verwendet, um die Befehle aus Kapitel \ref{sec Laravel Befehle} auszuführen. CMD ist der Kommandozeileninterpreter von Microsoft Windows und wird gebraucht, um Text Befehle in dem System auszuführen. 
 \subsection{Github VCS und Github Desktop GUI}
-Bei Github handelt es sich um einen sogenannten “Version Control Service” welcher, seit 2008 auf dem Mark ist und seit 2016 zu Microsoft gehört. Github Desktop ist die Implementation einer GUI für github und ist für Windows Mac und Linux erhältlich.
+Bei Github handelt es sich um einen sogenannten “Version Control Service” welcher, seit 2008 auf dem Mark ist und seit 2016 zu Microsoft gehört. Github Desktop ist die Implementation einer GUI (Graphical User Interface) für github und ist für Windows Mac und Linux erhältlich.
 
 \newpage
 \subsection{ phpMyAdmin}

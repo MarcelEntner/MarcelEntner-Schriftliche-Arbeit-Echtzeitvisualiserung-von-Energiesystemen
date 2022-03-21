@@ -1,5 +1,5 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
-\babel@toc {ngerman}{}\relax 
+\babel@toc {ngerman}{}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
@@ -143,12 +143,16 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {3.51}{\ignorespaces Statistik anzeigen\relax }}{77}{figure.caption.85}%
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.52}{\ignorespaces Statistik einer PV Anlage\relax }}{78}{figure.caption.86}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {3.53}{\ignorespaces Statistik eines Stromzählers\relax }}{78}{figure.caption.87}%
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Projektstrukturplan\relax }}{101}{figure.caption.98}%
+\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Verantwortungsmatrix\relax }}{102}{figure.caption.99}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Projektstrukturplan\relax }}{102}{figure.caption.100}%
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Verantwortungsmatrix\relax }}{103}{figure.caption.101}%
