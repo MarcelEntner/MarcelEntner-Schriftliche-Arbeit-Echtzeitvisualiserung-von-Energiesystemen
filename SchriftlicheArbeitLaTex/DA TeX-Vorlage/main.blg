@@ -1,17 +1,13 @@
 [0] Config.pm:311> INFO - This is Biber 2.16
 [0] Config.pm:314> INFO - Logfile is 'main.blg'
-[156] biber-MSWIN64:340> INFO - === 
-[210] Biber.pm:415> INFO - Reading 'main.bcf'
-[372] Biber.pm:952> INFO - Found 39 citekeys in bib section 0
-[394] Biber.pm:4340> INFO - Processing section 0
-[410] Biber.pm:4531> INFO - Looking for bibtex format file 'Verzeichniss.bib' for section 0
-[481] bibtex.pm:1689> INFO - LaTeX decoding ...
-[534] bibtex.pm:1494> INFO - Found BibTeX data source 'Verzeichniss.bib'
-[537] Utils.pm:395> WARN - Duplicate entry key: 'Migrations' in file 'Verzeichniss.bib', skipping ...
-[623] Utils.pm:395> WARN - Entry 'Kron1' (Verzeichniss.bib): Invalid format '2021-9-22' of date field 'urldate' - ignoring
-[624] Utils.pm:395> WARN - Entry 'Kron2' (Verzeichniss.bib): Invalid format '2021-9-22' of date field 'urldate' - ignoring
-[625] Utils.pm:395> WARN - Entry 'Kron3' (Verzeichniss.bib): Invalid format '2021-9-22' of date field 'urldate' - ignoring
-[626] Utils.pm:395> WARN - Entry 'Kron4' (Verzeichniss.bib): Invalid format '2021-9-22' of date field 'urldate' - ignoring
-[634] Utils.pm:411> ERROR - BibTeX subsystem: C:\Users\Marcel\AppData\Local\Temp\biber_tmp_LZUn\4575458c705c71f52cc019eaea0a4ee7_11776.utf8, line 277, syntax error: found "Maps", expected ","
-[634] Biber.pm:128> INFO - WARNINGS: 5
-[634] Biber.pm:132> INFO - ERRORS: 1
+[147] biber-MSWIN64:340> INFO - === 
+[193] Biber.pm:415> INFO - Reading 'main.bcf'
+[355] Biber.pm:952> INFO - Found 39 citekeys in bib section 0
+[376] Biber.pm:4340> INFO - Processing section 0
+[394] Biber.pm:4531> INFO - Looking for bibtex format file 'Verzeichniss.bib' for section 0
+[458] bibtex.pm:1689> INFO - LaTeX decoding ...
+[519] bibtex.pm:1494> INFO - Found BibTeX data source 'Verzeichniss.bib'
+[521] Utils.pm:395> WARN - Duplicate entry key: 'Migrations' in file 'Verzeichniss.bib', skipping ...
+[614] Utils.pm:411> ERROR - BibTeX subsystem: C:\Users\Marcel\AppData\Local\Temp\biber_tmp_vWA7\4575458c705c71f52cc019eaea0a4ee7_17252.utf8, line 277, syntax error: found "Maps", expected ","
+[614] Biber.pm:128> INFO - WARNINGS: 1
+[614] Biber.pm:132> INFO - ERRORS: 1
