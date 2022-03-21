@@ -916,7 +916,7 @@ Nach Durchführung dieser Schritte sollte sich das Programm problemlos starten u
 
 \newpage
 \section{Routen in Laravel}
-Laravel verfügt über ein ausgedehntes Routing System über welches Views aber auch ganze Gruppen von Elementen angesprochen und angezeigt werden können. Diese Routen werden in der Datei “web.php” angelegt und verwaltet.
+Laravel verfügt über ein ausgedehntes Routing System über welches Views aber auch ganze Gruppen von Elementen angesprochen und angezeigt werden können. Diese Routen werden in der Datei \glqq web.php\grqq \space angelegt und verwaltet.
 \subsection{Ressource Routen} 
 Mit der Ressource Route wird ein ganzer Controller angesprochen, so können über diese Route alle Methoden in diesem Controller angesprochen und verwendet werden. Im Produkt wird jeder Controller, welcher wiederum für jede Tabelle vorhanden ist, durch eine Ressource Route adressiert. Dieser Vorgang wird in Abbildung \ref{fig:ResourceRoute} veranschaulicht.
 
@@ -958,7 +958,7 @@ Für jede durch eine Migration (Kapitel 3.2.2) erstellte Tabelle gibt es ein Mod
 \subsection{View}
 Das Produkt baut auf acht Views auf. In diesen Views werden die Daten, welche von den Controllern übergeben werden mithilfe von DataTables (Kapitel 3.6) dem Benutzer angezeigt. Weiters gibt es in den Views verschiedene Möglichkeiten der Benutzerinteraktion.
 \subsection{Controller}
-In den Controllern wird der Datenweg zwischen den Views, also den Benutzerinteraktionen und der Datenbank gesteuert. Für jede, durch eine Migration in der Datenbank erstelle Tabelle, gibt es einen Controller, welcher das Speichern, die Ausgabe, das Editieren sowie das Löschen von einzelnen Tupeln aus der Datenbank steuert. Weiters werden in den "store()" und "destroy()" Methoden des EnTechControllers sowie des EnSysControllers die API Aufrufe an die Grafana HTTP API mit den vom Benutzer eingegebenen Daten ausgeführt.
+In den Controllern wird der Datenweg zwischen den Views, also den Benutzerinteraktionen und der Datenbank gesteuert. Für jede, durch eine Migration in der Datenbank erstelle Tabelle, gibt es einen Controller, welcher das Speichern, die Ausgabe, das Editieren sowie das Löschen von einzelnen Tupeln aus der Datenbank steuert. Weiters werden in den \glqq store()\grqq \space und  \glqq destroy()\grqq \space Methoden des EnTechControllers sowie des EnSysControllers die API Aufrufe an die Grafana HTTP API mit den vom Benutzer eingegebenen Daten ausgeführt.
 
 \chapter{Ergebnisdokumentation }
 Dieser Abschnitt beinhaltet eine Dokumentation der verwendeten Werkzeuge zur Umsetzung der einzelnen Funktionen. Es werden alle behandelten Teilbereiche erläutert.
@@ -1082,7 +1082,7 @@ In diesem Kapitel der Diplomarbeit wird das Redesign der Datenbank und der Relat
 Für das Produkt wurde ein neues vom alten unabhängiges Datenbankschema entwickelt. Hauptgründe hierfür waren die im Kapitel \ref{sec:Änderungsvorschläge} festgestellten Mängel und Designfehler. Im neuen Design wurde darauf geachtet alle Design Richtlinien welche für Relationale Datenbanken gelten einzuhalten. Das neue Datenbankschema besteht aus 21 Tabellen für Individuelle Energietechnologien sowie aus einer Tabelle für Benutzer, einer Tabelle für erstellte Energiesysteme und einer Tabelle für die Generalisierung einiger Attribute von Energietechnologien.
 
 \subsubsection{ER-Model}
-Um das Datenbankdesign zu veranschaulichen und Unklarheiten mit dem Auftraggeber vorzubeugen, wurden mithilfe des Programms “MySql Workbench” ein EER (Extended Entity Relationship) Diagramm erstellt. In diesem Diagramm ist jede Tabelle mit ihren Attributen sowie Primär und Fremdschlüsseln abgebildet. Weiters sind auch die einzelnen Relationen zwischen einer oder Mehreren Tabellen veranschaulicht. Das vollständige EER Modell der Datenbank ist in der Abbildung \ref{fig:ERModel} zu sehen.
+Um das Datenbankdesign zu veranschaulichen und Unklarheiten mit dem Auftraggeber vorzubeugen, wurden mithilfe des Programms \glqq MySql Workbench\grqq \space ein EER (Extended Entity Relationship) Diagramm erstellt. In diesem Diagramm ist jede Tabelle mit ihren Attributen sowie Primär und Fremdschlüsseln abgebildet. Weiters sind auch die einzelnen Relationen zwischen einer oder Mehreren Tabellen veranschaulicht. Das vollständige EER Modell der Datenbank ist in der Abbildung \ref{fig:ERModel} zu sehen.
 
 \begin{figure}[h]
 	\centering
@@ -1092,7 +1092,7 @@ Um das Datenbankdesign zu veranschaulichen und Unklarheiten mit dem Auftraggeber
 \end{figure}
 \newpage
 \subsubsection{Fremdschlüssel}
- Zwischen den Tabellen “users” und “EnSys” besteht eine 1:N Relation. Dies bedeutet, dass in jedem Eintrag in der “EnSys” Tabelle der Primärschlüssel des Benutzers welcher, den Eintrag durchführt, als Fremdschlüssel gespeichert wird. Zwischen den Tabellen “EnSys” und “EnTech” besteht ebenfalls eine 1:N Relation. In diesem Fall werden die Primärschlüssel der “users” sowie der “EnSys” Tabelle als Fremdschlüssel in der “EnTech” Tabelle gespeichert. Zwischen der “EnTech” sowie jeder der 21 Tabellen für individuelle Energietechnologien besteht eine 1:1 beziehung. Es gibt also zu jedem Eintrag in der “EnTech” Tabelle genau einen Eintrag in einer der 21 Tabellen für Energietechnologien. Hierbei wird der Primärschlüssel des Eintrages der “EnTech” Tabelle als Fremdschlüssel im korrespondierenden Eintrag in einer der 21 Tabellen für Energietechnologien gespeichert.
+ Zwischen den Tabellen \glqq users\grqq \space und \glqq EnSys\grqq \space besteht eine 1:N Relation. Dies bedeutet, dass in jedem Eintrag in der \glqq EnSys\grqq \space Tabelle der Primärschlüssel des Benutzers welcher, den Eintrag durchführt, als Fremdschlüssel gespeichert wird. Zwischen den Tabellen \glqq EnSys\grqq \space und \glqq EnTech\grqq \space besteht ebenfalls eine 1:N Relation. In diesem Fall werden die Primärschlüssel der \glqq users\grqq \space sowie der \glqq EnSys\grqq \space Tabelle als Fremdschlüssel in der  \glqq EnTech\grqq \space Tabelle gespeichert. Zwischen der \glqq EnTech\grqq \space sowie jeder der 21 Tabellen für individuelle Energietechnologien besteht eine 1:1 beziehung. Es gibt also zu jedem Eintrag in der  \glqq EnTech\grqq \space Tabelle genau einen Eintrag in einer der 21 Tabellen für Energietechnologien. Hierbei wird der Primärschlüssel des Eintrages der \glqq EnTech\grqq \space Tabelle als Fremdschlüssel im korrespondierenden Eintrag in einer der 21 Tabellen für Energietechnologien gespeichert.
 
 
 
@@ -1901,27 +1901,27 @@ Bei den einzelnen Energietechnologien, die dargestellt werden, wird zuerst das e
 In diesem Kapitel wird das automatische Erstellen von Dashboards via der Grafana HTTP API beschrieben. 
 
 \subsection{Automatisches Erstellen der Dashboards} \label{sec: Dashboard}
-Sobald in der Benutzeroberfläche ein Energiesystem erstellt wird, werden die Daten an die “store” Methode im “EnSysController” weitergereicht in welcher der API Aufruf zum Erstellen eines Dashboards getätigt wird. Hierzu werden die Daten welche vom Benutzer eingegeben wurden in das “json” Grundgerüst eingesetzt, welches dann an die API gesendet wird. Grafana setzt auf eine Bereichsverwaltung mit sogenannten “Organisations”, das Produkt erstellt die Dashboards und in diesen enthaltenen Panels in der sogenannten “annonymus organisation”. Diese Organisation ist von jedem einsehbar und erfordert keine Benutzerauthentifizierung. 
+Sobald in der Benutzeroberfläche ein Energiesystem erstellt wird, werden die Daten an die \glqq store\grqq \space Methode im \glqq EnSysController\grqq \space weitergereicht in welcher der API Aufruf zum Erstellen eines Dashboards getätigt wird. Hierzu werden die Daten welche vom Benutzer eingegeben wurden in das \glqq json\grqq \space Grundgerüst eingesetzt, welches dann an die API gesendet wird. Grafana setzt auf eine Bereichsverwaltung mit sogenannten \glqq Organisations\grqq \space, das Produkt erstellt die Dashboards und in diesen enthaltenen Panels in der sogenannten \glqq annonymus organisation\grqq \space. Diese Organisation ist von jedem einsehbar und erfordert keine Benutzerauthentifizierung. 
 \begin{figure}[h]
 	\centering
-	\includegraphics[height=7cm,width=14cm]{images/DashboardErstellen}
+	\includegraphics[height=7cm,width=16cm]{images/GrafanaESerstellen}
 	\caption{Dashboard erstellen}
 	\label{fig:DashboardErstellen }
 \end{figure}
 
 
 \subsection{Automatisches Erstellen der Panels}\label{sec: Panels}
-Wird in einem Energiesystem eine Energietechnologie erstellt, so werden die Daten wiederum an die Methode “store” im “EnTechController” übergeben. In dieser Methode werden alle in einem Dashboard bereits vorhandenen Panels per API Aufruf ausgelesen und in einem Array gespeichert, wird nun ein neues Panel erstellt, so wird dieses dem Array hinzugefügt und mit einem API Aufruf an Grafana gesendet. Weiters wird beim Erstellen des Panels mit hilfe einer “switch” Anweisung unterschieden um welchen Typ von Energietechnologie es sich handelt, um dann die richtige SQL Abfrage zu formulieren welche die Daten aus der Datenbank in das Panel liefert. 
+Wird in einem Energiesystem eine Energietechnologie erstellt, so werden die Daten wiederum an die Methode \glqq store\grqq \space im \glqq EnTechController\grqq \space übergeben. In dieser Methode werden alle in einem Dashboard bereits vorhandenen Panels per API Aufruf ausgelesen und in einem Array gespeichert, wird nun ein neues Panel erstellt, so wird dieses dem Array hinzugefügt und mit einem API Aufruf an Grafana gesendet. Weiters wird beim Erstellen des Panels mit hilfe einer \glqq switch\grqq \space Anweisung unterschieden um welchen Typ von Energietechnologie es sich handelt, um dann die richtige SQL Abfrage zu formulieren welche die Daten aus der Datenbank in das Panel liefert. 
 \begin{figure}[h]
 	\centering
-	\includegraphics[height=7cm,width=14cm]{images/PanelErstellen}
+	\includegraphics[height=7cm,width=16cm]{images/GrafanaETerstellen}
 	\caption{Panel erstellen}
 	\label{fig:PanelErstellen }
 \end{figure} 
 
 
 \subsection{Energietechnologien Statistiken anzeigen}
-Um nun in der Benutzeroberfläche des Produkts, die mit den API Aufrufen erstellten Grafana Statistiken anzeigen zu können ist, auf der Benutzeroberfläche ein Statistik Icon Vorhanden. Wird dieses vom Benutzer ausgewählt, so wird eine JavaScript Funktion welche die ID der Energietechnologie als Parameter hat ausgeführt. In dieser JavaScript Funktion wird ein Pop-Up Fenster aufgerufen sowie der “src” Parameter eines HTML “iframe” Elementes gesetzt. Dieses “iframe” Element wird nun in dem Pop-Up Fenster angezeigt.
+Um nun in der Benutzeroberfläche des Produkts, die mit den API Aufrufen erstellten Grafana Statistiken anzeigen zu können ist, auf der Benutzeroberfläche ein Statistik Icon Vorhanden. Wird dieses vom Benutzer ausgewählt, so wird eine JavaScript Funktion welche die ID der Energietechnologie als Parameter hat ausgeführt. In dieser JavaScript Funktion wird ein Pop-up Fenster aufgerufen sowie der \glqq src\grqq \space Parameter eines HTML \glqq iframe\grqq \space Elementes gesetzt. Dieses \glqq iframe\grqq \space Element wird nun in dem Pop-up Fenster angezeigt.
 \begin{figure}[h]
 	\centering
 	\includegraphics[height=8cm,width=14cm]{images/Statistikanzeigen}
@@ -2540,9 +2540,9 @@ Bei dem Apache Webserver handelt es sich um eine quelloffenes Projekt, welches i
 \subsection{Composer}
 Composer ist ein Paketmanager für PHP. Composer wird über die Kommandozeile ausgeführt und installiert zugehörige Abhängigkeiten eines PHP-Programmes. Informationen über Pakete, die mit Composer installiert werden können, sind auf der Website Packagist auffindbar. Das Projektteam hat dieses Programm dafür verwendet, um nach dem Git Pull, wie in \ref{sec: Git} beschrieben, alle neuen Pakete zu installieren und um Laravel generell zu downloaden.
 \subsection{Windows Eingabeaufforderung (CMD)}
-Das CMD (“Craniomandibuläre Dysfunktion“) auch Windows-Eingabeaufforderung genannt, wurde vom Projektteam hauptsächlich verwendet, um die Befehle aus Kapitel \ref{sec Laravel Befehle} auszuführen. CMD ist der Kommandozeileninterpreter von Microsoft Windows und wird gebraucht, um Text Befehle in dem System auszuführen. 
+Das CMD (\glqq Craniomandibuläre Dysfunktion\grqq) auch Windows-Eingabeaufforderung genannt, wurde vom Projektteam hauptsächlich verwendet, um die Befehle aus Kapitel \ref{sec Laravel Befehle} auszuführen. CMD ist der Kommandozeileninterpreter von Microsoft Windows und wird gebraucht, um Text Befehle in dem System auszuführen. 
 \subsection{Github VCS und Github Desktop GUI}
-Bei Github handelt es sich um einen sogenannten “Version Control Service” welcher, seit 2008 auf dem Mark ist und seit 2016 zu Microsoft gehört. Github Desktop ist die Implementation einer GUI (Graphical User Interface) für github und ist für Windows Mac und Linux erhältlich.
+Bei Github handelt es sich um einen sogenannten \glqq Version Control Service\grqq \space welcher, seit 2008 auf dem Mark ist und seit 2016 zu Microsoft gehört. Github Desktop ist die Implementation einer GUI (Graphical User Interface) für github und ist für Windows Mac und Linux erhältlich.
 
 \newpage
 \subsection{ phpMyAdmin}
